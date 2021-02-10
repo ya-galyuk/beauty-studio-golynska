@@ -1,0 +1,110 @@
+@import "nullstyles";
+@import "variable";
+/*@import "templates";*/
+/*@import "font";*/
+
+section {
+  margin-bottom: 100px;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.wrapper {
+  padding: 30px;
+  min-height: 100%;
+}
+
+/* title -----------------------------------*/
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+/* button ---------------------------------*/
+.btn-primary {
+  padding: 18px 30px;
+  background: $btn-primary-color;
+  color: $btn-primary-text-color;
+}
+
+/* ----------------------------------------*/
+
+/* flex -----------------------------------*/
+.f-block {
+  display: flex;
+}
+
+.f-block__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* ----------------------------------------*/
+
+
+/* slider ---------------------------------*/
+.image-slider,
+.review-slider {
+  padding: 30px 0 70px 0;
+}
+
+.image-slider__wrapper {
+}
+
+.image-slider__slide,
+.review-slider__slide {
+  border: 1px solid;
+}
+
+.image-slider__image,
+.review-slider__image,
+{
+  text-align: center;
+}
+
+.image-slider__image img,
+.review-slider__image img,
+{
+  max-width: 100%;
+}
+
+/*-----------------------------------------*/
+
+/* slider navigation arrows  --------------*/
+.swiper-button-prev,
+.swiper-button-next {
+  width: 60px;
+  height: 60px;
+  background: $primary-color;
+  color: $icon-white-color;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+
+}
+
+/* ----------------------------------------*/
+
+/* slider pagination ----------------------*/
+.swiper-pagination {
+
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid;
+}
+
+.swiper-pagination-bullet-active {
+  background: $primary-color;
+}
+
+/* ----------------------------------------*/
+

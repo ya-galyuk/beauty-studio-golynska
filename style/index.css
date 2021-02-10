@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a {
+  color: unset;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*@import "templates";*/
+/*@import "font";*/
+section {
+  margin-bottom: 100px;
+}
+section :last-child {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  padding: 30px;
+  min-height: 100%;
+}
+
+/* title -----------------------------------*/
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+/* button ---------------------------------*/
+.btn-primary {
+  padding: 18px 30px;
+  background: #000;
+  color: #fff;
+}
+
+/* ----------------------------------------*/
+/* flex -----------------------------------*/
+.f-block {
+  display: flex;
+}
+
+.f-block__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* ----------------------------------------*/
+/* slider ---------------------------------*/
+.image-slider,
+.review-slider {
+  padding: 30px 0 70px 0;
+}
+
+.image-slider__slide,
+.review-slider__slide {
+  border: 1px solid;
+}
+
+.image-slider__image,
+.review-slider__image {
+  text-align: center;
+}
+
+.image-slider__image img,
+.review-slider__image img {
+  max-width: 100%;
+}
+
+/*-----------------------------------------*/
+/* slider navigation arrows  --------------*/
+.swiper-button-prev,
+.swiper-button-next {
+  width: 60px;
+  height: 60px;
+  background: #000;
+  color: #fff;
+}
+
+/* ----------------------------------------*/
+/* slider pagination ----------------------*/
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  background: transparent;
+  border: 1px solid;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+/* ----------------------------------------*/
+
+/*# sourceMappingURL=index.css.map */

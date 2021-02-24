@@ -1,27 +1,207 @@
 @import "nullstyles";
 @import "variable";
+@import "mixin";
 /*@import "templates";*/
 /*@import "font";*/
 
-section {
-  margin-bottom: 100px;
-
-  :last-child {
-    margin-bottom: 0;
-  }
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  line-height: 1;
+  font-size: 14px;
+  background-color: #5d5d5d;
+  color: #fff;
+  text-rendering: optimizeLegibility;
 }
 
+// wrapper ---------------------------------
 .wrapper {
-  padding: 30px;
   min-height: 100%;
+  min-width: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease 0s;
 }
 
-/* title -----------------------------------*/
-.title {
-  font-size: 30px;
-  font-weight: 700;
-  margin: 0 0 30px 0;
+.wrapper._loaded {
+  opacity: 1;
 }
+
+.wrapper._loaded .header {
+  transition: transform 0.8s ease 0.8s;
+  transform: translate(0, 0);
+}
+
+.wrapper._loaded .page__pagination {
+  transform: translate(0, -50%);
+  opacity: 1;
+  visibility: visible;
+  transition: transform 0.6s ease 0.8s;
+}
+
+.wrapper._free .page__pagination {
+  transition: all 0.3s ease 0s;
+  transform: translate(50px, -50%);
+  opacity: 0;
+}
+
+// -----------------------------------------
+
+// header ----------------------------------
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transform: translate(0, -100%);
+  background-color: #1D5A7E;
+}
+
+.menu {
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+}
+
+.menu__link {
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s ease 0s;
+  margin: 0 10px;
+}
+
+.menu__link._active {
+  color: #9E2835;
+}
+
+// -----------------------------------------
+
+// page ------------------------------------
+.page {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+// -----------------------------------------
+
+// screen ----------------------------------
+.screen {
+  flex: 1 0 100%;
+  position: relative;
+  min-width: 0;
+}
+
+.screen__content {
+  padding: 100px 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.screen__title {
+  font-size: 50px;
+  color: #fff;
+  display: inline-block;
+}
+
+.screen__title_bg {
+  background: #000;
+  padding: 15px;
+}
+
+.screen__body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.screen__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.screen__image img {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+// -----------------------------------------
+
+// pagination, bullet, scroll --------------
+.page__pagination {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translate(0px, -50%);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__bullet {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border: 2px solid #000;
+  margin: 10px 0;
+  transition: background-color 0.3s ease 0s;
+}
+
+.page__bullet_active {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.page__scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page__drag-scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+// -----------------------------------------
+
+
+
+
+
+
+
+
+
 
 /* button ---------------------------------*/
 .btn-primary {
@@ -107,4 +287,6 @@ section {
 }
 
 /* ----------------------------------------*/
+
+
 

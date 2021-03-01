@@ -1,3 +1,4 @@
+// main slider -----------------------------------
 let wrapper = document.querySelector('.wrapper');
 
 let pageSlider = new Swiper('.page', {
@@ -213,61 +214,3 @@ new Swiper('.review-slider', {
 
     spaceBetween: 30,
 })
-
-/*// menu
-const open_menu_btn = document.getElementById('open-menu-button');
-const close_menu_btn = document.getElementById('close-menu-button');
-const menu = document.querySelector('.menu');
-const menu_list = document.querySelector('.menu__list');
-const header_main = document.querySelector('.header__main');
-
-menu_list.addEventListener('click', event => {
-    menuToggle()
-});
-
-function menuToggle() {
-    menuClassToggle(close_menu_btn)
-    menuClassToggle(open_menu_btn)
-    menuClassToggle(menu)
-    menuClassToggle(header_main)
-}
-
-function menuClassToggle(element) {
-    if (element.classList) {
-        element.classList.toggle("_open");
-    } else {
-        // For IE9
-        let classes = element.className.split(" ");
-        let i = classes.indexOf("_open");
-
-        if (i >= 0)
-            classes.splice(i, 1);
-        else
-            classes.push("_open");
-        element.className = classes.join(" ");
-    }
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

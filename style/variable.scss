@@ -1,42 +1,31 @@
-// test
-$container-maxWidth: 1440px;
+// width ----------------------------------------
+$maxWidth-container: 1440px;
+
+// ----------------------------------------------
 
 
+// main colors ----------------------------------
+$color-dark: #232323;
+$color-light: #fff;
+$color-primary: #01159A;
+$color-primary_dark: #303030;
+$color-primary_light: #fff;
+$color-orange: #FF4603;
 
+// ----------------------------------------------
 
+// bg -------------------------------------------
+$bg-primary: #01159A;
+$bg-dark: #232323;
+$bg-light: #fff;
 
-$primary-color: #000;
+// ----------------------------------------------
 
-$min-height-wrapper:1080px;
+// text -----------------------------------------
+$text-color_primary: #01159A;
+$text-color_dark: #232323;
+$text-color_light: #fff;
+$text-color_orange: #FF4603;
 
-$btn-primary-color: #000;
-$btn-primary-text-color: #fff;
-
-$icon-primary-color: #000;
-$icon-white-color: #fff;
-
-
-
-
-
-
-
-// height
-$container-maxHeight: 60vh;
-
-// color
-$black-color: #000;
-$white-color: #fff;
-$red-color: #9E2835;
-$light-color: #F7F8F9;
-$primary-color: #266387;
-$primary-color40: rgba(38, 99, 135, 0.4);
-$primary_dark-color: #1D5A7E;
-$secondary-color: #E9ECF1;
-$secondary-color40: rgba(233, 236, 241, 0.4);
-$icon_primary-color: #266387;
-$icon_dark-color: #000;
-
-$grey-color: #707070;
-$grey_dark-color: #3C3C3C;
+// ----------------------------------------------
 

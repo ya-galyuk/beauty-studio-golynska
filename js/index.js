@@ -1,3 +1,4 @@
+// main slider -----------------------------------
 let wrapper = document.querySelector('.wrapper');
 
 let pageSlider = new Swiper('.page', {
@@ -60,6 +61,7 @@ let pageSlider = new Swiper('.page', {
         slideChange: function () {
             menuSliderRemove()
             menuLinks[pageSlider.realIndex].classList.add('_active')
+            scrollFunction()
         },
 
         resize: function () {
@@ -68,7 +70,7 @@ let pageSlider = new Swiper('.page', {
     }
 });
 
-let menuLinks = document.querySelectorAll('.menu__link');
+let menuLinks = document.querySelectorAll('.header__link');
 
 function menuSlider() {
     if (menuLinks.length > 0) {
@@ -88,7 +90,7 @@ function menuSlider() {
 }
 
 function menuSliderRemove() {
-    let menuLinkActive = document.querySelector('.menu__link._active');
+    let menuLinkActive = document.querySelector('.header__link._active');
     if (menuLinkActive) {
         menuLinkActive.classList.remove('_active');
     }
@@ -118,6 +120,9 @@ function setScrollType() {
 
 pageSlider.init()
 
+// ----------------------------------------------
+
+// sliders --------------------------------------
 const optionBase = {
     speed: 1500,
 
@@ -178,12 +183,11 @@ const optionBase = {
     nested: true,
 }
 
-// init Swiper
-new Swiper('.image-slider', {
+new Swiper('.service-slider', {
 
     ...optionBase,
 
-    slidesPerView: 2.2,
+    slidesPerView: 2.3,
 
     spaceBetween: 30,
 
@@ -214,51 +218,53 @@ new Swiper('.review-slider', {
     spaceBetween: 30,
 })
 
-/*// menu
-const open_menu_btn = document.getElementById('open-menu-button');
-const close_menu_btn = document.getElementById('close-menu-button');
-const menu = document.querySelector('.menu');
-const menu_list = document.querySelector('.menu__list');
-const header_main = document.querySelector('.header__main');
+// ----------------------------------------------
 
-menu_list.addEventListener('click', event => {
-    menuToggle()
+// burger ---------------------------------------
+const header__burger = document.querySelector('.header__burger');
+const header__menu = document.querySelector('.header__menu');
+const body = document.querySelector('body');
+
+header__burger.addEventListener('click', event => {
+    menuClassToggle(header__burger, "active")
+    menuClassToggle(header__menu, "active")
+    menuClassToggle(body, "lock")
 });
 
-function menuToggle() {
-    menuClassToggle(close_menu_btn)
-    menuClassToggle(open_menu_btn)
-    menuClassToggle(menu)
-    menuClassToggle(header_main)
-}
-
-function menuClassToggle(element) {
-    if (element.classList) {
-        element.classList.toggle("_open");
+function menuClassToggle(element, className) {
+    if (element && element.classList) {
+        element.classList.toggle(className);
     } else {
         // For IE9
         let classes = element.className.split(" ");
-        let i = classes.indexOf("_open");
+        let i = classes.indexOf(className);
 
         if (i >= 0)
             classes.splice(i, 1);
         else
-            classes.push("_open");
+            classes.push(className);
         element.className = classes.join(" ");
     }
-}*/
+}
+
+// ----------------------------------------------
 
 
+// logo -----------------------------------------
+const logo = document.querySelector('.header__logo');
+const header_body = document.querySelector('.header__body');
 
+function scrollFunction() {
+    if (pageSlider.realIndex === 0) {
+        logo.style.maxWidth = "200px";
+        header_body.style.maxHeight = "100px";
+    } else {
+        logo.style.maxWidth = "90px";
+        header_body.style.maxHeight = "50px";
+    }
+}
 
-
-
-
-
-
-
-
-
+// ----------------------------------------------
 
 
 

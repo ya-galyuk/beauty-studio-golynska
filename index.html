@@ -1,182 +1,420 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8"/>
+    <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+
+    <!--  SEO -->
+
+    <!--  max 140  -->
+    <meta name="description" content=""/>
+    <!--  max 20 words ex: tag-1, tag-2, tab-3  -->
+    <meta name="keywords" content=""/>
+
+
+    <title>Title</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style/index.css">
 
-    <title>Beauty Studio Golynska</title>
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
 
-<header></header>
-<main>
-    <section>
-        <div class="wrapper">
-            <h1 class="title">Beauty Studio Golynska</h1>
-            <div class="f-block">
-                <div class="f-block__body">
-                    <!-- Slider main container -->
-                    <div class="image-slider swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="image-slider__wrapper swiper-wrapper">
-                            <!-- Slides -->
-                            <div data-hash="slide-1" class="image-slider__slide swiper-slide">
-                                <div class="image-slider__image">
-                                    <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <div data-hash="slide-2" class="image-slider__slide swiper-slide">
-                                <div class="image-slider__image">
-                                    <img data-src="img/02.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <div data-hash="slide-3" class="image-slider__slide swiper-slide">
-                                <div class="image-slider__image">
-                                    <img data-src="img/03.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <div data-hash="slide-4" class="image-slider__slide swiper-slide">
-                                <div class="image-slider__image">
-                                    <img data-src="img/04.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
+<div class="wrapper">
+
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <nav class="header__menu menu">
+                    <ul class="header__list">
+                        <li class="_d-none"><a href="" class="header__link"></a></li>
+                        <li class="_d-none"><a href="" class="header__link"></a></li>
+                        <li><a href="" class="header__link">Услуги</a></li>
+                        <li><a href="" class="header__link">Косметика</a></li>
+                        <li class="_d-none"><a href="" class="header__link"></a></li>
+                        <li class="_d-none"><a href="" class="header__link"></a></li>
+                        <li class="_d-none"><a href="" class="header__link"></a></li>
+                        <li><a href="" class="header__link">Салон</a></li>
+                        <li class="_d-none"><a href="" class="header__link"></a></li>
+                    </ul>
+                    <div class="header__service">
+                        <div class="header__phone phone">
+                            <a href="tel:+380667700948" class="header__link phone__link">+380667700948</a>
                         </div>
-
-                        <!-- If we need pagination -->
-                        <!-- <div class="swiper-pagination"></div> -->
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </div>
-            </div>
-            <button class="btn btn-primary">Button name</button>
-        </div>
-    </section>
-    <section>
-        <div class="wrapper">
-            <h1 class="title">Beauty Studio Golynska</h1>
-            <div class="f-block">
-                <div class="f-block__body">
-                    <!-- Slider main container -->
-                    <div class="parallax-slider swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="parallax-slider__wrapper swiper-wrapper">
-                            <!-- Slides -->
-                            <div data-hash="parallax-slide-1" class="parallax-slider__slide swiper-slide">
-                                <div class="parallax-slider__image image-slider__image">
-                                    <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <div data-hash="parallax-slide-2" class="parallax-slider__slide swiper-slide">
-                                <span class="parallax-slider__span" >2</span>
-                                <h2 class="parallax-slider__title">Some text</h2>
-                                <p class="parallax-slider__description">
-                                    Ad doloribus in incidunt officia officiis,
-                                    sit. Accusamus, architecto, nobis.</p>
-                            </div>
-                            <div data-hash="parallax-slide-3" class="parallax-slider__slide swiper-slide">
-                                <span class="parallax-slider__span" >3</span>
-                                <h2 class="parallax-slider__title">Some text</h2>
-                                <p class="parallax-slider__description">
-                                    Deserunt fugiat, laudantium maxime natus
-                                    sint suscipit ullam ut veritatis?</p>
-                            </div>
-                            <div data-hash="parallax-slide-4" class="parallax-slider__slide swiper-slide">
-                                <span class="parallax-slider__span" >4</span>
-                                <h2 class="parallax-slider__title">Some text</h2>
-                                <p class="parallax-slider__description">
-                                    Adipisci beatae corporis dicta dolorem fuga
-                                    in minus nihil ratione?</p>
-                            </div>
+                        <div class="header__lang lang">
+                            <ul class="lang__list">
+                                <li><a href="" class="header__link lang__link">UK</a></li>
+                                <li><a href="" class="header__link lang__link active">RU</a></li>
+                            </ul>
                         </div>
-
-                        <!-- If we need pagination -->
-                        <!--<div class="swiper-pagination"></div> -->
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias aperiam aspernatur beatae
-                corporis ducimus eaque enim eveniet excepturi facilis, ipsum odit praesentium quos ratione similique,
-                tenetur unde velit?</p>
-        </div>
-    </section>
-    <section>
-        <div class="wrapper">
-            <h1 class="title">Beauty Studio Golynska</h1>
-            <div class="f-block">
-                <div class="f-block__body">
-                    <!-- Slider main container -->
-                    <div class="review-slider swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="review-slider__wrapper swiper-wrapper">
-                            <!-- Slides -->
-                            <div data-hash="review-slide-1" class="review-slider__slide swiper-slide">
-                                <div class="review-slider__image">
-                                    <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <div data-hash="review-slide-2" class="review-slider__slide swiper-slide">
-                                <div class="review-slider__image">
-                                    <img data-src="img/02.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <div data-hash="review-slide-3" class="review-slider__slide swiper-slide">
-                                <div class="review-slider__image">
-                                    <img data-src="img/03.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <div data-hash="review-slide-4" class="review-slider__slide swiper-slide">
-                                <div class="review-slider__image">
-                                    <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <div data-hash="review-slide-5" class="review-slider__slide swiper-slide">
-                                <div class="review-slider__image">
-                                    <img data-src="img/02.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <div data-hash="review-slide-6" class="review-slider__slide swiper-slide">
-                                <div class="review-slider__image">
-                                    <img data-src="img/03.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- If we need pagination -->
-                         <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
+                </nav>
+                <a href="" class="header__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <div class="header__burger">
+                    <span></span>
                 </div>
             </div>
         </div>
-    </section>
-</main>
-<footer></footer>
+    </header>
+
+    <main class="page">
+        <div class="page__wrapper">
+            <section class="page__screen screen intro">
+                <div class="screen__content">
+                    <h1 class="screen__title screen__title_bg">Ваша красота дойстойна</h1>
+                    <h1 class="screen__title screen__title_bg">большего, чем вы для неё делаете</h1>
+                </div>
+                <div class="screen__body">
+                    <div class="screen__image">
+                        <img src="img/01.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__screen screen about">
+                <div class="screen__content">
+                    <h1 class="screen__title">Hello</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias beatae id natus, nesciunt porro
+                        praesentium, quibusdam quo recusandae repellendus tempora, ullam unde voluptatem?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias beatae id natus, nesciunt porro
+                        praesentium, quibusdam quo recusandae repellendus tempora, ullam unde voluptatem?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias beatae id natus, nesciunt porro
+                        praesentium, quibusdam quo recusandae repellendus tempora, ullam unde voluptatem?</p>
+                </div>
+                <div class="screen__body">
+                    <div class="screen__image">
+                        <img src="img/01.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__screen screen service">
+                <div class="screen__content">
+                    <div class="container">
+                        <h1 class="screen__title screen__title_bg service__title">Услуги и цены</h1>
+                        <div class="f-block">
+                            <div class="f-block__body">
+                                <!-- Slider main container -->
+                                <div class="service-slider swiper-container">
+                                    <!-- Additional required wrapper -->
+                                    <div class="service-slider__wrapper swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div data-hash="service-1" class="service-slider__slide swiper-slide">
+                                            <div class="service-slider__image">
+                                                <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                            <div class="service-slider__service-info service-info">
+                                                <h2 class="service-info__title">Криотерапия</h2>
+                                                <div class="service-info__details">
+                                                    <div class="service-info__price">
+                                                        <span>300</span>грн
+                                                    </div>
+                                                    <div class="service-info__time time">
+                                                        <div class="time__icon">
+                                                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M30.4541 13.2773H22.2041C22.0623 13.2773 21.9463 13.3934 21.9463 13.5352V15.082C21.9463 15.2238 22.0623 15.3398 22.2041 15.3398H30.4541C30.5959 15.3398 30.712 15.2238 30.712 15.082V13.5352C30.712 13.3934 30.5959 13.2773 30.4541 13.2773ZM26.1358 17.6602H22.2041C22.0623 17.6602 21.9463 17.7762 21.9463 17.918V19.4648C21.9463 19.6066 22.0623 19.7227 22.2041 19.7227H26.1358C26.2776 19.7227 26.3936 19.6066 26.3936 19.4648V17.918C26.3936 17.7762 26.2776 17.6602 26.1358 17.6602ZM15.3818 10.3931H13.9864C13.7866 10.3931 13.6254 10.5542 13.6254 10.754V18.7462C13.6254 18.8622 13.6802 18.9686 13.7737 19.0362L18.5722 22.536C18.7333 22.6521 18.9589 22.6198 19.0749 22.4587L19.9032 21.3275V21.3243C20.0192 21.1632 19.9837 20.9376 19.8226 20.8216L15.7395 17.8696V10.754C15.7427 10.5542 15.5784 10.3931 15.3818 10.3931Z"
+                                                                      fill="black"/>
+                                                                <path d="M25.936 21.7174H24.0733C23.8928 21.7174 23.722 21.8109 23.6253 21.9656C23.216 22.6133 22.7391 23.2128 22.1912 23.7606C21.247 24.7048 20.1481 25.4461 18.9267 25.9617C17.6602 26.4966 16.3163 26.7673 14.9306 26.7673C13.5416 26.7673 12.1978 26.4966 10.9345 25.9617C9.71311 25.4461 8.61418 24.7048 7.66994 23.7606C6.72571 22.8164 5.98449 21.7174 5.46887 20.4961C4.93391 19.2328 4.66321 17.8889 4.66321 16.5C4.66321 15.111 4.93391 13.7704 5.46887 12.5039C5.98449 11.2825 6.72571 10.1836 7.66994 9.23932C8.61418 8.29508 9.71311 7.55386 10.9345 7.03824C12.1978 6.50328 13.5448 6.23258 14.9306 6.23258C16.3196 6.23258 17.6634 6.50328 18.9267 7.03824C20.1481 7.55386 21.247 8.29508 22.1912 9.23932C22.7391 9.78717 23.216 10.3866 23.6253 11.0343C23.722 11.189 23.8928 11.2825 24.0733 11.2825H25.936C26.1583 11.2825 26.3001 11.0504 26.2002 10.8539C24.099 6.67408 19.8387 3.95738 15.0821 3.90259C8.11789 3.81558 2.33323 9.51646 2.32033 16.4742C2.30744 23.4448 7.95676 29.1005 14.9274 29.1005C19.7452 29.1005 24.0765 26.3742 26.2002 22.1461C26.3001 21.9495 26.1551 21.7174 25.936 21.7174Z"
+                                                                      fill="black"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="time__info">8 минут</div>
+                                                    </div>
+                                                    <div class="service-info__more">
+                                                        <a href="" class="service-info__link">Подробнее</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-hash="service-2" class="service-slider__slide swiper-slide">
+                                            <div class="service-slider__image">
+                                                <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                            <div class="service-slider__service-info service-info">
+                                                <h2 class="service-info__title">Криотерапия</h2>
+                                                <div class="service-info__details">
+                                                    <div class="service-info__price">
+                                                        <span>300</span>грн
+                                                    </div>
+                                                    <div class="service-info__time time">
+                                                        <div class="time__icon">
+                                                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M30.4541 13.2773H22.2041C22.0623 13.2773 21.9463 13.3934 21.9463 13.5352V15.082C21.9463 15.2238 22.0623 15.3398 22.2041 15.3398H30.4541C30.5959 15.3398 30.712 15.2238 30.712 15.082V13.5352C30.712 13.3934 30.5959 13.2773 30.4541 13.2773ZM26.1358 17.6602H22.2041C22.0623 17.6602 21.9463 17.7762 21.9463 17.918V19.4648C21.9463 19.6066 22.0623 19.7227 22.2041 19.7227H26.1358C26.2776 19.7227 26.3936 19.6066 26.3936 19.4648V17.918C26.3936 17.7762 26.2776 17.6602 26.1358 17.6602ZM15.3818 10.3931H13.9864C13.7866 10.3931 13.6254 10.5542 13.6254 10.754V18.7462C13.6254 18.8622 13.6802 18.9686 13.7737 19.0362L18.5722 22.536C18.7333 22.6521 18.9589 22.6198 19.0749 22.4587L19.9032 21.3275V21.3243C20.0192 21.1632 19.9837 20.9376 19.8226 20.8216L15.7395 17.8696V10.754C15.7427 10.5542 15.5784 10.3931 15.3818 10.3931Z"
+                                                                      fill="black"/>
+                                                                <path d="M25.936 21.7174H24.0733C23.8928 21.7174 23.722 21.8109 23.6253 21.9656C23.216 22.6133 22.7391 23.2128 22.1912 23.7606C21.247 24.7048 20.1481 25.4461 18.9267 25.9617C17.6602 26.4966 16.3163 26.7673 14.9306 26.7673C13.5416 26.7673 12.1978 26.4966 10.9345 25.9617C9.71311 25.4461 8.61418 24.7048 7.66994 23.7606C6.72571 22.8164 5.98449 21.7174 5.46887 20.4961C4.93391 19.2328 4.66321 17.8889 4.66321 16.5C4.66321 15.111 4.93391 13.7704 5.46887 12.5039C5.98449 11.2825 6.72571 10.1836 7.66994 9.23932C8.61418 8.29508 9.71311 7.55386 10.9345 7.03824C12.1978 6.50328 13.5448 6.23258 14.9306 6.23258C16.3196 6.23258 17.6634 6.50328 18.9267 7.03824C20.1481 7.55386 21.247 8.29508 22.1912 9.23932C22.7391 9.78717 23.216 10.3866 23.6253 11.0343C23.722 11.189 23.8928 11.2825 24.0733 11.2825H25.936C26.1583 11.2825 26.3001 11.0504 26.2002 10.8539C24.099 6.67408 19.8387 3.95738 15.0821 3.90259C8.11789 3.81558 2.33323 9.51646 2.32033 16.4742C2.30744 23.4448 7.95676 29.1005 14.9274 29.1005C19.7452 29.1005 24.0765 26.3742 26.2002 22.1461C26.3001 21.9495 26.1551 21.7174 25.936 21.7174Z"
+                                                                      fill="black"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="time__info">8 минут</div>
+                                                    </div>
+                                                    <div class="service-info__more">
+                                                        <a href="" class="service-info__link">Подробнее</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-hash="service-3" class="service-slider__slide swiper-slide">
+                                            <div class="service-slider__image">
+                                                <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                            <div class="service-slider__service-info service-info">
+                                                <h2 class="service-info__title">Криотерапия</h2>
+                                                <div class="service-info__details">
+                                                    <div class="service-info__price">
+                                                        <span>300</span>грн
+                                                    </div>
+                                                    <div class="service-info__time time">
+                                                        <div class="time__icon">
+                                                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M30.4541 13.2773H22.2041C22.0623 13.2773 21.9463 13.3934 21.9463 13.5352V15.082C21.9463 15.2238 22.0623 15.3398 22.2041 15.3398H30.4541C30.5959 15.3398 30.712 15.2238 30.712 15.082V13.5352C30.712 13.3934 30.5959 13.2773 30.4541 13.2773ZM26.1358 17.6602H22.2041C22.0623 17.6602 21.9463 17.7762 21.9463 17.918V19.4648C21.9463 19.6066 22.0623 19.7227 22.2041 19.7227H26.1358C26.2776 19.7227 26.3936 19.6066 26.3936 19.4648V17.918C26.3936 17.7762 26.2776 17.6602 26.1358 17.6602ZM15.3818 10.3931H13.9864C13.7866 10.3931 13.6254 10.5542 13.6254 10.754V18.7462C13.6254 18.8622 13.6802 18.9686 13.7737 19.0362L18.5722 22.536C18.7333 22.6521 18.9589 22.6198 19.0749 22.4587L19.9032 21.3275V21.3243C20.0192 21.1632 19.9837 20.9376 19.8226 20.8216L15.7395 17.8696V10.754C15.7427 10.5542 15.5784 10.3931 15.3818 10.3931Z"
+                                                                      fill="black"/>
+                                                                <path d="M25.936 21.7174H24.0733C23.8928 21.7174 23.722 21.8109 23.6253 21.9656C23.216 22.6133 22.7391 23.2128 22.1912 23.7606C21.247 24.7048 20.1481 25.4461 18.9267 25.9617C17.6602 26.4966 16.3163 26.7673 14.9306 26.7673C13.5416 26.7673 12.1978 26.4966 10.9345 25.9617C9.71311 25.4461 8.61418 24.7048 7.66994 23.7606C6.72571 22.8164 5.98449 21.7174 5.46887 20.4961C4.93391 19.2328 4.66321 17.8889 4.66321 16.5C4.66321 15.111 4.93391 13.7704 5.46887 12.5039C5.98449 11.2825 6.72571 10.1836 7.66994 9.23932C8.61418 8.29508 9.71311 7.55386 10.9345 7.03824C12.1978 6.50328 13.5448 6.23258 14.9306 6.23258C16.3196 6.23258 17.6634 6.50328 18.9267 7.03824C20.1481 7.55386 21.247 8.29508 22.1912 9.23932C22.7391 9.78717 23.216 10.3866 23.6253 11.0343C23.722 11.189 23.8928 11.2825 24.0733 11.2825H25.936C26.1583 11.2825 26.3001 11.0504 26.2002 10.8539C24.099 6.67408 19.8387 3.95738 15.0821 3.90259C8.11789 3.81558 2.33323 9.51646 2.32033 16.4742C2.30744 23.4448 7.95676 29.1005 14.9274 29.1005C19.7452 29.1005 24.0765 26.3742 26.2002 22.1461C26.3001 21.9495 26.1551 21.7174 25.936 21.7174Z"
+                                                                      fill="black"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="time__info">8 минут</div>
+                                                    </div>
+                                                    <div class="service-info__more">
+                                                        <a href="" class="service-info__link">Подробнее</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-hash="service-4" class="service-slider__slide swiper-slide">
+                                            <div class="service-slider__image">
+                                                <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                                <div class="swiper-lazy-preloader"></div>
+                                            </div>
+                                            <div class="service-slider__service-info service-info">
+                                                <h2 class="service-info__title">Криотерапия</h2>
+                                                <div class="service-info__details">
+                                                    <div class="service-info__price">
+                                                        <span>300</span>грн
+                                                    </div>
+                                                    <div class="service-info__time time">
+                                                        <div class="time__icon">
+                                                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M30.4541 13.2773H22.2041C22.0623 13.2773 21.9463 13.3934 21.9463 13.5352V15.082C21.9463 15.2238 22.0623 15.3398 22.2041 15.3398H30.4541C30.5959 15.3398 30.712 15.2238 30.712 15.082V13.5352C30.712 13.3934 30.5959 13.2773 30.4541 13.2773ZM26.1358 17.6602H22.2041C22.0623 17.6602 21.9463 17.7762 21.9463 17.918V19.4648C21.9463 19.6066 22.0623 19.7227 22.2041 19.7227H26.1358C26.2776 19.7227 26.3936 19.6066 26.3936 19.4648V17.918C26.3936 17.7762 26.2776 17.6602 26.1358 17.6602ZM15.3818 10.3931H13.9864C13.7866 10.3931 13.6254 10.5542 13.6254 10.754V18.7462C13.6254 18.8622 13.6802 18.9686 13.7737 19.0362L18.5722 22.536C18.7333 22.6521 18.9589 22.6198 19.0749 22.4587L19.9032 21.3275V21.3243C20.0192 21.1632 19.9837 20.9376 19.8226 20.8216L15.7395 17.8696V10.754C15.7427 10.5542 15.5784 10.3931 15.3818 10.3931Z"
+                                                                      fill="black"/>
+                                                                <path d="M25.936 21.7174H24.0733C23.8928 21.7174 23.722 21.8109 23.6253 21.9656C23.216 22.6133 22.7391 23.2128 22.1912 23.7606C21.247 24.7048 20.1481 25.4461 18.9267 25.9617C17.6602 26.4966 16.3163 26.7673 14.9306 26.7673C13.5416 26.7673 12.1978 26.4966 10.9345 25.9617C9.71311 25.4461 8.61418 24.7048 7.66994 23.7606C6.72571 22.8164 5.98449 21.7174 5.46887 20.4961C4.93391 19.2328 4.66321 17.8889 4.66321 16.5C4.66321 15.111 4.93391 13.7704 5.46887 12.5039C5.98449 11.2825 6.72571 10.1836 7.66994 9.23932C8.61418 8.29508 9.71311 7.55386 10.9345 7.03824C12.1978 6.50328 13.5448 6.23258 14.9306 6.23258C16.3196 6.23258 17.6634 6.50328 18.9267 7.03824C20.1481 7.55386 21.247 8.29508 22.1912 9.23932C22.7391 9.78717 23.216 10.3866 23.6253 11.0343C23.722 11.189 23.8928 11.2825 24.0733 11.2825H25.936C26.1583 11.2825 26.3001 11.0504 26.2002 10.8539C24.099 6.67408 19.8387 3.95738 15.0821 3.90259C8.11789 3.81558 2.33323 9.51646 2.32033 16.4742C2.30744 23.4448 7.95676 29.1005 14.9274 29.1005C19.7452 29.1005 24.0765 26.3742 26.2002 22.1461C26.3001 21.9495 26.1551 21.7174 25.936 21.7174Z"
+                                                                      fill="black"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="time__info">8 минут</div>
+                                                    </div>
+                                                    <div class="service-info__more">
+                                                        <a href="" class="service-info__link">Подробнее</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- If we need pagination -->
+                                    <!-- <div class="swiper-pagination"></div> -->
+
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn_secondary service-btn">Все процедуры</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__screen screen cosmetic">
+                <div class="screen__content">
+                    <div class="container">
+                        <h1 class="screen__title screen__title_line">Косметика с которой работаем</h1>
+                        <div class="cosmetic__info">
+                            <p class="cosmetic__description">
+                                Уникальные омолаживающие и восстанавливающие процедуры для лица с использованием
+                                косметических средств всемирно известных брендов. Эти эксклюзивные линии созданы с
+                                применением новейших технологий, а также природных компонентов. Каждая линия уникальна и
+                                имеет широкий спектр действия.
+                            </p>
+                            <button class="btn btn_secondary cosmetics-btn">Вся косметика</button>
+                        </div>
+                        <div class="cosmetic__cards">
+                            <ul class="cosmetic__list">
+                                <li class="cosmetic__item">
+                                    <h1 class="cosmetic__item-title">Holyland</h1>
+                                    <div class="cosmetic__img">
+                                        <img src="img/03.jpg" alt="">
+                                        <div class="_dark"></div>
+                                    </div>
+                                    <a href="" class="cosmetic__link btn btn_primary">Подробнее</a></li>
+                                <li class="cosmetic__item">
+                                    <h1 class="cosmetic__item-title">Dermaquest</h1>
+                                    <div class="cosmetic__img">
+                                        <img src="img/03.jpg" alt="">
+                                        <div class="_dark"></div>
+                                    </div>
+                                    <a href="" class="cosmetic__link btn btn_primary">Подробнее</a></li>
+                                <li class="cosmetic__item">
+                                    <h1 class="cosmetic__item-title">Bio-matrix</h1>
+                                    <div class="cosmetic__img">
+                                        <img src="img/03.jpg" alt="">
+                                        <div class="_dark"></div>
+                                    </div>
+                                    <a href="" class="cosmetic__link btn btn_primary">Подробнее</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certificates"></section>
+
+            <section class="page__screen screen consultation">
+                <div class="screen__content">
+                    <h1 class="title">Beauty Studio Golynska</h1>
+                    <div class="f-block">
+                        <div class="f-block__body">
+                            <!-- Slider main container -->
+                            <div class="parallax-slider swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="parallax-slider__wrapper swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div data-hash="parallax-slide-1" class="parallax-slider__slide swiper-slide">
+                                        <div class="parallax-slider__image service-slider__image">
+                                            <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div>
+                                    </div>
+                                    <div data-hash="parallax-slide-2" class="parallax-slider__slide swiper-slide">
+                                        <span class="parallax-slider__span">2</span>
+                                        <h2 class="parallax-slider__title">Some text</h2>
+                                        <p class="parallax-slider__description">
+                                            Ad doloribus in incidunt officia officiis,
+                                            sit. Accusamus, architecto, nobis.</p>
+                                    </div>
+                                    <div data-hash="parallax-slide-3" class="parallax-slider__slide swiper-slide">
+                                        <span class="parallax-slider__span">3</span>
+                                        <h2 class="parallax-slider__title">Some text</h2>
+                                        <p class="parallax-slider__description">
+                                            Deserunt fugiat, laudantium maxime natus
+                                            sint suscipit ullam ut veritatis?</p>
+                                    </div>
+                                    <div data-hash="parallax-slide-4" class="parallax-slider__slide swiper-slide">
+                                        <span class="parallax-slider__span">4</span>
+                                        <h2 class="parallax-slider__title">Some text</h2>
+                                        <p class="parallax-slider__description">
+                                            Adipisci beatae corporis dicta dolorem fuga
+                                            in minus nihil ratione?</p>
+                                    </div>
+                                </div>
+
+                                <!-- If we need pagination -->
+                                <!--<div class="swiper-pagination"></div> -->
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium alias aperiam aspernatur
+                        beatae
+                        corporis ducimus eaque enim eveniet excepturi facilis, ipsum odit praesentium quos ratione
+                        similique,
+                        tenetur unde velit?</p>
+                </div>
+            </section>
+
+            <section class="page__screen screen reviews">
+                <div class="screen__content">
+                    <h1 class="title">Beauty Studio Golynska</h1>
+                    <div class="f-block">
+                        <div class="f-block__body">
+                            <!-- Slider main container -->
+                            <div class="review-slider swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="review-slider__wrapper swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div data-hash="review-slide-1" class="review-slider__slide swiper-slide">
+                                        <div class="review-slider__image">
+                                            <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div>
+                                    </div>
+                                    <div data-hash="review-slide-2" class="review-slider__slide swiper-slide">
+                                        <div class="review-slider__image">
+                                            <img data-src="img/02.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div>
+                                    </div>
+                                    <div data-hash="review-slide-3" class="review-slider__slide swiper-slide">
+                                        <div class="review-slider__image">
+                                            <img data-src="img/03.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div>
+                                    </div>
+                                    <div data-hash="review-slide-4" class="review-slider__slide swiper-slide">
+                                        <div class="review-slider__image">
+                                            <img data-src="img/01.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div>
+                                    </div>
+                                    <div data-hash="review-slide-5" class="review-slider__slide swiper-slide">
+                                        <div class="review-slider__image">
+                                            <img data-src="img/02.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div>
+                                    </div>
+                                    <div data-hash="review-slide-6" class="review-slider__slide swiper-slide">
+                                        <div class="review-slider__image">
+                                            <img data-src="img/03.jpg" src="img/1x1.png" class="swiper-lazy" alt="">
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="salon"></section>
+        </div>
+        <!--<div class="page__pagination"></div>-->
+        <div class="page__scroll"></div>
+    </main>
+    <footer class="footer">
+        <div class="map"></div>
+        <div class="footer_bg">
+            <!--nav>ul>li*7>a-->
+            <div>© 2021, косметолог Татьяна Голынская</div>
+        </div>
+
+    </footer>
+</div>
+
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/index.js"></script>

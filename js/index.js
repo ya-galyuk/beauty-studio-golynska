@@ -260,7 +260,7 @@ function scrollFunction() {
         header_body.style.maxHeight = "100px";
     } else {
         logo.style.maxWidth = "90px";
-        header_body.style.maxHeight = "50px";
+        header_body.style.maxHeight = "60px";
     }
 }
 

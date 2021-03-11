@@ -93,7 +93,7 @@ ul {
 /* btn -------------------------------------*/
 .btn {
   display: inline-flex;
-  padding: 18px 30px;
+  padding: 14px 30px;
   @extend %tpl-font_regular;
   @extend %tpl-btn;
   cursor: pointer;
@@ -576,7 +576,7 @@ ul {
 }
 
 // TODO: absolute
-.service__title{
+.service__title {
   margin: 0;
 }
 
@@ -644,22 +644,34 @@ ul {
 
 /* cosmetic -------------------------------*/
 
-.cosmetic__info {
+.cosmetic__content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.cosmetic__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cosmetic__title {
+  margin: 0 0 34px;
 }
 
 .cosmetic__description {
-  flex: 0 1 1044px;
+  max-width: calc(1160px + 22px);
   @extend %tpl-font_regular;
   @extend %tpl-text;
-  margin-left: calc(20px - (3px / 2));
-  margin-bottom: 20px;
+  padding: 0 0 0 22px;
+  margin: 0 0 34px;
 }
 
 .cosmetics-btn {
-  margin-left: 100px;
-  align-self: flex-start;
+  flex: 0 0 auto;
+  margin: 0 0 34px;
 }
 
 .cosmetic__list {
@@ -674,12 +686,6 @@ ul {
 
   &:last-child {
     margin: 0;
-  }
-
-  &:hover {
-    .cosmetic__link {
-      display: flex;
-    }
   }
 }
 
@@ -715,17 +721,19 @@ ul {
   position: absolute;
   height: 100%;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.4;
   background: $bg-dark;
 }
 
-.cosmetic__link {
-  display: none;
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  //margin-top: -30px;
+.cosmetic__item:hover {
+  ._border {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    height: calc(100% + 24px);
+    width: calc(100% + 24px);
+    border: 3px solid #232323;
+  }
 }
 
 /* ----------------------------------------*/

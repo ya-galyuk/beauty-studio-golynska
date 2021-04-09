@@ -1,3 +1,5 @@
+@import "mixin";
+
 %tpl-font_regular{
   font-style: normal;
   font-weight: normal;
@@ -13,12 +15,12 @@
 
 %tpl-text{
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  @include adaptive-value("font-size", 20, 14, 1);
 }
 
 %tpl-h1{
   font-family: 'Oswald', sans-serif;
-  font-size: 52px;
+  @include adaptive-value("font-size", 52, 18, 1);
 }
 
 %tpl-h2{
@@ -38,5 +40,5 @@
 
 %tpl-btn{
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  @include adaptive-value("font-size", 16, 14, 1);
 }

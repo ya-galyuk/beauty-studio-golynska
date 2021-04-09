@@ -94,6 +94,7 @@ ul {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding: 14px 30px;
   @extend %tpl-font_regular;
   @extend %tpl-btn;
@@ -144,7 +145,7 @@ ul {
 .header__body {
   position: relative;
   //z-index: 3;
-  @include adaptive-value("height", 100, 50, 1);
+  @include adaptive-value("height", 60, 50, 1);
   display: flex;
   align-items: center;
   transition: all 0.8s ease 0.3s;
@@ -576,13 +577,13 @@ ul {
 
 /* intro ----------------------------------*/
 .intro {
-  &__content{
+  &__content {
     top: 100%;
     transform: translateY(-100%);
     padding-bottom: 90px;
   }
 
-  &__title{
+  &__title {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -590,7 +591,7 @@ ul {
     width: max-content;
     margin-left: auto;
 
-    &_bg{
+    &_bg {
       @extend %tpl-font_regular;
       @extend %tpl-h1;
       font-weight: 400;
@@ -600,20 +601,22 @@ ul {
       @include adaptive-value("padding-right", 24, 8, 1);
     }
 
-    &_bg:last-child{
+    &_bg:last-child {
       margin-bottom: 0;
     }
   }
 
   @media (max-width: 1024px) {
-    &__title{
+    &__title {
       margin-left: 0;
       margin-right: auto;
       width: auto;
     }
   }
-  @media (max-width: 768px) {}
-  @media (max-width: 374px) {}
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 374px) {
+  }
 }
 
 /* ----------------------------------------*/
@@ -681,7 +684,7 @@ ul {
   }
 
   @media (max-width: 767px) {
-    .about__content{
+    .about__content {
       //padding: 0;
     }
 
@@ -777,12 +780,16 @@ ul {
 
 .cosmetic__info {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
+  flex: 1;
 }
 
 .cosmetic__title {
-  margin: 0 0 34px;
+  display: flex;
+  align-items: center;
+  @include adaptive-value("font-size", 52, 40, 1, 375);
+  @include adaptive-value("margin-bottom", 34, 24, 1, 375);
 }
 
 .cosmetic__description {
@@ -790,12 +797,11 @@ ul {
   @extend %tpl-font_regular;
   @extend %tpl-text;
   padding: 0 0 0 22px;
-  margin: 0 0 34px;
+  @include adaptive-value("margin-bottom", 34, 24, 1, 375);
 }
 
 .cosmetics-btn {
   flex: 0 0 auto;
-  margin: 0 0 34px;
 }
 
 .cosmetic__list {
@@ -805,28 +811,40 @@ ul {
 .cosmetic__item {
   flex: 1 1 auto;
   position: relative;
-  margin-right: 30px;
+  margin-right: 24px;
   text-align: center;
 
   &:last-child {
     margin: 0;
   }
-}
 
-.cosmetic__item-title {
-  @extend %tpl-font_medium;
-  color: $text-color_light;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  &:hover {
+    ._border {
+      position: absolute;
+      top: -12px;
+      left: -12px;
+      height: calc(100% + 24px);
+      width: calc(100% + 24px);
+      border: 3px solid #232323;
+    }
+  }
+
+  &-title {
+    @extend %tpl-font_medium;
+    @include adaptive-value("font-size", 42, 34, 1, 375);
+    color: $text-color_light;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
 }
 
 .cosmetic__img {
   position: relative;
   text-align: center;
-  height: 460px;
+  @include adaptive-value("height", 460, 220, 1, 768);
   display: flex;
   overflow: hidden;
 
@@ -838,35 +856,28 @@ ul {
     top: 0;
     left: 0;
   }
-}
 
-.cosmetic__img ._dark {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.4;
-  background: $bg-dark;
-}
-
-.cosmetic__item:hover {
-  ._border {
+  & ._dark {
     position: absolute;
-    top: -12px;
-    left: -12px;
-    height: calc(100% + 24px);
-    width: calc(100% + 24px);
-    border: 3px solid #232323;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background: $bg-dark;
   }
 }
 
 @media (max-width: 767px) {
+  .cosmetics-btn {
+    @include adaptive-value("margin-bottom", 34, 24, 1, 375);
+  }
+
   .cosmetic__list {
     flex-direction: column;
   }
 
   .cosmetic__item {
-    margin: 0 0 30px;
-    height: 150px;
+    margin: 0 0 24px;
+    @include adaptive-value("height", 250, 110, 1, 375);
 
     &:last-child {
       margin: 0;
@@ -875,6 +886,12 @@ ul {
 
   .cosmetic__img {
     height: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .cosmetics-btn {
+    width: 100%;
   }
 }
 

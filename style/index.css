@@ -89,7 +89,7 @@ h6 {
   font-weight: 400;
 }
 
-.cosmetic__description, .service-info__details, .about .about__description, .intro__title_bg, .header__link,
+.review-slider__item, .cosmetic__description, .service-info__details, .about .about__description, .intro__title_bg, .header__link,
 .lang__link, .btn, h3, h2, h1 {
   font-style: normal;
   font-weight: normal;
@@ -102,13 +102,13 @@ h6 {
   line-height: 150%;
 }
 
-.cosmetic__description, .service-info__details, .about .about__description, .header__link,
+.review-slider__item, .cosmetic__description, .service-info__details, .about .about__description, .header__link,
 .lang__link {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
 @media (max-width: 1440px) {
-  .cosmetic__description, .service-info__details, .about .about__description, .header__link,
+  .review-slider__item, .cosmetic__description, .service-info__details, .about .about__description, .header__link,
 .lang__link {
     font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
   }
@@ -490,6 +490,7 @@ ul {
   flex: 1 0 100%;
   position: relative;
   min-width: 0;
+  padding: 60px 0 0;
 }
 
 .screen__content {
@@ -511,7 +512,7 @@ ul {
 
 .screen__title_bg {
   background: #fff;
-  padding: 14px 26px 8px;
+  padding: 4px 24px;
 }
 
 ._text-line {
@@ -958,6 +959,144 @@ ul {
     width: 100%;
   }
 }
+/* ----------------------------------------*/
+/* reviews ---------------------------------*/
+.review_bg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  background: #232323;
+  z-index: -1;
+}
+.review__content {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.review__body {
+  position: relative;
+  padding: calc(180px - 30px) 80px calc(180px - 30px - 45px);
+  padding-top: 150px;
+  padding-bottom: 105px;
+}
+@media (max-width: 1440px) {
+  .review__body {
+    padding-top: calc(70px + 80 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .review__body {
+    padding-bottom: calc(25px + 80 * ((100vw - 320px) / 1120));
+  }
+}
+.review__title {
+  position: absolute;
+  font-size: 52px;
+  top: -40px;
+}
+@media (max-width: 1440px) {
+  .review__title {
+    font-size: calc(40px + 12 * ((100vw - 375px) / 1065));
+  }
+}
+@media (max-width: 1440px) {
+  .review__title {
+    top: calc(-30px + -10 * ((100vw - 552px) / 888));
+  }
+}
+.review-slider {
+  padding: 30px 0;
+}
+.review-slider__slide {
+  height: auto;
+  border: none;
+}
+.review-slider__item {
+  font-weight: 400;
+  height: 100%;
+  padding: 20px;
+  background: #fff;
+  color: #232323;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.review-slider__text {
+  margin-bottom: 20px;
+}
+.review-slider__person {
+  font-weight: 500;
+}
+.review__pagination {
+  position: initial;
+}
+.review__pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  background: transparent;
+  border: 2px solid #fff;
+  opacity: 1;
+  margin: 12px;
+}
+.review__pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+.review__button-prev, .review__button-next {
+  width: 60px;
+  height: 60px;
+  background: #232323;
+  opacity: 1;
+  color: #fff;
+  padding: 0;
+  margin-top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.review__button-prev:after, .review__button-next:after {
+  font-size: 32px;
+}
+.review__button-prev:hover, .review__button-next:hover {
+  opacity: 1;
+  border: 2px solid #fff;
+}
+.review__button-prev {
+  left: 0;
+}
+.review__button-next {
+  right: 0;
+}
+@media (max-width: 600px) {
+  .review__body {
+    padding: 70px 0;
+  }
+  .review__title {
+    width: calc(100% - (18px + 32 * ((100vw - 320px) / 1600)) * 2);
+    margin-left: 0;
+  }
+  .review__button-prev, .review__button-next {
+    display: none;
+  }
+}
+@media (max-width: 551px) {
+  .review__title {
+    top: -65px;
+  }
+}
+@media (max-width: 375px) {
+  .review__title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 375px) and (max-width: 1440px) {
+  .review__title {
+    font-size: calc(34px + 18 * ((100vw - 280px) / 1160));
+  }
+}
+
 /* ----------------------------------------*/
 
 /*# sourceMappingURL=index.css.map */

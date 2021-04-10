@@ -208,14 +208,31 @@ new Swiper('.review-slider', {
 
     // Pagination
     pagination: {
-        el: '.swiper-pagination',
+        el: '.review__pagination',
         clickable: true,
-        dynamicBullets: true
+        // dynamicBullets: true
+    },
+
+    navigation: {
+        nextEl: '.review__button-next',
+        prevEl: '.review__button-prev'
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        1024: {
+            slidesPerView: 2,
+        },
+        1440: {
+            slidesPerView: 3,
+        }
     },
 
     slidesPerView: 3,
 
-    spaceBetween: 30,
+    spaceBetween: 10,
 })
 
 // ----------------------------------------------

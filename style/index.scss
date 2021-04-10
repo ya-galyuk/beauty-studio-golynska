@@ -107,6 +107,7 @@ ul {
 }
 
 .btn_secondary {
+  padding: 11px 27px;
   border: 3px solid $color-dark;
   color: $text-color_dark;
   background: $bg-light;
@@ -394,10 +395,10 @@ ul {
 }
 
 .screen__content {
-  padding-top: 80px;
+  //padding-top: 80px;
+  //padding-bottom: 50px;
   @include adaptive-value("padding-left", 50, 18, 0);
   @include adaptive-value("padding-right", 50, 18, 0);
-  padding-bottom: 50px;
 
   position: relative;
   top: 50%;
@@ -618,73 +619,107 @@ ul {
 
 /* about ----------------------------------*/
 .about {
-  .container {
+  &__container {
     position: relative;
+    @include adaptive-value("padding-top", 90, 0, 1, 1024);
+    @include adaptive-value("padding-bottom", 90, 0, 1, 1024);
   }
 
-  .about__content {
+  &__content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 165px 46px;
-    //max-width: calc(700px + (46px * 2) + 20px);
-    @include adaptive-value("max-width", 812, 280, 0);
+    justify-content: center;
+    padding: 46px;
+    @include adaptive-value("padding-top", 165, 46, 1, 768);
+    @include adaptive-value("padding-bottom", 165, 46, 1, 768);
+    @include adaptive-value("max-width", 790, 425, 1, 768);
+    min-width: 425px;
     position: relative;
-
     background: $bg-light;
-  }
 
-  .about__content ._border {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    height: calc(100% + 24px);
-    width: calc(100% + 24px);
-    border: 3px solid #232323;
-  }
-
-
-  .about__title {
-    margin-bottom: 38px;
-    @extend %tpl-h1;
-    @extend %tpl-font_medium;
-  }
-
-  .about__description {
-    margin-bottom: 38px;
-    @extend %tpl-text;
-    @extend %tpl-font_regular;
-  }
-
-  .about__buttons {
-    display: flex;
-
-    .btn:first-child {
-      margin-right: 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 12px;
+      left: 0;
+      height: calc(100% + 10px);
+      width: calc(100% + 22px);
+      border: 3px solid #232323;
+      pointer-events: none;
     }
   }
 
-  .about__photo {
-    position: absolute;
-    right: 0;
-    top: -65px;
-    z-index: -1;
-    max-height: calc(600px + 180px);
-    @include adaptive-value("max-width", 812, 280, 0);
+  &__title {
+    @extend %tpl-font_medium;
+    @extend %tpl-h1;
+    @include adaptive-value("font-size", 52, 40, 1);
+    margin-bottom: 38px;
+  }
 
+  &__description {
+    @extend %tpl-text;
+    @extend %tpl-font_regular;
+    margin-bottom: 18px;
+    padding-right: 0;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    .btn {
+      margin-top: 20px;
+      flex: 1 1 auto;
+
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include adaptive-value("right", 0, -100, 1, 1024);
+    @include adaptive-value("max-width", 808, 650, 1, 1024);
+    z-index: -1;
 
     img {
       width: 100%;
     }
   }
 
-  @media (max-width: 767px) {
-    .about__content {
-      //padding: 0;
+  @media (max-width: 1220px) {
+    &__buttons {
+      flex-direction: column;
+
+      .btn:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    &__container {
+      padding: 0;
     }
 
-    .about__content ._border {
-      display: none;
+    &__content {
+      padding: 0;
+      max-width: 100%;
+      min-width: 100%;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &__photo {
+      max-width: 100%;
+      position: relative;
+      z-index: 1;
+      right: 0;
+      transform: none;
     }
   }
 }

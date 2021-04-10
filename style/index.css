@@ -89,7 +89,7 @@ h6 {
   font-weight: 400;
 }
 
-.review-slider__item, .cosmetic__description, .service-info__details, .about .about__description, .intro__title_bg, .header__link,
+.review-slider__item, .cosmetic__description, .service-info__details, .about .about__description, .intro__title, .header__link,
 .lang__link, .btn, h3, h2, h1 {
   font-style: normal;
   font-weight: normal;
@@ -114,12 +114,12 @@ h6 {
   }
 }
 
-.about .about__title, .intro__title_bg, h1 {
+.about .about__title, .intro__title, h1 {
   font-family: "Oswald", sans-serif;
   font-size: 52px;
 }
 @media (max-width: 1440px) {
-  .about .about__title, .intro__title_bg, h1 {
+  .about .about__title, .intro__title, h1 {
     font-size: calc(18px + 34 * ((100vw - 320px) / 1120));
   }
 }
@@ -656,46 +656,36 @@ ul {
   transform: translateY(-100%);
   padding-bottom: 90px;
 }
-.intro__title {
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  width: max-content;
+.intro__title-block {
   margin-left: auto;
+  width: max-content;
 }
-.intro__title_bg {
+.intro__title {
+  font-size: 52px;
   font-weight: 400;
-  padding: 4px 24px;
-  margin-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  display: inline;
+  background: #fff;
+  line-height: 2;
+  text-transform: uppercase;
+  position: relative;
+  white-space: pre-line;
+  box-shadow: -12px 0 0 0 #fff, 12px 0 0 0 #fff;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 @media (max-width: 1440px) {
-  .intro__title_bg {
-    margin-bottom: calc(14px + 6 * ((100vw - 320px) / 1120));
+  .intro__title {
+    font-size: calc(36px + 16 * ((100vw - 320px) / 1120));
   }
-}
-@media (max-width: 1440px) {
-  .intro__title_bg {
-    padding-left: calc(8px + 16 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .intro__title_bg {
-    padding-right: calc(8px + 16 * ((100vw - 320px) / 1120));
-  }
-}
-.intro__title_bg:last-child {
-  margin-bottom: 0;
 }
 @media (max-width: 1024px) {
-  .intro__title {
+  .intro__title-block {
     margin-left: 0;
     margin-right: auto;
     width: auto;
   }
 }
+
 /* ----------------------------------------*/
 /* about ----------------------------------*/
 .about .container {

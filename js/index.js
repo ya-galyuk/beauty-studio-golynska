@@ -235,6 +235,21 @@ new Swiper('.review-slider', {
     spaceBetween: 10,
 })
 
+new Swiper('.salon-slider', {
+
+    ...optionBase,
+
+    // Pagination
+    pagination: false,
+
+    navigation: {
+        nextEl: '.salon__button-next',
+        prevEl: '.salon__button-prev'
+    },
+
+    slidesPerView: 1,
+})
+
 // ----------------------------------------------
 
 // burger ---------------------------------------

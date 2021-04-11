@@ -44,6 +44,11 @@ ul {
   list-style: none;
 }
 
+._text_strong {
+  font-family: 'Oswald', sans-serif;
+  @extend %tpl-font_medium;
+}
+
 /* wrapper ---------------------------------*/
 .wrapper {
   min-height: 100%;
@@ -896,7 +901,7 @@ ul {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .cosmetics-btn {
     @include adaptive-value("margin-bottom", 34, 24, 1, 375);
   }
@@ -1063,6 +1068,177 @@ ul {
   @media (max-width: 375px) {
     &__title {
       @include adaptive-value("font-size", 52, 34, 1, 280);
+    }
+  }
+}
+
+/* ----------------------------------------*/
+
+/* salon ----------------------------------*/
+.salon {
+  &__body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @include adaptive-value("font-size", 52, 40, 1);
+    @include adaptive-value("margin-bottom", 48, 10, 1, 1024);
+
+  }
+
+  &__address {
+    @extend %tpl-font_regular;
+    @extend %tpl-h4;
+
+    span {
+      color: $color-orange;
+    }
+  }
+
+  &__schedule,
+  &__phone {
+    @extend %tpl-font_regular;
+    @extend %tpl-h4;
+    // if font-size 22px
+    @include adaptive-value("line-height", 47, 33, 1, 1024);
+  }
+
+  &-slider {
+    @include adaptive-value("width", 956, 525, 1, 1024);
+    @include adaptive-value("height", 632, 347, 1, 1024);
+    margin-right: 40px;
+
+    .f-block {
+      display: initial;
+    }
+  }
+
+  &-slider__image {
+    img {
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__social {
+    display: flex;
+    margin-top: 34px;
+
+    &-item {
+      background: #fff;
+      margin-right: 24px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-link {
+      display: flex;
+
+      &:hover {
+        background: $color-orange;
+      }
+    }
+  }
+
+  &__button-prev,
+  &__button-next {
+    height: 60px;
+    width: 50px;
+    opacity: 1;
+    color: $color_light;
+    background: transparent;
+    padding: 15px 0;
+    margin-top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #fff;
+
+    &:after {
+      font-size: 32px;
+    }
+
+    &:hover {
+      opacity: 1;
+      color: $color_dark;
+      background: $color-light;
+    }
+  }
+
+  &__button-prev {
+    left: 20px;
+  }
+
+  &__button-next {
+    right: 20px;
+  }
+
+  @media (max-width: 1024px) {
+    &-slider {
+      @include adaptive-value("width", 956, 400, 1, 768);
+      @include adaptive-value("height", 632, 280, 1, 768);
+    }
+
+    &__title {
+      margin-bottom: 48px;
+    }
+
+    &__schedule,
+    &__phone {
+      @include adaptive-value("font-size", 22, 18, 1, 320);
+    }
+
+    &__details {
+      margin-bottom: 32px;
+    }
+
+    &__schedule,
+    &__phone {
+      line-height: calc(150% + 14px);
+    }
+  }
+  @media (max-width: 768px) {
+    &__body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-slider {
+      width: 100%;
+      @include adaptive-value("height", 632, 220, 1, 375);
+    }
+
+    &__info {
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-bottom: 32px;
+    }
+
+    &__schedule {
+      margin-right: 40px;
+    }
+  }
+  @media (max-width: 425px) {
+    &__info {
+      flex-direction: column;
+    }
+
+    &__schedule,
+    &__phone {
+      font-size: 22px;
     }
   }
 }

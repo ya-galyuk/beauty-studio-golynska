@@ -932,6 +932,69 @@ ul {
 
 /* ----------------------------------------*/
 
+/* certificates ---------------------------*/
+.certificates {
+  background: $bg-dark;
+
+  &__content {
+    padding: 20px 0;
+  }
+
+  &-slider__slide {
+    width: auto;
+  }
+
+  &-slider__image {
+    text-align: center;
+    @include adaptive-value("height", 350, 200, 1, 375);
+
+    img {
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    color: $text-color_light;
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %tpl-font_medium;
+    @extend %tpl-h1;
+    @include adaptive-value("font-size", 52, 32, 1, 375);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+
+    &:before,
+    &:after {
+      content: '';
+      flex: 1 1;
+      border-bottom: 3px solid $color-light;
+      margin: auto;
+    }
+
+    &:before {
+      margin-right: 14px
+    }
+
+    &:after {
+      margin-left: 14px
+    }
+  }
+
+  &__description {
+    @extend %tpl-font_regular;
+    @extend %tpl-text;
+    padding: 0 20px;
+    @include adaptive-value("font-size", 20, 15, 1, 375);
+  }
+}
+
+/* ----------------------------------------*/
+
 /* reviews ---------------------------------*/
 .review {
   &_bg {
@@ -1282,7 +1345,7 @@ ul {
 
   &__map {
     width: 100%;
-    @include adaptive-value("height", 700, 300, 1);
+    @include adaptive-value("height", 600, 300, 1);
     margin-bottom: 20px;
   }
 
@@ -1291,7 +1354,7 @@ ul {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -40px;
     height: 50%;
     z-index: -1;
   }

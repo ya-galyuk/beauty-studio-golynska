@@ -250,6 +250,44 @@ new Swiper('.salon-slider', {
     slidesPerView: 1,
 })
 
+new Swiper('.certificates-slider', {
+
+    speed: 2000,
+    parallax: true,
+
+    direction: 'horizontal',
+
+    // if slider too small
+    watchOverflow: true,
+
+    simulateTouch: false,
+
+    slideToClickedSlide: false,
+
+    observe: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    nested: true,
+
+    loop: true,
+
+    autoplay: {
+        delay: 0,
+        stopOnLastSlide: true,
+        disableOnInteraction: false,
+    },
+
+    // Pagination
+    pagination: false,
+
+    navigation: false,
+
+    spaceBetween: 24,
+
+    slidesPerView: 'auto',
+})
+
 // ----------------------------------------------
 
 // burger ---------------------------------------

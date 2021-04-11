@@ -70,7 +70,7 @@ let pageSlider = new Swiper('.page', {
     }
 });
 
-let menuLinks = document.querySelectorAll('.header__link');
+let menuLinks = document.querySelectorAll('.menu__link');
 
 function menuSlider() {
     if (menuLinks.length > 0) {
@@ -90,7 +90,7 @@ function menuSlider() {
 }
 
 function menuSliderRemove() {
-    let menuLinkActive = document.querySelector('.header__link._active');
+    let menuLinkActive = document.querySelector('.menu__link._active');
     if (menuLinkActive) {
         menuLinkActive.classList.remove('_active');
     }

@@ -187,10 +187,14 @@ new Swiper('.service-slider', {
 
     ...optionBase,
 
-    slidesPerView: 2.3,
-
     spaceBetween: 30,
 
+    slidesPerView: 'auto',
+
+    navigation: {
+        nextEl: '.service__button-next',
+        prevEl: '.service__button-prev'
+    },
 })
 
 new Swiper('.parallax-slider', {

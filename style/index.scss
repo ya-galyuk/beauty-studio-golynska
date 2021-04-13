@@ -739,7 +739,11 @@ ul {
     background: $bg-light;
     width: auto;
     height: auto;
-    max-width: 920px;
+    max-width: min-content;
+
+    &:last-child {
+      width: 30px;
+    }
   }
 
   &__title {
@@ -867,6 +871,10 @@ ul {
     }
   }
   @media (max-width: 425px) {
+    &-slider__slide:last-child {
+      display: none;
+    }
+
     &-slider__image {
       @include adaptive-value("width", 385, 335, 1, 375, 425);
       @include adaptive-value("height", 385, 335, 1, 375, 425);
@@ -1086,6 +1094,206 @@ ul {
     @extend %tpl-text;
     padding: 0 20px;
     @include adaptive-value("font-size", 20, 15, 1, 375);
+  }
+}
+
+/* ----------------------------------------*/
+
+/* consultation ---------------------------*/
+.consultation {
+  &__title {
+    @extend %tpl-h1;
+    @extend %tpl-font_medium;
+    display: flex;
+    align-items: center;
+    @include adaptive-value("font-size", 52, 40, 1, 375);
+    @include adaptive-value("margin-bottom", 34, 24, 1, 375);
+  }
+
+  &__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__container {
+    max-width: 1920px;
+    padding: 0 40px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__body {
+    @include adaptive-value("margin-left", 200, 0, 1, 1440, 1920);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1440px;
+  }
+
+  &__slider-navigation {
+    display: flex;
+  }
+
+  &__body-content {
+    display: flex;
+  }
+
+  &-slide {
+    height: auto;
+
+    &__span {
+      @extend %tpl-h1;
+      @extend %tpl-font_medium;
+      @include adaptive-value("font-size", 52, 40, 1, 375);
+      margin-bottom: 22px;
+      color: $color-orange;
+    }
+
+    &__title {
+      @extend %tpl-h3;
+      @extend %tpl-font_medium;
+      @include adaptive-value("font-size", 26, 20, 1, 375);
+      margin-bottom: 22px;
+    }
+
+    &__description {
+      @extend %tpl-text;
+      @extend %tpl-font_regular;
+      @include adaptive-value("font-size", 20, 15, 1, 375);
+    }
+  }
+
+
+  &__image {
+    margin-right: 48px;
+    @include adaptive-value("min-width", 700, 360, 1, 1024);
+    @include adaptive-value("height", 426, 218, 1, 1024);
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    max-width: 1440px;
+    @include adaptive-value("margin-top", 68, 48, 1, 375);
+  }
+
+  &__hr-line {
+    display: block;
+    height: 3px;
+    width: 260px;
+    background: $color-dark;
+  }
+
+  &__detail {
+    @extend %tpl-text;
+    @extend %tpl-font_regular;
+    @include adaptive-value("font-size", 20, 15, 1, 375);
+    margin: 26px 0;
+
+    span {
+      @extend %tpl-font_medium;
+    }
+
+  }
+
+  &__button-prev,
+  &__button-next {
+    position: relative;
+    width: 48px;
+    height: 62px;
+    background: transparent;
+    opacity: 1;
+    color: $color-dark;
+    padding: 0;
+    margin-top: 0;
+    border: 2px solid $color-dark;
+
+    &:after {
+      font-size: 32px;
+    }
+
+    &:hover {
+      opacity: 1;
+      border: 2px solid #fff;
+    }
+  }
+
+  &__button-prev {
+    left: 0;
+    margin-right: 14px;
+  }
+
+  &__button-next {
+    right: 0;
+  }
+
+  @media (min-width: 1920px) {
+    &__body {
+      margin-left: 200px;
+    }
+  }
+  @media (max-width: 1440px) {
+    &__container {
+      padding: 0 40px;
+    }
+
+    &__body {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 1024px) {
+    &-slide {
+      margin-top: 48px;
+    }
+
+    &__body-content {
+      flex-direction: column;
+    }
+
+    &__image-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    &__image {
+      min-width: 530px;
+      height: 322px;
+    }
+  }
+  @media (max-width: 768px) {
+    &__image {
+      min-width: auto;
+      height: auto;
+    }
+  }
+  @media (max-width: 500px) {
+    &__container {
+      @include adaptive-value("padding-left", 40, 20, 1, 375);
+      @include adaptive-value("padding-right", 40, 20, 1, 375);
+    }
+
+    &__image-body {
+      flex-direction: column;
+    }
+    
+    &__image {
+      min-width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+  @media (max-width: 375px) {
+    &__container {
+      padding: 0 20px;
+    }
   }
 }
 

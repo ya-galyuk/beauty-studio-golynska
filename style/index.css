@@ -89,37 +89,37 @@ h6 {
   font-weight: 400;
 }
 
-.footer__copyright, .salon__schedule, .salon__phone, .salon__address, .review-slider__item, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header__link,
+.footer__copyright, .salon__schedule, .salon__phone, .salon__address, .review-slider__item, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header__link,
 .lang__link, .btn, h3, h2, h1 {
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
 }
 
-.footer__menu, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .screen__title, .lang__link.active, .phone__link, ._text_strong {
+.footer__menu, .consultation__detail span, .consultation-slide__title, .consultation-slide__span, .consultation__title, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .screen__title, .lang__link.active, .phone__link, ._text_strong {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
 }
 
-.footer__menu, .review-slider__item, .certificates__description, .cosmetic__description, .service-info__more, .about__description, .header__link,
+.footer__menu, .review-slider__item, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .about__description, .header__link,
 .lang__link {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
 @media (max-width: 1440px) {
-  .footer__menu, .review-slider__item, .certificates__description, .cosmetic__description, .service-info__more, .about__description, .header__link,
+  .footer__menu, .review-slider__item, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .about__description, .header__link,
 .lang__link {
     font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
   }
 }
 
-.certificates__title, .about__title, .intro__title, h1 {
+.consultation-slide__span, .consultation__title, .certificates__title, .about__title, .intro__title, h1 {
   font-family: "Oswald", sans-serif;
   font-size: 52px;
 }
 @media (max-width: 1440px) {
-  .certificates__title, .about__title, .intro__title, h1 {
+  .consultation-slide__span, .consultation__title, .certificates__title, .about__title, .intro__title, h1 {
     font-size: calc(18px + 34 * ((100vw - 320px) / 1120));
   }
 }
@@ -129,7 +129,7 @@ h6 {
   font-size: 30px;
 }
 
-.service-info__time .time__info, .service-info__price, h3 {
+.consultation-slide__title, .service-info__time .time__info, .service-info__price, h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
 }
@@ -841,7 +841,10 @@ ul {
   background: #fff;
   width: auto;
   height: auto;
-  max-width: 920px;
+  max-width: min-content;
+}
+.service-slider__slide:last-child {
+  width: 30px;
 }
 .service__title {
   position: absolute;
@@ -1008,6 +1011,9 @@ ul {
   }
 }
 @media (max-width: 425px) {
+  .service-slider__slide:last-child {
+    display: none;
+  }
   .service-slider__image {
     width: 385px;
     height: 385px;
@@ -1265,6 +1271,223 @@ ul {
 @media (max-width: 1440px) {
   .certificates__description {
     font-size: calc(15px + 5 * ((100vw - 375px) / 1065));
+  }
+}
+
+/* ----------------------------------------*/
+/* consultation ---------------------------*/
+.consultation__title {
+  display: flex;
+  align-items: center;
+  font-size: 52px;
+  margin-bottom: 34px;
+}
+@media (max-width: 1440px) {
+  .consultation__title {
+    font-size: calc(40px + 12 * ((100vw - 375px) / 1065));
+  }
+}
+@media (max-width: 1440px) {
+  .consultation__title {
+    margin-bottom: calc(24px + 10 * ((100vw - 375px) / 1065));
+  }
+}
+.consultation__content {
+  padding-left: 0;
+  padding-right: 0;
+}
+.consultation__container {
+  max-width: 1920px;
+  padding: 0 40px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.consultation__body {
+  margin-left: 200px;
+}
+@media (max-width: 1920px) {
+  .consultation__body {
+    margin-left: calc(0px + 200 * ((100vw - 1440px) / 480));
+  }
+}
+.consultation__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1440px;
+}
+.consultation__slider-navigation {
+  display: flex;
+}
+.consultation__body-content {
+  display: flex;
+}
+.consultation-slide {
+  height: auto;
+}
+.consultation-slide__span {
+  font-size: 52px;
+  margin-bottom: 22px;
+  color: #FF4603;
+}
+@media (max-width: 1440px) {
+  .consultation-slide__span {
+    font-size: calc(40px + 12 * ((100vw - 375px) / 1065));
+  }
+}
+.consultation-slide__title {
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+@media (max-width: 1440px) {
+  .consultation-slide__title {
+    font-size: calc(20px + 6 * ((100vw - 375px) / 1065));
+  }
+}
+.consultation-slide__description {
+  font-size: 20px;
+}
+@media (max-width: 1440px) {
+  .consultation-slide__description {
+    font-size: calc(15px + 5 * ((100vw - 375px) / 1065));
+  }
+}
+.consultation__image {
+  margin-right: 48px;
+  min-width: 700px;
+  height: 426px;
+}
+@media (max-width: 1440px) {
+  .consultation__image {
+    min-width: calc(360px + 340 * ((100vw - 1024px) / 416));
+  }
+}
+@media (max-width: 1440px) {
+  .consultation__image {
+    height: calc(218px + 208 * ((100vw - 1024px) / 416));
+  }
+}
+.consultation__image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.consultation__description {
+  max-width: 1440px;
+  margin-top: 68px;
+}
+@media (max-width: 1440px) {
+  .consultation__description {
+    margin-top: calc(48px + 20 * ((100vw - 375px) / 1065));
+  }
+}
+.consultation__hr-line {
+  display: block;
+  height: 3px;
+  width: 260px;
+  background: #232323;
+}
+.consultation__detail {
+  font-size: 20px;
+  margin: 26px 0;
+}
+@media (max-width: 1440px) {
+  .consultation__detail {
+    font-size: calc(15px + 5 * ((100vw - 375px) / 1065));
+  }
+}
+.consultation__button-prev, .consultation__button-next {
+  position: relative;
+  width: 48px;
+  height: 62px;
+  background: transparent;
+  opacity: 1;
+  color: #232323;
+  padding: 0;
+  margin-top: 0;
+  border: 2px solid #232323;
+}
+.consultation__button-prev:after, .consultation__button-next:after {
+  font-size: 32px;
+}
+.consultation__button-prev:hover, .consultation__button-next:hover {
+  opacity: 1;
+  border: 2px solid #fff;
+}
+.consultation__button-prev {
+  left: 0;
+  margin-right: 14px;
+}
+.consultation__button-next {
+  right: 0;
+}
+@media (min-width: 1920px) {
+  .consultation__body {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 1440px) {
+  .consultation__container {
+    padding: 0 40px;
+  }
+  .consultation__body {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .consultation-slide {
+    margin-top: 48px;
+  }
+  .consultation__body-content {
+    flex-direction: column;
+  }
+  .consultation__image-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .consultation__image {
+    min-width: 530px;
+    height: 322px;
+  }
+}
+@media (max-width: 768px) {
+  .consultation__image {
+    min-width: auto;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 500px) and (max-width: 1440px) {
+  .consultation__container {
+    padding-left: calc(20px + 20 * ((100vw - 375px) / 1065));
+  }
+}
+@media (max-width: 500px) and (max-width: 1440px) {
+  .consultation__container {
+    padding-right: calc(20px + 20 * ((100vw - 375px) / 1065));
+  }
+}
+@media (max-width: 500px) {
+  .consultation__image-body {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .consultation__image {
+    min-width: 100%;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 375px) {
+  .consultation__container {
+    padding: 0 20px;
   }
 }
 

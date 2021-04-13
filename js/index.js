@@ -197,13 +197,53 @@ new Swiper('.service-slider', {
     },
 })
 
-new Swiper('.parallax-slider', {
+new Swiper('.consultation-slider', {
+    speed: 1500,
 
-    ...optionBase,
+    // vertical slider
+    direction: 'horizontal',
 
-    slidesPerView: 2.5,
+    // desktop drag
+    simulateTouch: true,
 
-    spaceBetween: 30,
+    // slide to click
+    slideToClickedSlide: false,
+
+
+    // Keyboard Control
+    keyboard: {
+        enable: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
+
+    // if slider too small
+    watchOverflow: true,
+
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+
+    observe: true,
+    observeParents: true,
+    observeSlideChildren: true,
+
+    nested: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        500: {
+            slidesPerView: 1.5,
+        },
+    },
+
+    spaceBetween: 60,
+
+    navigation: {
+        nextEl: '.consultation__button-next',
+        prevEl: '.consultation__button-prev'
+    },
 })
 
 new Swiper('.review-slider', {

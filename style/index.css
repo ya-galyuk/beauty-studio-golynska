@@ -858,7 +858,7 @@ ul {
 .service-slider__image {
   text-align: center;
   width: 590px;
-  height: 590px;
+  height: 545px;
 }
 @media (max-width: 1440px) {
   .service-slider__image {
@@ -867,7 +867,7 @@ ul {
 }
 @media (max-width: 1440px) {
   .service-slider__image {
-    height: calc(380px + 210 * ((100vw - 768px) / 672));
+    height: calc(380px + 165 * ((100vw - 768px) / 672));
   }
 }
 .service-slider__image img {

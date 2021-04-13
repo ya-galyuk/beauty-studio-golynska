@@ -758,7 +758,7 @@ ul {
   &-slider__image {
     text-align: center;
     @include adaptive-value("width", 590, 380, 1, 768);
-    @include adaptive-value("height", 590, 380, 1, 768);
+    @include adaptive-value("height", 545, 380, 1, 768);
 
     img {
       object-fit: cover;

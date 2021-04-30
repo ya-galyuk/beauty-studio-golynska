@@ -53,16 +53,16 @@ let pageSlider = new Swiper('.page', {
 
     on: {
         init: function () {
-            menuSlider();
+            // menuSlider();
             setScrollType();
             wrapper.classList.add('_loaded');
         },
 
-        slideChange: function () {
-            menuSliderRemove()
-            menuLinks[pageSlider.realIndex].classList.add('_active')
-            scrollFunction()
-        },
+        // slideChange: function () {
+        //     menuSliderRemove()
+        //     menuLinks[pageSlider.realIndex].classList.add('_active')
+        //     scrollFunction()
+        // },
 
         resize: function () {
             setScrollType();
@@ -187,9 +187,21 @@ new Swiper('.service-slider', {
 
     ...optionBase,
 
+    // slidesPerView: 'auto',
     spaceBetween: 30,
 
-    slidesPerView: 'auto',
+    // autoHeight: true,
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            // spaceBetween: 0,
+        },
+        500: {
+            slidesPerView: 'auto',
+            // spaceBetween: 30,
+        },
+    },
 
     navigation: {
         nextEl: '.service__button-next',
@@ -202,6 +214,8 @@ new Swiper('.consultation-slider', {
 
     // vertical slider
     direction: 'horizontal',
+
+    autoHeight: true,
 
     // desktop drag
     simulateTouch: true,
@@ -254,7 +268,7 @@ new Swiper('.review-slider', {
     pagination: {
         el: '.review__pagination',
         clickable: true,
-        // dynamicBullets: true
+        dynamicBullets: true,
     },
 
     navigation: {
@@ -334,7 +348,26 @@ new Swiper('.certificates-slider', {
 
 // ----------------------------------------------
 
-// burger ---------------------------------------
+// readMoreConsultation -------------------------
+function readMoreConsultation() {
+    let dots = document.getElementById("dotsConsultation");
+    let moreText = document.getElementById("moreConsultation");
+    let btnText = document.getElementById("btnMoreConsultation");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "больше";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "меньше";
+        moreText.style.display = "inline";
+    }
+}
+// ----------------------------------------------
+
+
+/*// burger ---------------------------------------
 const header__burger = document.querySelector('.header__burger');
 const header__menu = document.querySelector('.header__menu');
 const body = document.querySelector('body');
@@ -378,10 +411,30 @@ function scrollFunction() {
     }
 }
 
-// ----------------------------------------------
+// ----------------------------------------------*/
 
-
-
+//
+// const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+// if (menuLinks.length > 0){
+//     menuLinks.forEach(menuLink => {
+//         menuLink.addEventListener('click', onMenuLinkClick);
+//     });
+//
+//     function onMenuLinkClick(e){
+//         const menuLink = e.target;
+//         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
+//             const gotoBlock = document.querySelector(menuLink.dataset.goto);
+//             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+//
+//             window.scrollTo({
+//                 top:gotoBlockValue,
+//                 behavior: "smooth"
+//             });
+//
+//             e.preventDefault();
+//         }
+//     }
+// }
 
 
 

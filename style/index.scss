@@ -57,7 +57,7 @@ ul {
 .wrapper {
   min-height: 100%;
   min-width: 0;
-  opacity: 0;
+  //opacity: 0;
   transition: opacity 0.8s ease 0s;
 }
 
@@ -142,7 +142,7 @@ ul {
 /* -----------------------------------------*/
 
 /* header ----------------------------------*/
-.header {
+/*.header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -380,26 +380,26 @@ ul {
 
 @media (max-width: 767px) {
 
-}
+}*/
 
 /* -----------------------------------------*/
 
 /* page ------------------------------------*/
 .page {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  //position: fixed;
+  //width: 100%;
+  //height: 100%;
+  //top: 0;
+  //left: 0;
   overflow: hidden;
 }
 
-.page__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
+//.page__wrapper {
+//  display: flex;
+//  flex-direction: column;
+//  width: 100%;
+//  height: 100%;
+//}
 
 /* -----------------------------------------*/
 
@@ -408,7 +408,12 @@ ul {
   flex: 1 0 100%;
   position: relative;
   min-width: 0;
-  padding: 60px 0 0;
+  //padding: 60px 0 0;
+  margin-bottom: 100px;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .screen__content {
@@ -418,8 +423,8 @@ ul {
   @include adaptive-value("padding-right", 50, 18, 0);
 
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  //top: 50%;
+  //transform: translateY(-50%);
   z-index: 2;
 }
 
@@ -566,8 +571,58 @@ ul {
 
 /* ----------------------------------------*/
 
+/* header ---------------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #FF4603;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+  }
+
+  &__logo {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 5;
+    background: green;
+  }
+
+  .menu {
+    &__list {
+      display: flex;
+      align-items: center;
+
+      li {
+        position: relative;
+        padding: 10px 0;
+        margin-right: 20px;
+      }
+    }
+
+    &__link {
+      font-size: 18px;
+      color: white;
+    }
+  }
+}
+
+/* ----------------------------------------*/
+
 /* intro ----------------------------------*/
 .intro {
+  height: 100vh;
+
   &__content {
     top: 100%;
     transform: translateY(-100%);
@@ -619,8 +674,10 @@ ul {
     flex-direction: column;
     justify-content: center;
     padding: 46px;
-    @include adaptive-value("padding-top", 165, 46, 1, 768);
-    @include adaptive-value("padding-bottom", 165, 46, 1, 768);
+    //@include adaptive-value("padding-top", 165, 50, 1, 768);
+    //@include adaptive-value("padding-bottom", 165, 50, 1, 768);
+    @include adaptive-value("padding-top", 165, 50, 1, 375);
+    @include adaptive-value("padding-bottom", 165, 50, 1, 375);
     @include adaptive-value("max-width", 790, 425, 1, 768);
     min-width: 425px;
     position: relative;
@@ -721,12 +778,20 @@ ul {
   background: $bg-dark;
 
   &__content {
-    padding: 20px 0;
+    //padding: 80px 0;
+    padding-left: 0;
+    padding-right: 0;
+    @include adaptive-value("padding-top", 80, 50, 1, 375);
+    @include adaptive-value("padding-bottom", 80, 50, 1, 375);
   }
 
   &__container {
     max-width: 1920px;
     margin: 0 auto;
+  }
+
+  &-slider__wrapper{
+    //height: auto !important;
   }
 
   &__body {
@@ -740,9 +805,10 @@ ul {
     width: auto;
     height: auto;
     max-width: min-content;
+    overflow: hidden;
 
     &:last-child {
-      width: 30px;
+      width: 0px;
     }
   }
 
@@ -769,7 +835,7 @@ ul {
 
   &-info {
     padding: 24px;
-    height: auto;
+    //height: auto;
 
     &__title {
       @extend %tpl-font_medium;
@@ -856,18 +922,39 @@ ul {
     }
   }
   @media (max-width: 500px) {
+    &-slider__slide {
+      width: 100%;
+      //height: 100%;
+      max-width: initial;
+    }
+
     &-slider__image {
-      @include adaptive-value("width", 380, 385, 1, 425);
+      width: 100%;
+      //@include adaptive-value("width", 380, 385, 1, 425);
       @include adaptive-value("height", 380, 385, 1, 425);
+    }
+
+    &__body {
+      padding-left: 18px;
+      margin-right: 18px;
+      //padding-left: 0;
+      //margin-right: 0;
     }
 
     &-btns {
       flex-direction: column;
-      margin-right: 20px;
+      //margin-right: 20px;
     }
 
     &-btn {
-      margin-right: 0 !important;
+      &:nth-child(n) {
+
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-top: 20px;
+      }
     }
   }
   @media (max-width: 425px) {
@@ -876,22 +963,17 @@ ul {
     }
 
     &-slider__image {
-      @include adaptive-value("width", 385, 335, 1, 375, 425);
+      //@include adaptive-value("width", 385, 335, 1, 375, 425);
       @include adaptive-value("height", 385, 335, 1, 375, 425);
     }
 
-    &__body {
-      padding-left: 20px;
-      margin-right: 20px;
-    }
-
-    &-btns {
-      margin-right: 0;
-    }
+    //&-btns {
+    //  margin-right: 0;
+    //}
   }
   @media (max-width: 375px) {
     &-slider__slide {
-      @include adaptive-value("max-width", 335, 240, 1, 280, 375);
+      //@include adaptive-value("max-width", 335, 240, 1, 280, 375);
     }
 
     &-slider__image {
@@ -910,6 +992,13 @@ ul {
 /* cosmetic -------------------------------*/
 .cosmetic {
   &__content {
+    //padding-top: 180px;
+    //padding-bottom: 180px;
+    @include adaptive-value("padding-top", 180, 50, 1, 375);
+    @include adaptive-value("padding-bottom", 180, 50, 1, 375);
+  }
+
+  &__container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -1006,7 +1095,8 @@ ul {
 
   @media (max-width: 768px) {
     &-btn {
-      @include adaptive-value("margin-bottom", 34, 24, 1, 375);
+      margin-top: 34px;
+      //@include adaptive-value("margin-bottom", 34, 24, 1, 375);
     }
 
     &__list {
@@ -1041,7 +1131,7 @@ ul {
   background: $bg-dark;
 
   &__content {
-    padding: 0;
+    padding: 50px 0 50px 0;
   }
 
   &-slider__slide {
@@ -1111,8 +1201,11 @@ ul {
   }
 
   &__content {
-    padding-left: 0;
-    padding-right: 0;
+    //padding: 100px 0 100px 0;
+    @include adaptive-value("padding-top", 100, 50, 1, 375);
+    @include adaptive-value("padding-bottom", 100, 50, 1, 375);
+    //padding-left: 0;
+    //padding-right: 0;
   }
 
   &__container {
@@ -1150,6 +1243,7 @@ ul {
       @include adaptive-value("font-size", 52, 40, 1, 375);
       margin-bottom: 22px;
       color: $color-orange;
+      display: inline-block;
     }
 
     &__title {
@@ -1197,10 +1291,29 @@ ul {
     @include adaptive-value("font-size", 20, 15, 1, 375);
     margin: 26px 0;
 
-    span {
+    &_strong {
       @extend %tpl-font_medium;
     }
 
+  }
+
+  &__more {
+    display: inline;
+
+    &-dots{
+      display: none;
+    }
+
+    &-btn {
+      display: none;
+      @extend %tpl-text;
+      @extend %tpl-font_regular;
+      @include adaptive-value("font-size", 20, 15, 1, 375);
+      text-decoration: underline;
+      background: transparent;
+      opacity: .7;
+      color: $color-orange;
+    }
   }
 
   &__button-prev,
@@ -1249,8 +1362,8 @@ ul {
     }
   }
   @media (max-width: 1024px) {
-    &-slide {
-      margin-top: 48px;
+    &-slider__wrapper {
+      padding-top: 48px;
     }
 
     &__body-content {
@@ -1273,6 +1386,19 @@ ul {
     &__image {
       min-width: auto;
       height: auto;
+    }
+
+
+    &__more {
+      display: none;
+
+      &-dots{
+        display: inline;
+      }
+
+      &-btn {
+        display: inline;
+      }
     }
   }
   @media (max-width: 500px) {
@@ -1301,11 +1427,15 @@ ul {
 
 /* reviews ---------------------------------*/
 .review {
+
   &_bg {
     position: absolute;
-    top: 50%;
+    //top: 50%;
+    //left: -20%;
     left: 0;
-    transform: translateY(-50%);
+    top: 0;
+    //transform: translateY(-50%);
+    //width: 200%;
     width: 100%;
     height: 100%;
     background: $bg-dark;
@@ -1314,27 +1444,40 @@ ul {
 
   &__content {
     position: relative;
-    padding-top: 0;
-    padding-bottom: 0;
+    //padding-top: 180px;
+    //padding-bottom: 180px;
+    //padding: 180px 0;
+    padding-left: 0;
+    padding-right: 0;
+    @include adaptive-value("padding-top", 180, 50, 1, 375);
+    @include adaptive-value("padding-bottom", 180, 50, 1, 375);
+  }
+
+  &__bg-container{
+    //background: aquamarine;
+    position: relative;
   }
 
   &__body {
     position: relative;
-    padding: calc(180px - 30px) 80px calc(180px - 30px - 45px);
+    //padding: calc(180px - 30px) 80px calc(180px - 30px - 45px);
     // padding-top: calc(180px - 30px);
-    @include adaptive-value("padding-top", 150, 70, 1);
+    padding-left: 80px;
+    padding-right: 80px;
+    @include adaptive-value("padding-top", 180, 70, 1);
     // padding-bottom: calc(180px - 30px - 45px);
-    @include adaptive-value("padding-bottom", 105, 25, 1);
+    @include adaptive-value("padding-bottom", 110, 25, 1);
   }
 
   &__title {
     position: absolute;
     @include adaptive-value("font-size", 52, 40, 1, 375);
-    @include adaptive-value("top", -40, -30, 1, 552);
+    @include adaptive-value("top", -43, -30, 1, 552);
   }
 
   &-slider {
-    padding: 30px 0;
+    //padding: 30px 0;
+    padding-bottom: 42px;
   }
 
   &-slider__slide {
@@ -1365,15 +1508,16 @@ ul {
 
   &__pagination {
     position: initial;
+    margin: 0 auto;
 
     .swiper-pagination-bullet {
       width: 20px;
       height: 20px;
       border-radius: 0;
-      background: transparent;
+      //background: transparent;
       border: 2px solid $bg-light;
       opacity: 1;
-      margin: 12px;
+      margin: 0 12px;
     }
 
     .swiper-pagination-bullet-active {
@@ -1412,13 +1556,18 @@ ul {
     right: 0;
   }
 
+  @media (max-width: 1460px) {
+    &__container{
+      padding: 0 18px;
+    }
+  }
   @media (max-width: 600px) {
     &__body {
-      padding: 70px 0;
+      padding: 100px 0;
     }
 
     &__title {
-      width: calc(100% - (18px + 32 * ((100vw - 320px) / 1600)) * 2);
+      width: calc(100% - (2 * 18px));
       margin-left: 0;
     }
 
@@ -1427,7 +1576,7 @@ ul {
       display: none;
     }
   }
-  @media (max-width: 551px) {
+  @media (max-width: 541px) {
     &__title {
       top: -65px;
     }
@@ -1437,12 +1586,25 @@ ul {
       @include adaptive-value("font-size", 52, 34, 1, 280);
     }
   }
+  @media (max-width: 335px) {
+    &__title {
+      top: -100px;
+    }
+  }
 }
 
 /* ----------------------------------------*/
 
 /* salon ----------------------------------*/
 .salon {
+  &__content {
+    //padding-top: 220px;
+    //padding-bottom: 150px;
+
+    @include adaptive-value("padding-top", 220, 50, 1, 375);
+    @include adaptive-value("padding-bottom", 150, 50, 1, 375);
+  }
+
   &__body {
     display: flex;
     flex-direction: row-reverse;
@@ -1614,6 +1776,15 @@ ul {
 
 /* footer ----------------------------------*/
 .footer {
+  &__content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__body {
+    padding: 30px 0 50px 0;
+  }
+
   &__menu {
     @extend %tpl-text;
     @extend %tpl-font_medium;
@@ -1644,14 +1815,15 @@ ul {
     @include adaptive-value("font-size", 22, 16, 1);
     color: $text-color_light;
     text-align: center;
-    margin-bottom: 40px;
+    opacity: .4;
+    //margin-bottom: 40px;
   }
 
   &__map {
     background: $color-primary_dark;
     width: 100%;
-    @include adaptive-value("height", 600, 300, 1);
-    margin-bottom: 20px;
+    @include adaptive-value("height", 444, 300, 1);
+    //margin-bottom: 20px;
   }
 
   &_bg {
@@ -1659,8 +1831,8 @@ ul {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: -40px;
-    height: 50%;
+    bottom: 0;
+    height: 390px;
     z-index: -1;
   }
 

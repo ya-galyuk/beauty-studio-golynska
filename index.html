@@ -68,23 +68,36 @@
 
     <header class="header">
         <div class="header__container">
-            <a href="" class="header__logo"></a>
             <div class="header__menu menu">
-                <div class="menu__icon">
-                    <span></span>
-                </div>
                 <nav class="menu__body">
                     <ul class="menu__list">
                         <li><a data-goto=".screen-3" href="#" class="menu__link">Услуги</a></li>
                         <li><a data-goto=".screen-4" href="#" class="menu__link">Косметика</a></li>
-                        <li><a data-goto=".screen-5" href="#" class="menu__link">Салон</a></li>
+                        <li><a data-goto=".screen-8" href="#" class="menu__link">Салон</a></li>
                     </ul>
                 </nav>
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
+            <a href="" class="header__logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <div class="header__service">
+                <div class="header__phone phone">
+                    <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
+                </div>
+                <div class="header__lang lang">
+                    <ul class="lang__list">
+                        <li><a href="" class="header__link lang__link">UK</a></li>
+                        <li><a href="" class="header__link lang__link active">RU</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
 
-    <main class="">
+    <main class="page">
         <div class="">
             <!--        <main class="page">-->
             <!--        <div class="page__wrapper">-->
@@ -250,7 +263,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                                                            <div class="service-slider__slide swiper-slide"></div>
+                                        <div class="service-slider__slide swiper-slide"></div>
                                     </div>
 
                                     <!-- If we need navigation buttons -->
@@ -439,7 +452,7 @@
             </section>
 
             <!-- finish consultation -->
-            <section class="page__screen screen consultation">
+            <section class="page__screen screen-6 screen consultation">
                 <div class="screen__content consultation__content">
                     <div class="consultation__container">
                         <div class="consultation__body">
@@ -529,7 +542,8 @@
                                 <p class="consultation__detail">
                                     <span class="consultation__detail_strong">*Закажите 30-минутную виртуальную консультацию и проверку по уходу за кожей.</span>
                                     Консультация проводится не выходя из дома, адаптирована к <span
-                                        id="dotsConsultation" class="consultation__more-dots">...</span><span id="moreConsultation" class="consultation__more">вашим
+                                        id="dotsConsultation" class="consultation__more-dots">...</span><span
+                                        id="moreConsultation" class="consultation__more">вашим
                                     уникальным потребностям и поможет
                                     вам дать правильные рекомендации по продуктам, поможет с режимом ухода за кожей и
                                     поможет с любыми рекомендациями по уходу за кожей, инструментам и устройствам для
@@ -537,7 +551,9 @@
                                     косметический кабинет и поделиться советами и уловками, предоставляя индивидуальные
                                     советы.</span>
                                     <br/>
-                                    <button onclick="readMoreConsultation()" id="btnMoreConsultation" class="consultation__more-btn">больше</button>
+                                    <button onclick="readMoreConsultation()" id="btnMoreConsultation"
+                                            class="consultation__more-btn">больше
+                                    </button>
                                 </p>
                                 <button class="btn btn_primary consultation__btn">Записаться на консультацию</button>
                             </div>
@@ -547,7 +563,7 @@
             </section>
 
             <!-- finish review -->
-            <section class="page__screen screen review">
+            <section class="page__screen screen-7 screen review">
                 <div class="screen__content review__content">
                     <div class="review__bg-container">
                         <div class="container review__container">
@@ -616,7 +632,7 @@
             </section>
 
             <!-- finish salon -->
-            <section class="page__screen screen salon">
+            <section class="page__screen screen-8 screen salon">
                 <div class="screen__content salon__content">
                     <div class="container salon__container">
                         <div class="salon__body">
@@ -732,7 +748,7 @@
             </section>
 
             <!-- finish footer -->
-            <section class="page__screen screen footer">
+            <section class="page__screen screen-9 screen footer">
                 <div class="screen__content footer__content">
                     <div class="container footer__container">
                         <div class="footer__map">
@@ -741,19 +757,37 @@
                                     loading="lazy"></iframe>
                         </div>
                         <div class="footer__body">
-                            <nav class="footer__menu menu">
+                            <nav class="footer__menu menu__body menu">
                                 <ul class="footer__list menu__list">
-                                    <li class="footer__item"><a href="" class="menu__link">Главная</a></li>
-                                    <li class="footer__item"><a href="" class="menu__link">О себе</a></li>
-                                    <li class="footer__item"><a href="" class="menu__link">Услуги</a></li>
-                                    <li class="footer__item"><a href="" class="menu__link">Косметика</a></li>
-                                    <li class="footer__item"><a href="" class="menu__link">Сертификаты</a></li>
-                                    <li class="footer__item"><a href="" class="menu__link">Консультации</a></li>
-                                    <li class="footer__item"><a href="" class="menu__link">Отзывы</a></li>
-                                    <li class="footer__item"><a href="" class="menu__link">Салон</a></li>
-                                    <li class="_d-none"><a href="" class="menu__link">Контакты</a></li>
+                                    <li class="footer__item"><a data-goto=".screen-1" href="#" class="menu__link">Главная</a>
+                                    </li>
+                                    <li class="footer__item"><a data-goto=".screen-2" href="#" class="menu__link">О
+                                        себе</a></li>
+                                    <li class="footer__item"><a data-goto=".screen-3" href="#"
+                                                                class="menu__link">Услуги</a></li>
+                                    <li class="footer__item"><a data-goto=".screen-4" href="#" class="menu__link">Косметика</a>
+                                    </li>
+                                    <li class="footer__item"><a data-goto=".screen-5" href="#" class="menu__link">Сертификаты</a>
+                                    </li>
+                                    <li class="footer__item"><a data-goto=".screen-6" href="#" class="menu__link">Консультации</a>
+                                    </li>
+                                    <li class="footer__item"><a data-goto=".screen-7" href="#"
+                                                                class="menu__link">Отзывы</a></li>
+                                    <li class="footer__item"><a data-goto=".screen-8" href="#"
+                                                                class="menu__link">Салон</a></li>
                                 </ul>
                             </nav>
+
+
+                            <nav class="menu__body">
+                                <ul class="menu__list">
+                                    <li><a data-goto=".screen-3" href="#" class="menu__link">Услуги</a></li>
+                                    <li><a data-goto=".screen-4" href="#" class="menu__link">Косметика</a></li>
+                                    <li><a data-goto=".screen-8" href="#" class="menu__link">Салон</a></li>
+                                </ul>
+                            </nav>
+
+
                             <p class="footer__copyright">© 2021, косметолог Татьяна Голынская</p>
                         </div>
                     </div>

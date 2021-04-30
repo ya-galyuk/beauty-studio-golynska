@@ -89,24 +89,24 @@ h6 {
   font-weight: 400;
 }
 
-.footer__copyright, .salon__schedule, .salon__phone, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header__service .lang__link, .btn, h3, h2, h1 {
+.footer__copyright, .salon__schedule, .salon__phone, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header .lang__link, .btn, h3, h2, h1 {
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
 }
 
-.footer__menu, .consultation__detail_strong, .consultation-slide__title, .consultation-slide__span, .consultation__title, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .header__service .lang__link.active, .header__service .phone__link, .screen__title, ._text_strong {
+.footer__menu, .consultation__detail_strong, .consultation-slide__title, .consultation-slide__span, .consultation__title, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .header .lang__link.active, .header__service .phone__link, .screen__title, ._text_strong {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
 }
 
-.footer__menu, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .about__description, .header .menu__link, .header__service .lang__link {
+.footer__menu, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .about__description, .header .menu__link, .header .lang__link {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
 }
 @media (max-width: 1440px) {
-  .footer__menu, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .about__description, .header .menu__link, .header__service .lang__link {
+  .footer__menu, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .about__description, .header .menu__link, .header .lang__link {
     font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
   }
 }
@@ -192,17 +192,6 @@ body._lock {
 
 .wrapper._loaded {
   opacity: 1;
-}
-
-.wrapper._loaded .header__logo {
-  transform: translate(-50%, 0);
-  opacity: 1;
-  transition: all 0.8s ease 0.3s;
-}
-
-.wrapper._loaded .header {
-  transition: transform 0.5s ease 0.5s;
-  transform: translate(0, 0);
 }
 
 /*.wrapper._loaded .page__pagination {
@@ -518,7 +507,7 @@ body._lock {
   left: 0;
   width: 100%;
   z-index: 10;
-  background: burlywood;
+  background: #fff;
 }
 .header__container {
   max-width: 1440px;
@@ -528,6 +517,7 @@ body._lock {
   align-items: center;
   justify-content: space-between;
   min-height: 80px;
+  transition: all 1s;
 }
 .header__logo {
   position: absolute;
@@ -537,6 +527,8 @@ body._lock {
   overflow: hidden;
   transform: translate(-50%, 0);
   z-index: 5;
+  order: 2;
+  transition: all 2s;
 }
 .header__logo img {
   max-width: 100%;
@@ -547,6 +539,7 @@ body._lock {
 .header__service {
   z-index: 3;
   display: flex;
+  order: 3;
 }
 .header__service .phone__link {
   font-family: "Oswald", sans-serif;
@@ -559,21 +552,24 @@ body._lock {
     margin-right: calc(48px + 36 * ((100vw - 1024px) / 416));
   }
 }
-.header__service .lang {
+.header .lang {
   display: flex;
   align-items: center;
 }
-.header__service .lang__list {
+.header .lang__list {
   display: flex;
   align-items: center;
 }
-.header__service .lang__list li {
+.header .lang__list li {
   list-style: none;
   margin: 0 20px 0 0;
 }
-.header__service .lang__link {
+.header .lang__link {
   font-size: 20px;
   color: #232323;
+}
+.header .menu {
+  order: 1;
 }
 .header .menu__icon {
   display: none;
@@ -584,6 +580,10 @@ body._lock {
 .header .menu__link {
   color: #232323;
   font-size: 20px;
+}
+.header .menu__item_mob {
+  display: none;
+  margin: 0;
 }
 @media (min-width: 1024px) {
   .header .menu__list {
@@ -597,6 +597,9 @@ body._lock {
   }
 }
 @media (max-width: 1024px) {
+  .header .menu {
+    order: 3;
+  }
   .header .menu__icon {
     z-index: 5;
     display: block;
@@ -646,13 +649,29 @@ body._lock {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: aquamarine;
-    padding: 100px 30px 30px;
+    background: #fff;
+    padding: 80px 30px 30px;
     transition: left 0.3s ease 0s;
     overflow: auto;
   }
   .header .menu__body._active {
     left: 0;
+  }
+  .header .menu__body._active .menu__item_mob {
+    display: block;
+  }
+  .header .menu__body._active .menu__list li:last-child {
+    margin: 0 0 30px 0;
+  }
+  .header .menu__body._active .header__service {
+    flex-direction: column;
+  }
+  .header .menu__body._active .header__service .phone__link {
+    display: inline-block;
+    margin: 0 0 30px 0;
+  }
+  .header .menu__body._active .header__service .lang {
+    display: flex;
   }
   .header .menu__body:before {
     content: "";
@@ -671,16 +690,27 @@ body._lock {
   }
   .header__logo {
     position: relative;
-    width: 70px;
-    height: 70px;
+    width: 50px;
     top: 0;
     left: 0;
+    order: 1;
+    transform: translate(0, 0);
   }
   .header__service {
+    order: 2;
+    flex: 1 1;
     justify-content: flex-end;
+  }
+  .header__service .phone__link {
+    margin-right: 48px;
   }
   .header__service .lang {
     display: none;
+  }
+}
+@media (max-width: 500px) {
+  .header__container {
+    min-height: 60px;
   }
 }
 
@@ -895,7 +925,7 @@ body._lock {
   overflow: hidden;
 }
 .service-slider__slide:last-child {
-  width: 0px;
+  width: 0;
 }
 .service__title {
   position: absolute;

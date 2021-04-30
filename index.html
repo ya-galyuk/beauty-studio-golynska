@@ -71,9 +71,15 @@
             <div class="header__menu menu">
                 <nav class="menu__body">
                     <ul class="menu__list">
-                        <li><a data-goto=".screen-3" href="#" class="menu__link">Услуги</a></li>
-                        <li><a data-goto=".screen-4" href="#" class="menu__link">Косметика</a></li>
-                        <li><a data-goto=".screen-8" href="#" class="menu__link">Салон</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-1" href="#" class="menu__link">Главная</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-2" href="#" class="menu__link">О себе</a></li>
+                        <li class="menu__item"><a data-goto=".screen-3" href="#" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a data-goto=".screen-4" href="#" class="menu__link">Косметика</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-5" href="#" class="menu__link">Сертификаты</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-6" href="#" class="menu__link">Консультации</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-7" href="#" class="menu__link">Отзывы</a></li>
+                        <li class="menu__item"><a data-goto=".screen-8" href="#" class="menu__link">Салон</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="#" class="menu__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__icon">
@@ -83,11 +89,11 @@
             <a href="" class="header__logo">
                 <img src="img/logo.png" alt="">
             </a>
-            <div class="header__service">
+            <div data-da=".menu__body,500,1" class="header__service">
                 <div class="header__phone phone">
                     <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
                 </div>
-                <div class="header__lang lang">
+                <div data-da=".menu__body,1024,2" class="header__lang lang">
                     <ul class="lang__list">
                         <li><a href="" class="header__link lang__link">UK</a></li>
                         <li><a href="" class="header__link lang__link active">RU</a></li>
@@ -777,17 +783,6 @@
                                                                 class="menu__link">Салон</a></li>
                                 </ul>
                             </nav>
-
-
-                            <nav class="menu__body">
-                                <ul class="menu__list">
-                                    <li><a data-goto=".screen-3" href="#" class="menu__link">Услуги</a></li>
-                                    <li><a data-goto=".screen-4" href="#" class="menu__link">Косметика</a></li>
-                                    <li><a data-goto=".screen-8" href="#" class="menu__link">Салон</a></li>
-                                </ul>
-                            </nav>
-
-
                             <p class="footer__copyright">© 2021, косметолог Татьяна Голынская</p>
                         </div>
                     </div>
@@ -796,7 +791,7 @@
             </section>
         </div>
         <!--<div class="page__pagination"></div>-->
-        <div class="page__scroll"></div>
+        <!--        <div class="page__scroll"></div>-->
     </main>
 </div>
 

@@ -69,16 +69,16 @@ body._lock {
   opacity: 1;
 }
 
-.wrapper._loaded .header__logo {
-  transform: translate(-50%, 0);
-  opacity: 1;
-  transition: all 0.8s ease 0.3s;
-}
+//.wrapper._loaded .header__logo {
+//  transform: translate(-50%, 0);
+//  opacity: 1;
+//  transition: all 0.8s ease 0.3s;
+//}
 
-.wrapper._loaded .header {
-  transition: transform 0.5s ease 0.5s;
-  transform: translate(0, 0);
-}
+//.wrapper._loaded .header {
+//  transition: transform 0.5s ease 0.5s;
+//  transform: translate(0, 0);
+//}
 
 /*.wrapper._loaded .page__pagination {
   transform: translate(0, -50%);
@@ -441,7 +441,7 @@ body._lock {
   left: 0;
   width: 100%;
   z-index: 10;
-  background: burlywood;
+  background: $color-light;
 
   &__container {
     max-width: 1440px;
@@ -451,6 +451,7 @@ body._lock {
     align-items: center;
     justify-content: space-between;
     min-height: 80px;
+    transition: all 1s;
   }
 
   &__logo {
@@ -462,7 +463,8 @@ body._lock {
     overflow: hidden;
     transform: translate(-50%, 0);
     z-index: 5;
-    //order: 2;
+    order: 2;
+    transition: all 2s;
 
     img {
       max-width: 100%;
@@ -475,7 +477,7 @@ body._lock {
   &__service {
     z-index: 3;
     display: flex;
-    //order: 3;
+    order: 3;
 
     .phone__link {
       @extend %tpl-font_medium;
@@ -485,36 +487,36 @@ body._lock {
       @include adaptive-value("margin-right", 84, 48, 1, 1024);
       color: $color-orange;
     }
+  }
 
-    .lang {
+  .lang {
+    display: flex;
+    align-items: center;
+
+    &__list {
       display: flex;
       align-items: center;
 
-      &__list {
-        display: flex;
-        align-items: center;
-
-        li {
-          list-style: none;
-          margin: 0 20px 0 0;
-        }
+      li {
+        list-style: none;
+        margin: 0 20px 0 0;
       }
+    }
 
-      &__link {
-        @extend %tpl-font_regular;
-        @extend %tpl-text;
-        font-size: 20px;
-        color: $text-color_dark;
-      }
+    &__link {
+      @extend %tpl-font_regular;
+      @extend %tpl-text;
+      font-size: 20px;
+      color: $text-color_dark;
+    }
 
-      &__link.active {
-        @extend %tpl-font_medium;
-      }
+    &__link.active {
+      @extend %tpl-font_medium;
     }
   }
 
   .menu {
-    //order: 1;
+    order: 1;
 
     &__icon {
       display: none;
@@ -529,6 +531,11 @@ body._lock {
       @extend %tpl-text;
       color: $text-color_dark;
       font-size: 20px;
+    }
+
+    &__item_mob {
+      display: none;
+      margin: 0;
     }
   }
 
@@ -550,7 +557,7 @@ body._lock {
 
   @media (max-width: 1024px) {
     .menu {
-      //order: 3;
+      order: 3;
 
       &__icon {
         z-index: 5;
@@ -619,15 +626,36 @@ body._lock {
         width: 100%;
         height: 100%;
         //transform: translate(-100%, 0);
-        //background: $color-light;
-        background: aquamarine;
-        padding: 100px 30px 30px;
+        background: $color-light;
+        //background: aquamarine;
+        padding: 80px 30px 30px;
         transition: left 0.3s ease 0s;
         overflow: auto;
 
         &._active {
           //transform: translate(0, 0);
           left: 0;
+
+          .menu__item_mob {
+            display: block;
+          }
+
+          .menu__list li:last-child {
+            margin: 0 0 30px 0;
+          }
+
+          .header__service {
+            flex-direction: column;
+
+            .phone__link {
+              display: inline-block;
+              margin: 0 0 30px 0;
+            }
+
+            .lang {
+              display: flex;
+            }
+          }
         }
 
         &:before {
@@ -651,29 +679,36 @@ body._lock {
           }
         }
       }
-
-      &__link {
-        //font-size: 24px;
-      }
     }
 
     &__logo {
       position: relative;
-      width: 70px;
-      height: 70px;
+      width: 50px;
+      //height: 70px;
       top: 0;
       left: 0;
-      //order: 1;
+      order: 1;
+      transform: translate(0, 0);
     }
 
-    &__service{
-      //order: 2;
-      //flex: 1 1 auto;
+    &__service {
+      order: 2;
+      flex: 1 1;
       justify-content: flex-end;
 
-      .lang{
+      .phone__link {
+        margin-right: 48px;
+        //@include adaptive-value("margin-right", 84, 48, 1, 1024);
+      }
+
+      .lang {
         display: none;
       }
+    }
+  }
+  @media (max-width: 500px) {
+    &__container {
+      min-height: 60px;
     }
   }
 }
@@ -868,7 +903,7 @@ body._lock {
     overflow: hidden;
 
     &:last-child {
-      width: 0px;
+      width: 0;
     }
   }
 

@@ -1,3 +1,15 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.querySelector('.header__logo').style.maxWidth = "50px";
+        document.querySelector('.header__container').style.minHeight = "60px";
+    } else {
+        document.querySelector('.header__logo').style.maxWidth = "160px";
+        document.querySelector('.header__container').style.minHeight = "80px";
+    }
+}
+
 // main slider -----------------------------------
 let wrapper = document.querySelector('.wrapper');
 

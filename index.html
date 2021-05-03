@@ -76,7 +76,6 @@
                         <h1 class="intro__title">Ваша красота достойна
                             большего, чем вы для неё делаете</h1>
                     </div>
-                    <a href="#popup" class="popup-link">modal w</a>
                 </div>
             </div>
             <div class="screen__body">
@@ -239,7 +238,8 @@
                         </div>
                         <div class="service-btns">
                             <button class="btn btn_primary-w service-btn">Записаться на прием</button>
-                            <button class="btn btn_secondary-w service-btn">Все процедуры</button>
+                            <!--                            <button class="btn btn_secondary-w service-btn">Все процедуры</button>-->
+                            <a href="#all_service" class="popup-link btn btn_secondary-w service-btn">Все процедуры</a>
                         </div>
                     </div>
                 </div>
@@ -747,21 +747,304 @@
         </section>
     </main>
 </div>
-<div id="popup" class="popup open">
+<div id="all_service" class="popup">
     <a href="#intro" class="popup__area"></a>
     <div class="popup__body">
         <div class="popup__content">
-            <a href="#intro" class="popup__close close-popup">
+            <a href="#service" class="popup__close close-popup">
                 <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#232323" stroke-width="6.08333"/>
                 </svg>
             </a>
             <h1 class="popup__title screen__title screen__title_bg">Услуги и цены</h1>
-            <p class="popup__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aut blanditiis cupiditate earum
-                ex ipsum iste iure laborum libero molestiae officiis quas quibusdam quos rerum saepe sed, sequi.
-                Est, fugiat.
-            </p>
+
+
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <h2 class="accordion__header-title"><span>Консультация</span></h2>
+                            <div class="accordion__header-price">бесплатно*</div>
+                        </div>
+                        <div class="accordion__description">
+                            Косметика Holy Land производится в Израиле и уже 25 лет
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <div class="panel__table table">
+                                <div class="table__row">
+                                    <div class="table__title">Атравматическая чистка лица</div>
+                                    <div class="table__details">
+                                        <div class="table__time">60 мин</div>
+                                        <div class="table__price">750 грн</div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div class="table__title">Программа AgeControl-Super Lift</div>
+                                    <div class="table__details">
+                                        <div class="table__time">120 мин</div>
+                                        <div class="table__price">750 грн</div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div class="table__title">Пептиды в коррекции возрастных изменений кожи</div>
+                                    <div class="table__details">
+                                        <div class="table__time">45 мин</div>
+                                        <div class="table__price">800 грн</div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div class="table__title">Решение проблем кожи вокруг глаз</div>
+                                    <div class="table__details">
+                                        <div class="table__time">30 мин</div>
+                                        <div class="table__price">650 грн</div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div class="table__title">Программа «Vitalize» с гиалуроновой кислотой</div>
+                                    <div class="table__details">
+                                        <div class="table__time">15 мин</div>
+                                        <div class="table__price">700 грн</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="panel__title">Описание</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <h3 class="panel__title">Как проводится процедура?</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <button class="panel__btn btn btn_secondary-w service-btn">Записаться на прием</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <h2 class="accordion__header-title"><span>Процедуры ухода с применением лечебной косметики «Holyland» (Израиль)</span>
+                            </h2>
+                            <div class="accordion__header-price">от 650 грн</div>
+                        </div>
+                        <div class="accordion__description">
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">Описание</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <h3 class="panel__title">Как проводится процедура?</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <button class="panel__btn btn btn_secondary-w service-btn">Записаться на прием</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <h2 class="accordion__header-title"><span>Процедуры ухода с применением лечебной косметики «Dermaquest» (Америка)</span>
+                            </h2>
+                            <div class="accordion__header-price">от 800 грн</div>
+                        </div>
+                        <div class="accordion__description">
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">Описание</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <h3 class="panel__title">Как проводится процедура?</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <button class="panel__btn btn btn_secondary-w service-btn">Записаться на прием</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <h2 class="accordion__header-title"><span>Химические пилинги</span></h2>
+                            <div class="accordion__header-price">от 750 грн</div>
+                        </div>
+                        <div class="accordion__description">
+                            Косметика Holy Land производится в Израиле и уже 25 лет
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">Описание</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <h3 class="panel__title">Как проводится процедура?</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <button class="panel__btn btn btn_secondary-w service-btn">Записаться на прием</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <h2 class="accordion__header-title">
+                                <span>Испанский (хиромассаж) массаж лица и зоны декольте</span></h2>
+                            <div class="accordion__header-price">800 грн</div>
+                        </div>
+                        <div class="accordion__description">
+                            Косметика Holy Land производится в Израиле и уже 25 лет
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">Описание</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <h3 class="panel__title">Как проводится процедура?</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <button class="panel__btn btn btn_secondary-w service-btn">Записаться на прием</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <h2 class="accordion__header-title"><span>Внутрикожная контурная пластика</span></h2>
+                            <div class="accordion__header-price">от 1100 грн</div>
+                        </div>
+                        <div class="accordion__description">
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">Описание</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <h3 class="panel__title">Как проводится процедура?</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <button class="panel__btn btn btn_secondary-w service-btn">Записаться на прием</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <h2 class="accordion__header-title"><span>Подростковая косметология</span></h2>
+                            <div class="accordion__header-price">600 грн</div>
+                        </div>
+                        <div class="accordion__description">
+                            Косметика Holy Land производится в Израиле и уже 25 лет
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">Описание</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <h3 class="panel__title">Как проводится процедура?</h3>
+                            <p class="panel__text">
+                                Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье
+                                кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                самого высокого качества. Продукты направлены на восстановление здорового естественного
+                                функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                отзывами косметологов, а безопасность подтверждается сертификатами.
+                            </p>
+                            <button class="panel__btn btn btn_secondary-w service-btn">Записаться на прием</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>

@@ -1,5 +1,7 @@
 // resize logo ----------------------------------
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+    scrollFunction()
+};
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -33,19 +35,22 @@ function readMoreConsultation() {
 // ----------------------------------------------
 
 // accordion ------------------------------------
-const  acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight){
-            panel.style.maxHeight = null;
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
+const accordion = document.querySelectorAll('.accordion__header');
+if (accordion.length > 0) {
+    for (let index = 0; index < accordion.length; index++) {
+        const el = accordion[index]
+        el.addEventListener("click", function (e) {
+            this.classList.toggle("open");
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                // panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.style.maxHeight = "initial";
+            }
+            e.preventDefault();
+        });
+    }
 }
 
 // ----------------------------------------------

@@ -1,0 +1,293 @@
+.products-wrapper {
+
+  .intro {
+    height: 772px;
+    margin-bottom: -75px;
+  }
+
+  .cosmetic {
+    margin-bottom: 120px;
+
+    &__content {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__title {
+      width: 100%;
+      //height: 150px;
+      padding: 36px;
+      background: $color-dark;
+      color: $color-light;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 60px;
+      @include adaptive-value("font-size", 52, 40, 1, 375);
+    }
+
+    &__cards {
+      position: relative;
+      padding: 34px 0;
+
+      &:before,
+      &:after {
+        content: '';
+        width: 45%;
+        height: 3px;
+        background: $color-dark;
+        position: absolute;
+
+      }
+
+      &:before {
+        top: 0;
+        left: 0;
+      }
+
+      &:after {
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  .cards {
+    //margin-bottom: 120px;
+    margin-bottom: 0;
+
+    &__content {
+      @include adaptive-value("padding-top", 120, 50, 1, 375);
+      @include adaptive-value("padding-bottom", 120, 50, 1, 375);
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+      @include adaptive-value("font-size", 52, 40, 1, 375);
+    }
+
+    &__filter {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0 20px;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    .brand {
+      overflow-x: scroll;
+
+      &__list {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      &__item {
+        margin-right: 48px;
+        flex: 0 0 auto;
+
+        &:last-child {
+          //margin-right: 0;
+        }
+      }
+
+      &__btn {
+        @extend %tpl-text;
+        @extend %tpl-font_regular;
+        @include adaptive-value("font-size", 22, 20, 1, 375);
+        color: $color-dark;
+        opacity: .6;
+        background: none;
+
+        &.active {
+          @extend %tpl-font_medium;
+          opacity: 1;
+        }
+      }
+    }
+
+    &__sort {
+      display: flex;
+      margin-bottom: 20px;
+      cursor: pointer;
+      background: none;
+
+      &-text {
+        @extend %tpl-text;
+        @extend %tpl-font_regular;
+        @include adaptive-value("font-size", 22, 20, 1, 375);
+        color: $color-dark;
+        margin-right: 20px;
+      }
+
+      &-icon {
+        display: none;
+
+        &.show {
+          display: flex;
+        }
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+
+      .card {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 40px;
+        //margin-right: 0;
+        flex: 0 1 100%;
+
+
+        &.show {
+          display: flex;
+        }
+
+        &:hover {
+          &:after {
+            position: absolute;
+            top: -12px;
+            left: -10px;
+            content: '';
+            width: calc(100% + 20px);
+            height: calc(100% + 24px);
+            border: 3px solid $color-dark;
+          }
+        }
+
+        &__img {
+          position: relative;
+          height: 330px;
+
+          img {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            object-fit: cover;
+          }
+        }
+
+        &__info {
+          padding: 10px 18px;
+          @extend %tpl-text;
+          @extend %tpl-font_regular;
+          @include adaptive-value("font-size", 20, 16, 1, 320);
+          color: $color-dark;
+        }
+
+        &__description {
+          margin-bottom: 6px;
+          @extend %tpl-font_medium;
+
+          -webkit-line-clamp: 2;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        &__price {
+          opacity: .6;
+          font-size: 18px;
+        }
+
+      }
+    }
+
+    &__more {
+      margin-top: 20px;
+      // TODO: if you need btn load more --> display:flex;
+      display: none;
+      justify-content: center;
+
+      &-btn {
+        @extend %tpl-text;
+        @extend %tpl-font_regular;
+        @include adaptive-value("font-size", 22, 20, 1, 375);
+        padding: 20px;
+      }
+
+    }
+
+    @media (min-width: 500px) {
+      &__list {
+        margin: 0 -14px;
+
+        .card {
+          margin: 0 14px 40px;
+          flex: 0 1 calc(50% - 28px);
+
+          //&:nth-child(-n+2) {
+          //  &.show{
+          //    display: flex;
+          //  }
+          //}
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      &__list {
+        .card {
+          flex: 0 1 calc(33% - 28px);
+
+          //&:nth-child(-n+12) {
+          //  display: flex;
+          //}
+          //
+          //&:nth-child(3n+4) {
+          //  margin-right: 14px;
+          //  margin-left: 0;
+          //}
+          //
+          //&:nth-child(3n+2) {
+          //  flex: 0 1 calc(33% - 21px);
+          //  margin-left: 14px;
+          //  margin-right: 14px;
+          //}
+          //
+          //&:nth-child(3n+3) {
+          //  margin-right: 0;
+          //  margin-left: 14px;
+          //}
+        }
+      }
+    }
+    @media (min-width: 1024px) {
+      &__list {
+
+        .card {
+          flex: 0 1 calc(25% - 28px);
+
+          &:nth-child(n) {
+            //margin-right: 28px;
+            //margin-left: 0;
+          }
+
+          //&:nth-child(4n+4) {
+          //  margin-right: 0;
+          //}
+        }
+      }
+    }
+  }
+
+
+  .footer {
+    background: $color-dark;
+
+    &__body {
+      padding: 18px 0 38px;
+    }
+
+    &__list {
+      margin-bottom: 36px;
+    }
+  }
+
+}

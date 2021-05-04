@@ -1972,7 +1972,7 @@ body.lock {
   visibility: hidden;
   overflow-y: auto;
   overflow-x: hidden;
-  transition: all 0.2s ease 0s;
+  transition: opacity 0.2s ease 0s;
   z-index: 1000;
 
   &.open {
@@ -2014,7 +2014,7 @@ body.lock {
     padding: 54px 15px 8px;
     text-decoration: none;
     background: $color-light;
-    transition: all 0.3s ease 0s;
+    transition: padding 0.2s ease 0s;
 
     &:hover {
       background: $color-orange;
@@ -2253,3 +2253,5 @@ body.lock {
 //  @media (max-width: 375px) {}
 //}
 ///* ----------------------------------------*/
+
+@import "products";

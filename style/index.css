@@ -89,13 +89,13 @@ h6 {
   font-weight: 400;
 }
 
-.products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .footer__copyright, .salon__schedule, .salon__phone, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header .lang__link, .btn, h3, h2, h1 {
+.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .footer__copyright, .salon__schedule, .salon__phone, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header .lang__link, .btn, h3, h2, h1 {
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
 }
 
-.products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, .footer__menu, .consultation__detail_strong, .consultation-slide__title, .consultation-slide__span, .consultation__title, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .header .lang__link.active, .header__service .phone__link, .screen__title, ._text_strong {
+.products-popup .popup__feature .feature__item span, .products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, .footer__menu, .consultation__detail_strong, .consultation-slide__title, .consultation-slide__span, .consultation__title, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .header .lang__link.active, .header__service .phone__link, .screen__title, ._text_strong {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -136,14 +136,18 @@ h6 {
   font-size: 22px;
 }
 
-.btn {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
-@media (max-width: 1440px) {
-  .btn {
-    font-size: calc(14px + 2 * ((100vw - 320px) / 1120));
-  }
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(35, 35, 35, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF4603;
 }
 
 html,
@@ -165,6 +169,9 @@ button {
 
 a:hover {
   text-decoration: underline;
+}
+a:hover.btn, a:hover.card {
+  text-decoration: none;
 }
 
 ul {
@@ -195,18 +202,6 @@ body.lock {
   opacity: 1;
 }
 
-/*.wrapper._loaded .page__pagination {
-  transform: translate(0, -50%);
-  opacity: 1;
-  visibility: visible;
-  transition: transform 0.6s ease 0.8s;
-}
-
-.wrapper._free .page__pagination {
-  transition: all 0.3s ease 0s;
-  transform: translate(50px, -50%);
-  opacity: 0;
-}*/
 /* -----------------------------------------*/
 /* container -------------------------------*/
 .container {
@@ -220,26 +215,41 @@ body.lock {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 30px;
+  padding: 11px 27px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   cursor: pointer;
+  transition: border 0.3s ease 0s;
+}
+.btn:after {
+  opacity: 0;
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  content: "";
+  width: calc(100% + 8px);
+  height: calc(100% + 6px);
+  border: 3px solid #FF4603;
+  transition: all 0.3s ease 0s;
+}
+.btn:hover:after {
+  opacity: 1;
 }
 .btn_primary {
   background: #232323;
   color: #fff;
+  border: 3px solid #232323;
+  transition: border 0.3s ease 0s;
 }
 .btn_primary-w {
   background: #fff;
   color: #232323;
 }
 .btn_secondary {
-  padding: 11px 27px;
   border: 3px solid #232323;
   color: #232323;
   background: #fff;
-}
-.btn_secondary:hover {
-  background: #fff;
-  color: #232323;
 }
 .btn_secondary-w {
   padding: 11px 27px;
@@ -248,123 +258,6 @@ body.lock {
   color: #fff;
 }
 
-/* -----------------------------------------*/
-/* header ----------------------------------*/
-/*.header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  transform: translate(0, -100%);
-  @include adaptive-value("padding-left", 100, 14, 0);
-  @include adaptive-value("padding-right", 100, 14, 0);
-}
-
-
-.header__body {
-  position: relative;
-  //z-index: 3;
-  @include adaptive-value("height", 60, 50, 1);
-  display: flex;
-  align-items: center;
-  transition: all 0.8s ease 0.3s;
-}
-
-.header__menu {
-  display: flex;
-  justify-content: space-between;
-  flex: 1 1 auto;
-}
-
-.header__list {
-  display: flex;
-  position: relative;
-  z-index: 2;
-
-  li {
-    list-style: none;
-    margin: 0 48px 0 0;
-  }
-}
-
-
-.header__logo {
-  position: absolute;
-  left: 50%;
-  top: 10px;
-  flex: 0 0;
-  @include adaptive-value("max-width", 90, 75, 1);
-  overflow: hidden;
-  z-index: 3;
-  transform: translate(-50%, -100%);
-  opacity: 0;
-
-  img {
-    max-width: 100%;
-    display: block;
-  }
-}
-
-@media (max-width: 1024px) {
-  body.lock {
-    overflow: hidden;
-  }
-
-  .header__logo {
-    left: 45px;
-  }
-
-  .header__menu {
-    position: fixed;
-    top: -2000%;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: $bg-light;
-
-    padding: 150px 20px 0;
-    @include adaptive-value("padding-top", 200, 75, 1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
-    overflow: auto;
-    transition: all 0.5s linear 0s;
-  }
-
-  .header__list {
-    display: block;
-
-    li {
-      margin: 0;
-    }
-  }
-
-  .header__link {
-    display: block;
-    padding: 24px;
-  }
-
-  .header__service {
-    flex-direction: column;
-
-    display: flex;
-    align-items: center;
-  }
-
-  .phone__link {
-    margin: 0;
-  }
-
-  .lang__list li {
-    margin: 0;
-  }
-}
-
-@media (max-width: 767px) {
-
-}*/
 /* -----------------------------------------*/
 /* screen ----------------------------------*/
 .screen {
@@ -605,8 +498,8 @@ body.lock {
     z-index: 5;
     display: block;
     position: relative;
-    width: 30px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
     cursor: pointer;
   }
   .header .menu__icon._active span, .header .menu__icon._active:before, .header .menu__icon._active:after {
@@ -617,16 +510,16 @@ body.lock {
   }
   .header .menu__icon._active::before {
     top: 50%;
-    transform: rotate(-45deg) translate(0, -50%);
+    transform: rotate(-45deg) translate(0, 0);
   }
   .header .menu__icon._active::after {
     top: 50%;
-    transform: rotate(45deg) translate(0, 50%);
+    transform: rotate(45deg) translate(0, 0);
   }
   .header .menu__icon span, .header .menu__icon:before, .header .menu__icon:after {
     left: 0;
     position: absolute;
-    height: 10%;
+    height: 6px;
     width: 100%;
     transition: all 0.3s ease 0s;
     background: #232323;
@@ -1343,6 +1236,7 @@ body.lock {
 .consultation__title {
   display: flex;
   align-items: center;
+  padding-right: 0;
   font-size: 52px;
   margin-bottom: 34px;
 }
@@ -1374,7 +1268,6 @@ body.lock {
   max-width: 1920px;
   padding: 0 40px;
   margin: 0 auto;
-  overflow: hidden;
 }
 .consultation__body {
   margin-left: 200px;
@@ -1542,11 +1435,14 @@ body.lock {
     width: 100%;
   }
   .consultation__image {
-    min-width: 530px;
+    width: 100%;
     height: 322px;
   }
 }
 @media (max-width: 768px) {
+  .consultation__container {
+    padding: 0;
+  }
   .consultation__image {
     min-width: auto;
     height: auto;
@@ -1562,38 +1458,14 @@ body.lock {
   }
 }
 @media (max-width: 500px) {
-  .consultation__container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media (max-width: 500px) and (max-width: 1440px) {
-  .consultation__container {
-    padding-left: calc(20px + 20 * ((100vw - 375px) / 1065));
-  }
-}
-@media (max-width: 500px) and (max-width: 1440px) {
-  .consultation__container {
-    padding-right: calc(20px + 20 * ((100vw - 375px) / 1065));
-  }
-}
-@media (max-width: 500px) {
   .consultation__image-body {
     flex-direction: column;
   }
-}
-@media (max-width: 500px) {
   .consultation__image {
     min-width: 100%;
     margin-bottom: 24px;
   }
 }
-@media (max-width: 375px) {
-  .consultation__container {
-    padding: 0 20px;
-  }
-}
-
 /* ----------------------------------------*/
 /* reviews ---------------------------------*/
 .review_bg {
@@ -1808,6 +1680,9 @@ body.lock {
     line-height: calc(33px + 14 * ((100vw - 1024px) / 416));
   }
 }
+.salon__phone a:hover {
+  color: #FF4603;
+}
 .salon-slider {
   width: 956px;
   height: 632px;
@@ -1847,9 +1722,21 @@ body.lock {
 }
 .salon__social-link {
   display: flex;
+  position: relative;
 }
-.salon__social-link:hover {
-  background: #FF4603;
+.salon__social-link:after {
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 3px);
+  border: 2px solid #FF4603;
+  transition: all 0.3s ease 0s;
+}
+.salon__social-link:hover:after {
+  opacity: 1;
 }
 .salon__button-prev, .salon__button-next {
   height: 60px;
@@ -2089,13 +1976,21 @@ body.lock {
   position: relative;
 }
 .popup__close {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
   padding: 54px 15px 8px;
   text-decoration: none;
   background: #fff;
   transition: padding 0.2s ease 0s;
+}
+.popup__close-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 60px;
+  height: 94px;
+  z-index: 5;
 }
 .popup__close:hover {
   background: #FF4603;
@@ -2129,18 +2024,40 @@ body.lock {
 }
 .accordion__header {
   display: flex;
-  flex-direction: column;
   cursor: pointer;
+  align-items: baseline;
+}
+.accordion__header:hover .accordion__header-btn:after {
+  opacity: 1;
 }
 .accordion__header-info {
   display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.accordion__header-top {
+  display: flex;
   justify-content: space-between;
+}
+.accordion__header-btn {
+  position: relative;
+  margin-right: 30px;
+}
+.accordion__header-btn:after {
+  opacity: 0;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  content: "";
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border: 2px solid #fff;
+  transition: all 0.3s ease 0s;
 }
 .accordion__header-btn button {
   width: 40px;
   height: 40px;
   background: #fff;
-  margin-right: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2215,7 +2132,6 @@ body.lock {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  padding-left: 70px;
   opacity: 0.6;
 }
 @media (max-width: 1440px) {
@@ -2300,25 +2216,81 @@ body.lock {
   .accordion .table__row {
     flex-direction: column;
   }
-}
-@media (max-width: 500px) {
-  .accordion__header-info {
+  .accordion__header-btn {
+    margin-right: 20px;
+  }
+  .accordion__header-btn button {
+    width: 30px;
+    height: 30px;
+  }
+  .accordion__header-btn button:before, .accordion__header-btn button:after {
+    width: 20px;
+    height: 4px;
+  }
+  .accordion__header-top {
     flex-wrap: wrap;
+    margin-bottom: 20px;
   }
   .accordion__header-title {
-    flex: 1 1;
+    flex: 1 1 auto;
   }
   .accordion__header-title:after {
     border: none;
   }
   .accordion__header-price {
-    margin-left: 70px;
+    margin-left: 0;
+  }
+}
+/* ----------------------------------------*/
+.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, h1, h2, h3, .btn, .header .lang__link, .header .menu__link, .intro__title, .about__description, .service-info__price, .service-info__time .time__info, .service-info__more, .cosmetic__description, .certificates__description, .consultation-slide__description, .consultation__detail, .consultation__more-btn, .review-slider__item, .salon__address, .salon__schedule, .salon__phone, .footer__copyright {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+.products-popup .popup__feature .feature__item span, .products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, ._text_strong, .screen__title, .header__service .phone__link, .header .lang__link.active, .about__title, .service-info__title, .cosmetic__item-title, .certificates__title, .consultation__title, .consultation-slide__span, .consultation-slide__title, .consultation__detail_strong, .footer__menu {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .header .lang__link, .header .menu__link, .about__description, .service-info__more, .cosmetic__description, .certificates__description, .consultation-slide__description, .consultation__detail, .consultation__more-btn, .review-slider__item, .footer__menu {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+@media (max-width: 1440px) {
+  .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .header .lang__link, .header .menu__link, .about__description, .service-info__more, .cosmetic__description, .certificates__description, .consultation-slide__description, .consultation__detail, .consultation__more-btn, .review-slider__item, .footer__menu {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
   }
 }
 
-/* ----------------------------------------*/
+h1, .intro__title, .about__title, .certificates__title, .consultation__title, .consultation-slide__span {
+  font-family: "Oswald", sans-serif;
+  font-size: 52px;
+}
+@media (max-width: 1440px) {
+  h1, .intro__title, .about__title, .certificates__title, .consultation__title, .consultation-slide__span {
+    font-size: calc(18px + 34 * ((100vw - 320px) / 1120));
+  }
+}
+
+h2, .service-info__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+
+h3, .service-info__price, .service-info__time .time__info, .consultation-slide__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+}
+
+.salon__address, .salon__schedule, .salon__phone, .footer__copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
 .products-wrapper .intro {
-  height: 772px;
+  height: 75vh;
   margin-bottom: -75px;
 }
 .products-wrapper .cosmetic {
@@ -2400,6 +2372,10 @@ body.lock {
 }
 .products-wrapper .cards .brand {
   overflow-x: scroll;
+  margin-bottom: 20px;
+}
+.products-wrapper .cards .brand::-webkit-scrollbar {
+  display: none;
 }
 .products-wrapper .cards .brand__list {
   display: flex;
@@ -2542,6 +2518,143 @@ body.lock {
 }
 .products-wrapper .footer__list {
   margin-bottom: 36px;
+}
+
+.products-popup.popup {
+  background: #fff;
+}
+.products-popup .popup__content {
+  padding: 80px 0 70px;
+  background: #fff;
+  color: #232323;
+  display: flex;
+}
+.products-popup .popup__close {
+  background: #232323;
+}
+.products-popup .popup__close:hover {
+  background: #FF4603;
+}
+.products-popup .popup__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.products-popup .popup__image-box {
+  min-width: 490px;
+  height: 490px;
+  margin-right: 60px;
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__image-box {
+    min-width: calc(390px + 100 * ((100vw - 1024px) / 416));
+  }
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__image-box {
+    height: calc(390px + 100 * ((100vw - 1024px) / 416));
+  }
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__image-box {
+    margin-right: calc(30px + 30 * ((100vw - 320px) / 1120));
+  }
+}
+.products-popup .popup__image img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: contain;
+}
+.products-popup .popup__title {
+  margin: 0 0 30px;
+}
+.products-popup .popup__feature .feature__item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__feature .feature__item {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
+  }
+}
+.products-popup .popup__feature .feature__item:last-child {
+  margin-bottom: 0;
+}
+.products-popup .popup__feature .feature__price {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  margin-top: 24px;
+  color: #FF4603;
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__feature .feature__price {
+    font-size: calc(22px + 4 * ((100vw - 320px) / 1120));
+  }
+}
+.products-popup .panel__text {
+  margin-bottom: 20px;
+  color: #232323;
+}
+.products-popup .panel__text:last-child {
+  margin-bottom: 0;
+}
+.products-popup .accordion {
+  margin-top: 60px;
+}
+.products-popup .accordion__header-btn:after {
+  border-color: #232323;
+}
+.products-popup .accordion__header-btn button {
+  background: #232323;
+}
+.products-popup .accordion__header-btn button:before, .products-popup .accordion__header-btn button:after {
+  background: #fff;
+}
+.products-popup .accordion__header-title span {
+  background: #fff;
+}
+.products-popup .accordion__header-title:after {
+  border-top-color: #232323;
+}
+@media (max-width: 1024px) {
+  .products-popup .popup__content {
+    flex-wrap: wrap;
+  }
+  .products-popup .popup__container {
+    flex: 1 1;
+  }
+  .products-popup .accordion {
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .products-popup .popup__container {
+    margin-top: 30px;
+  }
+  .products-popup .popup__content {
+    flex-direction: column;
+  }
+  .products-popup .popup__image-box {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .products-popup .accordion__header-title:after {
+    border-top: 1px solid #232323;
+  }
+}
+@media (max-width: 425px) {
+  .products-popup .popup__image-box {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

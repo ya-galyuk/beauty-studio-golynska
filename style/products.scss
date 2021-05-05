@@ -1,7 +1,10 @@
+@import "variable";
+@import "templates";
+
 .products-wrapper {
 
   .intro {
-    height: 772px;
+    height: 75vh;
     margin-bottom: -75px;
   }
 
@@ -78,6 +81,11 @@
 
     .brand {
       overflow-x: scroll;
+      margin-bottom: 20px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       &__list {
         display: flex;
@@ -277,7 +285,6 @@
     }
   }
 
-
   .footer {
     background: $color-dark;
 
@@ -289,5 +296,201 @@
       margin-bottom: 36px;
     }
   }
+}
 
+.products-popup {
+
+  &.popup {
+    background: $color-light;
+  }
+
+  .popup {
+    &__content {
+      padding: 80px 0 70px;
+      background: $color-light;
+      color: $color-dark;
+      display: flex;
+    }
+
+    &__close {
+      background: $color-dark;
+
+      &:hover {
+        background: $color-orange;
+      }
+    }
+
+    &__image {
+      //min-width: 490px;
+      //max-height: 490px;
+      width: 100%;
+      height: 100%;
+      //display: flex;
+
+      //flex: 1 1 auto;
+      //max-height: 490px;
+      position: relative;
+      //border: 1px solid red;
+
+      &-box {
+        @include adaptive-value("min-width", 490, 390, 1, 1024);
+        @include adaptive-value("height", 490, 390, 1, 1024);
+        @include adaptive-value("margin-right", 60, 30, 1);
+      }
+
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: contain;
+      }
+    }
+
+    &__container {
+    }
+
+    &__title {
+      margin: 0 0 30px;
+    }
+
+    &__feature {
+      .feature {
+        &__list {
+        }
+
+        &__item {
+          @extend %tpl-font_regular;
+          font-family: 'Montserrat', sans-serif;
+          @include adaptive-value("font-size", 18, 16, 1, 320);
+          margin-bottom: 6px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          span {
+            @extend %tpl-font_medium;
+          }
+        }
+
+        &__price {
+          display: inline-block;
+          font-family: 'Montserrat', sans-serif;
+          @include adaptive-value("font-size", 26, 22, 1, 320);
+          @extend %tpl-font_regular;
+          margin-top: 24px;
+          color: $color-orange;
+        }
+      }
+    }
+  }
+
+  .panel {
+    &__text {
+      margin-bottom: 20px;
+      color: $color-dark;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .accordion {
+    margin-top: 60px;
+
+    &__header {
+      &-btn {
+        &:after {
+          border-color: $color-dark;
+        }
+
+        button {
+          background: $color-dark;
+
+          &:before,
+          &:after {
+            background: $color-light;
+          }
+        }
+      }
+
+      &-title {
+        & span {
+          background: $color-light;
+        }
+
+        &:after {
+          border-top-color: $color-dark;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .popup {
+      &__content {
+        flex-wrap: wrap;
+      }
+
+      &__image {
+        &-box {
+        }
+
+        //flex: 0 1 calc(39.4% + 60px);
+        //min-width: initial;
+        //max-height: initial;
+      }
+
+      &__container {
+        flex: 1 1;
+        //flex: 0 1 calc(60.0% - 60px);
+      }
+    }
+    .accordion {
+      flex: 1 1 auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .popup {
+      &__container {
+        margin-top: 30px;
+      }
+
+      &__content {
+        flex-direction: column;
+      }
+
+      &__image {
+        &-box {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    .accordion {
+      &__header {
+        &-title {
+          &:after {
+            border-top: 1px solid $color-dark;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    .popup {
+      &__image {
+        &-box {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
 }

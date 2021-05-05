@@ -37,8 +37,3 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
 }
-
-%tpl-btn{
-  font-family: 'Montserrat', sans-serif;
-  @include adaptive-value("font-size", 16, 14, 1);
-}

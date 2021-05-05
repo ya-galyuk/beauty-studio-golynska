@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="style/index.css">
 </head>
-<body>
+<body onload="setBrand();">
 
 <div class="wrapper products-wrapper">
     <header class="header lock-padding">
@@ -51,7 +51,7 @@
                     <span></span>
                 </div>
             </div>
-            <a href="" class="header__logo">
+            <a href="index.html" class="header__logo">
                 <img src="img/logo.png" alt="">
             </a>
             <div data-da=".menu__body,500,1" class="header__service">
@@ -69,7 +69,7 @@
     </header>
 
     <main class="page">
-        <section id="intro" class="page__screen screen-1 screen intro">
+        <section id="cosmetic-intro" class="page__screen screen-1 screen intro">
             <div class="screen__body">
                 <div class="screen__image">
                     <img src="img/intro.png" alt="">
@@ -77,7 +77,7 @@
             </div>
         </section>
 
-        <section id="cosmetic" class="page__screen screen-4 screen cosmetic">
+        <section id="cosmetic-brand" class="page__screen screen cosmetic">
             <div class="screen__content cosmetic__content">
                 <div class="container">
                     <div class="cosmetic__container">
@@ -88,7 +88,8 @@
                     <div class="cosmetic__cards">
                         <ul class="cosmetic__list">
                             <li class="cosmetic__item">
-                                <a href="" class="cosmetic__item-link">
+                                <a href="#cosmetic-cards" class="cosmetic__item-link"
+                                   onclick="setBrand('brand-holyland')">
                                     <h1 class="cosmetic__item-title">Holyland</h1>
                                     <div class="cosmetic__img">
                                         <img src="img/holyland.png" alt="">
@@ -98,7 +99,8 @@
                                 </a>
                             </li>
                             <li class="cosmetic__item">
-                                <a href="" class="cosmetic__item-link">
+                                <a href="#cosmetic-cards" class="cosmetic__item-link"
+                                   onclick="setBrand('brand-dermaquest')">
                                     <h1 class="cosmetic__item-title">Dermaquest</h1>
                                     <div class="cosmetic__img">
                                         <img src="img/dermaquest.png" alt="">
@@ -108,7 +110,8 @@
                                 </a>
                             </li>
                             <li class="cosmetic__item">
-                                <a href="" class="cosmetic__item-link">
+                                <a href="#cosmetic-cards" class="cosmetic__item-link"
+                                   onclick="setBrand('brand-bio_matrix')">
                                     <h1 class="cosmetic__item-title">Bio-matrix</h1>
                                     <div class="cosmetic__img">
                                         <img src="img/holyland.png" alt="">
@@ -123,17 +126,33 @@
             </div>
         </section>
 
-        <section id="cosmetic-cards" class="page__screen screen-4 screen cosmetic-cards cards">
+        <section id="cosmetic-cards" class="page__screen screen cosmetic-cards cards">
             <div class="screen__content cards__content">
                 <div class="container">
                     <h1 class="screen__title _text-line cards__title">Косметика</h1>
                     <div class="cards__filter">
                         <div class="cards__brand brand">
                             <ul class="brand__list">
-                                <li class="brand__item"><button class="brand__btn active" onclick="filterSelection('all')">Все бренды</button></li>
-                                <li class="brand__item"><button class="brand__btn" onclick="filterSelection('holyland')">Holyland</button></li>
-                                <li class="brand__item"><button class="brand__btn" onclick="filterSelection('dermaquest')">Dermaquest</button></li>
-                                <li class="brand__item"><button class="brand__btn" onclick="filterSelection('bio_matrix')">Bio-matrix</button></li>
+                                <li class="brand__item">
+                                    <button class="brand__btn brand-all active" onclick="filterSelection('all')">Все
+                                        бренды
+                                    </button>
+                                </li>
+                                <li class="brand__item">
+                                    <button class="brand__btn brand-holyland" onclick="filterSelection('holyland')">
+                                        Holyland
+                                    </button>
+                                </li>
+                                <li class="brand__item">
+                                    <button class="brand__btn brand-dermaquest" onclick="filterSelection('dermaquest')">
+                                        Dermaquest
+                                    </button>
+                                </li>
+                                <li class="brand__item">
+                                    <button class="brand__btn brand-bio_matrix" onclick="filterSelection('bio_matrix')">
+                                        Bio-matrix
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                         <button class="cards__sort" onclick="sortListDir()">
@@ -163,7 +182,7 @@
                         </button>
                     </div>
                     <div class="cards__list">
-                        <div class="cards__item card holyland">
+                        <a href="#card_1" class="popup-link cards__item card holyland">
                             <div class="card__img">
                                 <img src="img/products/card__item-1.png" alt=""/>
                             </div>
@@ -171,8 +190,8 @@
                                 <div class="card__description">holyland Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card dermaquest">
+                        </a>
+                        <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
                                 <img src="img/products/card__item-2.png" alt=""/>
                             </div>
@@ -180,8 +199,8 @@
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">750 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card holyland">
+                        </a>
+                        <a href="#" class="popup-link cards__item card holyland">
                             <div class="card__img">
                                 <img src="img/products/card__item-2.png" alt=""/>
                             </div>
@@ -189,8 +208,8 @@
                                 <div class="card__description">holyland Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card holyland">
+                        </a>
+                        <a href="#" class="popup-link cards__item card holyland">
                             <div class="card__img">
                                 <img src="img/products/card__item-1.png" alt=""/>
                             </div>
@@ -198,8 +217,8 @@
                                 <div class="card__description">holyland Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">900 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card bio_matrix">
+                        </a>
+                        <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
                                 <img src="img/products/card__item-1.png" alt=""/>
                             </div>
@@ -207,8 +226,8 @@
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card bio_matrix">
+                        </a>
+                        <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
                                 <img src="img/products/card__item-1.png" alt=""/>
                             </div>
@@ -216,8 +235,8 @@
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card dermaquest">
+                        </a>
+                        <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
                                 <img src="img/products/card__item-2.png" alt=""/>
                             </div>
@@ -225,8 +244,8 @@
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card bio_matrix">
+                        </a>
+                        <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
                                 <img src="img/products/card__item-2.png" alt=""/>
                             </div>
@@ -234,8 +253,8 @@
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1200 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card holyland">
+                        </a>
+                        <a href="#" class="popup-link cards__item card holyland">
                             <div class="card__img">
                                 <img src="img/products/card__item-1.png" alt=""/>
                             </div>
@@ -243,8 +262,8 @@
                                 <div class="card__description">holyland Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card bio_matrix">
+                        </a>
+                        <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
                                 <img src="img/products/card__item-1.png" alt=""/>
                             </div>
@@ -252,8 +271,8 @@
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card dermaquest">
+                        </a>
+                        <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
                                 <img src="img/products/card__item-2.png" alt=""/>
                             </div>
@@ -261,8 +280,8 @@
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card dermaquest">
+                        </a>
+                        <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
                                 <img src="img/products/card__item-2.png" alt=""/>
                             </div>
@@ -270,8 +289,8 @@
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card dermaquest">
+                        </a>
+                        <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
                                 <img src="img/products/card__item-1.png" alt=""/>
                             </div>
@@ -279,8 +298,8 @@
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
-                        <div class="cards__item card bio_matrix">
+                        </a>
+                        <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
                                 <img src="img/products/card__item-1.png" alt=""/>
                             </div>
@@ -288,7 +307,7 @@
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
                                 <div class="card__price">1000 грн</div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="cards__more">
                         <a class="cards__more-btn">Загрузить ещё</a>
@@ -297,30 +316,36 @@
             </div>
         </section>
 
-        <section id="footer" class="page__screen screen-9 screen footer">
+        <section id="cosmetic-footer" class="page__screen screen footer">
             <div class="screen__content footer__content">
                 <div class="container footer__container">
                     <div class="footer__body">
                         <nav class="footer__menu menu__body menu">
                             <ul class="footer__list menu__list">
-                                <li class="footer__item"><a data-goto=".screen-1" href="#"
-                                                            class="menu__link">Главная</a>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-1" href="index.html#intro" class="menu__link">Главная</a>
                                 </li>
-                                <li class="footer__item"><a data-goto=".screen-2" href="#" class="menu__link">О
-                                    себе</a></li>
-                                <li class="footer__item"><a data-goto=".screen-3" href="#"
-                                                            class="menu__link">Услуги</a></li>
-                                <li class="footer__item"><a data-goto=".screen-4" href="#"
-                                                            class="menu__link">Косметика</a>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-2" href="index.html#about" class="menu__link">О себе</a>
                                 </li>
-                                <li class="footer__item"><a data-goto=".screen-5" href="#" class="menu__link">Сертификаты</a>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-3" href="index.html#service" class="menu__link">Услуги</a>
                                 </li>
-                                <li class="footer__item"><a data-goto=".screen-6" href="#" class="menu__link">Консультации</a>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-4" href="index.html#cosmetic" class="menu__link">Косметика</a>
                                 </li>
-                                <li class="footer__item"><a data-goto=".screen-7" href="#"
-                                                            class="menu__link">Отзывы</a></li>
-                                <li class="footer__item"><a data-goto=".screen-8" href="#"
-                                                            class="menu__link">Салон</a></li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-5" href="index.html#certificates" class="menu__link">Сертификаты</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-6" href="index.html#consultation" class="menu__link">Консультации</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-7" href="index.html#review" class="menu__link">Отзывы</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-8" href="index.html#salon" class="menu__link">Салон</a>
+                                </li>
                             </ul>
                         </nav>
                         <p class="footer__copyright">© 2021, косметолог Татьяна Голынская</p>
@@ -331,28 +356,164 @@
         </section>
     </main>
 </div>
-<div id="all_service" class="popup">
-    <a href="#intro" class="popup__area"></a>
+<div id="card_1" class="popup products-popup">
+    <a href="#" class="popup__area"></a>
     <div class="popup__body">
         <div class="popup__content">
-            <a href="#service" class="popup__close close-popup">
-                <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#232323" stroke-width="6.08333"/>
-                </svg>
-            </a>
-            <h1 class="popup__title screen__title screen__title_bg">Услуги и цены</h1>
-
+            <div class="popup__close-box">
+                <a href="#" class="popup__close close-popup">
+                    <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#fff" stroke-width="6.08333"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="popup__image-box">
+                <div class="popup__image">
+                    <img src="img/products/card__item-1.png" alt="">
+                </div>
+            </div>
+            <div class="popup__container">
+                <h1 class="popup__title screen__title">Увлажняющий крем для жирной кожи</h1>
+                <div class="popup__feature feature">
+                    <ul class="feature__list">
+                        <li class="feature__item"><span>Объем (мл): </span>40ml</li>
+                        <li class="feature__item"><span>Время применения: </span>универсальный</li>
+                        <li class="feature__item"><span>Классификация: </span>дерматокосметика</li>
+                        <li class="feature__item"><span>Назначение: </span>увлажнение, укрепление, успокоение</li>
+                        <li class="feature__item"><span>Тип кожи: </span> комбинированная, нормальная</li>
+                    </ul>
+                    <span class="feature__price">1000 грн</span>
+                </div>
+                <div data-da=".popup__content,1024,last" class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <div class="accordion__header-info">
+                                <div class="accordion__header-top">
+                                    <h2 class="accordion__header-title"><span>Описание</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__panel panel">
+                            <div class="accordion__panel-content panel__content">
+                                <p class="panel__text">
+                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
+                                    здоровье
+                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                    самого высокого качества. Продукты направлены на восстановление здорового
+                                    естественного
+                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                    отзывами косметологов, а безопасность подтверждается сертификатами.
+                                </p>
+                                <p class="panel__text">
+                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
+                                    здоровье
+                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                    самого высокого качества. Продукты направлены на восстановление здорового
+                                    естественного
+                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                    отзывами косметологов, а безопасность подтверждается сертификатами.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <div class="accordion__header-info">
+                                <div class="accordion__header-top">
+                                    <h2 class="accordion__header-title"><span>Применение</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__panel panel">
+                            <div class="accordion__panel-content panel__content">
+                                <p class="panel__text">
+                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
+                                    здоровье
+                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                    самого высокого качества. Продукты направлены на восстановление здорового
+                                    естественного
+                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                    отзывами косметологов, а безопасность подтверждается сертификатами.
+                                </p>
+                                <p class="panel__text">
+                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
+                                    здоровье
+                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                    самого высокого качества. Продукты направлены на восстановление здорового
+                                    естественного
+                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                    отзывами косметологов, а безопасность подтверждается сертификатами.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__header">
+                            <div class="accordion__header-btn">
+                                <button></button>
+                            </div>
+                            <div class="accordion__header-info">
+                                <div class="accordion__header-top">
+                                    <h2 class="accordion__header-title"><span>Состав</span>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__panel panel">
+                            <div class="accordion__panel-content panel__content">
+                                <p class="panel__text">
+                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
+                                    здоровье
+                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                    самого высокого качества. Продукты направлены на восстановление здорового
+                                    естественного
+                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                    отзывами косметологов, а безопасность подтверждается сертификатами.
+                                </p>
+                                <p class="panel__text">
+                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
+                                    здоровье
+                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
+                                    самого высокого качества. Продукты направлены на восстановление здорового
+                                    естественного
+                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
+                                    отзывами косметологов, а безопасность подтверждается сертификатами.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
 </div>
 
 <!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
-<!--<script src="js/dynamicAdapt.js"></script>-->
+<script src="js/dynamicAdapt.js"></script>
 <script src="js/burger.js"></script>
 <script src="js/popup.js"></script>
 <script src="js/filter.js"></script>
 <script src="js/sort.js"></script>
+<script>
+    function setBrand(filterBrand) {
+        let brand = filterBrand;
+        const localBrand = localStorage.getItem('brand');
+        if (!brand) {
+            brand = localBrand;
+        }
+        const el = document.querySelector(`.${brand}`);
+        el?.click();
+        localStorage.removeItem('brand');
+    }
+</script>
 <!--<script src="js/sliders.js"></script>-->
 <script src="js/index.js"></script>
 </body>

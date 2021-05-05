@@ -3,7 +3,7 @@ const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
 if (iconMenu){
     const menuBody = document.querySelector('.menu__body');
-    iconMenu.addEventListener("click", function (e){
+    iconMenu.addEventListener("click", function (){
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
@@ -20,7 +20,8 @@ if (menuLinks.length > 0){
         const menuLink = e.target;
         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
-            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+            const paddingTopBlock = window.getComputedStyle(gotoBlock.childNodes[1],null).getPropertyValue("padding-top").replace( /[^\d\.]*/g, '');
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight + (+paddingTopBlock - 50);
 
             if(iconMenu.classList.contains('_active')){
                 document.body.classList.remove('_lock');

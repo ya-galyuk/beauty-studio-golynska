@@ -56,7 +56,8 @@ button {
 a:hover {
   text-decoration: underline;
 
-  &.btn {
+  &.btn,
+  &.card {
     text-decoration: none;
   }
 }
@@ -2195,10 +2196,11 @@ body.lock {
 
     &__header {
       &-btn {
+        margin-right: 20px;
+
         button {
           width: 30px;
           height: 30px;
-          margin-right: 20px;
 
           &:before,
           &:after {

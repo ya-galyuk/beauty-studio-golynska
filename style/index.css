@@ -89,13 +89,13 @@ h6 {
   font-weight: 400;
 }
 
-.products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .footer__copyright, .salon__schedule, .salon__phone, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header .lang__link, .btn, h3, h2, h1 {
+.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .footer__copyright, .salon__schedule, .salon__phone, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header .lang__link, .btn, h3, h2, h1 {
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
 }
 
-.products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, .footer__menu, .consultation__detail_strong, .consultation-slide__title, .consultation-slide__span, .consultation__title, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .header .lang__link.active, .header__service .phone__link, .screen__title, ._text_strong {
+.products-popup .popup__feature .feature__item span, .products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, .footer__menu, .consultation__detail_strong, .consultation-slide__title, .consultation-slide__span, .consultation__title, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .header .lang__link.active, .header__service .phone__link, .screen__title, ._text_strong {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -170,7 +170,7 @@ button {
 a:hover {
   text-decoration: underline;
 }
-a:hover.btn {
+a:hover.btn, a:hover.card {
   text-decoration: none;
 }
 
@@ -2216,10 +2216,12 @@ body.lock {
   .accordion .table__row {
     flex-direction: column;
   }
+  .accordion__header-btn {
+    margin-right: 20px;
+  }
   .accordion__header-btn button {
     width: 30px;
     height: 30px;
-    margin-right: 20px;
   }
   .accordion__header-btn button:before, .accordion__header-btn button:after {
     width: 20px;
@@ -2240,6 +2242,53 @@ body.lock {
   }
 }
 /* ----------------------------------------*/
+.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, h1, h2, h3, .btn, .header .lang__link, .header .menu__link, .intro__title, .about__description, .service-info__price, .service-info__time .time__info, .service-info__more, .cosmetic__description, .certificates__description, .consultation-slide__description, .consultation__detail, .consultation__more-btn, .review-slider__item, .salon__address, .salon__schedule, .salon__phone, .footer__copyright {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 150%;
+}
+
+.products-popup .popup__feature .feature__item span, .products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, ._text_strong, .screen__title, .header__service .phone__link, .header .lang__link.active, .about__title, .service-info__title, .cosmetic__item-title, .certificates__title, .consultation__title, .consultation-slide__span, .consultation-slide__title, .consultation__detail_strong, .footer__menu {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .header .lang__link, .header .menu__link, .about__description, .service-info__more, .cosmetic__description, .certificates__description, .consultation-slide__description, .consultation__detail, .consultation__more-btn, .review-slider__item, .footer__menu {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+@media (max-width: 1440px) {
+  .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .header .lang__link, .header .menu__link, .about__description, .service-info__more, .cosmetic__description, .certificates__description, .consultation-slide__description, .consultation__detail, .consultation__more-btn, .review-slider__item, .footer__menu {
+    font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
+  }
+}
+
+h1, .intro__title, .about__title, .certificates__title, .consultation__title, .consultation-slide__span {
+  font-family: "Oswald", sans-serif;
+  font-size: 52px;
+}
+@media (max-width: 1440px) {
+  h1, .intro__title, .about__title, .certificates__title, .consultation__title, .consultation-slide__span {
+    font-size: calc(18px + 34 * ((100vw - 320px) / 1120));
+  }
+}
+
+h2, .service-info__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+
+h3, .service-info__price, .service-info__time .time__info, .consultation-slide__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+}
+
+.salon__address, .salon__schedule, .salon__phone, .footer__copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
 .products-wrapper .intro {
   height: 75vh;
   margin-bottom: -75px;
@@ -2469,6 +2518,143 @@ body.lock {
 }
 .products-wrapper .footer__list {
   margin-bottom: 36px;
+}
+
+.products-popup.popup {
+  background: #fff;
+}
+.products-popup .popup__content {
+  padding: 80px 0 70px;
+  background: #fff;
+  color: #232323;
+  display: flex;
+}
+.products-popup .popup__close {
+  background: #232323;
+}
+.products-popup .popup__close:hover {
+  background: #FF4603;
+}
+.products-popup .popup__image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.products-popup .popup__image-box {
+  min-width: 490px;
+  height: 490px;
+  margin-right: 60px;
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__image-box {
+    min-width: calc(390px + 100 * ((100vw - 1024px) / 416));
+  }
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__image-box {
+    height: calc(390px + 100 * ((100vw - 1024px) / 416));
+  }
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__image-box {
+    margin-right: calc(30px + 30 * ((100vw - 320px) / 1120));
+  }
+}
+.products-popup .popup__image img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: contain;
+}
+.products-popup .popup__title {
+  margin: 0 0 30px;
+}
+.products-popup .popup__feature .feature__item {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__feature .feature__item {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
+  }
+}
+.products-popup .popup__feature .feature__item:last-child {
+  margin-bottom: 0;
+}
+.products-popup .popup__feature .feature__price {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  margin-top: 24px;
+  color: #FF4603;
+}
+@media (max-width: 1440px) {
+  .products-popup .popup__feature .feature__price {
+    font-size: calc(22px + 4 * ((100vw - 320px) / 1120));
+  }
+}
+.products-popup .panel__text {
+  margin-bottom: 20px;
+  color: #232323;
+}
+.products-popup .panel__text:last-child {
+  margin-bottom: 0;
+}
+.products-popup .accordion {
+  margin-top: 60px;
+}
+.products-popup .accordion__header-btn:after {
+  border-color: #232323;
+}
+.products-popup .accordion__header-btn button {
+  background: #232323;
+}
+.products-popup .accordion__header-btn button:before, .products-popup .accordion__header-btn button:after {
+  background: #fff;
+}
+.products-popup .accordion__header-title span {
+  background: #fff;
+}
+.products-popup .accordion__header-title:after {
+  border-top-color: #232323;
+}
+@media (max-width: 1024px) {
+  .products-popup .popup__content {
+    flex-wrap: wrap;
+  }
+  .products-popup .popup__container {
+    flex: 1 1;
+  }
+  .products-popup .accordion {
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 768px) {
+  .products-popup .popup__container {
+    margin-top: 30px;
+  }
+  .products-popup .popup__content {
+    flex-direction: column;
+  }
+  .products-popup .popup__image-box {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .products-popup .accordion__header-title:after {
+    border-top: 1px solid #232323;
+  }
+}
+@media (max-width: 425px) {
+  .products-popup .popup__image-box {
+    width: 100%;
+    height: 300px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

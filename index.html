@@ -51,7 +51,7 @@
                     <span></span>
                 </div>
             </div>
-            <a href="" class="header__logo">
+            <a href="index.html" class="header__logo">
                 <img src="img/logo.png" alt="">
             </a>
             <div data-da=".menu__body,500,1" class="header__service">
@@ -252,7 +252,8 @@
                     <div class="cosmetic__container">
                         <div class="cosmetic__info">
                             <h1 class="screen__title _text-line cosmetic__title">Косметика с которой работаем</h1>
-                            <a href="products.html" data-da=".cosmetic__content,768,last" class="btn btn_secondary cosmetic-btn">
+                            <a href="products.html" data-da=".cosmetic__content,768,last"
+                               class="btn btn_secondary cosmetic-btn">
                                 Вся косметика
                             </a>
                         </div>
@@ -266,7 +267,8 @@
                     <div class="cosmetic__cards">
                         <ul class="cosmetic__list">
                             <li class="cosmetic__item">
-                                <a href="" class="cosmetic__item-link">
+                                <a href="products.html#cosmetic-cards" class="cosmetic__item-link"
+                                   onclick="setFilterSelection('brand-holyland')">
                                     <h1 class="cosmetic__item-title">Holyland</h1>
                                     <div class="cosmetic__img">
                                         <img src="img/holyland.png" alt="">
@@ -276,7 +278,8 @@
                                 </a>
                             </li>
                             <li class="cosmetic__item">
-                                <a href="" class="cosmetic__item-link">
+                                <a href="products.html#cosmetic-cards" class="cosmetic__item-link"
+                                   onclick="setFilterSelection('brand-dermaquest')">
                                     <h1 class="cosmetic__item-title">Dermaquest</h1>
                                     <div class="cosmetic__img">
                                         <img src="img/dermaquest.png" alt="">
@@ -286,7 +289,8 @@
                                 </a>
                             </li>
                             <li class="cosmetic__item">
-                                <a href="" class="cosmetic__item-link">
+                                <a href="products.html#cosmetic-cards" class="cosmetic__item-link"
+                                   onclick="setFilterSelection('brand-bio_matrix')">
                                     <h1 class="cosmetic__item-title">Bio-matrix</h1>
                                     <div class="cosmetic__img">
                                         <img src="img/holyland.png" alt="">
@@ -421,7 +425,7 @@
                     <div class="consultation__body">
                         <div class="consultation__header">
                             <h1 class="screen__title _text-line consultation__title">Как проходит
-                                консультация?*</h1>
+                                консультация?&#160;*</h1>
                             <!-- If we need navigation buttons -->
                             <div data-da=".consultation__image-body,1024,last"
                                  class="consultation__slider-navigation">
@@ -607,8 +611,7 @@
                                 <br/> пн-пт <strong class="_text_strong">10:00 – 18:00</strong>
                                 <br/> сб-вс <strong class="_text_strong">выходной</strong>
                             </p>
-                            <p class="salon__phone">
-                                Номер для записи:<br/>
+                            <p class="salon__phone">Номер для записи:<br/>
                                 <a href="tel:+380667700948"><strong class="_text_strong">066 770 09 48</strong></a>
                             </p>
                         </div>
@@ -751,26 +754,30 @@
     <a href="#intro" class="popup__area"></a>
     <div class="popup__body">
         <div class="popup__content">
-            <a href="#service" class="popup__close close-popup">
-                <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#232323" stroke-width="6.08333"/>
-                </svg>
-            </a>
+            <div class="popup__close-box">
+                <a href="#service" class="popup__close close-popup">
+                    <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#232323" stroke-width="6.08333"/>
+                    </svg>
+                </a>
+            </div>
             <h1 class="popup__title screen__title screen__title_bg">Услуги и цены</h1>
 
 
             <div class="accordion">
                 <div class="accordion__item">
                     <div class="accordion__header">
-                        <div class="accordion__header-info">
-                            <div class="accordion__header-btn">
-                                <button></button>
-                            </div>
-                            <h2 class="accordion__header-title"><span>Консультация</span></h2>
-                            <div class="accordion__header-price">бесплатно*</div>
+                        <div class="accordion__header-btn">
+                            <button></button>
                         </div>
-                        <div class="accordion__description">
-                            Косметика Holy Land производится в Израиле и уже 25 лет
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title"><span>Консультация</span></h2>
+                                <div class="accordion__header-price">бесплатно*</div>
+                            </div>
+                            <div class="accordion__description">Косметика Holy Land производится в Израиле и уже 25
+                                лет
+                            </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
@@ -834,15 +841,18 @@
                 </div>
                 <div class="accordion__item">
                     <div class="accordion__header">
-                        <div class="accordion__header-info">
-                            <div class="accordion__header-btn">
-                                <button></button>
-                            </div>
-                            <h2 class="accordion__header-title"><span>Процедуры ухода с применением лечебной косметики «Holyland» (Израиль)</span>
-                            </h2>
-                            <div class="accordion__header-price">от 650 грн</div>
+                        <div class="accordion__header-btn">
+                            <button></button>
                         </div>
-                        <div class="accordion__description">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title"><span>Процедуры ухода с применением лечебной косметики «Holyland» (Израиль)</span>
+                                </h2>
+                                <div class="accordion__header-price">от 650 грн</div>
+                            </div>
+                            <div class="accordion__description">Косметика Holy Land производится в Израиле и уже 25
+                                лет
+                            </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
@@ -869,15 +879,18 @@
                 </div>
                 <div class="accordion__item">
                     <div class="accordion__header">
-                        <div class="accordion__header-info">
-                            <div class="accordion__header-btn">
-                                <button></button>
-                            </div>
-                            <h2 class="accordion__header-title"><span>Процедуры ухода с применением лечебной косметики «Dermaquest» (Америка)</span>
-                            </h2>
-                            <div class="accordion__header-price">от 800 грн</div>
+                        <div class="accordion__header-btn">
+                            <button></button>
                         </div>
-                        <div class="accordion__description">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title"><span>Процедуры ухода с применением лечебной косметики «Dermaquest» (Америка)</span>
+                                </h2>
+                                <div class="accordion__header-price">от 800 грн</div>
+                            </div>
+                            <div class="accordion__description">Косметика Holy Land производится в Израиле и уже 25
+                                лет
+                            </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
@@ -904,15 +917,17 @@
                 </div>
                 <div class="accordion__item">
                     <div class="accordion__header">
-                        <div class="accordion__header-info">
-                            <div class="accordion__header-btn">
-                                <button></button>
-                            </div>
-                            <h2 class="accordion__header-title"><span>Химические пилинги</span></h2>
-                            <div class="accordion__header-price">от 750 грн</div>
+                        <div class="accordion__header-btn">
+                            <button></button>
                         </div>
-                        <div class="accordion__description">
-                            Косметика Holy Land производится в Израиле и уже 25 лет
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title"><span>Химические пилинги</span></h2>
+                                <div class="accordion__header-price">от 750 грн</div>
+                            </div>
+                            <div class="accordion__description">Косметика Holy Land производится в Израиле и уже 25
+                                лет
+                            </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
@@ -939,16 +954,18 @@
                 </div>
                 <div class="accordion__item">
                     <div class="accordion__header">
-                        <div class="accordion__header-info">
-                            <div class="accordion__header-btn">
-                                <button></button>
-                            </div>
-                            <h2 class="accordion__header-title">
-                                <span>Испанский (хиромассаж) массаж лица и зоны декольте</span></h2>
-                            <div class="accordion__header-price">800 грн</div>
+                        <div class="accordion__header-btn">
+                            <button></button>
                         </div>
-                        <div class="accordion__description">
-                            Косметика Holy Land производится в Израиле и уже 25 лет
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title"><span>Испанский (хиромассаж) массаж лица и зоны декольте</span>
+                                </h2>
+                                <div class="accordion__header-price">800 грн</div>
+                            </div>
+                            <div class="accordion__description">Косметика Holy Land производится в Израиле и уже 25
+                                лет
+                            </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
@@ -975,14 +992,17 @@
                 </div>
                 <div class="accordion__item">
                     <div class="accordion__header">
-                        <div class="accordion__header-info">
-                            <div class="accordion__header-btn">
-                                <button></button>
-                            </div>
-                            <h2 class="accordion__header-title"><span>Внутрикожная контурная пластика</span></h2>
-                            <div class="accordion__header-price">от 1100 грн</div>
+                        <div class="accordion__header-btn">
+                            <button></button>
                         </div>
-                        <div class="accordion__description">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title"><span>Внутрикожная контурная пластика</span></h2>
+                                <div class="accordion__header-price">от 1100 грн</div>
+                            </div>
+                            <div class="accordion__description">Косметика Holy Land производится в Израиле и уже 25
+                                лет
+                            </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
@@ -1009,15 +1029,17 @@
                 </div>
                 <div class="accordion__item">
                     <div class="accordion__header">
-                        <div class="accordion__header-info">
-                            <div class="accordion__header-btn">
-                                <button></button>
-                            </div>
-                            <h2 class="accordion__header-title"><span>Подростковая косметология</span></h2>
-                            <div class="accordion__header-price">600 грн</div>
+                        <div class="accordion__header-btn">
+                            <button></button>
                         </div>
-                        <div class="accordion__description">
-                            Косметика Holy Land производится в Израиле и уже 25 лет
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title"><span>Подростковая косметология</span></h2>
+                                <div class="accordion__header-price">600 грн</div>
+                            </div>
+                            <div class="accordion__description">Косметика Holy Land производится в Израиле и уже 25
+                                лет
+                            </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
@@ -1054,6 +1076,11 @@
 <script src="js/burger.js"></script>
 <script src="js/popup.js"></script>
 <script src="js/sliders.js"></script>
+<script>
+    function setFilterSelection(param) {
+        localStorage.setItem('brand', param);
+    }
+</script>
 <script src="js/index.js"></script>
 </body>
 </html>

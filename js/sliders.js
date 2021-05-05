@@ -144,7 +144,7 @@ new Swiper('.review-slider', {
     pagination: {
         el: '.review__pagination',
         clickable: true,
-        dynamicBullets: true,
+        // dynamicBullets: true,
     },
 
     navigation: {

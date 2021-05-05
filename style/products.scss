@@ -1,7 +1,7 @@
 .products-wrapper {
 
   .intro {
-    height: 772px;
+    height: 75vh;
     margin-bottom: -75px;
   }
 
@@ -78,6 +78,11 @@
 
     .brand {
       overflow-x: scroll;
+      margin-bottom: 20px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       &__list {
         display: flex;

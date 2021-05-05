@@ -1,5 +1,6 @@
 @import "variable";
 @import "templates";
+@import "mixin";
 
 .products-wrapper {
 
@@ -18,7 +19,6 @@
 
     &__title {
       width: 100%;
-      //height: 150px;
       padding: 36px;
       background: $color-dark;
       color: $color-light;
@@ -39,7 +39,6 @@
         height: 3px;
         background: $color-dark;
         position: absolute;
-
       }
 
       &:before {
@@ -55,7 +54,6 @@
   }
 
   .cards {
-    //margin-bottom: 120px;
     margin-bottom: 0;
 
     &__content {
@@ -95,14 +93,10 @@
       &__item {
         margin-right: 48px;
         flex: 0 0 auto;
-
-        &:last-child {
-          //margin-right: 0;
-        }
       }
 
       &__btn {
-        @extend %tpl-text;
+        font-family: 'Montserrat', sans-serif;
         @extend %tpl-font_regular;
         @include adaptive-value("font-size", 22, 20, 1, 375);
         color: $color-dark;
@@ -123,7 +117,7 @@
       background: none;
 
       &-text {
-        @extend %tpl-text;
+        font-family: 'Montserrat', sans-serif;
         @extend %tpl-font_regular;
         @include adaptive-value("font-size", 22, 20, 1, 375);
         color: $color-dark;
@@ -148,9 +142,7 @@
         flex-direction: column;
         position: relative;
         margin-bottom: 40px;
-        //margin-right: 0;
         flex: 0 1 100%;
-
 
         &.show {
           display: flex;
@@ -184,7 +176,7 @@
 
         &__info {
           padding: 10px 18px;
-          @extend %tpl-text;
+          font-family: 'Montserrat', sans-serif;
           @extend %tpl-font_regular;
           @include adaptive-value("font-size", 20, 16, 1, 320);
           color: $color-dark;
@@ -193,7 +185,6 @@
         &__description {
           margin-bottom: 6px;
           @extend %tpl-font_medium;
-
           -webkit-line-clamp: 2;
           display: -webkit-box;
           -webkit-box-orient: vertical;
@@ -204,7 +195,6 @@
           opacity: .6;
           font-size: 18px;
         }
-
       }
     }
 
@@ -215,12 +205,11 @@
       justify-content: center;
 
       &-btn {
-        @extend %tpl-text;
+        font-family: 'Montserrat', sans-serif;
         @extend %tpl-font_regular;
         @include adaptive-value("font-size", 22, 20, 1, 375);
         padding: 20px;
       }
-
     }
 
     @media (min-width: 500px) {
@@ -230,12 +219,6 @@
         .card {
           margin: 0 14px 40px;
           flex: 0 1 calc(50% - 28px);
-
-          //&:nth-child(-n+2) {
-          //  &.show{
-          //    display: flex;
-          //  }
-          //}
         }
       }
     }
@@ -243,43 +226,13 @@
       &__list {
         .card {
           flex: 0 1 calc(33% - 28px);
-
-          //&:nth-child(-n+12) {
-          //  display: flex;
-          //}
-          //
-          //&:nth-child(3n+4) {
-          //  margin-right: 14px;
-          //  margin-left: 0;
-          //}
-          //
-          //&:nth-child(3n+2) {
-          //  flex: 0 1 calc(33% - 21px);
-          //  margin-left: 14px;
-          //  margin-right: 14px;
-          //}
-          //
-          //&:nth-child(3n+3) {
-          //  margin-right: 0;
-          //  margin-left: 14px;
-          //}
         }
       }
     }
     @media (min-width: 1024px) {
       &__list {
-
         .card {
           flex: 0 1 calc(25% - 28px);
-
-          &:nth-child(n) {
-            //margin-right: 28px;
-            //margin-left: 0;
-          }
-
-          //&:nth-child(4n+4) {
-          //  margin-right: 0;
-          //}
         }
       }
     }
@@ -299,7 +252,6 @@
 }
 
 .products-popup {
-
   &.popup {
     background: $color-light;
   }
@@ -321,16 +273,9 @@
     }
 
     &__image {
-      //min-width: 490px;
-      //max-height: 490px;
       width: 100%;
       height: 100%;
-      //display: flex;
-
-      //flex: 1 1 auto;
-      //max-height: 490px;
       position: relative;
-      //border: 1px solid red;
 
       &-box {
         @include adaptive-value("min-width", 490, 390, 1, 1024);
@@ -350,18 +295,12 @@
       }
     }
 
-    &__container {
-    }
-
     &__title {
       margin: 0 0 30px;
     }
 
     &__feature {
       .feature {
-        &__list {
-        }
-
         &__item {
           @extend %tpl-font_regular;
           font-family: 'Montserrat', sans-serif;
@@ -437,20 +376,11 @@
         flex-wrap: wrap;
       }
 
-      &__image {
-        &-box {
-        }
-
-        //flex: 0 1 calc(39.4% + 60px);
-        //min-width: initial;
-        //max-height: initial;
-      }
-
       &__container {
         flex: 1 1;
-        //flex: 0 1 calc(60.0% - 60px);
       }
     }
+
     .accordion {
       flex: 1 1 auto;
     }

@@ -1,83 +1,63 @@
-const optionBase = {
-    speed: 1500,
+// resize logo ----------------------------------
+window.onscroll = function () {
+    scrollFunction()
+};
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // desktop drag
-    // simulateTouch: true,
-    // touchRation: 1,
-    // touchAngle: 45,
-    // grabCursor: true,
-
-    // slide to click
-    slideToClickedSlide: true,
-
-    // hash navigation
-    hashNavigation: {
-        watchState: true
-    },
-
-    // Keyboard Control
-    keyboard: {
-        enable: true,
-        onlyInViewport: true,
-        pageUpDown: true,
-    },
-
-    // Mousewheel Control
-    // mousewheel: {
-    //     sensitivity: 1,
-    // },
-
-    preloadImages: false,
-    // lazy loader
-    lazy: {
-        loadOnTransitionStart: false,
-        loadPrevNext: false,
-    },
-    watchSlidesProgress: true,
-    watchSlidesVisibility: true
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.querySelector('.header__logo').style.maxWidth = "50px";
+        document.querySelector('.header__container').style.minHeight = "60px";
+    } else {
+        document.querySelector('.header__logo').style.maxWidth = "160px";
+        document.querySelector('.header__container').style.minHeight = "80px";
+    }
 }
 
-// init Swiper
-new Swiper('.image-slider', {
+// ----------------------------------------------
 
-    ...optionBase,
+// readMoreConsultation -------------------------
+function readMoreConsultation() {
+    let dots = document.getElementById("dotsConsultation");
+    let moreText = document.getElementById("moreConsultation");
+    let btnText = document.getElementById("btnMoreConsultation");
 
-    slidesPerView: 2.2,
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "больше";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "меньше";
+        moreText.style.display = "inline";
+    }
+}
 
-    spaceBetween: 30,
-})
+// ----------------------------------------------
 
-new Swiper('.parallax-slider', {
+// accordion ------------------------------------
+const accordion = document.querySelectorAll('.accordion__header');
+if (accordion.length > 0) {
+    for (let index = 0; index < accordion.length; index++) {
+        const el = accordion[index]
+        el.addEventListener("click", function (e) {
+            this.classList.toggle("open");
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                // panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.style.maxHeight = "initial";
+            }
+            e.preventDefault();
+        });
+    }
+}
 
-    // parallax: true,
+// ----------------------------------------------
 
-    ...optionBase,
 
-    slidesPerView: 2.5,
 
-    spaceBetween: 30,
-})
 
-new Swiper('.review-slider', {
 
-    // parallax: true,
 
-    ...optionBase,
 
-    // Pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true
-    },
-
-    slidesPerView: 3,
-
-    spaceBetween: 30,
-})

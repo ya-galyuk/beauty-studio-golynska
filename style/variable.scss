@@ -1,9 +1,31 @@
-$primary-color: #000;
+// width ----------------------------------------
+$maxWidth-container: 1440px;
 
-$min-height-wrapper:1080px;
+// ----------------------------------------------
 
-$btn-primary-color: #000;
-$btn-primary-text-color: #fff;
 
-$icon-primary-color: #000;
-$icon-white-color: #fff;
+// main colors ----------------------------------
+$color-dark: #232323;
+$color-light: #fff;
+$color-primary: #01159A;
+$color-primary_dark: #303030;
+$color-primary_light: #fff;
+$color-orange: #FF4603;
+
+// ----------------------------------------------
+
+// bg -------------------------------------------
+$bg-primary: #01159A;
+$bg-dark: #232323;
+$bg-light: #fff;
+
+// ----------------------------------------------
+
+// text -----------------------------------------
+$text-color_primary: #01159A;
+$text-color_dark: #232323;
+$text-color_light: #fff;
+$text-color_orange: #FF4603;
+
+// ----------------------------------------------
+

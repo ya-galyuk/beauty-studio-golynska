@@ -4,6 +4,20 @@
 
 .products-wrapper {
 
+  .header {
+    @media (max-width: 1024px) {
+      .menu__body._active {
+        .menu__item {
+          display: none;
+        }
+
+        .menu__item_mob {
+          display: block;
+        }
+      }
+    }
+  }
+  
   .intro {
     height: 75vh;
     margin-bottom: -75px;

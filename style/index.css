@@ -89,7 +89,7 @@ h6 {
   font-weight: 400;
 }
 
-.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .footer__copyright, .salon__schedule, .salon__phone, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header .lang__link, .btn, h3, h2, h1 {
+.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .footer__copyright, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header .lang__link, .btn, h3, h2, h1 {
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
@@ -229,7 +229,7 @@ body.lock {
   flex: 1 0 100%;
   position: relative;
   min-width: 0;
-  margin-bottom: 100px;
+  margin-bottom: 9.2592592593vh;
 }
 .screen:last-child {
   margin: 0;
@@ -584,7 +584,8 @@ body.lock {
 .intro__content {
   top: 100%;
   transform: translateY(-100%);
-  padding-bottom: 90px;
+  padding-top: 9.2592592593vh;
+  padding-bottom: 8.3333333333vh;
 }
 .intro__title-block {
   margin-left: auto;
@@ -621,18 +622,8 @@ body.lock {
 /* about ----------------------------------*/
 .about__container {
   position: relative;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-@media (max-width: 1440px) {
-  .about__container {
-    padding-top: calc(0px + 90 * ((100vw - 1024px) / 416));
-  }
-}
-@media (max-width: 1440px) {
-  .about__container {
-    padding-bottom: calc(0px + 90 * ((100vw - 1024px) / 416));
-  }
+  padding-top: 8.3333333333vh;
+  padding-bottom: 8.3333333333vh;
 }
 .about__content {
   display: flex;
@@ -724,7 +715,7 @@ body.lock {
 .about__photo img {
   width: 100%;
 }
-@media (max-width: 1220px) {
+@media (max-width: 1230px) {
   .about__buttons {
     flex-direction: column;
   }
@@ -759,20 +750,7 @@ body.lock {
   background: #232323;
 }
 .service__content {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-@media (max-width: 1440px) {
-  .service__content {
-    padding-top: calc(50px + 30 * ((100vw - 375px) / 1065));
-  }
-}
-@media (max-width: 1440px) {
-  .service__content {
-    padding-bottom: calc(50px + 30 * ((100vw - 375px) / 1065));
-  }
+  padding: 7.4074074074vh 0;
 }
 .service__container {
   max-width: 1920px;
@@ -1002,18 +980,8 @@ body.lock {
 /* ----------------------------------------*/
 /* cosmetic -------------------------------*/
 .cosmetic__content {
-  padding-top: 180px;
-  padding-bottom: 180px;
-}
-@media (max-width: 1440px) {
-  .cosmetic__content {
-    padding-top: calc(50px + 130 * ((100vw - 375px) / 1065));
-  }
-}
-@media (max-width: 1440px) {
-  .cosmetic__content {
-    padding-bottom: calc(50px + 130 * ((100vw - 375px) / 1065));
-  }
+  padding-top: 16.6666666667vh;
+  padding-bottom: 16.6666666667vh;
 }
 .cosmetic__container {
   display: flex;
@@ -1163,7 +1131,7 @@ body.lock {
   background: #232323;
 }
 .certificates__content {
-  padding: 50px 0 50px 0;
+  padding: 4.6296296296vh 0;
 }
 .certificates-slider__slide {
   width: auto;
@@ -1242,18 +1210,8 @@ body.lock {
   }
 }
 .consultation__content {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-@media (max-width: 1440px) {
-  .consultation__content {
-    padding-top: calc(50px + 50 * ((100vw - 375px) / 1065));
-  }
-}
-@media (max-width: 1440px) {
-  .consultation__content {
-    padding-bottom: calc(50px + 50 * ((100vw - 375px) / 1065));
-  }
+  padding-top: 9.2592592593vh;
+  padding-bottom: 9.2592592593vh;
 }
 .consultation__container {
   max-width: 1920px;
@@ -1476,20 +1434,7 @@ body.lock {
 }
 .review__content {
   position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 180px;
-  padding-bottom: 180px;
-}
-@media (max-width: 1440px) {
-  .review__content {
-    padding-top: calc(50px + 130 * ((100vw - 375px) / 1065));
-  }
-}
-@media (max-width: 1440px) {
-  .review__content {
-    padding-bottom: calc(50px + 130 * ((100vw - 375px) / 1065));
-  }
+  padding: 16.6666666667vh 0;
 }
 .review__bg-container {
   position: relative;
@@ -1519,11 +1464,6 @@ body.lock {
 @media (max-width: 1440px) {
   .review__title {
     font-size: calc(40px + 12 * ((100vw - 375px) / 1065));
-  }
-}
-@media (max-width: 1440px) {
-  .review__title {
-    top: calc(-30px + -13 * ((100vw - 552px) / 888));
   }
 }
 .review-slider {
@@ -1600,6 +1540,12 @@ body.lock {
     padding: 0 18px;
   }
 }
+@media (max-width: 645px) {
+  .review__title {
+    width: calc(100% - (2 * 18px));
+    top: -73px;
+  }
+}
 @media (max-width: 600px) {
   .review__body {
     padding: 100px 0;
@@ -1612,9 +1558,9 @@ body.lock {
     display: none;
   }
 }
-@media (max-width: 541px) {
+@media (max-width: 437px) {
   .review__title {
-    top: -65px;
+    top: -103px;
   }
 }
 @media (max-width: 375px) {
@@ -1627,27 +1573,12 @@ body.lock {
     font-size: calc(34px + 18 * ((100vw - 280px) / 1160));
   }
 }
-@media (max-width: 335px) {
-  .review__title {
-    top: -100px;
-  }
-}
 
 /* ----------------------------------------*/
 /* salon ----------------------------------*/
 .salon__content {
-  padding-top: 220px;
-  padding-bottom: 150px;
-}
-@media (max-width: 1440px) {
-  .salon__content {
-    padding-top: calc(50px + 170 * ((100vw - 375px) / 1065));
-  }
-}
-@media (max-width: 1440px) {
-  .salon__content {
-    padding-bottom: calc(50px + 100 * ((100vw - 375px) / 1065));
-  }
+  padding-top: 20.3703703704vh;
+  padding-bottom: 13.8888888889vh;
 }
 .salon__body {
   display: flex;
@@ -1681,14 +1612,27 @@ body.lock {
   color: #FF4603;
 }
 .salon__schedule, .salon__phone {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 150%;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   line-height: 47px;
 }
 @media (max-width: 1440px) {
   .salon__schedule, .salon__phone {
-    line-height: calc(33px + 14 * ((100vw - 1024px) / 416));
+    line-height: calc(22px + 25 * ((100vw - 1024px) / 416));
   }
+}
+.salon__schedule span, .salon__phone span {
+  display: block;
+  margin-bottom: 14px;
+}
+.salon__schedule span:last-child {
+  margin-bottom: 0;
+}
+.salon__phone a {
+  display: block;
 }
 .salon__phone a:hover {
   color: #FF4603;
@@ -1797,13 +1741,7 @@ body.lock {
 }
 @media (max-width: 1024px) {
   .salon__schedule, .salon__phone {
-    font-size: 22px;
-    line-height: calc(150% + 14px);
-  }
-}
-@media (max-width: 1024px) and (max-width: 1440px) {
-  .salon__schedule, .salon__phone {
-    font-size: calc(18px + 4 * ((100vw - 320px) / 1120));
+    line-height: 150%;
   }
 }
 @media (max-width: 1024px) {
@@ -1829,8 +1767,19 @@ body.lock {
 @media (max-width: 768px) {
   .salon__info {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .salon__details {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .salon__schedule, .salon__phone {
+    margin-top: 32px;
   }
 }
 @media (max-width: 768px) {
@@ -1838,12 +1787,9 @@ body.lock {
     margin-right: 40px;
   }
 }
-@media (max-width: 425px) {
-  .salon__info {
-    flex-direction: column;
-  }
-  .salon__schedule, .salon__phone {
-    font-size: 22px;
+@media (max-width: 768px) and (max-width: 1440px) {
+  .salon__schedule {
+    margin-right: calc(30px + 10 * ((100vw - 425px) / 1015));
   }
 }
 
@@ -2251,7 +2197,7 @@ body.lock {
 }
 
 /* ----------------------------------------*/
-.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, h1, h2, h3, .btn, .header .lang__link, .header .menu__link, .intro__title, .about__description, .service-info__price, .service-info__time .time__info, .service-info__more, .cosmetic__description, .certificates__description, .consultation-slide__description, .consultation__detail, .consultation__more-btn, .review-slider__item, .salon__address, .salon__schedule, .salon__phone, .footer__copyright {
+.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, h1, h2, h3, .btn, .header .lang__link, .header .menu__link, .intro__title, .about__description, .service-info__price, .service-info__time .time__info, .service-info__more, .cosmetic__description, .certificates__description, .consultation-slide__description, .consultation__detail, .consultation__more-btn, .review-slider__item, .salon__address, .footer__copyright {
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
@@ -2263,6 +2209,14 @@ body.lock {
   line-height: 150%;
 }
 
+@media (max-width: 1024px) {
+  .products-wrapper .header .menu__body._active .menu__item {
+    display: none;
+  }
+  .products-wrapper .header .menu__body._active .menu__item_mob {
+    display: block;
+  }
+}
 .products-wrapper .intro {
   height: 75vh;
   margin-bottom: -75px;

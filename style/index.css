@@ -95,7 +95,7 @@ h6 {
   line-height: 150%;
 }
 
-.products-popup .popup__feature .feature__item span, .products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, .footer__menu, .consultation__detail_strong, .consultation-slide__title, .consultation-slide__span, .consultation__title, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .header .lang__btn.active, .header__service .phone__link, .screen__title, ._text_strong {
+.products-popup .popup__feature .feature__item span, .products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, .footer__menu, .salon__schedule span strong, .consultation__detail_strong, .consultation-slide__title, .consultation-slide__span, .consultation__title, .certificates__title, .cosmetic__item-title, .service-info__title, .about__title, .header .lang__btn.active, .header__service .phone__link, .screen__title, ._text_strong {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -707,8 +707,8 @@ body.lock {
   }
 }
 .about__photo img {
-  object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 @media (max-width: 1230px) {
   .about__buttons {
@@ -1623,6 +1623,9 @@ body.lock {
   display: block;
   margin-bottom: 14px;
 }
+.salon__schedule span strong {
+  font-family: "Oswald", sans-serif;
+}
 .salon__schedule span:last-child {
   margin-bottom: 0;
 }
@@ -2198,7 +2201,7 @@ body.lock {
   line-height: 150%;
 }
 
-.products-popup .popup__feature .feature__item span, .products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, ._text_strong, .screen__title, .header__service .phone__link, .header .lang__btn.active, .about__title, .service-info__title, .cosmetic__item-title, .certificates__title, .consultation__title, .consultation-slide__span, .consultation-slide__title, .consultation__detail_strong, .footer__menu {
+.products-popup .popup__feature .feature__item span, .products-wrapper .cards__list .card__description, .products-wrapper .cards .brand__btn.active, ._text_strong, .screen__title, .header__service .phone__link, .header .lang__btn.active, .about__title, .service-info__title, .cosmetic__item-title, .certificates__title, .consultation__title, .consultation-slide__span, .consultation-slide__title, .consultation__detail_strong, .salon__schedule span strong, .footer__menu {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;

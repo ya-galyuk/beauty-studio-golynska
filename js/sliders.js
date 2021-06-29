@@ -15,7 +15,7 @@ const optionBase = {
     direction: 'horizontal',
 
     // desktop drag
-    simulateTouch: true,
+    simulateTouch: false,
     // touchRation: 1,
     // touchAngle: 45,
     // grabCursor: true,

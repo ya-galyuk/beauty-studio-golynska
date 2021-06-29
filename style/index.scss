@@ -694,9 +694,9 @@ body.lock {
     z-index: -1;
 
     img {
-      object-fit: cover;
+      //object-fit: cover;
       width: 100%;
-      //max-height: 842px;
+      height: 100%;
     }
   }
 
@@ -1561,6 +1561,13 @@ body.lock {
     span {
       display: block;
       margin-bottom: 14px;
+    }
+  }
+
+  &__schedule{
+    span strong {
+        font-family: 'Oswald', sans-serif;
+        @extend %tpl-font_medium;
     }
   }
 

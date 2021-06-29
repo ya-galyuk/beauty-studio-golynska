@@ -6,9 +6,11 @@ function setLang(langValue) {
     setActiveLangBtn(langValue);
 
     for (let key in langObj) {
-        let elem = document.querySelector('.lng-' + key);
+        let elem = document.querySelectorAll('.lng-' + key);
         if (elem) {
-            elem.innerHTML = langObj[key][langValue];
+            for (const elemElement of elem) {
+                elemElement.innerHTML = langObj[key][langValue];
+            }
         }
     }
 }

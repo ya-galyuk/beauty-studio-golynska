@@ -34,15 +34,24 @@
             <div class="header__menu menu">
                 <nav class="menu__body">
                     <ul class="menu__list">
-                        <li class="menu__item_mob"><a data-goto=".screen-1" href="#" class="menu__link">Главная</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-2" href="#" class="menu__link">О себе</a></li>
-                        <li class="menu__item"><a data-goto=".screen-3" href="#" class="menu__link">Услуги</a></li>
-                        <li class="menu__item"><a data-goto=".screen-4" href="#" class="menu__link lng-cosmetics">Косметика</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-5" href="#" class="menu__link">Сертификаты</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-6" href="#" class="menu__link">Консультации</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-7" href="#" class="menu__link">Отзывы</a></li>
-                        <li class="menu__item"><a data-goto=".screen-8" href="#" class="menu__link">Салон</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="#" class="menu__link">Контакты</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-1" href="#" class="menu__link lng-menu-home">Главная</a>
+                        </li>
+                        <li class="menu__item_mob"><a data-goto=".screen-2" href="#" class="menu__link lng-menu-about">О
+                            себе</a></li>
+                        <li class="menu__item"><a data-goto=".screen-3" href="#" class="menu__link lng-menu-service">Услуги</a>
+                        </li>
+                        <li class="menu__item"><a data-goto=".screen-4" href="#" class="menu__link lng-menu-cosmetics">Косметика</a>
+                        </li>
+                        <li class="menu__item_mob"><a data-goto=".screen-5" href="#"
+                                                      class="menu__link lng-menu-certificates">Сертификаты</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-6" href="#"
+                                                      class="menu__link lng-menu-consultation">Консультации</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-7" href="#" class="menu__link lng-menu-review">Отзывы</a>
+                        </li>
+                        <li class="menu__item"><a data-goto=".screen-8" href="#"
+                                                  class="menu__link lng-menu-salon">Салон</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="#"
+                                                      class="menu__link lng-menu-contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__icon">
@@ -50,14 +59,15 @@
                 </div>
             </div>
             <a href="index.html" class="header__logo" title="logo">
-                <img src="img/logo.png" width="180" height="180" alt="logo">
+                <img src="img/logo.png" alt="Логотип Beauty studio Golynska">
             </a>
             <div data-da=".menu__body,500,1" class="header__service">
                 <div class="header__phone phone">
                     <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
                 </div>
                 <div data-da=".menu__body,1024,2" class="header__lang lang">
-                    <button value="ua" class="header__btn lang__btn active" id="lang-ua" onclick="setLang('ua')">UA</button>
+                    <button value="ua" class="header__btn lang__btn active" id="lang-ua" onclick="setLang('ua')">UA
+                    </button>
                     <button value="en" class="header__btn lang__btn" id="lang-en" onclick="setLang('en')">EN</button>
                     <button value="ru" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</button>
                 </div>
@@ -70,15 +80,14 @@
             <div class="screen__content intro__content">
                 <div class="container">
                     <div class="intro__title-block">
-                        <h1 class="intro__title">Ваша красота достойна
-                            большего, чем вы для неё делаете</h1>
+                        <h1 class="intro__title lng-intro-title">Ваша красота достойна <br/> большего, чем вы для неё
+                            делаете</h1>
                     </div>
                 </div>
             </div>
             <div class="screen__body">
                 <div class="screen__image">
-                    <img src="img/intro.jpeg" alt="">
-<!--                    <img src="img/%3Fintro.png" width="1920" height="4686" alt="">-->
+                    <img src="img/intro.jpeg" alt="Изображение, на котором Татьяна сидит на диване">
                 </div>
             </div>
         </section>
@@ -87,19 +96,20 @@
             <div class="screen__content">
                 <div class="container about__container">
                     <div class="about__content">
-                        <h2 class="screen__title about__title">О себе</h2>
-                        <p class="about__description _text-line">Татьяна Голынская - универсальный косметолог. За
+                        <h2 class="screen__title about__title lng-about-title">О себе</h2>
+                        <p class="about__description _text-line lng-about-description">Татьяна Голынская - универсальный
+                            косметолог. За
                             последние 25 лет она накопила обширный практический опыт. Татьяна знает конкретные
                             требования и потребности клиентов. Сочетая свои знания и опыт с ведущими косметическими
                             брендами.</p>
                         <div class="about__buttons">
-                            <button class="btn btn_primary">Записаться на консультацию</button>
-                            <button class="btn btn_secondary">Подробнее про бренды</button>
+                            <button class="btn btn_primary lng-about-btn-consultation">Записаться на консультацию
+                            </button>
+                            <button class="btn btn_secondary lng-about-btn-brand">Подробнее про бренды</button>
                         </div>
                     </div>
                     <div data-da=".about__content,768,2" class="about__photo">
-<!--                        <img src="img/%3Fphoto.png" width="808" height="842" alt="">-->
-                        <img src="img/photo.jpeg">
+                        <img src="img/photo.png" alt="Фото Татьяна Голынская">
                     </div>
                 </div>
             </div>
@@ -109,7 +119,7 @@
             <div class="screen__content service__content">
                 <div class="fluid-container service__container">
                     <div class="service__body">
-                        <h2 class="screen__title screen__title_bg service__title">Услуги и цены</h2>
+                        <h2 class="screen__title screen__title_bg service__title lng-service-title">Услуги и цены</h2>
                         <div class="f-block__body">
                             <!-- Slider main container -->
                             <div class="service-slider swiper-container">
@@ -118,12 +128,12 @@
                                     <!-- Slides -->
                                     <div data-hash="service-1" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="img/service/service-1.png" width="724" height="590" alt="">
+                                            <img src="img/service/service-1.png" alt="Криотерапия">
                                         </div>
                                         <div class="service-slider__service-info service-info">
-                                            <h2 class="service-info__title">Криотерапия</h2>
+                                            <h2 class="service-info__title lng-service-1-title">Криотерапия</h2>
                                             <div class="service-info__details">
-                                                <div class="service-info__price">300 грн</div>
+                                                <div class="service-info__price lng-service-1-price">300 грн</div>
                                                 <div class="service-info__time time">
                                                     <div class="time__icon">
                                                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
@@ -134,22 +144,23 @@
                                                                   fill="black"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="time__info">8 минут</div>
+                                                    <div class="time__info lng-service-1-time">8 минут</div>
                                                 </div>
                                                 <div class="service-info__more">
-                                                    <a href="#" class="service-info__link">Подробнее</a>
+                                                    <a href="#" class="service-info__link lng-service-link-more">Подробнее</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div data-hash="service-2" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="img/service/service-2.png" width="724" height="590" alt="">
+                                            <img src="img/service/service-2.png" alt="Мезотерапия. Биоревитализация.">
                                         </div>
                                         <div class="service-slider__service-info service-info">
-                                            <h2 class="service-info__title">Мезотерапия. Биоревитализация.</h2>
+                                            <h2 class="service-info__title lng-service-2-title">Мезотерапия.
+                                                Биоревитализация.</h2>
                                             <div class="service-info__details">
-                                                <div class="service-info__price">
+                                                <div class="service-info__price lng-service-2-price">
                                                     <span>300</span>грн
                                                 </div>
                                                 <div class="service-info__time time">
@@ -162,22 +173,22 @@
                                                                   fill="black"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="time__info">8 минут</div>
+                                                    <div class="time__info lng-service-2-time">8 минут</div>
                                                 </div>
                                                 <div class="service-info__more">
-                                                    <a href="#" class="service-info__link">Подробнее</a>
+                                                    <a href="#" class="service-info__link lng-service-link-more">Подробнее</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div data-hash="service-3" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="img/service/service-3.png" width="724" height="590" alt="">
+                                            <img src="img/service/service-3.png" alt="Химические пилинги">
                                         </div>
                                         <div class="service-slider__service-info service-info">
-                                            <h2 class="service-info__title">Химические пилинги</h2>
+                                            <h2 class="service-info__title lng-service-3-title">Химические пилинги</h2>
                                             <div class="service-info__details">
-                                                <div class="service-info__price">
+                                                <div class="service-info__price lng-service-3-price">
                                                     <span>300</span>грн
                                                 </div>
                                                 <div class="service-info__time time">
@@ -190,23 +201,24 @@
                                                                   fill="black"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="time__info">8 минут</div>
+                                                    <div class="time__info lng-service-3-time">8 минут</div>
                                                 </div>
                                                 <div class="service-info__more">
-                                                    <a href="#" class="service-info__link">Подробнее</a>
+                                                    <a href="#" class="service-info__link lng-service-link-more">Подробнее</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div data-hash="service-4" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="img/service/service-4.png" width="724" height="590" alt="">
+                                            <img src="img/service/service-4.png"
+                                                 alt="Ультрозвуковая. Механическая. Комбинированая.">
                                         </div>
                                         <div class="service-slider__service-info service-info">
-                                            <h2 class="service-info__title">Ультрозвуковая. Механическая.
-                                                Комбинированая.</h2>
+                                            <h2 class="service-info__title lng-service-4-title">Ультразвуковая.
+                                                Механическая. Комбинированная.</h2>
                                             <div class="service-info__details">
-                                                <div class="service-info__price">
+                                                <div class="service-info__price lng-service-4-price">
                                                     <span>300</span>грн
                                                 </div>
                                                 <div class="service-info__time time">
@@ -219,10 +231,10 @@
                                                                   fill="black"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="time__info">8 минут</div>
+                                                    <div class="time__info lng-service-4-time">8 минут</div>
                                                 </div>
                                                 <div class="service-info__more">
-                                                    <a href="#" class="service-info__link">Подробнее</a>
+                                                    <a href="#" class="service-info__link lng-service-link-more">Подробнее</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,8 +248,12 @@
                             </div>
                         </div>
                         <div class="service-btns">
-                            <button class="btn btn_primary-w service-btn">Записаться на прием</button>
-                            <a href="#all_service" class="popup-link btn btn_secondary-w service-btn">Все процедуры</a>
+                            <button class="btn btn_primary-w service-btn lng-service-btn-appointment">Записаться на
+                                прием
+                            </button>
+                            <a href="#all_service"
+                               class="popup-link btn btn_secondary-w service-btn lng-service-btn-procedures">Все
+                                процедуры</a>
                         </div>
                     </div>
                 </div>
@@ -249,17 +265,18 @@
                 <div class="container">
                     <div class="cosmetic__container">
                         <div class="cosmetic__info">
-                            <h2 class="screen__title _text-line cosmetic__title">Косметика с которой работаем</h2>
+                            <h2 class="screen__title _text-line cosmetic__title lng-cosmetic-title">Косметика с которой
+                                работаем</h2>
                             <a href="products.html" data-da=".cosmetic__content,768,last"
-                               class="btn btn_secondary cosmetic-btn">
+                               class="btn btn_secondary cosmetic-btn lng-cosmetic-btn-cosmetics">
                                 Вся косметика
                             </a>
                         </div>
-                        <p class="cosmetic__description">
+                        <p class="cosmetic__description lng-cosmetic-description">
                             Уникальные омолаживающие и восстанавливающие процедуры для лица с использованием
                             косметических средств всемирно известных брендов. Эти эксклюзивные линии созданы с
-                            применением новейших технологий, а также природных компонентов. Каждая линия
-                            уникальна и имеет широкий спектр действия.
+                            применением новейших технологий, а также природных компонентов. Каждая линия уникальна и
+                            имеет широкий спектр действия.
                         </p>
                     </div>
                     <div class="cosmetic__cards">
@@ -269,7 +286,7 @@
                                    onclick="setFilterSelection('brand-holyland')">
                                     <h2 class="cosmetic__item-title">Holyland</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/holyland.png" width="460" height="460" alt="Holyland">
+                                        <img src="img/holyland.png" alt="Косметика Holyland">
                                         <div class="_dark"></div>
                                     </div>
                                     <div class="_border"></div>
@@ -280,7 +297,7 @@
                                    onclick="setFilterSelection('brand-dermaquest')">
                                     <h2 class="cosmetic__item-title">Dermaquest</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/dermaquest.png" width="460" height="460" alt="Dermaquest">
+                                        <img src="img/dermaquest.png" alt="Косметика Dermaquest">
                                         <div class="_dark"></div>
                                     </div>
                                     <div class="_border"></div>
@@ -291,7 +308,7 @@
                                    onclick="setFilterSelection('brand-bio_matrix')">
                                     <h2 class="cosmetic__item-title">Bio-matrix</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/holyland.png" width="460" height="460" alt="Bio-matrix">
+                                        <img src="img/holyland.png" alt="Косметика Bio-matrix">
                                         <div class="_dark"></div>
                                     </div>
                                     <div class="_border"></div>
@@ -312,58 +329,59 @@
                                 <div class="certificates-slider__wrapper swiper-wrapper">
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.08.png" width="282" height="400"
-                                                 alt="">
+                                            <img src="img/diplom/Diploma1.08.png"
+                                                 alt="Диплом №1">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.07.png" width="282" height="400"
-                                                 alt="">
+                                            <img src="img/diplom/Diploma1.07.png"
+                                                 alt="Диплом №2">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.06.png" width="618" height="400"
-                                                 alt="">
+                                            <img src="img/diplom/Diploma1.06.png"
+                                                 alt="Диплом №3">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.05.png" width="282" height="400"
-                                                 alt="">
+                                            <img src="img/diplom/Diploma1.05.png"
+                                                 alt="Сертификат №1">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.04.png" width="618" height="400"
-                                                 alt="">
+                                            <img src="img/diplom/Diploma1.04.png"
+                                                 alt="Сертификат №2">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.03.png" width="282" height="400"
-                                                 alt="">
+                                            <img src="img/diplom/Diploma1.03.png"
+                                                 alt="Сертификат №3">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.02.png" width="618" height="400"
-                                                 alt="">
+                                            <img src="img/diplom/Diploma1.02.png"
+                                                 alt="Диплом №4">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.01.png" width="282" height="400"
-                                                 alt="">
+                                            <img src="img/diplom/Diploma1.01.png"
+                                                 alt="Сертификат №4">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="certificates__info">
-                            <h2 class="certificates__title">Вы в надёжных руках</h2>
-                            <p class="certificates__description">Ваше лицо расцветёт в доброжелательной атмосфере и
+                            <h2 class="certificates__title lng-certificates-title">Вы в надёжных руках</h2>
+                            <p class="certificates__description lng-certificates-description">Ваше лицо расцветёт в
+                                доброжелательной атмосфере и
                                 заботе. Обратившись ко мне, вы доверите здоровье и красоту профессионалу.</p>
                         </div>
                         <div class="certificates__row">
@@ -371,42 +389,42 @@
                                 <div class="certificates-slider__wrapper swiper-wrapper">
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.08.png" width="282" height="400" alt="">
+                                            <img src="img/diplom/Diploma2.08.png" alt="Диплом №5">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.07.png" width="618" height="400" alt="">
+                                            <img src="img/diplom/Diploma2.07.png" alt="Сертификат №5">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.06.png" width="282" height="400" alt="">
+                                            <img src="img/diplom/Diploma2.06.png" alt="Сертификат №6">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.05.png" width="618" height="400" alt="">
+                                            <img src="img/diplom/Diploma2.05.png" alt="Диплом №6">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.04.png" width="282" height="400" alt="">
+                                            <img src="img/diplom/Diploma2.04.png" alt="Диплом №7">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.03.png" width="282" height="400" alt="">
+                                            <img src="img/diplom/Diploma2.03.png" alt="Сертификат №7">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.02.png" width="282" height="400" alt="">
+                                            <img src="img/diplom/Diploma2.02.png" alt="Сертификат №8">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.01.png" width="618" height="400" alt="">
+                                            <img src="img/diplom/Diploma2.01.png" alt="Сертификат №9">
                                         </div>
                                     </div>
                                 </div>
@@ -422,7 +440,7 @@
                 <div class="consultation__container">
                     <div class="consultation__body">
                         <div class="consultation__header">
-                            <h2 class="screen__title _text-line consultation__title">Как проходит
+                            <h2 class="screen__title _text-line consultation__title lng-consultation-title">Как проходит
                                 консультация?&#160;*</h2>
                             <!-- If we need navigation buttons -->
                             <div data-da=".consultation__image-body,1024,last"
@@ -435,7 +453,7 @@
                         <div class="consultation__body-content">
                             <div class="consultation__image-body">
                                 <div class="consultation__image">
-                                    <img src="img/consultation/consultation.png" width="530" height="323" alt="">
+                                    <img src="img/consultation/consultation.png" alt="Фото как проходит консультация">
                                 </div>
                             </div>
                             <div class="f-block__body">
@@ -448,9 +466,11 @@
                                             <div class="consultation-slide-body">
 
                                                 <span class="consultation-slide__span">01.</span>
-                                                <h2 class="consultation-slide__title">Диагностика состояния
+                                                <h2 class="consultation-slide__title lng-consultation-1-title">
+                                                    Диагностика состояния
                                                     кожи</h2>
-                                                <p class="consultation-slide__description">На консультации
+                                                <p class="consultation-slide__description lng-consultation-1-description">
+                                                    На консультации
                                                     специалист проведен детальный диагностику кожи.</p>
                                             </div>
 
@@ -459,9 +479,10 @@
                                             <div class="consultation-slide-body">
 
                                                 <span class="consultation-slide__span">02.</span>
-                                                <h2 class="consultation-slide__title">Анализ существующего
+                                                <h2 class="consultation-slide__title lng-consultation-2-title">Анализ
+                                                    существующего
                                                     домашнего ухода</h2>
-                                                <p class="consultation-slide__description">
+                                                <p class="consultation-slide__description lng-consultation-2-description">
                                                     На консультации специалист проведет тщательный анализ
                                                     существующего ухода, по вашему желанию оценит склады
                                                     препаратов, даст фидбэк относительно ошибок и адекватности
@@ -472,10 +493,11 @@
                                             <div class="consultation-slide-body">
 
                                                 <span class="consultation-slide__span">03.</span>
-                                                <h2 class="consultation-slide__title">Определение целей
+                                                <h2 class="consultation-slide__title lng-consultation-3-title">
+                                                    Определение целей
                                                     домашнего
                                                     ухода</h2>
-                                                <p class="consultation-slide__description">
+                                                <p class="consultation-slide__description lng-consultation-3-description">
                                                     Специалист вместе с вами определит цели, которые можно
                                                     достичь
                                                     домашним уходом, а в случае необходимости и реалистичности
@@ -487,10 +509,9 @@
                                             <div class="consultation-slide-body">
 
                                                 <span class="consultation-slide__span">04.</span>
-                                                <h2 class="consultation-slide__title">Определение целей
-                                                    домашнего
-                                                    ухода</h2>
-                                                <p class="consultation-slide__description">
+                                                <h2 class="consultation-slide__title lng-consultation-3-title">
+                                                    Определение целей домашнего ухода</h2>
+                                                <p class="consultation-slide__description lng-consultation-4-description">
                                                     Специалист вместе с вами определит цели, которые можно
                                                     достичь
                                                     домашним уходом, а в случае необходимости и реалистичности
@@ -505,10 +526,9 @@
                         <div class="consultation__description">
                             <span class="consultation__hr-line"></span>
                             <p class="consultation__detail">
-                                <span class="consultation__detail_strong">*Закажите 30-минутную виртуальную консультацию и проверку по уходу за кожей.</span>
-                                Консультация проводится не выходя из дома, адаптирована к <span
-                                    id="dotsConsultation" class="consultation__more-dots">...</span><span
-                                    id="moreConsultation" class="consultation__more">вашим
+                                <span class="consultation__detail_strong lng-consultation-detail-strong">*Закажите 30-минутную виртуальную консультацию и проверку по уходу за кожей.</span>
+                                <span id="dotsConsultation" class="consultation__more-dots">...</span><span
+                                    id="moreConsultation" class="consultation__more consultation-detail-strong lng-consultation-detail">Консультация проводится не выходя из дома, адаптирована к вашим
                                     уникальным потребностям и поможет
                                     вам дать правильные рекомендации по продуктам, поможет с режимом ухода за кожей и
                                     поможет с любыми рекомендациями по уходу за кожей, инструментам и устройствам для
@@ -520,7 +540,7 @@
                                         class="consultation__more-btn">больше
                                 </button>
                             </p>
-                            <button class="btn btn_primary consultation__btn">Записаться на консультацию</button>
+                            <button class="btn btn_primary consultation__btn lng-consultation-btn-consultation">Записаться на консультацию</button>
                         </div>
                     </div>
                 </div>
@@ -531,7 +551,7 @@
             <div class="screen__content review__content">
                 <div class="review__bg-container">
                     <div class="container review__container">
-                        <h2 class="screen__title screen__title_bg review__title">Наши счастливые клиенты</h2>
+                        <h2 class="screen__title screen__title_bg review__title lng-review-title">Наши счастливые клиенты</h2>
                         <div class="f-block">
                             <div class="f-block__body review__body">
                                 <!-- Slider main container -->
@@ -541,41 +561,41 @@
                                         <!-- Slides -->
                                         <div data-hash="review-slide-1" class="review-slider__slide swiper-slide">
                                             <div class="review-slider__item">
-                                                <p class="review-slider__text">“А также базовые сценарии поведения
+                                                <p class="review-slider__text lng-review-1-text">“А также базовые сценарии поведения
                                                     пользователей могут быть преданы социально-демократической
                                                     анафеме.
                                                     В своём стремлении повысить качество жизни, они забывают, что
                                                     реализация намеченных плановых заданий”</p>
-                                                <p class="review-slider__person">Владислава Жулей</p>
+                                                <p class="review-slider__person lng-review-1-author">Владислава Жулей</p>
                                             </div>
                                         </div>
                                         <div data-hash="review-slide-2" class="review-slider__slide swiper-slide">
                                             <div class="review-slider__item">
-                                                <p class="review-slider__text">““В своём стремлении улучшить
+                                                <p class="review-slider__text lng-review-2-text">““В своём стремлении улучшить
                                                     пользовательский опыт мы упускаем"
                                                 <p>
-                                                <p class="review-slider__person">Владислава Жулей</p>
+                                                <p class="review-slider__person lng-review-2-author">Владислава Жулей</p>
                                             </div>
                                         </div>
                                         <div data-hash="review-slide-3" class="review-slider__slide swiper-slide">
                                             <div class="review-slider__item">
-                                                <p class="review-slider__text">““Повседневная практика показывает,
+                                                <p class="review-slider__text lng-review-3-text">““Повседневная практика показывает,
                                                     что
                                                     глубокий уровень погружения способствует подготовке и реализации
                                                     экономической целесообразности принимаемых решений деятельности
                                                     представляет собой интересный эксперимент проверки
                                                     благоприятных””</p>
-                                                <p class="review-slider__person">Владислава Жулей</p>
+                                                <p class="review-slider__person lng-review-3-author">Владислава Жулей</p>
                                             </div>
                                         </div>
                                         <div data-hash="review-slide-4" class="review-slider__slide swiper-slide">
                                             <div class="review-slider__item">
-                                                <p class="review-slider__text">“А также базовые сценарии поведения
+                                                <p class="review-slider__text lng-review-4-text">“А также базовые сценарии поведения
                                                     пользователей могут быть преданы социально-демократической
                                                     анафеме.
                                                     В своём стремлении повысить качество жизни, они забывают, что
                                                     реализация намеченных плановых заданий”</p>
-                                                <p class="review-slider__person">Владислава Жулей</p>
+                                                <p class="review-slider__person lng-review-4-author">Владислава Жулей</p>
                                             </div>
                                         </div>
                                     </div>
@@ -601,17 +621,17 @@
                     <div class="salon__body">
                         <div class="salon__info">
                             <div data-da=".salon__container,1024,first" class="salon__details">
-                                <h2 class="screen__title _text-line salon__title">Салон</h2>
-                                <address class="salon__address">г. Харьков, <span>ул. Пушкинская, 56а</span>
+                                <h2 class="screen__title _text-line salon__title lng-salon-title">Салон</h2>
+                                <address class="salon__address lng-salon-address">г. Харьков, <span>ул. Алчевських, 50а</span>
                                 </address>
                             </div>
                             <p class="salon__schedule">
-                                <span>График работы:</span>
-                                <span> пн-пт <strong class="_text_strong">10:00 – 18:00</strong></span>
-                                <span> сб-вс <strong class="_text_strong">выходной</strong></span>
+                                <span class="lng-salon-schedule-title">График работы:</span>
+                                <span class="lng-salon-schedule-weekdays">пн-пт <strong>10:00 – 18:00</strong></span>
+                                <span class="lng-salon-schedule-weekend">сб-вс <strong>выходной</strong></span>
                             </p>
                             <p class="salon__phone">
-                                <span>Номер для записи:</span>
+                                <span class="lng-salon-schedule-phone-title">Номер для записи:</span>
                                 <a href="tel:+380667700948"><strong class="_text_strong">066 770 09 48</strong></a>
                             </p>
                         </div>
@@ -627,33 +647,41 @@
                                             <div data-hash="salon-slide-1"
                                                  class="salon-slider__slide swiper-slide">
                                                 <div class="salon-slider__image">
-                                                    <img data-src="img/salon/salon.png" src="img/1x1.png"
+                                                    <img data-src="img/salon/salon-5.jpg" src="img/1x1.png"
                                                          width="1" height="1" class="swiper-lazy"
-                                                         alt="">
+                                                         alt="Фото салона №1">
                                                     <div class="swiper-lazy-preloader"></div>
                                                 </div>
                                             </div>
                                             <div data-hash="salon-slide-2" class="salon-slider__slide swiper-slide">
                                                 <div class="salon-slider__image">
-                                                    <img data-src="img/salon/salon.png" src="img/1x1.png"
+                                                    <img data-src="img/salon/salon-2.jpg" src="img/1x1.png"
                                                          width="1" height="1" class="swiper-lazy"
-                                                         alt="">
+                                                         alt="Фото салона №2">
                                                     <div class="swiper-lazy-preloader"></div>
                                                 </div>
                                             </div>
                                             <div data-hash="salon-slide-3" class="salon-slider__slide swiper-slide">
                                                 <div class="salon-slider__image">
-                                                    <img data-src="img/salon/salon.png" src="img/1x1.png"
+                                                    <img data-src="img/salon/salon-3.jpg" src="img/1x1.png"
                                                          width="1" height="1" class="swiper-lazy"
-                                                         alt="">
+                                                         alt="Фото салона №3">
                                                     <div class="swiper-lazy-preloader"></div>
                                                 </div>
                                             </div>
                                             <div data-hash="salon-slide-4" class="salon-slider__slide swiper-slide">
                                                 <div class="salon-slider__image">
-                                                    <img data-src="img/salon/salon.png" src="img/1x1.png"
+                                                    <img data-src="img/salon/salon-4.jpg" src="img/1x1.png"
                                                          width="1" height="1" class="swiper-lazy"
-                                                         alt="">
+                                                         alt="Фото салона №4">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </div>
+                                            <div data-hash="salon-slide-5" class="salon-slider__slide swiper-slide">
+                                                <div class="salon-slider__image">
+                                                    <img data-src="img/salon/salon-1.jpg" src="img/1x1.png"
+                                                         width="1" height="1" class="swiper-lazy"
+                                                         alt="Фото салона №5">
                                                     <div class="swiper-lazy-preloader"></div>
                                                 </div>
                                             </div>
@@ -668,7 +696,8 @@
                     </div>
                     <div class="salon__social">
                         <div class="salon__social-item">
-                            <a href="https://instagram.com/studio.golynska" class="salon__social-link" title="instagram">
+                            <a href="https://instagram.com/studio.golynska" class="salon__social-link"
+                               title="instagram">
                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
@@ -715,39 +744,44 @@
             <div class="screen__content footer__content">
                 <div class="container footer__container">
                     <div class="footer__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1282.283809485566!2d36.24323402380426!3d50.00071539713266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e81800889b%3A0xa358019b91e79f1c!2z0YPQuy4g0J_Rg9GI0LrQuNC90YHQutCw0Y8sIDU2LCDQpdCw0YDRjNC60L7Qsiwg0KXQsNGA0YzQutC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1sru!2sua!4v1618169879600!5m2!1sru!2sua"
-                                width="1" height="1" style="border:0; width: 100%; height: 100%;" allowfullscreen=""
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.364729923862!2d36.249581804218096!3d50.006499783323875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0da5e77ffd7%3A0x74580dc32c4b412c!2z0KHQv9C-0YDRgtC60L7QvNC_0LvQtdC60YEgItCf0L7Qu9GW0YLQtdGF0L3RltC6IiDQuNC8LiDQmC4g0JfQvtGA0LjQvdCw!5e0!3m2!1sru!2sua!4v1624995034025!5m2!1sru!2sua"
+                                width="1" height="1" style="border:0;width: 100%; height: 100%;" allowfullscreen=""
                                 loading="lazy" title="map"></iframe>
                     </div>
                     <div class="footer__body">
                         <nav class="footer__menu menu__body menu">
                             <ul class="footer__list menu__list">
                                 <li class="footer__item">
-                                    <a data-goto=".screen-1" href="#intro" class="menu__link">Главная</a>
+                                    <a data-goto=".screen-1" href="#intro" class="menu__link lng-menu-home">Главная</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-2" href="#about" class="menu__link">О себе</a></li>
-                                <li class="footer__item">
-                                    <a data-goto=".screen-3" href="#service" class="menu__link">Услуги</a>
+                                    <a data-goto=".screen-2" href="#about" class="menu__link lng-menu-about">О себе</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-4" href="#cosmetic" class="menu__link">Косметика</a>
+                                    <a data-goto=".screen-3" href="#service"
+                                       class="menu__link lng-menu-service">Услуги</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-5" href="#certificates" class="menu__link">Сертификаты</a>
+                                    <a data-goto=".screen-4" href="#cosmetic" class="menu__link lng-menu-cosmetics">Косметика</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-6" href="#consultation" class="menu__link">Консультации</a>
+                                    <a data-goto=".screen-5" href="#certificates"
+                                       class="menu__link lng-menu-certificates">Сертификаты</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-7" href="#review" class="menu__link">Отзывы</a>
+                                    <a data-goto=".screen-6" href="#consultation"
+                                       class="menu__link lng-menu-consultation">Консультации</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-8" href="#salon" class="menu__link">Салон</a>
+                                    <a data-goto=".screen-7" href="#review"
+                                       class="menu__link lng-menu-review">Отзывы</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-8" href="#salon" class="menu__link lng-menu-salon">Салон</a>
                                 </li>
                             </ul>
                         </nav>
-                        <p class="footer__copyright">© 2021, косметолог Татьяна Голынская</p>
+                        <p class="footer__copyright lng-footer-copyright">© 2021, косметолог Татьяна Голынская</p>
                     </div>
                 </div>
             </div>
@@ -1089,14 +1123,13 @@
 
 <!--
 TODO:
-    - compress img
     - set atl for img
     - cookies
     - translate
-    - make an appointment
     - more about service (single modal)
     - clear js file
     -
+    - ? make an appointment
     - ? red address (footer) set more contrast
     - ? logo and social link don't have name
     - ? user-scalable=no, check how fix!

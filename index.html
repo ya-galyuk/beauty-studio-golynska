@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
             name="viewport"
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
@@ -11,15 +11,16 @@
     <!--  SEO -->
 
     <!--  max 140  -->
-    <meta name="description" content=""/>
+    <meta name="description"
+          content="Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948"/>
     <!--  max 20 words ex: tag-1, tag-2, tab-3  -->
     <meta name="keywords" content=""/>
 
 
-    <title>Title</title>
+    <title>Beauty studio Golynska</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
@@ -36,33 +37,29 @@
                         <li class="menu__item_mob"><a data-goto=".screen-1" href="#" class="menu__link">Главная</a></li>
                         <li class="menu__item_mob"><a data-goto=".screen-2" href="#" class="menu__link">О себе</a></li>
                         <li class="menu__item"><a data-goto=".screen-3" href="#" class="menu__link">Услуги</a></li>
-                        <li class="menu__item"><a data-goto=".screen-4" href="#" class="menu__link">Косметика</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-5" href="#" class="menu__link">Сертификаты</a>
-                        </li>
-                        <li class="menu__item_mob"><a data-goto=".screen-6" href="#" class="menu__link">Консультации</a>
-                        </li>
+                        <li class="menu__item"><a data-goto=".screen-4" href="#" class="menu__link lng-cosmetics">Косметика</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-5" href="#" class="menu__link">Сертификаты</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-6" href="#" class="menu__link">Консультации</a></li>
                         <li class="menu__item_mob"><a data-goto=".screen-7" href="#" class="menu__link">Отзывы</a></li>
                         <li class="menu__item"><a data-goto=".screen-8" href="#" class="menu__link">Салон</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="#" class="menu__link">Контакты</a>
-                        </li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="#" class="menu__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__icon">
                     <span></span>
                 </div>
             </div>
-            <a href="index.html" class="header__logo">
-                <img src="img/logo.png" alt="">
+            <a href="index.html" class="header__logo" title="logo">
+                <img src="img/logo.png" width="180" height="180" alt="logo">
             </a>
             <div data-da=".menu__body,500,1" class="header__service">
                 <div class="header__phone phone">
                     <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
                 </div>
                 <div data-da=".menu__body,1024,2" class="header__lang lang">
-                    <ul class="lang__list">
-                        <li><a href="/ua/" class="header__link lang__link">UA</a></li>
-                        <li><a href="/ru/" class="header__link lang__link active">RU</a></li>
-                    </ul>
+                    <button value="ua" class="header__btn lang__btn active" id="lang-ua" onclick="setLang('ua')">UA</button>
+                    <button value="en" class="header__btn lang__btn" id="lang-en" onclick="setLang('en')">EN</button>
+                    <button value="ru" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</button>
                 </div>
             </div>
         </div>
@@ -80,7 +77,8 @@
             </div>
             <div class="screen__body">
                 <div class="screen__image">
-                    <img src="img/intro.png" alt="">
+                    <img src="img/intro.jpeg" alt="">
+<!--                    <img src="img/%3Fintro.png" width="1920" height="4686" alt="">-->
                 </div>
             </div>
         </section>
@@ -100,7 +98,8 @@
                         </div>
                     </div>
                     <div data-da=".about__content,768,2" class="about__photo">
-                        <img src="img/photo.png" alt="">
+<!--                        <img src="img/%3Fphoto.png" width="808" height="842" alt="">-->
+                        <img src="img/photo.jpeg">
                     </div>
                 </div>
             </div>
@@ -119,7 +118,7 @@
                                     <!-- Slides -->
                                     <div data-hash="service-1" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="img/service/service-1.png" alt="">
+                                            <img src="img/service/service-1.png" width="724" height="590" alt="">
                                         </div>
                                         <div class="service-slider__service-info service-info">
                                             <h2 class="service-info__title">Криотерапия</h2>
@@ -145,7 +144,7 @@
                                     </div>
                                     <div data-hash="service-2" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="img/service/service-2.png" alt="">
+                                            <img src="img/service/service-2.png" width="724" height="590" alt="">
                                         </div>
                                         <div class="service-slider__service-info service-info">
                                             <h2 class="service-info__title">Мезотерапия. Биоревитализация.</h2>
@@ -173,7 +172,7 @@
                                     </div>
                                     <div data-hash="service-3" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="img/service/service-3.png" alt="">
+                                            <img src="img/service/service-3.png" width="724" height="590" alt="">
                                         </div>
                                         <div class="service-slider__service-info service-info">
                                             <h2 class="service-info__title">Химические пилинги</h2>
@@ -201,7 +200,7 @@
                                     </div>
                                     <div data-hash="service-4" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="img/service/service-4.png" alt="">
+                                            <img src="img/service/service-4.png" width="724" height="590" alt="">
                                         </div>
                                         <div class="service-slider__service-info service-info">
                                             <h2 class="service-info__title">Ультрозвуковая. Механическая.
@@ -270,7 +269,7 @@
                                    onclick="setFilterSelection('brand-holyland')">
                                     <h2 class="cosmetic__item-title">Holyland</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/holyland.png" alt="">
+                                        <img src="img/holyland.png" width="460" height="460" alt="Holyland">
                                         <div class="_dark"></div>
                                     </div>
                                     <div class="_border"></div>
@@ -281,7 +280,7 @@
                                    onclick="setFilterSelection('brand-dermaquest')">
                                     <h2 class="cosmetic__item-title">Dermaquest</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/dermaquest.png" alt="">
+                                        <img src="img/dermaquest.png" width="460" height="460" alt="Dermaquest">
                                         <div class="_dark"></div>
                                     </div>
                                     <div class="_border"></div>
@@ -292,7 +291,7 @@
                                    onclick="setFilterSelection('brand-bio_matrix')">
                                     <h2 class="cosmetic__item-title">Bio-matrix</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/holyland.png" alt="">
+                                        <img src="img/holyland.png" width="460" height="460" alt="Bio-matrix">
                                         <div class="_dark"></div>
                                     </div>
                                     <div class="_border"></div>
@@ -313,49 +312,49 @@
                                 <div class="certificates-slider__wrapper swiper-wrapper">
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.08.png"
+                                            <img src="img/diplom/Diploma1.08.png" width="282" height="400"
                                                  alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.07.png"
+                                            <img src="img/diplom/Diploma1.07.png" width="282" height="400"
                                                  alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.06.png"
+                                            <img src="img/diplom/Diploma1.06.png" width="618" height="400"
                                                  alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.05.png"
+                                            <img src="img/diplom/Diploma1.05.png" width="282" height="400"
                                                  alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.04.png"
+                                            <img src="img/diplom/Diploma1.04.png" width="618" height="400"
                                                  alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.03.png"
+                                            <img src="img/diplom/Diploma1.03.png" width="282" height="400"
                                                  alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.02.png"
+                                            <img src="img/diplom/Diploma1.02.png" width="618" height="400"
                                                  alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma1.01.png"
+                                            <img src="img/diplom/Diploma1.01.png" width="282" height="400"
                                                  alt="">
                                         </div>
                                     </div>
@@ -372,42 +371,42 @@
                                 <div class="certificates-slider__wrapper swiper-wrapper">
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.08.png" alt="">
+                                            <img src="img/diplom/Diploma2.08.png" width="282" height="400" alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.07.png" alt="">
+                                            <img src="img/diplom/Diploma2.07.png" width="618" height="400" alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.06.png" alt="">
+                                            <img src="img/diplom/Diploma2.06.png" width="282" height="400" alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.05.png" alt="">
+                                            <img src="img/diplom/Diploma2.05.png" width="618" height="400" alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.04.png" alt="">
+                                            <img src="img/diplom/Diploma2.04.png" width="282" height="400" alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.03.png" alt="">
+                                            <img src="img/diplom/Diploma2.03.png" width="282" height="400" alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.02.png" alt="">
+                                            <img src="img/diplom/Diploma2.02.png" width="282" height="400" alt="">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="img/diplom/Diploma2.01.png" alt="">
+                                            <img src="img/diplom/Diploma2.01.png" width="618" height="400" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -436,7 +435,7 @@
                         <div class="consultation__body-content">
                             <div class="consultation__image-body">
                                 <div class="consultation__image">
-                                    <img src="img/consultation/consultation.png" alt="">
+                                    <img src="img/consultation/consultation.png" width="530" height="323" alt="">
                                 </div>
                             </div>
                             <div class="f-block__body">
@@ -629,7 +628,7 @@
                                                  class="salon-slider__slide swiper-slide">
                                                 <div class="salon-slider__image">
                                                     <img data-src="img/salon/salon.png" src="img/1x1.png"
-                                                         class="swiper-lazy"
+                                                         width="1" height="1" class="swiper-lazy"
                                                          alt="">
                                                     <div class="swiper-lazy-preloader"></div>
                                                 </div>
@@ -637,7 +636,7 @@
                                             <div data-hash="salon-slide-2" class="salon-slider__slide swiper-slide">
                                                 <div class="salon-slider__image">
                                                     <img data-src="img/salon/salon.png" src="img/1x1.png"
-                                                         class="swiper-lazy"
+                                                         width="1" height="1" class="swiper-lazy"
                                                          alt="">
                                                     <div class="swiper-lazy-preloader"></div>
                                                 </div>
@@ -645,7 +644,7 @@
                                             <div data-hash="salon-slide-3" class="salon-slider__slide swiper-slide">
                                                 <div class="salon-slider__image">
                                                     <img data-src="img/salon/salon.png" src="img/1x1.png"
-                                                         class="swiper-lazy"
+                                                         width="1" height="1" class="swiper-lazy"
                                                          alt="">
                                                     <div class="swiper-lazy-preloader"></div>
                                                 </div>
@@ -653,7 +652,7 @@
                                             <div data-hash="salon-slide-4" class="salon-slider__slide swiper-slide">
                                                 <div class="salon-slider__image">
                                                     <img data-src="img/salon/salon.png" src="img/1x1.png"
-                                                         class="swiper-lazy"
+                                                         width="1" height="1" class="swiper-lazy"
                                                          alt="">
                                                     <div class="swiper-lazy-preloader"></div>
                                                 </div>
@@ -669,7 +668,7 @@
                     </div>
                     <div class="salon__social">
                         <div class="salon__social-item">
-                            <a href="" class="salon__social-link">
+                            <a href="https://instagram.com/studio.golynska" class="salon__social-link" title="instagram">
                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
@@ -691,7 +690,7 @@
                             </a>
                         </div>
                         <div class="salon__social-item">
-                            <a href="" class="salon__social-link">
+                            <a href="https://t.me/golynskaTa" class="salon__social-link" title="telegram">
                                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0)">
@@ -1083,13 +1082,22 @@
         localStorage.setItem('brand', param);
     }
 </script>
+<script src="js/lang.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
 
 <!--
-TODO: - parallax
-    - more about service
+TODO:
+    - compress img
+    - set atl for img
+    - cookies
     - translate
     - make an appointment
+    - more about service (single modal)
+    - clear js file
+    -
+    - ? red address (footer) set more contrast
+    - ? logo and social link don't have name
+    - ? user-scalable=no, check how fix!
 -->

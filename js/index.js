@@ -1,3 +1,43 @@
+// lang -----------------------------------------
+checkLang()
+
+function setLang(langValue) {
+    localStorage.setItem('language', langValue);
+    setActiveLangBtn(langValue);
+
+    for (let key in langObj) {
+        let elem = document.querySelector('.lng-' + key);
+        if (elem) {
+            elem.innerHTML = langObj[key][langValue];
+        }
+    }
+}
+
+function checkLang() {
+    const localLang = localStorage.getItem('language');
+    if (localLang) {
+        setLang(localLang)
+    } else {
+        setLang("ua")
+    }
+}
+
+function setActiveLangBtn(langValue) {
+    const langBtn = document.querySelectorAll('.lang__btn');
+    const activeLangBtn = document.getElementById('lang-' + langValue);
+
+    if (langBtn.length > 0) {
+        for (let index = 0; index < langBtn.length; index++) {
+            const el = langBtn[index]
+            el.classList.remove("active");
+        }
+    }
+
+    activeLangBtn?.classList.add("active");
+}
+
+// ----------------------------------------------
+
 // resize logo ----------------------------------
 window.onscroll = function () {
     scrollFunction()

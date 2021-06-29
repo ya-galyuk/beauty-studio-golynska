@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
             name="viewport"
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
@@ -19,7 +19,7 @@
     <title>Title</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
@@ -34,7 +34,7 @@
                 <nav class="menu__body">
                     <ul class="menu__list">
                         <li class="menu__item"><a data-goto=".screen-p-1" href="#cosmetic-brand" class="menu__link">Бренды</a></li>
-                        <li class="menu__item"><a data-goto=".screen-p-2" href="#cosmetic-cards" class="menu__link">Косметика</a></li>
+                        <li class="menu__item"><a data-goto=".screen-p-2" href="#cosmetic-cards" class="menu__link lng-cosmetics">Косметика</a></li>
                         <li class="menu__item_mob"><a data-goto=".screen-1" href="index.html#intro" class="menu__link">Главная</a></li>
                         <li class="menu__item_mob"><a data-goto=".screen-2" href="index.html#about" class="menu__link">О себе</a></li>
                         <li class="menu__item_mob"><a data-goto=".screen-3" href="index.html#service" class="menu__link">Услуги</a></li>
@@ -43,8 +43,7 @@
                         <li class="menu__item_mob"><a data-goto=".screen-6" href="index.html#consultation" class="menu__link">Консультации</a></li>
                         <li class="menu__item_mob"><a data-goto=".screen-7" href="index.html#review" class="menu__link">Отзывы</a></li>
                         <li class="menu__item_mob"><a data-goto=".screen-8" href="index.html#salon" class="menu__link">Салон</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="index.html#salon" class="menu__link">Контакты</a>
-                        </li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="index.html#salon" class="menu__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__icon">
@@ -52,17 +51,16 @@
                 </div>
             </div>
             <a href="index.html" class="header__logo">
-                <img src="img/logo.png" alt="">
+                <img src="img/logo.png" width="180" height="180" alt="logo">
             </a>
             <div data-da=".menu__body,500,1" class="header__service">
                 <div class="header__phone phone">
                     <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
                 </div>
                 <div data-da=".menu__body,1024,2" class="header__lang lang">
-                    <ul class="lang__list">
-                        <li><a href="" class="header__link lang__link">UK</a></li>
-                        <li><a href="" class="header__link lang__link active">RU</a></li>
-                    </ul>
+                    <button value="ua" class="header__btn lang__btn active" id="lang-ua" onclick="setLang('ua')">UA</button>
+                    <button value="en" class="header__btn lang__btn" id="lang-en" onclick="setLang('en')">EN</button>
+                    <button value="ru" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</button>
                 </div>
             </div>
         </div>
@@ -495,6 +493,7 @@
         </div>
     </div>
 </div>
+<script src="js/lang.js"></script>
 
 <!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
 <script src="js/dynamicAdapt.js"></script>

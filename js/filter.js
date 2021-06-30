@@ -1,3 +1,5 @@
+"use strict";
+
 filterSelection("all")
 
 function filterSelection(rule) {

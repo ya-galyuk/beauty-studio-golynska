@@ -1,3 +1,5 @@
+"use strict";
+
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll('.lock-padding');
@@ -102,7 +104,7 @@ document.addEventListener('keydown', function (e) {
 (function () {
     if (!Element.prototype.closest) {
         Element.prototype.closest = function (css) {
-            var node = this;
+            let node = this;
             while (node) {
                 if (node.matches(css)) return node;
                 else node = node.parentElement;

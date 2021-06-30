@@ -1,3 +1,5 @@
+"use strict";
+
 function sortListDir() {
     let index, shouldSwitch;
     let switchCount = 0;

@@ -1545,6 +1545,7 @@ body.lock {
 
     span {
       color: $color-orange;
+      font-weight: 700;
     }
   }
 
@@ -1564,10 +1565,10 @@ body.lock {
     }
   }
 
-  &__schedule{
+  &__schedule {
     span strong {
-        font-family: 'Oswald', sans-serif;
-        @extend %tpl-font_medium;
+      font-family: 'Oswald', sans-serif;
+      @extend %tpl-font_medium;
     }
   }
 
@@ -2091,6 +2092,18 @@ body.lock {
       line-height: 150%;
       @include adaptive-value("font-size", 18, 16, 1);
       color: #E8D7CD;
+    }
+  }
+
+  &__simple {
+    @include adaptive-value("margin-top", 130, 100, 1);
+
+    .panel {
+      max-height: initial;
+
+      &__content {
+        padding: 16px 0;
+      }
     }
   }
 

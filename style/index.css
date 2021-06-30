@@ -1605,6 +1605,7 @@ body.lock {
 }
 .salon__address span {
   color: #FF4603;
+  font-weight: 700;
 }
 .salon__schedule, .salon__phone {
   font-style: normal;
@@ -2155,6 +2156,20 @@ body.lock {
   .accordion .panel__text {
     font-size: calc(16px + 2 * ((100vw - 320px) / 1120));
   }
+}
+.accordion__simple {
+  margin-top: 130px;
+}
+@media (max-width: 1440px) {
+  .accordion__simple {
+    margin-top: calc(100px + 30 * ((100vw - 320px) / 1120));
+  }
+}
+.accordion__simple .panel {
+  max-height: initial;
+}
+.accordion__simple .panel__content {
+  padding: 16px 0;
 }
 @media (max-width: 1024px) {
   .accordion .panel__content {

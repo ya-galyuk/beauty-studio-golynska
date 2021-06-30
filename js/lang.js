@@ -666,4 +666,145 @@ const langObj = {
         "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
         "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
     },
+
+    "service-1-modal-title": {
+        "ua": "Кріотерапія",
+        "ru": "Криотерапия",
+        "en": "Cryotherapy",
+    },
+    "service-1-modal-price": {
+        "ua": "від 300 грн",
+        "ru": "от 300 грн",
+        "en": "from 300 UAH",
+    },
+    "service-1-modal-description": {
+        "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+        "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+        "en": "Holy Land cosmetics are produced in Israel for 25 years",
+    },
+    "service-1-modal-accordion-description-1-title": {
+        "ua": "Опис",
+        "ru": "Описание",
+        "en": "Description",
+    },
+    "service-1-modal-accordion-description-1-text": {
+        "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+        "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+        "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+    },
+    "service-1-modal-accordion-description-2-title": {
+        "ua": "Як проводиться процедура?",
+        "ru": "Как проводится процедура?",
+        "en": "How is the procedure conducted?",
+    },
+    "service-1-modal-accordion-description-2-text": {
+        "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+        "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+        "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+    },
+    "service-2-modal-title": {
+        "ua": "Мезотерапія. Біоревіталізація.",
+        "ru": "Мезотерапия. Биоревитализация.",
+        "en": "Mesotherapy. Biorevitalization.",
+    },
+    "service-2-modal-price": {
+        "ua": "від 300 грн",
+        "ru": "от 300 грн",
+        "en": "from 300 UAH",
+    },
+    "service-2-modal-description": {
+        "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+        "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+        "en": "Holy Land cosmetics are produced in Israel for 25 years",
+    },
+    "service-2-modal-accordion-description-1-title": {
+        "ua": "Опис",
+        "ru": "Описание",
+        "en": "Description",
+    },
+    "service-2-modal-accordion-description-1-text": {
+        "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+        "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+        "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+    },
+    "service-2-modal-accordion-description-2-title": {
+        "ua": "Як проводиться процедура?",
+        "ru": "Как проводится процедура?",
+        "en": "How is the procedure conducted?",
+    },
+    "service-2-modal-accordion-description-2-text": {
+        "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+        "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+        "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+    },
+    "service-3-modal-title": {
+        "ua": "Хімічні пілінги",
+        "ru": "Химические пилинги",
+        "en": "Chemical peelings",
+    },
+    "service-3-modal-price": {
+        "ua": "від 300 грн",
+        "ru": "от 300 грн",
+        "en": "from 300 UAH",
+    },
+    "service-3-modal-description": {
+        "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+        "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+        "en": "Holy Land cosmetics are produced in Israel for 25 years",
+    },
+    "service-3-modal-accordion-description-1-title": {
+        "ua": "Опис",
+        "ru": "Описание",
+        "en": "Description",
+    },
+    "service-3-modal-accordion-description-1-text": {
+        "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+        "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+        "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+    },
+    "service-3-modal-accordion-description-2-title": {
+        "ua": "Як проводиться процедура?",
+        "ru": "Как проводится процедура?",
+        "en": "How is the procedure conducted?",
+    },
+    "service-3-modal-accordion-description-2-text": {
+        "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+        "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+        "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+    },
+    "service-4-modal-title": {
+        "ua": "Ультразвукова. Механічна. Комбінована.",
+        "ru": "Ультразвуковая. Механическая. Комбинированная.",
+        "en": "Ultrasonic. Mechanical. Combined.",
+    },
+    "service-4-modal-price": {
+        "ua": "від 300 грн",
+        "ru": "от 300 грн",
+        "en": "from 300 UAH",
+    },
+    "service-4-modal-description": {
+        "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+        "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+        "en": "Holy Land cosmetics are produced in Israel for 25 years",
+    },
+    "service-4-modal-accordion-description-1-title": {
+        "ua": "Опис",
+        "ru": "Описание",
+        "en": "Description",
+    },
+    "service-4-modal-accordion-description-1-text": {
+        "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+        "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+        "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+    },
+    "service-4-modal-accordion-description-2-title": {
+        "ua": "Як проводиться процедура?",
+        "ru": "Как проводится процедура?",
+        "en": "How is the procedure conducted?",
+    },
+    "service-4-modal-accordion-description-2-text": {
+        "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+        "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+        "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+    },
 }

@@ -767,10 +767,11 @@ body.lock {
     top: 0;
     left: 0;
     margin: 0;
-    z-index: 2;
+    z-index: 100;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     @include adaptive-value("font-size", 52, 40, 1);
     font-family: "Oswald", sans-serif;
-
   }
 
   &-slider__image {
@@ -938,6 +939,13 @@ body.lock {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
   }
 
   &__title {

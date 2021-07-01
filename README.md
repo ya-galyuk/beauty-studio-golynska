@@ -1,6 +1,6 @@
 ## Translate
 
-1. Use еру prefix `lng-` in class 
+1. Use the prefix `lng-` in class 
    ex: `lng-intro-title`
 2. Add a new language value to `lang.js` or `lang-product.js` file.
 

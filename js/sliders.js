@@ -3,12 +3,7 @@ const optionBase = {
     speed: 1500,
 
     // desktop drag
-    simulateTouch: true,
-
-    // hash navigation
-    hashNavigation: {
-        watchState: true
-    },
+    simulateTouch: false,
 
     // Keyboard Control
     keyboard: {

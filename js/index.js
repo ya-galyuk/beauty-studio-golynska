@@ -72,7 +72,7 @@ function scrollFunction() {
 
 // readMoreConsultation
 const btnMoreConsultation = document.querySelector('.btnMoreConsultation');
-btnMoreConsultation.addEventListener('click', readMoreConsultation);
+btnMoreConsultation?.addEventListener('click', readMoreConsultation);
 
 function readMoreConsultation() {
     const dots = document.getElementById("dotsConsultation");

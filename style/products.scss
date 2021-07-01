@@ -114,7 +114,7 @@
         @extend %tpl-font_regular;
         @include adaptive-value("font-size", 22, 20, 1, 375);
         color: $color-dark;
-        opacity: .6;
+        opacity: .7;
         background: none;
 
         &.active {
@@ -206,7 +206,7 @@
         }
 
         &__price {
-          opacity: .6;
+          opacity: .7;
           font-size: 18px;
         }
       }

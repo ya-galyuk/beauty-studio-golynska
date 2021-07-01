@@ -41,7 +41,6 @@ body {
   width: 100%;
   line-height: 1;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -89,7 +88,7 @@ h6 {
   font-weight: 400;
 }
 
-.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .footer__copyright, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header .lang__btn, .btn, h3, h2, h1 {
+.products-popup .popup__feature .feature__price, .products-popup .popup__feature .feature__item, .products-wrapper .cards__more-btn, .products-wrapper .cards__list .card__info, .products-wrapper .cards__sort-text, .products-wrapper .cards .brand__btn, .footer__copyright, .salon__address, .review-slider__item, .consultation__more-btn, .consultation__detail, .consultation-slide__description, .certificates__description, .cosmetic__description, .service-info__more, .service-info__time .time__info, .service-info__price, .about__description, .intro__title, .header .menu__link, .header .lang__btn, .btn, h1, h2, h3 {
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
@@ -118,7 +117,6 @@ h6 {
 html,
 body {
   height: 100%;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   line-height: 1;
   font-size: 14px;
@@ -243,6 +241,7 @@ body.lock {
   z-index: 2;
 }
 .screen__title {
+  font-family: "Oswald", sans-serif;
   color: #232323;
   display: inline-block;
   margin-bottom: 20px;
@@ -778,6 +777,7 @@ body.lock {
   margin: 0;
   z-index: 2;
   font-size: 52px;
+  font-family: "Oswald", sans-serif;
 }
 @media (max-width: 1440px) {
   .service__title {
@@ -2330,7 +2330,7 @@ body.lock {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   color: #232323;
-  opacity: 0.6;
+  opacity: 0.7;
   background: none;
 }
 @media (max-width: 1440px) {
@@ -2418,7 +2418,7 @@ body.lock {
   overflow: hidden;
 }
 .products-wrapper .cards__list .card__price {
-  opacity: 0.6;
+  opacity: 0.7;
   font-size: 18px;
 }
 .products-wrapper .cards__more {

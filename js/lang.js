@@ -252,6 +252,12 @@ const langObj = {
         "en": "Sign up for a consultation",
     },
 
+    "consultation-btn-more": {
+        "ua": "детальніше",
+        "ru": "больше",
+        "en": "more",
+    },
+
     "review-title": {
         "ua": "Наші щасливі клієнти",
         "ru": "Наши счастливые клиенты",

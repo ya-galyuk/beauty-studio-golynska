@@ -16,15 +16,11 @@
     <!--  max 20 words ex: tag-1, tag-2, tab-3  -->
     <meta name="keywords" content=""/>
 
-
     <title>Beauty studio Golynska</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/index.min.css">
 </head>
 <body>
 
@@ -66,10 +62,10 @@
                     <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
                 </div>
                 <div data-da=".menu__body,1024,2" class="header__lang lang">
-                    <button value="ua" class="header__btn lang__btn active" id="lang-ua" onclick="setLang('ua')">UA
+                    <button value="ua" class="header__btn lang__btn active" id="lang-ua">UA
                     </button>
-                    <button value="en" class="header__btn lang__btn" id="lang-en" onclick="setLang('en')">EN</button>
-                    <button value="ru" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</button>
+                    <button value="en" class="header__btn lang__btn" id="lang-en">EN</button>
+                    <button value="ru" class="header__btn lang__btn" id="lang-ru">RU</button>
                 </div>
             </div>
         </div>
@@ -542,7 +538,7 @@
                                     советы.</span>
                                 <br/>
                                 <button onclick="readMoreConsultation()" id="btnMoreConsultation"
-                                        class="consultation__more-btn">больше
+                                        class="consultation__more-btn lng-consultation-btn-more">больше
                                 </button>
                             </p>
                             <a href="#" class="btn btn_primary consultation__btn lng-consultation-btn-consultation">
@@ -1420,19 +1416,7 @@
 <script src="js/burger.js"></script>
 <script src="js/popup.js"></script>
 <script src="js/sliders.js"></script>
-<script>
-    function setFilterSelection(param) {
-        localStorage.setItem('brand', param);
-    }
-</script>
 <script src="js/lang.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
-
-<!--
-TODO:
-    - clear js file
-    - ? cookies
-    - ? logo and social link don't have name
--->

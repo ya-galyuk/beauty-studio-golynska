@@ -11,21 +11,16 @@
     <!--  SEO -->
 
     <!--  max 140  -->
-    <meta name="description" content=""/>
+    <meta name="description"
+          content="Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948"/>
     <!--  max 20 words ex: tag-1, tag-2, tab-3  -->
     <meta name="keywords" content=""/>
 
+    <title>Beauty studio Golynska</title>
 
-    <title>Title</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/index.min.css">
 </head>
-<body onload="setBrand();">
+<body>
 
 <div class="wrapper products-wrapper">
     <header class="header lock-padding">
@@ -33,17 +28,28 @@
             <div class="header__menu menu">
                 <nav class="menu__body">
                     <ul class="menu__list">
-                        <li class="menu__item"><a data-goto=".screen-p-1" href="#cosmetic-brand" class="menu__link lng-menu-brands">Бренды</a></li>
-                        <li class="menu__item"><a data-goto=".screen-p-2" href="#cosmetic-cards" class="menu__link lng-menu-cosmetics">Косметика</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-1" href="index.html#intro" class="menu__link lng-menu-home">Главная</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-2" href="index.html#about" class="menu__link lng-menu-about">О себе</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-3" href="index.html#service" class="menu__link lng-menu-service">Услуги</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-4" href="index.html#cosmetic" class="menu__link lng-menu-cosmetics">Косметика</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-5" href="index.html#certificates" class="menu__link lng-menu-certificates">Сертификаты</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-6" href="index.html#consultation" class="menu__link lng-menu-consultation">Консультации</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-7" href="index.html#review" class="menu__link lng-menu-review">Отзывы</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="index.html#salon" class="menu__link lng-menu-salon">Салон</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="index.html#salon" class="menu__link lng-menu-contacts">Контакты</a></li>
+                        <li class="menu__item"><a data-goto=".screen-p-1" href="#cosmetic-brand"
+                                                  class="menu__link lng-menu-brands">Бренды</a></li>
+                        <li class="menu__item"><a data-goto=".screen-p-2" href="#cosmetic-cards"
+                                                  class="menu__link lng-menu-cosmetics">Косметика</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-1" href="index.html#intro"
+                                                      class="menu__link lng-menu-home">Главная</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-2" href="index.html#about"
+                                                      class="menu__link lng-menu-about">О себе</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-3" href="index.html#service"
+                                                      class="menu__link lng-menu-service">Услуги</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-4" href="index.html#cosmetic"
+                                                      class="menu__link lng-menu-cosmetics">Косметика</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-5" href="index.html#certificates"
+                                                      class="menu__link lng-menu-certificates">Сертификаты</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-6" href="index.html#consultation"
+                                                      class="menu__link lng-menu-consultation">Консультации</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-7" href="index.html#review"
+                                                      class="menu__link lng-menu-review">Отзывы</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="index.html#salon"
+                                                      class="menu__link lng-menu-salon">Салон</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="index.html#salon"
+                                                      class="menu__link lng-menu-contacts">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__icon">
@@ -58,9 +64,9 @@
                     <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
                 </div>
                 <div data-da=".menu__body,1024,2" class="header__lang lang">
-                    <button value="ua" class="header__btn lang__btn active" id="lang-ua" onclick="setLang('ua')">UA</button>
-                    <button value="en" class="header__btn lang__btn" id="lang-en" onclick="setLang('en')">EN</button>
-                    <button value="ru" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</button>
+                    <button value="ua" class="header__btn lang__btn active" id="lang-ua">UA</button>
+                    <button value="en" class="header__btn lang__btn" id="lang-en">EN</button>
+                    <button value="ru" class="header__btn lang__btn" id="lang-ru">RU</button>
                 </div>
             </div>
         </div>
@@ -80,7 +86,8 @@
                 <div class="container">
                     <div class="cosmetic__container">
                         <div class="cosmetic__info">
-                            <h1 class="screen__title screen__title_bg cosmetic__title lng-cosmetic-title">Бренды с которыми работаем</h1>
+                            <h1 class="screen__title screen__title_bg cosmetic__title lng-cosmetic-title">Бренды с
+                                которыми работаем</h1>
                         </div>
                     </div>
                     <div class="cosmetic__cards">
@@ -132,7 +139,8 @@
                         <div class="cards__brand brand">
                             <ul class="brand__list">
                                 <li class="brand__item">
-                                    <button class="brand__btn brand-all active lng-cards-filter-all-brands" onclick="filterSelection('all')">Все
+                                    <button class="brand__btn brand-all active lng-cards-filter-all-brands"
+                                            onclick="filterSelection('all')">Все
                                         бренды
                                     </button>
                                 </li>
@@ -185,7 +193,9 @@
                                 <img src="img/products/card__item-1.png" alt=""/>
                             </div>
                             <div class="card__info">
-                                <div class="card__description lng-card-1-description">holyland Увлажняющий крем для жирной кожи</div>
+                                <div class="card__description lng-card-1-description">holyland Увлажняющий крем для
+                                    жирной кожи
+                                </div>
                                 <div class="card__price lng-card-1-price">1000 грн</div>
                             </div>
                         </a>
@@ -307,9 +317,6 @@
                             </div>
                         </a>
                     </div>
-<!--                    <div class="cards__more">-->
-<!--                        <a class="cards__more-btn">Загрузить ещё</a>-->
-<!--                    </div>-->
                 </div>
             </div>
         </section>
@@ -324,22 +331,28 @@
                                     <a data-goto=".screen-1" href="index.html#intro" class="menu__link lng-menu-home">Главная</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-2" href="index.html#about" class="menu__link lng-menu-about">О себе</a>
+                                    <a data-goto=".screen-2" href="index.html#about" class="menu__link lng-menu-about">О
+                                        себе</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-3" href="index.html#service" class="menu__link lng-menu-service">Услуги</a>
+                                    <a data-goto=".screen-3" href="index.html#service"
+                                       class="menu__link lng-menu-service">Услуги</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-4" href="index.html#cosmetic" class="menu__link lng-menu-cosmetics">Косметика</a>
+                                    <a data-goto=".screen-4" href="index.html#cosmetic"
+                                       class="menu__link lng-menu-cosmetics">Косметика</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-5" href="index.html#certificates" class="menu__link lng-menu-certificates">Сертификаты</a>
+                                    <a data-goto=".screen-5" href="index.html#certificates"
+                                       class="menu__link lng-menu-certificates">Сертификаты</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-6" href="index.html#consultation" class="menu__link lng-menu-consultation">Консультации</a>
+                                    <a data-goto=".screen-6" href="index.html#consultation"
+                                       class="menu__link lng-menu-consultation">Консультации</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-7" href="index.html#review" class="menu__link lng-menu-review">Отзывы</a>
+                                    <a data-goto=".screen-7" href="index.html#review"
+                                       class="menu__link lng-menu-review">Отзывы</a>
                                 </li>
                                 <li class="footer__item">
                                     <a data-goto=".screen-8" href="index.html#salon" class="menu__link lng-menu-salon">Салон</a>
@@ -350,7 +363,6 @@
                     </div>
                 </div>
             </div>
-            <!--            <div class="footer_bg"></div>-->
         </footer>
     </main>
 </div>
@@ -375,10 +387,16 @@
                 <div class="popup__feature feature">
                     <ul class="feature__list">
                         <li class="feature__item lng-card-1-modal-feature-1"><span>Объем (мл): </span>40ml</li>
-                        <li class="feature__item lng-card-1-modal-feature-2"><span>Время применения: </span>универсальный</li>
-                        <li class="feature__item lng-card-1-modal-feature-3"><span>Классификация: </span>дерматокосметика</li>
-                        <li class="feature__item lng-card-1-modal-feature-4"><span>Назначение: </span>увлажнение, укрепление, успокоение</li>
-                        <li class="feature__item lng-card-1-modal-feature-5"><span>Тип кожи: </span> комбинированная, нормальная</li>
+                        <li class="feature__item lng-card-1-modal-feature-2"><span>Время применения: </span>универсальный
+                        </li>
+                        <li class="feature__item lng-card-1-modal-feature-3"><span>Классификация: </span>дерматокосметика
+                        </li>
+                        <li class="feature__item lng-card-1-modal-feature-4"><span>Назначение: </span>увлажнение,
+                            укрепление, успокоение
+                        </li>
+                        <li class="feature__item lng-card-1-modal-feature-5"><span>Тип кожи: </span> комбинированная,
+                            нормальная
+                        </li>
                     </ul>
                     <span class="feature__price lng-card-1-modal-price">1000 грн</span>
                 </div>
@@ -390,7 +408,8 @@
                             </div>
                             <div class="accordion__header-info">
                                 <div class="accordion__header-top">
-                                    <h2 class="accordion__header-title"><span class="lng-card-1-modal-accordion-1-title">Описание</span></h2>
+                                    <h2 class="accordion__header-title"><span
+                                            class="lng-card-1-modal-accordion-1-title">Описание</span></h2>
                                 </div>
                             </div>
                         </div>
@@ -424,7 +443,8 @@
                             </div>
                             <div class="accordion__header-info">
                                 <div class="accordion__header-top">
-                                    <h2 class="accordion__header-title"><span class="lng-card-1-modal-accordion-2-title">Применение</span>
+                                    <h2 class="accordion__header-title"><span
+                                            class="lng-card-1-modal-accordion-2-title">Применение</span>
                                     </h2>
                                 </div>
                             </div>
@@ -459,7 +479,8 @@
                             </div>
                             <div class="accordion__header-info">
                                 <div class="accordion__header-top">
-                                    <h2 class="accordion__header-title"><span class="lng-card-1-modal-accordion-3-title">Состав</span>
+                                    <h2 class="accordion__header-title"><span
+                                            class="lng-card-1-modal-accordion-3-title">Состав</span>
                                     </h2>
                                 </div>
                             </div>
@@ -493,26 +514,13 @@
         </div>
     </div>
 </div>
-<script src="js/lang-product.js"></script>
 
 <script src="js/dynamicAdapt.js"></script>
 <script src="js/burger.js"></script>
 <script src="js/popup.js"></script>
 <script src="js/filter.js"></script>
 <script src="js/sort.js"></script>
-<script>
-    function setBrand(filterBrand) {
-        let brand = filterBrand;
-        const localBrand = localStorage.getItem('brand');
-        if (!brand) {
-            brand = localBrand;
-        }
-        const el = document.querySelector(`.${brand}`);
-        el?.click();
-        localStorage.removeItem('brand');
-    }
-</script>
-<!--<script src="js/sliders.js"></script>-->
+<script src="js/lang-product.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>

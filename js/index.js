@@ -36,7 +36,7 @@ function rewriteLangValue(elem, key, langValue) {
 
 function checkLang() {
     const localLang = localStorage.getItem('language');
-    setLang(localLang || "ua")
+    setLang(localLang || "ru")
 }
 
 function setActiveLangBtn(langValue) {

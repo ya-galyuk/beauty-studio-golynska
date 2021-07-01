@@ -940,17 +940,11 @@ body.lock {
     flex-wrap: wrap;
   }
 
-  &__info {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex: 1;
-  }
-
   &__title {
     display: flex;
     align-items: center;
-    @include adaptive-value("font-size", 52, 40, 1, 375);
+    flex: 1 1 auto;
+    @include adaptive-value("font-size", 52, 36, 1, 375);
     @include adaptive-value("margin-bottom", 34, 24, 1, 375);
   }
 
@@ -1126,6 +1120,10 @@ body.lock {
 
 /* consultation ---------------------------*/
 .consultation {
+  &-slider__wrapper {
+    height: auto !important;
+  }
+
   &__title {
     font-family: 'Oswald', sans-serif;
     @extend %tpl-font_medium;

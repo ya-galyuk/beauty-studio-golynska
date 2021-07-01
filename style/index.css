@@ -984,21 +984,16 @@ body.lock {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.cosmetic__info {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex: 1;
-}
 .cosmetic__title {
   display: flex;
   align-items: center;
+  flex: 1 1 auto;
   font-size: 52px;
   margin-bottom: 34px;
 }
 @media (max-width: 1440px) {
   .cosmetic__title {
-    font-size: calc(40px + 12 * ((100vw - 375px) / 1065));
+    font-size: calc(36px + 16 * ((100vw - 375px) / 1065));
   }
 }
 @media (max-width: 1440px) {
@@ -1186,6 +1181,9 @@ body.lock {
 
 /* ----------------------------------------*/
 /* consultation ---------------------------*/
+.consultation-slider__wrapper {
+  height: auto !important;
+}
 .consultation__title {
   font-family: "Oswald", sans-serif;
   display: flex;

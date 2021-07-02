@@ -3,7 +3,6 @@
 @import "mixin";
 @import "templates";
 @import "function";
-@import "font";
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -25,7 +24,7 @@
 html,
 body {
   height: 100%;
-  //font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-style: normal;
   line-height: 1;
   font-size: 14px;
@@ -567,6 +566,11 @@ body.lock {
     &__container {
       min-height: 60px;
     }
+    &__service {
+      .phone__link {
+        display: none;
+      }
+    }
   }
 }
 
@@ -997,6 +1001,7 @@ body.lock {
     &-title {
       @extend %tpl-font_medium;
       @include adaptive-value("font-size", 42, 34, 1, 375);
+      font-family: 'Oswald', sans-serif;
       color: $text-color_light;
       position: absolute;
       top: 50%;

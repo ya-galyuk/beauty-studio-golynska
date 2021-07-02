@@ -2,12 +2,15 @@
 
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
+const phoneNumber = document.querySelector('.header__phone .phone__link');
+
 if (iconMenu) {
     const menuBody = document.querySelector('.menu__body');
     iconMenu.addEventListener("click", function () {
         document.body.classList.toggle('_lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
+        phoneNumber.style.display = "initial";
     })
 }
 
@@ -28,6 +31,7 @@ if (menuLinks.length > 0) {
                 document.body.classList.remove('_lock');
                 iconMenu.classList.remove('_active');
                 menuBody.classList.remove('_active');
+                phoneNumber.style.display = "none";
             }
 
             window.scrollTo({

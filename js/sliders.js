@@ -1,6 +1,6 @@
 // sliders --------------------------------------
 const optionBase = {
-    speed: 1500,
+    speed: 1000,
 
     // desktop drag
     simulateTouch: false,

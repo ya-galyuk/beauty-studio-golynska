@@ -325,7 +325,7 @@ body.lock {
     align-items: center;
     justify-content: space-between;
     min-height: 80px;
-    transition: all 1s;
+    //transition: all 1s;
   }
 
   &__logo {
@@ -337,7 +337,7 @@ body.lock {
     transform: translate(-50%, 0);
     z-index: 5;
     order: 2;
-    transition: all 2s;
+    //transition: all 2s;
 
     img {
       max-width: 100%;

@@ -1,56 +1,12 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-    checkLang();
     setBrand();
 });
 
 window.onscroll = () => {
     scrollFunction()
 };
-
-
-// lang
-document.querySelectorAll('.lang button')
-    .forEach((b) => b.addEventListener('click', setLang));
-
-function setLang(langValue) {
-    if (this?.value)
-        langValue = this.value
-
-    localStorage.setItem('language', langValue);
-    setActiveLangBtn(langValue);
-
-    for (let key in langObj) {
-        let elem = document.querySelectorAll('.lng-' + key);
-        if (elem && langObj.hasOwnProperty(key))
-            rewriteLangValue(elem, key, langValue)
-    }
-}
-
-function rewriteLangValue(elem, key, langValue) {
-    for (const elemElement of elem) {
-        elemElement.innerHTML = langObj[key][langValue];
-    }
-}
-
-function checkLang() {
-    const localLang = localStorage.getItem('language');
-    setLang(localLang || "ru")
-}
-
-function setActiveLangBtn(langValue) {
-    const langBtn = document.querySelectorAll('.lang__btn');
-    const activeLangBtn = document.getElementById('lang-' + langValue);
-
-    if (langBtn.length) {
-        for (const langBtnElement of langBtn) {
-            langBtnElement.classList.remove("active");
-        }
-    }
-
-    activeLangBtn?.classList.add("active");
-}
 
 // ----------------------------------------------
 

@@ -115,14 +115,14 @@ const langObj = {
         "en": "<span>Classification: </span> Dermatokosmetics",
     },
     "card-1-modal-feature-4": {
-        "ua": "<span> Призначення: </span> зволоження, зміцнення, заспокоєння",
+        "ua": "<span>Призначення: </span> зволоження, зміцнення, заспокоєння",
         "ru": "<span>Назначение: </span>увлажнение, укрепление, успокоение",
-        "en": "<span> Purpose: </ span> Moisturizing, strengthening, calm",
+        "en": "<span>Purpose: </span> Moisturizing, strengthening, calm",
     },
     "card-1-modal-feature-5": {
-        "ua": "<span> Тип шкіри: </span> комбінована, нормальна",
+        "ua": "<span>Тип шкіри: </span> комбінована, нормальна",
         "ru": "<span>Тип кожи: </span> комбинированная, нормальная",
-        "en": "<span> Skin Type: </span> Combined, Normal",
+        "en": "<span>Skin Type: </span> Combined, Normal",
     },
     "card-1-modal-price": {
         "ua": "1000 грн",

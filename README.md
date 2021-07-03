@@ -1,8 +1,7 @@
 ## Translate
 
-1. Use the prefix `lng-` in class 
-   ex: `lng-intro-title`
-2. Add a new language value to `lang.js` or `lang-product.js` file.
+1. Add a new language value to `lang-YOUR_LANGUAGE_CODE.json` file.
+2. `mustache lang-YOUR_LANGUAGE_CODE.json TEMPLATE_NAME.mustache > OUTPUT_FILE_NAME.html`
 
 ## Popup
 

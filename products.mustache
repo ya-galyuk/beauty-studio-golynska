@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="{{{lang}}}">
 <head>
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" name="viewport"/>
@@ -8,22 +8,22 @@
     <!--  SEO -->
 
     <!--  max 140  -->
-    <meta name="description" content="Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948"/>
+    <meta name="description" content="{{{meta.description}}}"/>
     <!--  max 20 words ex: tag-1, tag-2, tab-3  -->
-    <meta name="keywords" content=""/>
+    <meta name="keywords" content="{{{meta.keywords}}}"/>
 
-    <title>Beauty studio Golynska</title>
+    <title>{{{title}}}</title>
 
-    <link rel="alternate" href="https://www.example.com/products.html" hreflang="ru">
-    <link rel="alternate" href="https://www.example.com/ua/products.html" hreflang="ua">
-    <link rel="alternate" href="https://www.example.com/en/products.html" hreflang="en">
+    <link rel="alternate" href="{{{url}}}/products.html" hreflang="ru">
+    <link rel="alternate" href="{{{url}}}/ua/products.html" hreflang="ua">
+    <link rel="alternate" href="{{{url}}}/en/products.html" hreflang="en">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@400;500&display=swap"
           rel="stylesheet">
 
-    <link rel="stylesheet" href="style/index.min.css">
+    <link rel="stylesheet" href="{{{root}}}style/index.min.css">
 </head>
 <body>
 
@@ -33,34 +33,34 @@
             <div class="header__menu menu">
                 <nav class="menu__body">
                     <ul class="menu__list">
-                        <li class="menu__item"><a data-goto=".screen-p-1" href="#cosmetic-brand" class="menu__link">Бренды</a></li>
-                        <li class="menu__item"><a data-goto=".screen-p-2" href="#cosmetic-cards" class="menu__link">Косметика</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-1" href="/beauty-studio-golynska/#intro" class="menu__link">Главная</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-2" href="/beauty-studio-golynska/#about" class="menu__link">О себе</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-3" href="/beauty-studio-golynska/#service" class="menu__link">Услуги</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-4" href="/beauty-studio-golynska/#cosmetics" class="menu__link">Косметика</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-5" href="/beauty-studio-golynska/#certificates" class="menu__link">Сертификаты</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-6" href="/beauty-studio-golynska/#consultation" class="menu__link">Консультации</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-7" href="/beauty-studio-golynska/#review" class="menu__link">Отзывы</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="/beauty-studio-golynska/#salon" class="menu__link">Салон</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="/beauty-studio-golynska/#salon" class="menu__link">Контакты</a></li>
+                        <li class="menu__item"><a data-goto=".screen-p-1" href="#cosmetic-brand" class="menu__link">{{{menu.brands}}}</a></li>
+                        <li class="menu__item"><a data-goto=".screen-p-2" href="#cosmetic-cards" class="menu__link">{{{menu.cosmetics}}}</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-1" href="{{{root-url}}}{{{dir}}}#intro" class="menu__link">{{{menu.home}}}</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-2" href="{{{root-url}}}{{{dir}}}#about" class="menu__link">{{{menu.about}}}</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-3" href="{{{root-url}}}{{{dir}}}#service" class="menu__link">{{{menu.service}}}</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-4" href="{{{root-url}}}{{{dir}}}#cosmetics" class="menu__link">{{{menu.cosmetics}}}</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-5" href="{{{root-url}}}{{{dir}}}#certificates" class="menu__link">{{{menu.certificates}}}</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-6" href="{{{root-url}}}{{{dir}}}#consultation" class="menu__link">{{{menu.consultation}}}</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-7" href="{{{root-url}}}{{{dir}}}#review" class="menu__link">{{{menu.review}}}</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="{{{root-url}}}{{{dir}}}#salon" class="menu__link">{{{menu.salon}}}</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="{{{root-url}}}{{{dir}}}#salon" class="menu__link">{{{menu.contacts}}}</a></li>
                     </ul>
                 </nav>
                 <div class="menu__icon">
                     <span></span>
                 </div>
             </div>
-            <a href="/beauty-studio-golynska/" class="header__logo">
-                <img src="img/logo.png" width="180" height="180" alt="Логотип Beauty studio Golynska">
+            <a href="{{{root-url}}}" class="header__logo">
+                <img src="{{{root}}}img/logo.png" width="180" height="180" alt="{{{alt.logo}}}">
             </a>
             <div data-da=".menu__body,500,1" class="header__service">
                 <div class="header__phone phone">
                     <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
                 </div>
                 <div data-da=".menu__body,1024,2" class="header__lang lang">
-                    <a href="/beauty-studio-golynska/products.html" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</a>
-                    <a href="/beauty-studio-golynska/ua/products.html" class="header__btn lang__btn" id="lang-ua" onclick="setLang('ua')">UA</a>
-                    <a href="/beauty-studio-golynska/en/products.html" class="header__btn lang__btn" id="lang-en" onclick="setLang('en')">EN</a>
+                    <a href="{{{root-url}}}products.html" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</a>
+                    <a href="{{{root-url}}}ua/products.html" class="header__btn lang__btn" id="lang-ua" onclick="setLang('ua')">UA</a>
+                    <a href="{{{root-url}}}en/products.html" class="header__btn lang__btn" id="lang-en" onclick="setLang('en')">EN</a>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
         <section id="cosmetic-intro" class="page__screen screen intro">
             <div class="screen__body">
                 <div class="screen__image">
-                    <img src="img/products-intro.jpg" alt="Изображение, на котором косметика">
+                    <img src="{{{root}}}img/products-intro.jpg" alt="{{{alt.products.intro}}}">
                 </div>
             </div>
         </section>
@@ -80,7 +80,7 @@
                 <div class="container">
                     <div class="cosmetic__container">
                         <div class="cosmetic__info">
-                            <h1 class="screen__title screen__title_bg cosmetic__title">Бренды с которыми работаем</h1>
+                            <h1 class="screen__title screen__title_bg cosmetic__title">{{{products.title}}}</h1>
                         </div>
                     </div>
                     <div class="cosmetic__cards">
@@ -90,7 +90,7 @@
                                    onclick="setBrand('brand-holyland')">
                                     <h2 class="cosmetic__item-title">Holyland</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/holyland.png" alt="Косметика Holyland">
+                                        <img src="{{{root}}}img/holyland.png" alt="{{{alt.cosmetics.0}}}">
                                         <div class="_dark"></div>
                                     </div>
                                     <div class="_border"></div>
@@ -101,7 +101,7 @@
                                    onclick="setBrand('brand-dermaquest')">
                                     <h2 class="cosmetic__item-title">Dermaquest</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/dermaquest.png" alt="Косметика Dermaquest">
+                                        <img src="{{{root}}}img/dermaquest.png" alt="{{{alt.cosmetics.1}}}">
                                         <div class="_dark"></div>
                                     </div>
                                     <div class="_border"></div>
@@ -112,7 +112,7 @@
                                    onclick="setBrand('brand-bio_matrix')">
                                     <h2 class="cosmetic__item-title">Bio-matrix</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/holyland.png" alt="Косметика Bio-matrix">
+                                        <img src="{{{root}}}img/holyland.png" alt="{{{alt.cosmetics.2}}}">
                                         <div class="_dark"></div>
                                     </div>
                                     <div class="_border"></div>
@@ -127,13 +127,13 @@
         <section id="cosmetic-cards" class="page__screen screen-p-2 screen cosmetic-cards cards">
             <div class="screen__content cards__content">
                 <div class="container">
-                    <h2 class="screen__title _text-line cards__title">Косметика</h2>
+                    <h2 class="screen__title _text-line cards__title">{{{products.cards.title}}}</h2>
                     <div class="cards__filter">
                         <div class="cards__brand brand">
                             <ul class="brand__list">
                                 <li class="brand__item">
                                     <button class="brand__btn brand-all active"
-                                            onclick="filterSelection('all')">Все бренды
+                                            onclick="filterSelection('all')">{{{products.cards.filter}}}
                                     </button>
                                 </li>
                                 <li class="brand__item">
@@ -154,7 +154,7 @@
                             </ul>
                         </div>
                         <button class="cards__sort" onclick="sortListDir()">
-                            <span class="cards__sort-text">Сортировать по цене</span>
+                            <span class="cards__sort-text">{{{products.cards.sort}}}</span>
                             <span class="cards__sort-icon sort-icon__top">
                                 <svg width="30" height="23" viewBox="0 0 30 23" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -182,17 +182,17 @@
                     <div class="cards__list">
                         <a href="#card_1" class="popup-link cards__item card holyland">
                             <div class="card__img">
-                                <img src="img/products/card__item-1.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-1.png" alt="{{{alt.products.cards.0}}}"/>
                             </div>
                             <div class="card__info">
-                                <div class="card__description">holyland Увлажняющий крем для жирной кожи</div>
-                                <div class="card__price">1000 грн</div>
+                                <div class="card__description">{{{products.cards.items.0.description}}}</div>
+                                <div class="card__price">{{{products.cards.items.0.price}}}</div>
                             </div>
                         </a>
 
                         <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
-                                <img src="img/products/card__item-2.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-2.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
@@ -201,7 +201,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card holyland">
                             <div class="card__img">
-                                <img src="img/products/card__item-2.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-2.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">holyland Увлажняющий крем для жирной кожи</div>
@@ -210,7 +210,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card holyland">
                             <div class="card__img">
-                                <img src="img/products/card__item-1.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-1.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">holyland Увлажняющий крем для жирной кожи</div>
@@ -219,7 +219,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
-                                <img src="img/products/card__item-1.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-1.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
@@ -228,7 +228,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
-                                <img src="img/products/card__item-1.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-1.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
@@ -237,7 +237,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
-                                <img src="img/products/card__item-2.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-2.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
@@ -246,7 +246,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
-                                <img src="img/products/card__item-2.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-2.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
@@ -255,7 +255,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card holyland">
                             <div class="card__img">
-                                <img src="img/products/card__item-1.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-1.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">holyland Увлажняющий крем для жирной кожи</div>
@@ -264,7 +264,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
-                                <img src="img/products/card__item-1.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-1.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
@@ -273,7 +273,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
-                                <img src="img/products/card__item-2.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-2.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
@@ -282,7 +282,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
-                                <img src="img/products/card__item-2.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-2.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
@@ -291,7 +291,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
-                                <img src="img/products/card__item-1.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-1.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">dermaquest Увлажняющий крем для жирной кожи</div>
@@ -300,7 +300,7 @@
                         </a>
                         <a href="#" class="popup-link cards__item card bio_matrix">
                             <div class="card__img">
-                                <img src="img/products/card__item-1.png" alt=""/>
+                                <img src="{{{root}}}img/products/card__item-1.png" alt=""/>
                             </div>
                             <div class="card__info">
                                 <div class="card__description">bio_matrix Увлажняющий крем для жирной кожи</div>
@@ -319,40 +319,40 @@
                         <nav class="footer__menu menu__body menu">
                             <ul class="footer__list menu__list">
                                 <li class="footer__item">
-                                    <a data-goto=".screen-1" href="/beauty-studio-golynska/#intro"
-                                       class="menu__link">Главная</a>
+                                    <a data-goto=".screen-1" href="{{{root-url}}}{{{dir}}}#intro"
+                                       class="menu__link">{{{menu.home}}}</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-2" href="/beauty-studio-golynska/#about"
-                                       class="menu__link">О себе</a>
+                                    <a data-goto=".screen-2" href="{{{root-url}}}{{{dir}}}#about"
+                                       class="menu__link">{{{menu.about}}}</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-3" href="/beauty-studio-golynska/#service"
-                                       class="menu__link">Услуги</a>
+                                    <a data-goto=".screen-3" href="{{{root-url}}}{{{dir}}}#service"
+                                       class="menu__link">{{{menu.service}}}</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-4" href="/beauty-studio-golynska/#cosmetic"
-                                       class="menu__link">Косметика</a>
+                                    <a data-goto=".screen-4" href="{{{root-url}}}{{{dir}}}#cosmetic"
+                                       class="menu__link">{{{menu.cosmetics}}}</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-5" href="/beauty-studio-golynska/#certificates"
-                                       class="menu__link">Сертификаты</a>
+                                    <a data-goto=".screen-5" href="{{{root-url}}}{{{dir}}}#certificates"
+                                       class="menu__link">{{{menu.certificates}}}</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-6" href="/beauty-studio-golynska/#consultation"
-                                       class="menu__link">Консультации</a>
+                                    <a data-goto=".screen-6" href="{{{root-url}}}{{{dir}}}#consultation"
+                                       class="menu__link">{{{menu.consultation}}}</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-7" href="/beauty-studio-golynska/#review"
-                                       class="menu__link">Отзывы</a>
+                                    <a data-goto=".screen-7" href="{{{root-url}}}{{{dir}}}#review"
+                                       class="menu__link">{{{menu.review}}}</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-8" href="/beauty-studio-golynska/#salon"
-                                       class="menu__link">Салон</a>
+                                    <a data-goto=".screen-8" href="{{{root-url}}}{{{dir}}}#salon"
+                                       class="menu__link">{{{menu.salon}}}</a>
                                 </li>
                             </ul>
                         </nav>
-                        <p class="footer__copyright">© 2021, косметолог Татьяна Голынская</p>
+                        <p class="footer__copyright">{{{footer.copyright}}}</p>
                     </div>
                 </div>
             </div>
@@ -372,20 +372,20 @@
             </div>
             <div class="popup__image-box">
                 <div class="popup__image">
-                    <img src="img/products/card__item-1.png" alt="">
+                    <img src="{{{root}}}img/products/card__item-1.png" alt="{{{alt.products.cards.0}}}">
                 </div>
             </div>
             <div class="popup__container">
-                <h2 class="popup__title screen__title">Увлажняющий крем для жирной кожи</h2>
+                <h2 class="popup__title screen__title">{{{products.cards.items.0.modal.title}}}</h2>
                 <div class="popup__feature feature">
                     <ul class="feature__list">
-                        <li class="feature__item">Объем (мл): 
-                        <li class="feature__item"><span>Время применения: </span>универсальный</li>
-                        <li class="feature__item"><span>Классификация: </span>дерматокосметика</li>
-                        <li class="feature__item"><span>Назначение: </span>увлажнение, укрепление, успокоение</li>
-                        <li class="feature__item"><span>Тип кожи: </span> комбинированная, нормальная</li>
+                        <li class="feature__item">{{{products.cards.items.0.modal.feature.0}}}
+                        <li class="feature__item">{{{products.cards.items.0.modal.feature.1}}}</li>
+                        <li class="feature__item">{{{products.cards.items.0.modal.feature.2}}}</li>
+                        <li class="feature__item">{{{products.cards.items.0.modal.feature.3}}}</li>
+                        <li class="feature__item">{{{products.cards.items.0.modal.feature.4}}}</li>
                     </ul>
-                    <span class="feature__price">1000 грн</span>
+                    <span class="feature__price">{{{products.cards.items.0.modal.price}}}</span>
                 </div>
                 <div data-da=".popup__content,1024,last" class="accordion">
                     <div class="accordion__item">
@@ -396,15 +396,15 @@
                             <div class="accordion__header-info">
                                 <div class="accordion__header-top">
                                     <h2 class="accordion__header-title">
-                                        <span>Применение</span>
+                                        <span>{{{products.cards.items.0.modal.accordions.1.title}}}</span>
                                     </h2>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion__panel panel">
                             <div class="accordion__panel-content panel__content">
-                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
-                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
+                                <p class="panel__text">{{{products.cards.items.0.modal.accordions.0.text.0}}}</p>
+                                <p class="panel__text">{{{products.cards.items.0.modal.accordions.0.text.1}}}</p>
                             </div>
                         </div>
                     </div>
@@ -416,15 +416,15 @@
                             <div class="accordion__header-info">
                                 <div class="accordion__header-top">
                                     <h2 class="accordion__header-title">
-                                        <span>Применение</span>
+                                        <span>{{{products.cards.items.0.modal.accordions.1.title}}}</span>
                                     </h2>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion__panel panel">
                             <div class="accordion__panel-content panel__content">
-                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
-                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
+                                <p class="panel__text">{{{products.cards.items.0.modal.accordions.1.text.0}}}</p>
+                                <p class="panel__text">{{{products.cards.items.0.modal.accordions.1.text.1}}}</p>
                             </div>
                         </div>
                     </div>
@@ -436,15 +436,15 @@
                             <div class="accordion__header-info">
                                 <div class="accordion__header-top">
                                     <h2 class="accordion__header-title">
-                                        <span>Состав</span>
+                                        <span>{{{products.cards.items.0.modal.accordions.2.title}}}</span>
                                     </h2>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion__panel panel">
                             <div class="accordion__panel-content panel__content">
-                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
-                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
+                                <p class="panel__text">{{{products.cards.items.0.modal.accordions.2.text.0}}}</p>
+                                <p class="panel__text">{{{products.cards.items.0.modal.accordions.2.text.1}}}</p>
                             </div>
                         </div>
                     </div>
@@ -454,11 +454,11 @@
     </div>
 </div>
 
-<script src="js/dynamicAdapt.js"></script>
-<script src="js/burger.js"></script>
-<script src="js/popup.js"></script>
-<script src="js/filter.js"></script>
-<script src="js/sort.js"></script>
-<script src="js/index.js"></script>
+<script src="{{{root}}}js/dynamicAdapt.js"></script>
+<script src="{{{root}}}js/burger.js"></script>
+<script src="{{{root}}}js/popup.js"></script>
+<script src="{{{root}}}js/filter.js"></script>
+<script src="{{{root}}}js/sort.js"></script>
+<script src="{{{root}}}js/index.js"></script>
 </body>
 </html>

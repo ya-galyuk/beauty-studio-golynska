@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="ru">
 <head>
     <meta charset="UTF-8"/>
-    <meta
-            content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
-            name="viewport"
-    />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" name="viewport"/>
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
 
     <!--  SEO -->
 
     <!--  max 140  -->
-    <meta name="description"
-          content="Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948">
+    <meta name="description" content="Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948"/>
     <!--  max 20 words ex: tag-1, tag-2, tab-3  -->
     <meta name="keywords" content=""/>
 
     <title>Beauty studio Golynska</title>
 
+    <link rel="alternate" href="https://www.example.com/ua/" hreflang="ua">
     <link rel="alternate" href="https://www.example.com/" hreflang="ru">
     <link rel="alternate" href="https://www.example.com/en/" hreflang="en">
 
@@ -38,25 +35,33 @@
             <div class="header__menu menu">
                 <nav class="menu__body">
                     <ul class="menu__list">
-                        <li class="menu__item_mob"><a data-goto=".screen-1" href="#" class="menu__link lng-menu-home">Головна</a>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-1" href="#intro" class="menu__link">Головна</a>
                         </li>
-                        <li class="menu__item_mob"><a data-goto=".screen-2" href="#" class="menu__link lng-menu-about">Про
-                            себе</a></li>
-                        <li class="menu__item"><a data-goto=".screen-3" href="#" class="menu__link lng-menu-service">Послуги</a>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-2" href="#about" class="menu__link">Про себе</a>
                         </li>
-                        <li class="menu__item"><a data-goto=".screen-4" href="#" class="menu__link lng-menu-cosmetics">Косметика</a>
+                        <li class="menu__item">
+                            <a data-goto=".screen-3" href="#service" class="menu__link">Послуги</a>
                         </li>
-                        <li class="menu__item_mob"><a data-goto=".screen-5" href="#"
-                                                      class="menu__link lng-menu-certificates">Сертифікати</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-6" href="#"
-                                                      class="menu__link lng-menu-consultation">Консультація</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-7" href="#" class="menu__link lng-menu-review">Відгуки</a>
+                        <li class="menu__item">
+                            <a data-goto=".screen-4" href="#cosmetic" class="menu__link">Косметика</a>
                         </li>
-                        <li class="menu__item"><a data-goto=".screen-8" href="#"
-                                                  class="menu__link lng-menu-salon">Салон</a>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-5" href="#certificates" class="menu__link">Сертифікати</a>
                         </li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="#"
-                                                      class="menu__link lng-menu-contacts">Контакти</a></li>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-6" href="#consultation" class="menu__link">Консультація</a>
+                        </li>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-7" href="#review" class="menu__link">Відгуки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".screen-8" href="#salon" class="menu__link">Салон</a>
+                        </li>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-8" href="#salon" class="menu__link">Контакти</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="menu__icon">
@@ -71,9 +76,9 @@
                     <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
                 </div>
                 <div data-da=".menu__body,1024,2" class="header__lang lang">
-                    <a href="/" class="header__btn lang__btn" id="lang-ru">RU</a>
-                    <a href="/ua/" class="header__btn lang__btn active" id="lang-ua">UA</a>
-                    <a href="/en/" class="header__btn lang__btn" id="lang-en">EN</a>
+                    <a href="/beauty-studio-golynska/" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</a>
+                    <a href="/beauty-studio-golynska/ua/" class="header__btn lang__btn" id="lang-ua" onclick="setLang('ua')">UA</a>
+                    <a href="/beauty-studio-golynska/en/" class="header__btn lang__btn" id="lang-en" onclick="setLang('en')">EN</a>
                 </div>
             </div>
         </div>
@@ -84,14 +89,13 @@
             <div class="screen__content intro__content">
                 <div class="container">
                     <div class="intro__title-block">
-                        <h1 class="intro__title lng-intro-title">Ваша краса гідна <br> більшого, ніж ви для неї робите
-                        </h1>
+                        <h1 class="intro__title">Ваша краса гідна <br/> більшого, ніж ви для неї робите</h1>
                     </div>
                 </div>
             </div>
             <div class="screen__body">
                 <div class="screen__image">
-                    <img src="../img/intro.jpeg" alt="Изображение, на котором Татьяна сидит на диване">
+                    <img src="../img/intro.jpeg" alt="Зображення, на якому Тетяна сидить на дивані">
                 </div>
             </div>
         </section>
@@ -100,21 +104,17 @@
             <div class="screen__content">
                 <div class="container about__container">
                     <div class="about__content">
-                        <h2 class="screen__title about__title lng-about-title">Про себе</h2>
-                        <p class="about__description _text-line lng-about-description">Тетяна Голинська - універсальний
-                            косметолог. За останні 25 років вона накопичила великий практичний досвід. Тетяна знає
-                            конкретні вимоги і потреби клієнтів. Поєднуючи свої знання і досвід з провідними
-                            косметичними брендами.</p>
+                        <h2 class="screen__title about__title">Про себе</h2>
+                        <p class="about__description _text-line">Тетяна Голинська - універсальний косметолог. За останні 25 років вона накопичила великий практичний досвід. Тетяна знає конкретні вимоги і потреби клієнтів. Поєднуючи свої знання і досвід з провідними косметичними брендами.</p>
 
                         <div class="about__buttons">
-                            <a href="#" class="btn btn_primary lng-about-btn-consultation">Записатися на
-                                консультацію</a>
-                            <a data-goto=".screen-4" href="#" class="menu__link btn btn_secondary lng-about-btn-brand">Детальніше
-                                про бренди</a>
+                            <a href="#" class="btn btn_primary">Записатися на консультацію</a>
+                            <a data-goto=".screen-4" href="#"
+                               class="menu__link btn btn_secondary">Детальніше про бренди</a>
                         </div>
                     </div>
                     <div data-da=".about__content,768,2" class="about__photo">
-                        <img src="../img/photo.png" alt="Фото Татьяна Голынская">
+                        <img src="../img/photo.png" alt="Фото Тетяна Голинська">
                     </div>
                 </div>
             </div>
@@ -124,23 +124,20 @@
             <div class="screen__content service__content">
                 <div class="fluid-container service__container">
                     <div class="service__body">
-                        <h2 class="screen__title screen__title_bg service__title lng-service-title">Послуги та ціни</h2>
+                        <h2 class="screen__title screen__title_bg service__title">Послуги та ціни</h2>
                         <div class="f-block__body">
-                            <!-- Slider main container -->
                             <div class="service-slider swiper-container">
-                                <!-- Additional required wrapper -->
                                 <div class="service-slider__wrapper swiper-wrapper">
-                                    <!-- Slides -->
                                     <div data-hash="service-1" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="../img/service/service-1.png" alt="Криотерапия">
+                                            <img src="../img/service/service-1.png" alt="Кріотерапія">
                                         </div>
                                         <div class="service-slider__service-info service-info">
                                             <a href="#service-1" class="popup-link">
-                                                <h2 class="service-info__title lng-service-1-title">Кріотерапія</h2>
+                                                <h2 class="service-info__title">Кріотерапія</h2>
                                             </a>
                                             <div class="service-info__details">
-                                                <div class="service-info__price lng-service-1-price">300 грн</div>
+                                                <div class="service-info__price">300 грн</div>
                                                 <div class="service-info__time time">
                                                     <div class="time__icon">
                                                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
@@ -151,27 +148,25 @@
                                                                   fill="black"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="time__info lng-service-1-time">8 хвилин</div>
+                                                    <div class="time__info">8 хвилин</div>
                                                 </div>
                                                 <div class="service-info__more">
                                                     <a href="#service-1"
-                                                       class="popup-link service-info__link lng-service-link-more">Докладніше</a>
+                                                       class="popup-link service-info__link"></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div data-hash="service-2" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="../img/service/service-2.png"
-                                                 alt="Мезотерапия. Биоревитализация.">
+                                            <img src="../img/service/service-2.png" alt="Мезотерапія. Біоревіталізація.">
                                         </div>
                                         <div class="service-slider__service-info service-info">
                                             <a href="#service-2" class="popup-link">
-                                                <h2 class="service-info__title lng-service-2-title">Мезотерапія.
-                                                    Біоревіталізація.</h2>
+                                                <h2 class="service-info__title">Мезотерапія. Біоревіталізація.</h2>
                                             </a>
                                             <div class="service-info__details">
-                                                <div class="service-info__price lng-service-2-price">300 грн</div>
+                                                <div class="service-info__price">300 грн</div>
                                                 <div class="service-info__time time">
                                                     <div class="time__icon">
                                                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
@@ -182,25 +177,25 @@
                                                                   fill="black"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="time__info lng-service-2-time">8 хвилин</div>
+                                                    <div class="time__info">8 хвилин</div>
                                                 </div>
                                                 <div class="service-info__more">
                                                     <a href="#service-2"
-                                                       class="popup-link service-info__link lng-service-link-more">Докладніше</a>
+                                                       class="popup-link service-info__link"></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div data-hash="service-3" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
-                                            <img src="../img/service/service-3.png" alt="Химические пилинги">
+                                            <img src="../img/service/service-3.png" alt="Хімічні пілінги">
                                         </div>
                                         <div class="service-slider__service-info service-info">
                                             <a href="#service-3" class="popup-link">
-                                                <h2 class="service-info__title lng-service-3-title">Хімічні пілінги</h2>
+                                                <h2 class="service-info__title">Хімічні пілінги</h2>
                                             </a>
                                             <div class="service-info__details">
-                                                <div class="service-info__price lng-service-3-price">300 грн</div>
+                                                <div class="service-info__price">300 грн</div>
                                                 <div class="service-info__time time">
                                                     <div class="time__icon">
                                                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
@@ -211,11 +206,11 @@
                                                                   fill="black"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="time__info lng-service-3-time">8 хвилин</div>
+                                                    <div class="time__info">8 хвилин</div>
                                                 </div>
                                                 <div class="service-info__more">
                                                     <a href="#service-3"
-                                                       class="popup-link service-info__link lng-service-link-more">Докладніше</a>
+                                                       class="popup-link service-info__link"></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -223,15 +218,14 @@
                                     <div data-hash="service-4" class="service-slider__slide swiper-slide">
                                         <div class="service-slider__image">
                                             <img src="../img/service/service-4.png"
-                                                 alt="Ультрозвуковая. Механическая. Комбинированая.">
+                                                 alt="Ультразвукова. Механічна. Комбінована.">
                                         </div>
                                         <div class="service-slider__service-info service-info">
                                             <a href="#service-4" class="popup-link">
-                                                <h2 class="service-info__title lng-service-4-title">Ультразвукова.
-                                                    Механічна. Комбінована.</h2>
+                                                <h2 class="service-info__title">Ультразвукова. Механічна. Комбінована.</h2>
                                             </a>
                                             <div class="service-info__details">
-                                                <div class="service-info__price lng-service-4-price">300 грн</div>
+                                                <div class="service-info__price">300 грн</div>
                                                 <div class="service-info__time time">
                                                     <div class="time__icon">
                                                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
@@ -242,11 +236,11 @@
                                                                   fill="black"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="time__info lng-service-4-time">8 хвилин</div>
+                                                    <div class="time__info">8 хвилин</div>
                                                 </div>
                                                 <div class="service-info__more">
                                                     <a href="#service-4"
-                                                       class="popup-link service-info__link lng-service-link-more">Докладніше</a>
+                                                       class="popup-link service-info__link"></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -254,17 +248,14 @@
                                     <div class="service-slider__slide swiper-slide"></div>
                                 </div>
 
-                                <!-- If we need navigation buttons -->
                                 <div class="swiper-button-prev service__button-prev"></div>
                                 <div class="swiper-button-next service__button-next"></div>
                             </div>
                         </div>
                         <div class="service-btns">
-                            <a href="#" class="btn btn_primary-w service-btn lng-service-btn-appointment">Записатися на
-                                прийом</a>
+                            <a href="#" class="btn btn_primary-w service-btn">Записатися на прийом</a>
                             <a href="#all_service"
-                               class="popup-link btn btn_secondary-w service-btn lng-service-btn-procedures">Всі
-                                процедури</a>
+                               class="popup-link btn btn_secondary-w service-btn">Всі процедури</a>
                         </div>
                     </div>
                 </div>
@@ -275,14 +266,10 @@
             <div class="screen__content cosmetic__content">
                 <div class="container">
                     <div class="cosmetic__container">
-                        <h2 class="screen__title _text-line cosmetic__title lng-cosmetic-title">Косметика з якою
-                            працюємо</h2>
+                        <h2 class="screen__title _text-line cosmetic__title">Косметика з якою працюємо</h2>
                         <a href="products.html" data-da=".cosmetic__content,768,last"
-                           class="btn btn_secondary cosmetic-btn lng-cosmetic-btn-cosmetics">Вся косметика</a>
-                        <p class="cosmetic__description lng-cosmetic-description">Унікальні омолоджуючі і відновлювальні
-                            процедури для обличчя з використанням косметичних засобів всесвітньо відомих брендів. Ці
-                            ексклюзивні лінії створені із застосуванням новітніх технологій, а також природних
-                            компонентів. Кожна лінія унікальна і має широкий спектр дії.</p>
+                           class="btn btn_secondary cosmetic-btn">Вся косметика</a>
+                        <p class="cosmetic__description">Унікальні омолоджуючі і відновлювальні процедури для обличчя з використанням косметичних засобів всесвітньо відомих брендів. Ці ексклюзивні лінії створені із застосуванням новітніх технологій, а також природних компонентів. Кожна лінія унікальна і має широкий спектр дії.</p>
                     </div>
                     <div class="cosmetic__cards">
                         <ul class="cosmetic__list">
@@ -353,19 +340,19 @@
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
                                             <img src="../img/diplom/Diploma1.05.png"
-                                                 alt="Сертификат №1">
+                                                 alt="Сертифікат №1">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
                                             <img src="../img/diplom/Diploma1.04.png"
-                                                 alt="Сертификат №2">
+                                                 alt="Сертифікат №2">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
                                             <img src="../img/diplom/Diploma1.03.png"
-                                                 alt="Сертификат №3">
+                                                 alt="Сертифікат №3">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
@@ -377,17 +364,15 @@
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
                                             <img src="../img/diplom/Diploma1.01.png"
-                                                 alt="Сертификат №4">
-                                        </div>
-                                    </div>
+                                                 alt="Сертифікат №4">
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
                         <div class="certificates__info">
-                            <h2 class="certificates__title lng-certificates-title">Ви в надійних руках</h2>
-                            <p class="certificates__description lng-certificates-description">Ваше обличчя розквітне в
-                                доброзичливій атмосфері та турботі. Звернувшись до мене, ви довірите здоров'я і красу
-                                професіоналу.</p>
+                            <h2 class="certificates__title">Ви в надійних руках</h2>
+                            <p class="certificates__description">Ваше обличчя розквітне в доброзичливій атмосфері та турботі. Звернувшись до мене, ви довірите здоров'я і красу професіоналу.</p>
                         </div>
                         <div class="certificates__row">
                             <div dir="rtl" class="certificates-slider swiper-container">
@@ -399,12 +384,12 @@
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="../img/diplom/Diploma2.07.png" alt="Сертификат №5">
+                                            <img src="../img/diplom/Diploma2.07.png" alt="Сертифікат №5">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="../img/diplom/Diploma2.06.png" alt="Сертификат №6">
+                                            <img src="../img/diplom/Diploma2.06.png" alt="Сертифікат №6">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
@@ -419,21 +404,21 @@
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="../img/diplom/Diploma2.03.png" alt="Сертификат №7">
+                                            <img src="../img/diplom/Diploma2.03.png" alt="Сертифікат №7">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="../img/diplom/Diploma2.02.png" alt="Сертификат №8">
+                                            <img src="../img/diplom/Diploma2.02.png" alt="Сертифікат №8">
                                         </div>
                                     </div>
                                     <div class="certificates-slider__slide swiper-slide">
                                         <div class="certificates-slider__image">
-                                            <img src="../img/diplom/Diploma2.01.png" alt="Сертификат №9">
+                                            <img src="../img/diplom/Diploma2.01.png" alt="Сертифікат №9">
                                         </div>
                                     </div>
-                                        </div>
-                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -445,9 +430,7 @@
                 <div class="consultation__container">
                     <div class="consultation__body">
                         <div class="consultation__header">
-                            <h2 class="screen__title _text-line consultation__title lng-consultation-title">Як проходить
-                                консультація?&nbsp;*</h2>
-                            <!-- If we need navigation buttons -->
+                            <h2 class="screen__title _text-line consultation__title">Як проходить консультація?&#160;*</h2>
                             <div data-da=".consultation__image-body,1024,last"
                                  class="consultation__slider-navigation">
                                 <div class="swiper-button-prev consultation__button-prev"></div>
@@ -459,60 +442,39 @@
                             <div class="consultation__image-body">
                                 <div class="consultation__image">
                                     <img src="../img/consultation/consultation.png"
-                                         alt="Фото как проходит консультация">
+                                         alt="Фото як відбувається консультація">
                                 </div>
                             </div>
                             <div class="f-block__body">
-                                <!-- Slider main container -->
                                 <div class="consultation-slider swiper-container">
-                                    <!-- Additional required wrapper -->
                                     <div class="consultation-slider__wrapper swiper-wrapper">
-                                        <!-- Slides -->
                                         <div class="consultation-slider__slide consultation-slide swiper-slide">
                                             <div class="consultation-slide-body">
-
                                                 <span class="consultation-slide__span">01.</span>
-                                                <h2 class="consultation-slide__title lng-consultation-1-title">
-                                                    Діагностика стану шкіри</h2>
-                                                <p class="consultation-slide__description lng-consultation-1-description">
-                                                    На консультації фахівець проводить детальний діагностику шкіри.</p>
+                                                <h2 class="consultation-slide__title">Діагностика стану шкіри</h2>
+                                                <p class="consultation-slide__description">На консультації фахівець проводить детальний діагностику шкіри.</p>
                                             </div>
 
                                         </div>
                                         <div class="consultation-slider__slide consultation-slide swiper-slide">
                                             <div class="consultation-slide-body">
-
                                                 <span class="consultation-slide__span">02.</span>
-                                                <h2 class="consultation-slide__title lng-consultation-2-title">Аналіз
-                                                    існуючого домашнього догляду</h2>
-                                                <p class="consultation-slide__description lng-consultation-2-description">
-                                                    На консультації фахівець проведе ретельний аналіз існуючого догляду,
-                                                    за вашим бажанням оцінить склади препаратів, дасть фідбек щодо
-                                                    помилок і адекватності препаратів стану вашої шкіри.</p>
+                                                <h2 class="consultation-slide__title">Аналіз існуючого домашнього догляду</h2>
+                                                <p class="consultation-slide__description">На консультації фахівець проведе ретельний аналіз існуючого догляду, за вашим бажанням оцінить склади препаратів, дасть фідбек щодо помилок і адекватності препаратів стану вашої шкіри.</p>
                                             </div>
                                         </div>
                                         <div class="consultation-slider__slide consultation-slide swiper-slide">
                                             <div class="consultation-slide-body">
-
                                                 <span class="consultation-slide__span">03.</span>
-                                                <h2 class="consultation-slide__title lng-consultation-3-title">
-                                                    Визначення цілей домашнього догляду</h2>
-                                                <p class="consultation-slide__description lng-consultation-3-description">
-                                                    Спеціаліст разом з вами визначить цілі, які можна досягти домашнім
-                                                    доглядом, а в разі потреби і реалістичності запиту, порадить
-                                                    методики досягнення цілей іншими методами.</p>
+                                                <h2 class="consultation-slide__title">Визначення цілей домашнього догляду</h2>
+                                                <p class="consultation-slide__description">Спеціаліст разом з вами визначить цілі, які можна досягти домашнім доглядом, а в разі потреби і реалістичності запиту, порадить методики досягнення цілей іншими методами.</p>
                                             </div>
                                         </div>
                                         <div class="consultation-slider__slide consultation-slide swiper-slide">
                                             <div class="consultation-slide-body">
-
                                                 <span class="consultation-slide__span">04.</span>
-                                                <h2 class="consultation-slide__title lng-consultation-3-title">
-                                                    Визначення цілей домашнього догляду</h2>
-                                                <p class="consultation-slide__description lng-consultation-4-description">
-                                                    Спеціаліст разом з вами визначить цілі, які можна досягти домашнім
-                                                    доглядом, а в разі потреби і реалістичності запиту, порадить
-                                                    методики досягнення цілей іншими методами.</p>
+                                                <h2 class="consultation-slide__title">Визначення цілей домашнього догляду</h2>
+                                                <p class="consultation-slide__description">Спеціаліст разом з вами визначить цілі, які можна досягти домашнім доглядом, а в разі потреби і реалістичності запиту, порадить методики досягнення цілей іншими методами.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -522,17 +484,17 @@
                         <div class="consultation__description">
                             <span class="consultation__hr-line"></span>
                             <p class="consultation__detail">
-                                <span class="consultation__detail_strong lng-consultation-detail-strong">* Замовте 30-хвилинну віртуальну консультацію і перевірку по догляду за шкірою.</span>
+                                <span class="consultation__detail_strong">* Замовте 30-хвилинну віртуальну консультацію і перевірку по догляду за шкірою.</span>
                                 <span id="dotsConsultation" class="consultation__more-dots">...</span><span
                                     id="moreConsultation"
-                                    class="consultation__more consultation-detail-strong lng-consultation-detail">Консультація проводиться не виходячи з дому, адаптована до ваших унікальних потреб і допоможе вам дати правильні рекомендації по продуктам, допоможе з режимом догляду за шкірою і допоможе з будь-якими рекомендаціями по догляду за шкірою, інструментів і пристроїв для догляду за шкірою обличчя. Я також можу продемонструвати продукти, очистити ваш косметичний кабінет і поділитися порадами і хитрощами, надаючи індивідуальні поради.</span>
+                                    class="consultation__more consultation-detail-strong">Консультація проводиться не виходячи з дому, адаптована до ваших унікальних потреб і допоможе вам дати правильні рекомендації по продуктам, допоможе з режимом догляду за шкірою і допоможе з будь-якими рекомендаціями по догляду за шкірою, інструментів і пристроїв для догляду за шкірою обличчя. Я також можу продемонструвати продукти, очистити ваш косметичний кабінет і поділитися порадами і хитрощами, надаючи індивідуальні поради.</span>
                                 <br>
                                 <button id="btnMoreConsultation"
-                                        class="consultation__more-btn lng-consultation-btn-more">детальніше
+                                        class="consultation__more-btn">детальніше
                                 </button>
                             </p>
-                            <a href="#" class="btn btn_primary consultation__btn lng-consultation-btn-consultation">Записатися
-                                на консультацію</a>
+                            <a href="#"
+                               class="btn btn_primary consultation__btn">Записатися на консультацію</a>
                         </div>
                     </div>
                 </div>
@@ -543,8 +505,7 @@
             <div class="screen__content review__content">
                 <div class="review__bg-container">
                     <div class="container review__container">
-                        <h2 class="screen__title screen__title_bg review__title lng-review-title">Наші щасливі
-                            клієнти</h2>
+                        <h2 class="screen__title screen__title_bg review__title"></h2>
                         <div class="f-block">
                             <div class="f-block__body review__body">
                                 <!-- Slider main container -->
@@ -554,44 +515,28 @@
                                         <!-- Slides -->
                                         <div data-hash="review-slide-1" class="review-slider__slide swiper-slide">
                                             <div class="review-slider__item">
-                                                <p class="review-slider__text lng-review-1-text">"А також базові
-                                                    сценарії поведінки користувачів можуть бути віддані
-                                                    соціально-демократичної анафемі. У своєму прагненні підвищити якість
-                                                    життя, вони забувають, що реалізація намічених планових завдань"</p>
-                                                <p class="review-slider__person lng-review-1-author">Владислава
-                                                    Жулей</p>
+                                                <p class="review-slider__text">"А також базові сценарії поведінки користувачів можуть бути віддані соціально-демократичної анафемі. У своєму прагненні підвищити якість життя, вони забувають, що реалізація намічених планових завдань"</p>
+                                                <p class="review-slider__person">Владислава Жулей</p>
                                             </div>
                                         </div>
                                         <div data-hash="review-slide-2" class="review-slider__slide swiper-slide">
                                             <div class="review-slider__item">
-                                                <p class="review-slider__text lng-review-2-text">"А також базові
-                                                    сценарії поведінки користувачів можуть бути віддані
-                                                    соціально-демократичної анафемі. У своєму прагненні підвищити якість
-                                                    життя, вони забувають, що реалізація намічених планових завдань"</p>
+                                                <p class="review-slider__text">"А також базові сценарії поведінки користувачів можуть бути віддані соціально-демократичної анафемі. У своєму прагненні підвищити якість життя, вони забувають, що реалізація намічених планових завдань"</p>
                                                 <p>
                                                 </p>
-                                                <p class="review-slider__person lng-review-2-author">Владислава
-                                                    Жулей</p>
+                                                <p class="review-slider__person">Владислава Жулей</p>
                                             </div>
                                         </div>
                                         <div data-hash="review-slide-3" class="review-slider__slide swiper-slide">
                                             <div class="review-slider__item">
-                                                <p class="review-slider__text lng-review-3-text">"А також базові
-                                                    сценарії поведінки користувачів можуть бути віддані
-                                                    соціально-демократичної анафемі. У своєму прагненні підвищити якість
-                                                    життя, вони забувають, що реалізація намічених планових завдань"</p>
-                                                <p class="review-slider__person lng-review-3-author">Владислава
-                                                    Жулей</p>
+                                                <p class="review-slider__text">"А також базові сценарії поведінки користувачів можуть бути віддані соціально-демократичної анафемі. У своєму прагненні підвищити якість життя, вони забувають, що реалізація намічених планових завдань"</p>
+                                                <p class="review-slider__person">Владислава Жулей</p>
                                             </div>
                                         </div>
                                         <div data-hash="review-slide-4" class="review-slider__slide swiper-slide">
                                             <div class="review-slider__item">
-                                                <p class="review-slider__text lng-review-4-text">"А також базові
-                                                    сценарії поведінки користувачів можуть бути віддані
-                                                    соціально-демократичної анафемі. У своєму прагненні підвищити якість
-                                                    життя, вони забувають, що реалізація намічених планових завдань"</p>
-                                                <p class="review-slider__person lng-review-4-author">Владислава
-                                                    Жулей</p>
+                                                <p class="review-slider__text">"А також базові сценарії поведінки користувачів можуть бути віддані соціально-демократичної анафемі. У своєму прагненні підвищити якість життя, вони забувають, що реалізація намічених планових завдань"</p>
+                                                <p class="review-slider__person">Владислава Жулей</p>
                                             </div>
                                         </div>
                                     </div>
@@ -617,24 +562,22 @@
                     <div class="salon__body">
                         <div class="salon__info">
                             <div data-da=".salon__container,1024,first" class="salon__details">
-                                <h2 class="screen__title _text-line salon__title lng-salon-title">Салон</h2>
-                                <address class="salon__address lng-salon-address">м. Харків,
-                                    <span> вул. Алчевськ, 50а</span></address>
+                                <h2 class="screen__title _text-line salon__title">Салон</h2>
+                                <address class="salon__address">м. Харків, <span> вул. Алчевськ, 50а</span></address>
                             </div>
                             <p class="salon__schedule">
-                                <span class="lng-salon-schedule-title">Графік роботи:</span>
-                                <span class="lng-salon-schedule-weekdays">пн-пт <strong>10:00 – 18:00</strong></span>
-                                <span class="lng-salon-schedule-weekend">сб-нд <strong>вихідний</strong></span>
+                                <span>Графік роботи:</span>
+                                <span>пн-пт <strong>10:00 – 18:00</strong></span>
+                                <span>сб-нд <strong>вихідний</strong></span>
                             </p>
                             <p class="salon__phone">
-                                <span class="lng-salon-schedule-phone-title">Номер для запису:</span>
+                                <span>Графік роботи:</span>
                                 <a href="tel:+380667700948"><strong class="_text_strong">066 770 09 48</strong></a>
                             </p>
                         </div>
                         <div class="salon__slider">
                             <div class="f-block">
                                 <div class="f-block__body salon__body">
-
                                     <!-- Slider main container -->
                                     <div class="salon-slider swiper-container">
                                         <!-- Additional required wrapper -->
@@ -748,37 +691,37 @@
                         <nav class="footer__menu menu__body menu">
                             <ul class="footer__list menu__list">
                                 <li class="footer__item">
-                                    <a data-goto=".screen-1" href="#intro" class="menu__link lng-menu-home">Головна</a>
+                                    <a data-goto=".screen-1" href="#intro" class="menu__link">Головна</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-2" href="#about" class="menu__link lng-menu-about">Про
-                                        себе</a>
+                                    <a data-goto=".screen-2" href="#about" class="menu__link">Про себе</a>
                                 </li>
                                 <li class="footer__item">
                                     <a data-goto=".screen-3" href="#service"
-                                       class="menu__link lng-menu-service">Послуги</a>
+                                       class="menu__link">Про себе</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-4" href="#cosmetic" class="menu__link lng-menu-cosmetics">Косметика</a>
+                                    <a data-goto=".screen-4" href="#cosmetic"
+                                       class="menu__link">Косметика</a>
                                 </li>
                                 <li class="footer__item">
                                     <a data-goto=".screen-5" href="#certificates"
-                                       class="menu__link lng-menu-certificates">Сертифікати</a>
+                                       class="menu__link">Сертифікати</a>
                                 </li>
                                 <li class="footer__item">
                                     <a data-goto=".screen-6" href="#consultation"
-                                       class="menu__link lng-menu-consultation">Консультація</a>
+                                       class="menu__link">Консультація</a>
                                 </li>
                                 <li class="footer__item">
                                     <a data-goto=".screen-7" href="#review"
-                                       class="menu__link lng-menu-review">Відгуки</a>
+                                       class="menu__link">Відгуки</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-8" href="#salon" class="menu__link lng-menu-salon">Салон</a>
+                                    <a data-goto=".screen-8" href="#salon" class="menu__link">Салон</a>
                                 </li>
                             </ul>
                         </nav>
-                        <p class="footer__copyright lng-footer-copyright">© 2021, косметолог Тетяна Голинська</p>
+                        <p class="footer__copyright">© 2021, косметолог Тетяна Голинська</p>
                     </div>
                 </div>
             </div>
@@ -798,7 +741,7 @@
                     </svg>
                 </a>
             </div>
-            <h2 class="popup__title screen__title screen__title_bg lng-service-modal-title">Послуги та ціни</h2>
+            <h2 class="popup__title screen__title screen__title_bg">Послуги та ціни</h2>
             <div class="accordion">
                 <div class="accordion__item">
                     <div class="accordion__header">
@@ -807,13 +750,13 @@
                         </div>
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
-                                <h2 class="accordion__header-title"><span class="lng-service-modal-accordion-1-title">Консультація</span>
+                                <h2 class="accordion__header-title">
+                                    <span></span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-modal-accordion-1-price">безкоштовно*
-                                </div>
+                                <div class="accordion__header-price"></div>
                             </div>
-                            <div class="accordion__description lng-service-modal-accordion-1-title-description">
-                                Косметика Holy Land проводиться в Ізраїлі вже 25 років
+                            <div class="accordion__description">
+                                
                             </div>
                         </div>
                     </div>
@@ -821,84 +764,47 @@
                         <div class="accordion__panel-content panel__content">
                             <div class="panel__table table">
                                 <div class="table__row">
-                                    <div class="table__title lng-service-modal-accordion-1-table-row-1-title">
-                                        Атравматична чистка обличчя
-                                    </div>
+                                    <div class="table__title">Атравматична чистка обличчя</div>
                                     <div class="table__details">
-                                        <div class="table__time lng-service-modal-accordion-1-table-row-1-time">60 хв
-                                        </div>
-                                        <div class="table__price lng-service-modal-accordion-1-table-row-1-price">750
-                                            грн
-                                        </div>
+                                        <div class="table__time">60 хв</div>
+                                        <div class="table__price">750 грн</div>
                                     </div>
                                 </div>
                                 <div class="table__row">
-                                    <div class="table__title lng-service-modal-accordion-1-table-row-2-title">Програма
-                                        Age Control-Super Lift
-                                    </div>
+                                    <div class="table__title">Програма Age Control-Super Lift</div>
                                     <div class="table__details">
-                                        <div class="table__time lng-service-modal-accordion-1-table-row-2-time">120 хв
-                                        </div>
-                                        <div class="table__price lng-service-modal-accordion-1-table-row-2-price">750
-                                            грн
-                                        </div>
+                                        <div class="table__time">120 хв</div>
+                                        <div class="table__price">750 грн</div>
                                     </div>
                                 </div>
                                 <div class="table__row">
-                                    <div class="table__title lng-service-modal-accordion-1-table-row-3-title">Пептиди в
-                                        корекції вікових змін шкіри
-                                    </div>
+                                    <div class="table__title">Пептиди в корекції вікових змін шкіри</div>
                                     <div class="table__details">
-                                        <div class="table__time lng-service-modal-accordion-1-table-row-3-time">45 хв
-                                        </div>
-                                        <div class="table__price lng-service-modal-accordion-1-table-row-3-price">800
-                                            грн
-                                        </div>
+                                        <div class="table__time">45 хв</div>
+                                        <div class="table__price">800 грн</div>
                                     </div>
                                 </div>
                                 <div class="table__row">
-                                    <div class="table__title lng-service-modal-accordion-1-table-row-4-title">Рішення
-                                        проблем шкіри навколо очей
-                                    </div>
+                                    <div class="table__title">Рішення проблем шкіри навколо очей</div>
                                     <div class="table__details">
-                                        <div class="table__time lng-service-modal-accordion-1-table-row-4-time">30 хв
-                                        </div>
-                                        <div class="table__price lng-service-modal-accordion-1-table-row-4-price">650
-                                            грн
-                                        </div>
+                                        <div class="table__time">30 хв</div>
+                                        <div class="table__price">650 грн</div>
                                     </div>
                                 </div>
                                 <div class="table__row">
-                                    <div class="table__title lng-service-modal-accordion-1-table-row-5-title">Програма
-                                        «Vitalize» з гіалуроновою кислотою
-                                    </div>
+                                    <div class="table__title">Програма «Vitalize» з гіалуроновою кислотою</div>
                                     <div class="table__details">
-                                        <div class="table__time lng-service-modal-accordion-1-table-row-5-time">15 хв
-                                        </div>
-                                        <div class="table__price lng-service-modal-accordion-1-table-row-5-price">700
-                                            грн
-                                        </div>
+                                        <div class="table__time">15 хв</div>
+                                        <div class="table__price">700 грн</div>
                                     </div>
                                 </div>
                             </div>
-                            <h3 class="panel__title lng-service-modal-accordion-1-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-modal-accordion-1-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-modal-accordion-1-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-modal-accordion-1-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn"></a>
                         </div>
                     </div>
                 </div>
@@ -910,36 +816,22 @@
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
                                 <h2 class="accordion__header-title">
-                                    <span class="lng-service-modal-accordion-2-title">Процедури догляду із застосуванням лікувальної косметики «Holy Land» (Ізраїль)</span>
+                                    <span></span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-modal-accordion-2-price">від 650 грн
-                                </div>
+                                <div class="accordion__header-price"></div>
                             </div>
-                            <div class="accordion__description lng-service-modal-accordion-2-title-description">
-                                Косметика Holy Land проводиться в Ізраїлі вже 25 років
+                            <div class="accordion__description">
                             </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-modal-accordion-2-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-modal-accordion-2-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-modal-accordion-2-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-modal-accordion-2-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn"></a>
                         </div>
                     </div>
                 </div>
@@ -951,36 +843,22 @@
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
                                 <h2 class="accordion__header-title">
-                                    <span class="lng-service-modal-accordion-3-title">Процедури догляду із застосуванням лікувальної косметики «Dermaquest» (США)</span>
+                                    <span></span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-modal-accordion-3-price">від 800 грн
-                                </div>
+                                <div class="accordion__header-price"></div>
                             </div>
-                            <div class="accordion__description lng-service-modal-accordion-3-title-description">
-                                Косметика Holy Land проводиться в Ізраїлі вже 25 років
+                            <div class="accordion__description">
                             </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-modal-accordion-3-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-modal-accordion-3-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-modal-accordion-3-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-modal-accordion-3-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn"></a>
                         </div>
                     </div>
                 </div>
@@ -991,36 +869,23 @@
                         </div>
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
-                                <h2 class="accordion__header-title"><span class="lng-service-modal-accordion-4-title">Хімічні пілінги</span>
+                                <h2 class="accordion__header-title">
+                                    <span></span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-modal-accordion-4-price">від 750 грн
-                                </div>
+                                <div class="accordion__header-price"></div>
                             </div>
-                            <div class="accordion__description lng-service-modal-accordion-4-title-description">
-                                Косметика Holy Land проводиться в Ізраїлі вже 25 років
+                            <div class="accordion__description">
                             </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-modal-accordion-4-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-modal-accordion-4-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-modal-accordion-4-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-modal-accordion-4-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn"></a>
                         </div>
                     </div>
                 </div>
@@ -1031,36 +896,23 @@
                         </div>
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
-                                <h2 class="accordion__header-title"><span class="lng-service-modal-accordion-5-title">Іспанська (хиромассаж) масаж обличчя і зони декольте</span>
+                                <h2 class="accordion__header-title">
+                                    <span></span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-modal-accordion-5-price">від 800 грн
-                                </div>
+                                <div class="accordion__header-price"></div>
                             </div>
-                            <div class="accordion__description lng-service-modal-accordion-5-title-description">
-                                Косметика Holy Land проводиться в Ізраїлі вже 25 років
+                            <div class="accordion__description">
                             </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-modal-accordion-5-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-modal-accordion-5-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-modal-accordion-5-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-modal-accordion-5-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn"></a>
                         </div>
                     </div>
                 </div>
@@ -1071,36 +923,23 @@
                         </div>
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
-                                <h2 class="accordion__header-title"><span class="lng-service-modal-accordion-6-title">Внутрішньо контурна пластика</span>
+                                <h2 class="accordion__header-title">
+                                    <span></span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-modal-accordion-6-price">від 1100 грн
-                                </div>
+                                <div class="accordion__header-price"></div>
                             </div>
-                            <div class="accordion__description lng-service-modal-accordion-6-title-description">
-                                Косметика Holy Land проводиться в Ізраїлі вже 25 років
+                            <div class="accordion__description">
                             </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-modal-accordion-6-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-modal-accordion-6-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-modal-accordion-6-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-modal-accordion-6-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn"></a>
                         </div>
                     </div>
                 </div>
@@ -1111,36 +950,23 @@
                         </div>
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
-                                <h2 class="accordion__header-title"><span class="lng-service-modal-accordion-7-title">Підліткова косметологія</span>
+                                <h2 class="accordion__header-title">
+                                    <span></span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-modal-accordion-7-price">від 600 грн
-                                </div>
+                                <div class="accordion__header-price"></div>
                             </div>
-                            <div class="accordion__description lng-service-modal-accordion-7-title-description">
-                                Косметика Holy Land проводиться в Ізраїлі вже 25 років
+                            <div class="accordion__description">
                             </div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-modal-accordion-7-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-modal-accordion-7-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-modal-accordion-7-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-modal-accordion-7-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn"></a>
                         </div>
                     </div>
                 </div>
@@ -1165,35 +991,21 @@
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
                                 <h2 class="accordion__header-title ">
-                                    <span class="lng-service-1-modal-title">Кріотерапія</span>
+                                    <span>Кріотерапія</span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-1-modal-price">від 300 грн</div>
+                                <div class="accordion__header-price">від 300 грн</div>
                             </div>
-                            <div class="accordion__description lng-service-1-modal-description">Косметика Holy Land
-                                проводиться в Ізраїлі вже 25 років
-                            </div>
+                            <div class="accordion__description">Косметика Holy Land проводиться в Ізраїлі вже 25 років</div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-1-modal-accordion-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-1-modal-accordion-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-1-modal-accordion-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-1-modal-accordion-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn">Записатися на прийом</a>
                         </div>
                     </div>
                 </div>
@@ -1218,35 +1030,21 @@
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
                                 <h2 class="accordion__header-title ">
-                                    <span class="lng-service-2-modal-title">Мезотерапія. Біоревіталізація.</span>
+                                    <span>Мезотерапія. Біоревіталізація.</span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-2-modal-price">від 300 грн</div>
+                                <div class="accordion__header-price">від 300 грн</div>
                             </div>
-                            <div class="accordion__description lng-service-2-modal-description">Косметика Holy Land
-                                проводиться в Ізраїлі вже 25 років
-                            </div>
+                            <div class="accordion__description">Косметика Holy Land проводиться в Ізраїлі вже 25 років</div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-2-modal-accordion-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-2-modal-accordion-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-2-modal-accordion-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-2-modal-accordion-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn">Записатися на прийом</a>
                         </div>
                     </div>
                 </div>
@@ -1271,35 +1069,21 @@
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
                                 <h2 class="accordion__header-title ">
-                                    <span class="lng-service-3-modal-title">Хімічні пілінги</span>
+                                    <span>Хімічні пілінги</span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-3-modal-price">від 300 грн</div>
+                                <div class="accordion__header-price">від 300 грн</div>
                             </div>
-                            <div class="accordion__description lng-service-3-modal-description">Косметика Holy Land
-                                проводиться в Ізраїлі вже 25 років
-                            </div>
+                            <div class="accordion__description">Косметика Holy Land проводиться в Ізраїлі вже 25 років</div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-3-modal-accordion-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-3-modal-accordion-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-3-modal-accordion-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-3-modal-accordion-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn">Записатися на прийом</a>
                         </div>
                     </div>
                 </div>
@@ -1324,35 +1108,21 @@
                         <div class="accordion__header-info">
                             <div class="accordion__header-top">
                                 <h2 class="accordion__header-title ">
-                                    <span class="lng-service-4-modal-title">Ультразвукова. Механічна. Комбінована.</span>
+                                    <span>Ультразвукова. Механічна. Комбінована.</span>
                                 </h2>
-                                <div class="accordion__header-price lng-service-4-modal-price">від 300 грн</div>
+                                <div class="accordion__header-price">від 300 грн</div>
                             </div>
-                            <div class="accordion__description lng-service-4-modal-description">Косметика Holy Land
-                                проводиться в Ізраїлі вже 25 років
-                            </div>
+                            <div class="accordion__description">Косметика Holy Land проводиться в Ізраїлі вже 25 років</div>
                         </div>
                     </div>
                     <div class="accordion__panel panel">
                         <div class="accordion__panel-content panel__content">
-                            <h3 class="panel__title lng-service-4-modal-accordion-description-1-title">Опис</h3>
-                            <p class="panel__text lng-service-4-modal-accordion-description-1-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
-                            <h3 class="panel__title lng-service-4-modal-accordion-description-2-title">Як проводиться
-                                процедура?</h3>
-                            <p class="panel__text lng-service-4-modal-accordion-description-2-text">Косметика Holy Land
-                                виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за
-                                допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої
-                                якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри.
-                                Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а
-                                безпеку підтверджується сертифікатами.</p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
+                            <h3 class="panel__title"></h3>
+                            <p class="panel__text"></p>
                             <a href="#"
-                               class="panel__btn btn btn_secondary-w service-btn lng-service-modal-accordion-btn">Записатися
-                                на прийом</a>
+                               class="panel__btn btn btn_secondary-w service-btn">Записатися на прийом</a>
                         </div>
                     </div>
                 </div>
@@ -1361,7 +1131,6 @@
     </div>
 </div>
 
-<!--<script src="../js/lang.js"></script>-->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="../js/dynamicAdapt.js"></script>
 <script src="../js/burger.js"></script>

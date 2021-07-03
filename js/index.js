@@ -1,6 +1,9 @@
 "use strict";
 
+const langArr = ["ru", "ua", "en"];
+
 document.addEventListener("DOMContentLoaded", () => {
+    checkLang();
     setBrand();
 });
 
@@ -9,6 +12,33 @@ window.onscroll = () => {
 };
 
 // ----------------------------------------------
+// lang
+function setLang(langValue) {
+    if (!langArr.includes(langValue))
+        langValue = "ru"
+    localStorage.setItem('language', langValue);
+    setActiveLangBtn(langValue);
+}
+
+function checkLang() {
+    let localLang = localStorage.getItem('language');
+    if (!langArr.includes(localLang))
+        localLang = "ru"
+    setLang(localLang);
+}
+
+function setActiveLangBtn(langValue) {
+    const langBtn = document.querySelectorAll('.lang__btn');
+    const activeLangBtn = document.getElementById('lang-' + langValue);
+
+    if (langBtn.length) {
+        for (const langBtnElement of langBtn) {
+            langBtnElement.classList.remove("active");
+        }
+    }
+
+    activeLangBtn?.classList.add("active");
+}
 
 // resize logo if scrollTop > 50
 function scrollFunction() {

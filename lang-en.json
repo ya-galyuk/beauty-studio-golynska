@@ -1,0 +1,405 @@
+{
+  "lang": "en",
+  "url": "https://www.example.com",
+  "root-url": "/beauty-studio-golynska/",
+  "root": "../",
+  "dir": "en/",
+  "title": "Beauty studio Golynska",
+  "meta": {
+    "description": "Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948",
+    "keywords": ""
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "service": "Service",
+    "cosmetics": "Cosmetics",
+    "certificates": "Certificates",
+    "consultation": "Consultation",
+    "review": "Review",
+    "salon": "Salon",
+    "contacts": "Contacts",
+    "brands": "Brands"
+  },
+  "intro": {
+    "title": "Your beauty deserves <br/> more than you do for it"
+  },
+  "about": {
+    "title": "About myself",
+    "description": "Tatiana Golynskaya is a universal cosmetologist. Over the past 25 years, she has accumulated extensive practical experience. Tatiana knows the specific requirements and needs of customers. Combining their knowledge and experience with leading cosmetic brands.",
+    "btn": {
+      "consultation": "Sign up for a consultation",
+      "brand": "More about brands"
+    }
+  },
+  "service": {
+    "title": "Services and prices",
+    "link-more": "More details",
+    "btn": {
+      "appointment": "To make an appointment",
+      "procedures": "All procedures"
+    },
+    "items": [
+      {
+        "title": "Cryotherapy",
+        "price": "300 UAH",
+        "time": "8 minutes",
+        "modal": {
+          "title": "Cryotherapy",
+          "price": "from 300 UAH",
+          "description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "accordions": [
+            {
+              "title": "Description",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            },
+            {
+              "title": "How is the procedure conducted?",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            }
+          ]
+        }
+      },
+      {
+        "title": "Mesotherapy. Biorevitalization.",
+        "price": "300 UAH",
+        "time": "8 minutes",
+        "modal": {
+          "title": "Mesotherapy. Biorevitalization.",
+          "price": "from 300 UAH",
+          "description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "accordion": [
+            {
+              "title": "Description",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            },
+            {
+              "title": "How is the procedure conducted?",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            }
+          ]
+        }
+      },
+      {
+        "title": "Chemical peelings",
+        "price": "300 UAH",
+        "time": "8 minutes",
+        "modal": {
+          "title": "Chemical peelings",
+          "price": "from 300 UAH",
+          "description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "accordion": [
+            {
+              "title": "Description",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            },
+            {
+              "title": "How is the procedure conducted?",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            }
+          ]
+        }
+      },
+      {
+        "title": "Ultrasonic. Mechanical. Combined.",
+        "price": "300 UAH",
+        "time": "8 minutes",
+        "modal": {
+          "title": "Ultrasonic. Mechanical. Combined.",
+          "price": "from 300 UAH",
+          "description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "accordion": [
+            {
+              "title": "Description",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            },
+            {
+              "title": "How is the procedure conducted?",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            }
+          ]
+        }
+      }
+    ],
+    "modal": {
+      "title": "Services and prices",
+      "btn": "To make an appointment",
+      "accordions": [
+        {
+          "title": "Consultation",
+          "price": "is free*",
+          "title-description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "table-rows": [
+            {
+              "title": "Atraumatic facial cleaning",
+              "time": "60 min",
+              "price": "750 UAH"
+            },
+            {
+              "title": "Age Control-Super Lift Program",
+              "time": "120 min",
+              "price": "750 UAH"
+            },
+            {
+              "title": "Peptides in the correction of age-related skin changes",
+              "time": "45 min",
+              "price": "800 UAH"
+            },
+            {
+              "title": "Solving skin problems around the eyes",
+              "time": "30 min",
+              "price": "650 UAH"
+            },
+            {
+              "title": "Program \"Vitalize\" with hyaluronic acid",
+              "time": "15 min",
+              "price": "700 UAH"
+            }
+          ],
+          "descriptions": [
+            {
+              "title": "Description",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            },
+            {
+              "title": "How is the procedure conducted?",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            }
+          ]
+        },
+        {
+          "title": "Care procedures with the use of medical cosmetics \"Holyland\" (Israel)",
+          "price": "from 650 UAH",
+          "title-description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "descriptions": [
+            {
+              "title": "Description",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            },
+            {
+              "title": "How is the procedure conducted?",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            }
+          ]
+        },
+        {
+          "title": "Care procedures with the use of medical cosmetics \"Dermaquest\" (USA)",
+          "price": "from 800 UAH",
+          "title-description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "descriptions": [
+            {
+              "title": "Description",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            },
+            {
+              "title": "How is the procedure conducted?",
+              "text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+            }
+          ]
+        },
+        {
+          "title": "Chemical peelings",
+          "price": "from 750 UAH",
+          "title-description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "description-1-title": "Description",
+          "description-1-text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+          "description-2-title": "How is the procedure conducted?",
+          "description-2-text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+        },
+        {
+          "title": "Spanish (chromassage) face massage and zone neckline",
+          "price": "from 800 UAH",
+          "title-description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "description-1-title": "Description",
+          "description-1-text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+          "description-2-title": "How is the procedure conducted?",
+          "description-2-text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+        },
+        {
+          "title": "Intracutaneous contour plastic",
+          "price": "from 1100 UAH",
+          "title-description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "description-1-title": "Description",
+          "description-1-text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+          "description-2-title": "How is the procedure conducted?",
+          "description-2-text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+        },
+        {
+          "title": "Teenage cosmetology",
+          "price": "from 600 UAH",
+          "title-description": "Holy Land cosmetics are produced in Israel for 25 years",
+          "description-1-title": "Description",
+          "description-1-text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+          "description-2-title": "How is the procedure conducted?",
+          "description-2-text": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+        }
+      ]
+    }
+  },
+  "cosmetic": {
+    "title": "Cosmetics with which we work",
+    "btn": "All cosmetics",
+    "description": "Unique rejuvenating and restoring facial procedures using cosmetics world-famous brands. These exclusive lines are created using the latest technologies, as well as natural components. Each line is unique and has a wide range of action."
+  },
+  "certificates": {
+    "title": "You are in reliable hands",
+    "description": "Your face will bloom in a friendly atmosphere and care. Turning to me, you beat the health and beauty of a professional."
+  },
+  "consultation": {
+    "title": "How is the consultation?&#160;*",
+    "items": [
+      {
+        "title": "Diagnostics of skin condition",
+        "description": "At the consultation, a specialist conducts detailed skin diagnostics."
+      },
+      {
+        "title": "Analysis of existing home care",
+        "description": "During the consultation specialist will conduct a thorough analysis of the existing care of your request will evaluate storage products, will give feedback regarding errors and the adequacy of the preparations of your skin condition."
+      },
+      {
+        "title": "Defining home care objectives",
+        "description": "A specialist with you will determine the goals that can be achieved by home care, and if necessary, the realism of the request will advise the methods of achieving goals by other methods."
+      },
+      {
+        "title": "Defining home care objectives",
+        "description": "A specialist with you will determine the goals that can be achieved by home care, and if necessary, the realism of the request will advise the methods of achieving goals by other methods."
+      }
+    ],
+    "detail-strong": "* Book a 30-minute virtual advice and skin care check.",
+    "detail": "Consultation is carried out without leaving the house, adapted to your unique needs and will help you give the right recommendations on products, it will help with the skin care regimen and will help with any skin care guidelines, tools and facial care devices. I can also demonstrate the products, clean your cosmetic office and share tips and tricks by providing individual tips.",
+    "btn": {
+      "consultation": "Sign up for a consultation",
+      "more": "more"
+    }
+  },
+  "review": {
+    "review-title": "Our happy customers",
+    "items": [
+      {
+        "text": "\"As well as basic scenarios of user behavior can be betrayed by socio-democratic anathema. In its desire to improve the quality of life, they forget that the implementation of planned planned tasks\"",
+        "author": "Vladislav Zhuley"
+      },
+      {
+        "text": "\"As well as basic scenarios of user behavior can be betrayed by socio-democratic anathema. In its desire to improve the quality of life, they forget that the implementation of planned planned tasks\"",
+        "author": "Vladislav Zhuley"
+      },
+      {
+        "text": "\"As well as basic scenarios of user behavior can be betrayed by socio-democratic anathema. In its desire to improve the quality of life, they forget that the implementation of planned planned tasks\"",
+        "author": "Vladislav Zhuley"
+      },
+      {
+        "text": "\"As well as basic scenarios of user behavior can be betrayed by socio-democratic anathema. In its desire to improve the quality of life, they forget that the implementation of planned planned tasks\"",
+        "author": "Vladislav Zhuley"
+      }
+    ]
+  },
+  "salon": {
+    "title": "Salon",
+    "address": "Kharkov, <span> ul. Alchevsky, 50a</span>",
+    "schedule": {
+      "title": "Schedule:",
+      "weekdays": "Mon-Fri <strong>10:00 – 18:00</strong>",
+      "weekend": "Sat-Sun <strong>day off</strong>",
+      "phone-title": "Record number:"
+    }
+  },
+  "footer": {
+    "copyright": "© 2021, Cosmetologist Tatyana Golynska"
+  },
+  "products": {
+    "title": "Brands with which we work",
+    "cards": {
+      "title": "Cosmetics",
+      "filter": "All brands",
+      "sort": "Sort by price",
+      "items": [
+        {
+          "description": "HOLYLAND Moisturizing Fatty Cream",
+          "price": "1000 UAH",
+          "modal": {
+            "title": "Moisturizing Fatty Skin Cream",
+            "price": "1000 UAH",
+            "feature": [
+              "Volume (ml): ",
+              "<span>Application time: </span> Universal",
+              "<span>Classification: </span> Dermatokosmetics",
+              "<span>Purpose: </span> Moisturizing, strengthening, calm",
+              "<span>Skin Type: </span> Combined, Normal"
+            ],
+            "accordions": [
+              {
+                "title": "Description",
+                "text": [
+                  "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+                  "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+                ]
+              },
+              {
+                "title": "Application",
+                "text": [
+                  "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+                  "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+                ]
+              },
+              {
+                "title": "Structure",
+                "text": [
+                  "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates.",
+                  "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "alt": {
+    "logo": "Beauty studio Golynska logo",
+    "intro": "An image on which Tatiana sits on the sofa",
+    "about": "Photo Tatyana Golynska",
+    "services": [
+      "Cryotherapy",
+      "Mesotherapy. Biorevitalization.",
+      "Chemical peelings",
+      "Ultrasonic. Mechanical. Combined."
+    ],
+    "cosmetics": [
+      "Cosmetics Holyland.",
+      "Cosmetics Dermaquest.",
+      "Cosmetics Bio-matrix."
+    ],
+    "certificates": [
+      "Diploma1.08",
+      "Diploma1.07",
+      "Diploma1.06",
+      "Diploma1.05",
+      "Diploma1.04",
+      "Diploma1.03",
+      "Diploma1.02",
+      "Diploma1.01",
+      "Diploma2.08",
+      "Diploma2.07",
+      "Diploma2.06",
+      "Diploma2.05",
+      "Diploma2.04",
+      "Diploma2.03",
+      "Diploma2.02",
+      "Diploma2.01"
+    ],
+    "consultation": "Photo How to consult",
+    "salon": [
+      "Photo of the salon #1",
+      "Photo of the salon #2",
+      "Photo of the salon #3",
+      "Photo of the salon #4",
+      "Photo of the salon #5"
+    ],
+    "products": {
+      "intro": "Image on which cosmetics",
+      "cards": [
+        ""
+      ]
+    }
+  }
+}

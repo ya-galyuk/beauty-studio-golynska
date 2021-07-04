@@ -567,6 +567,9 @@ body.lock {
   .header__service .phone__link {
     display: none;
   }
+  .header__phone {
+    margin-bottom: 30px;
+  }
 }
 
 /* ----------------------------------------*/

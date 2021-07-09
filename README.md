@@ -1,7 +1,7 @@
 ## Translate
 
 1. Add a new language value to `lang-YOUR_LANGUAGE_CODE.json` file.
-2. `mustache lang-YOUR_LANGUAGE_CODE.json TEMPLATE_NAME.mustache > OUTPUT_FILE_NAME.html`
+2. `mustache lang/lang-YOUR_LANGUAGE_CODE.json TEMPLATE_NAME.mustache > OUTPUT_FILE_NAME.html`
 
 ## Popup
 

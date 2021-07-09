@@ -43,7 +43,11 @@ button {
 }
 
 a:hover {
-  text-decoration: underline;
+  &.menu__link:not(.btn),
+  &.lang__btn,
+  &:not(.btn) {
+    color: $color-orange;
+  }
 
   &.btn,
   &.card {
@@ -57,6 +61,33 @@ ul {
 
 ._d-none {
   display: none;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+
+  &__border {
+    border: 3px solid #232323;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.about {
+  .bg {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+  }
+}
+.cosmetic{
+  .bg {
+    top: -12px;
+    left: -12px;
+    position: absolute !important;
+  }
 }
 
 ._text_strong {
@@ -325,7 +356,7 @@ body.lock {
     align-items: center;
     justify-content: space-between;
     min-height: 80px;
-    //transition: all 1s;
+    transition: min-height 1s;
   }
 
   &__logo {
@@ -337,7 +368,7 @@ body.lock {
     transform: translate(-50%, 0);
     z-index: 5;
     order: 2;
-    //transition: all 2s;
+    transition: max-width 2s;
 
     img {
       max-width: 100%;
@@ -571,7 +602,7 @@ body.lock {
         display: none;
       }
     }
-    &__phone{
+    &__phone {
       margin-bottom: 30px;
     }
   }
@@ -596,13 +627,13 @@ body.lock {
   }
 
   &__title {
-    @extend %tpl-font_regular;
     font-family: 'Oswald', sans-serif;
     @include adaptive-value("font-size", 52, 36, 1);
     font-weight: 400;
+    font-style: normal;
     display: inline;
     background: #fff;
-    line-height: 2;
+    line-height: 160%;
     text-transform: uppercase;
     position: relative;
     white-space: pre-line;
@@ -643,17 +674,6 @@ body.lock {
     min-width: 425px;
     position: relative;
     background: $bg-light;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 12px;
-      left: 0;
-      height: calc(100% + 10px);
-      width: calc(100% + 22px);
-      border: 3px solid #232323;
-      pointer-events: none;
-    }
   }
 
   &__title {
@@ -688,7 +708,7 @@ body.lock {
   &__photo {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate3d(0px, -50%, 0px) rotate(0deg) !important;
     @include adaptive-value("right", 0, -100, 1, 1024);
     @include adaptive-value("max-width", 808, 650, 1, 1024);
     z-index: -1;
@@ -993,8 +1013,6 @@ body.lock {
     &:hover {
       ._border {
         position: absolute;
-        top: -12px;
-        left: -12px;
         height: calc(100% + 24px);
         width: calc(100% + 24px);
         border: 3px solid #232323;
@@ -1570,6 +1588,9 @@ body.lock {
 
     span {
       display: block;
+    }
+
+    span:first-child {
       margin-bottom: 14px;
     }
   }
@@ -1578,12 +1599,6 @@ body.lock {
     span strong {
       font-family: 'Oswald', sans-serif;
       @extend %tpl-font_medium;
-    }
-  }
-
-  &__schedule {
-    span:last-child {
-      margin-bottom: 0;
     }
   }
 
@@ -1634,24 +1649,7 @@ body.lock {
     &-link {
       display: flex;
       position: relative;
-
-      &:after {
-        opacity: 0;
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        content: '';
-        width: calc(100% + 4px);
-        height: calc(100% + 3px);
-        border: 2px solid $color-orange;
-        transition: all .3s ease 0s;
-      }
-
-      &:hover {
-        &:after {
-          opacity: 1;
-        }
-      }
+      font-size: 36px;
     }
   }
 
@@ -1753,7 +1751,7 @@ body.lock {
 
   &__menu {
     font-family: 'Montserrat', sans-serif;
-    @extend %tpl-font_medium;
+    @extend %tpl-font_regular;
     font-size: 20px;
     color: $text-color_light;
   }
@@ -1778,7 +1776,7 @@ body.lock {
   &__copyright {
     font-family: 'Montserrat', sans-serif;
     @extend %tpl-font_regular;
-    @include adaptive-value("font-size", 22, 16, 1);
+    @include adaptive-value("font-size", 20, 16, 1);
     color: $text-color_light;
     text-align: center;
     opacity: .5;

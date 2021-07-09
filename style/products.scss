@@ -21,6 +21,15 @@
   .intro {
     height: 75vh;
     margin-bottom: -75px;
+
+    &__img{
+      background-image: url('../img/products-intro.jpg');
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   .cosmetic {
@@ -335,7 +344,7 @@
           @include adaptive-value("font-size", 26, 22, 1, 320);
           @extend %tpl-font_regular;
           margin-top: 24px;
-          color: $color-orange;
+          //color: $color-orange;
         }
       }
     }

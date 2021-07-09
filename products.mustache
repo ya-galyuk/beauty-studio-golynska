@@ -69,8 +69,8 @@
     <main class="page">
         <section id="cosmetic-intro" class="page__screen screen intro">
             <div class="screen__body">
-                <div class="screen__image">
-                    <img src="{{{root}}}img/products-intro.jpg" alt="{{{alt.products.intro}}}">
+                <div class="screen__image intro__img">
+<!--                    <img src="{{{root}}}img/products-intro.jpg" alt="{{{alt.products.intro}}}">-->
                 </div>
             </div>
         </section>
@@ -93,7 +93,9 @@
                                         <img src="{{{root}}}img/holyland.png" alt="{{{alt.cosmetics.0}}}">
                                         <div class="_dark"></div>
                                     </div>
-                                    <div class="_border"></div>
+                                    <div id="parallax-cosmetic-1" class="bg">
+                                        <div data-depth-y="0.5" data-depth-x="-0.2" class="_border"></div>
+                                    </div>
                                 </a>
                             </li>
                             <li class="cosmetic__item">
@@ -104,7 +106,9 @@
                                         <img src="{{{root}}}img/dermaquest.png" alt="{{{alt.cosmetics.1}}}">
                                         <div class="_dark"></div>
                                     </div>
-                                    <div class="_border"></div>
+                                    <div id="parallax-cosmetic-2" class="bg">
+                                        <div data-depth-y="0.5" data-depth-x="-0.2" class="_border"></div>
+                                    </div>
                                 </a>
                             </li>
                             <li class="cosmetic__item">
@@ -115,7 +119,9 @@
                                         <img src="{{{root}}}img/holyland.png" alt="{{{alt.cosmetics.2}}}">
                                         <div class="_dark"></div>
                                     </div>
-                                    <div class="_border"></div>
+                                    <div id="parallax-cosmetic-3" class="bg">
+                                        <div data-depth-y="0.5" data-depth-x="-0.2" class="_border"></div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -454,6 +460,7 @@
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="{{{root}}}js/dynamicAdapt.js"></script>
 <script src="{{{root}}}js/burger.js"></script>
 <script src="{{{root}}}js/popup.js"></script>

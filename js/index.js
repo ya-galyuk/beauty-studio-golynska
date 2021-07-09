@@ -11,6 +11,16 @@ window.onscroll = () => {
     scrollFunction()
 };
 
+const parallaxAbout = document.getElementById('parallax-about');
+if (parallaxAbout) new Parallax(parallaxAbout);
+
+const parallaxCosmetic_1 = document.getElementById('parallax-cosmetic-1')
+const parallaxCosmetic_2 = document.getElementById('parallax-cosmetic-2')
+const parallaxCosmetic_3 = document.getElementById('parallax-cosmetic-3')
+if (parallaxCosmetic_1) new Parallax(parallaxCosmetic_1, {hoverOnly: true});
+if (parallaxCosmetic_2) new Parallax(parallaxCosmetic_2, {hoverOnly: true});
+if (parallaxCosmetic_3) new Parallax(parallaxCosmetic_3, {hoverOnly: true});
+
 // ----------------------------------------------
 // lang
 function setLang(langValue) {

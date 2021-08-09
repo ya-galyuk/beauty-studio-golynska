@@ -1,10 +1,16 @@
 "use strict";
 
 const langArr = ["ru", "ua", "en"];
+const defaultLang = "ru"
 
 document.addEventListener("DOMContentLoaded", () => {
     checkLang();
     setBrand();
+    checkPosition();
+});
+
+window.addEventListener("beforeunload", (e) => {
+    localStorage.setItem("body-scroll", this.scrollY.toString());
 });
 
 window.onscroll = () => {
@@ -12,7 +18,7 @@ window.onscroll = () => {
 };
 
 const parallaxAbout = document.getElementById('parallax-about');
-if (parallaxAbout) new Parallax(parallaxAbout);
+if (parallaxAbout) new Parallax(parallaxAbout, {limitX: 40, limitY: 40});
 
 const parallaxCosmetic_1 = document.getElementById('parallax-cosmetic-1')
 const parallaxCosmetic_2 = document.getElementById('parallax-cosmetic-2')
@@ -24,16 +30,18 @@ if (parallaxCosmetic_3) new Parallax(parallaxCosmetic_3, {hoverOnly: true});
 // ----------------------------------------------
 // lang
 function setLang(langValue) {
-    if (!langArr.includes(langValue))
-        langValue = "ru"
+    if (!langArr.includes(langValue)) {
+        langValue = defaultLang
+    }
     localStorage.setItem('language', langValue);
     setActiveLangBtn(langValue);
 }
 
 function checkLang() {
     let localLang = localStorage.getItem('language');
-    if (!langArr.includes(localLang))
-        localLang = "ru"
+    if (!langArr.includes(localLang)) {
+        localLang = defaultLang
+    }
     setLang(localLang);
 }
 
@@ -98,10 +106,11 @@ if (accordion.length > 0) {
         el.addEventListener("click", function (e) {
             this.classList.toggle("open");
             const panel = this.nextElementSibling;
+            const panelHeight = panel.children[0].offsetHeight
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
             } else {
-                panel.style.maxHeight = "initial";
+                panel.style.maxHeight = panelHeight + 'px';
             }
             e.preventDefault();
         });
@@ -124,7 +133,10 @@ function setBrand(filterBrand) {
 }
 
 
-
-
-
-
+// scroll position
+function checkPosition() {
+    let topPosition = localStorage.getItem("body-scroll");
+    if (topPosition !== null) {
+        window.scrollTo(0, +topPosition)
+    }
+}

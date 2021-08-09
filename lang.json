@@ -1,12 +1,29 @@
 {
-  "lang": "ua",
+  "lang": {
+    "ua": "ua",
+    "ru": "ru",
+    "en": "en"
+  },
   "url": "https://www.example.com",
   "root-url": "/beauty-studio-golynska/",
-  "root": "",
-  "dir": "",
+  "root": {
+    "ua": "../",
+    "ru": "",
+    "en": "../"
+  },
+  "dir": {
+    "ua": "ua/",
+    "ru": "",
+    "en": "en/"
+  },
   "title": "Beauty studio Golynska",
+  "phone": "+380 (66) 770 09 48",
   "meta": {
-    "description": "Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948",
+    "description": {
+      "ua": "Голинська Тетяна. Косметолог-естетист. Ультразвукова чистка обличчя. Хім. Пілінги. ️Хіромассаж особи. Мезотерапія. Кріотерапії. Запис на консультацію: +380667700948",
+      "ru": "Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948",
+      "en": "Golynskaya Tatiana. Aesthetic beautician. ️Ultrasonic facial cleansing. Chem. Peelings. ️Chiromassage of the face. Mesotherapy. ️Cryotherapy. Record on consultation: +380667700948"
+    },
     "keywords": ""
   },
   "menu": {
@@ -908,9 +925,9 @@
       "en": "Salon"
     },
     "address": {
-      "ua": "м. Харків, <span> вул. Алчевськ, 50а</span>",
-      "ru": "г. Харьков, <span>ул. Алчевських, 50а</span>",
-      "en": "Kharkov, <span> ul. Alchevsky, 50a</span>"
+      "ua": "м. Харків, <span> вул. Алчевськ, 50а</span><br/>(біля станції метро Пушкінська)",
+      "ru": "г. Харьков, <span>ул. Алчевських, 50а</span><br/>(возле станции метро Пушкинская)",
+      "en": "Kharkov, <span> ul. Alchevsky, 50a</span><br/>(near Pushkinskaya metro station)"
     },
     "schedule": {
       "title": {

@@ -23,6 +23,7 @@ for (const brandBtn of brandBtns) {
 
 function toggleActiveBrand() {
     const current = document.querySelector(".brand__btn.active");
+    this.scrollIntoView({behavior: 'smooth', block: 'nearest'})
     current?.classList.remove('active');
     this.classList.add('active');
 }

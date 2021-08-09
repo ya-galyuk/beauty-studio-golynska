@@ -41,7 +41,7 @@ new Swiper('.service-slider', {
         0: {
             slidesPerView: 1,
         },
-        500: {
+        501: {
             slidesPerView: 'auto',
         },
     },
@@ -100,7 +100,7 @@ new Swiper('.review-slider', {
     pagination: {
         el: '.review__pagination',
         clickable: true,
-        // dynamicBullets: true,
+        dynamicBullets: true,
     },
 
     navigation: {

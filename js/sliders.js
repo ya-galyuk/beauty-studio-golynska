@@ -31,7 +31,7 @@ const optionBase = {
     nested: true,
 }
 
-new Swiper('.service-slider', {
+const serviceSwiper = new Swiper('.service-slider', {
 
     ...optionBase,
 
@@ -40,6 +40,7 @@ new Swiper('.service-slider', {
     breakpoints: {
         0: {
             slidesPerView: 1,
+            autoHeight: true
         },
         501: {
             slidesPerView: 'auto',
@@ -100,7 +101,6 @@ new Swiper('.review-slider', {
     pagination: {
         el: '.review__pagination',
         clickable: true,
-        dynamicBullets: true,
     },
 
     navigation: {

@@ -4,9 +4,32 @@
 
 .products-wrapper {
 
+  .header {
+    @media (max-width: 1024px) {
+      .menu__body._active {
+        .menu__item {
+          display: none;
+        }
+
+        .menu__item_mob {
+          display: block;
+        }
+      }
+    }
+  }
+
   .intro {
     height: 75vh;
     margin-bottom: -75px;
+
+    &__img{
+      background-image: url('../img/products-intro.jpg');
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   .cosmetic {
@@ -100,7 +123,7 @@
         @extend %tpl-font_regular;
         @include adaptive-value("font-size", 22, 20, 1, 375);
         color: $color-dark;
-        opacity: .6;
+        opacity: .7;
         background: none;
 
         &.active {
@@ -192,7 +215,7 @@
         }
 
         &__price {
-          opacity: .6;
+          opacity: .7;
           font-size: 18px;
         }
       }
@@ -200,7 +223,6 @@
 
     &__more {
       margin-top: 20px;
-      // TODO: if you need btn load more --> display:flex;
       display: none;
       justify-content: center;
 
@@ -322,7 +344,7 @@
           @include adaptive-value("font-size", 26, 22, 1, 320);
           @extend %tpl-font_regular;
           margin-top: 24px;
-          color: $color-orange;
+          //color: $color-orange;
         }
       }
     }

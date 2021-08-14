@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--  SEO -->
+
+    <!--  max 140  -->
+    <meta name="description" content="{{{meta.description}}}"/>
+    <!--  max 20 words ex: tag-1, tag-2, tab-3  -->
+    <meta name="keywords" content="{{{meta.keywords}}}"/>
+
+    <title>{{{title}}}</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{{root}}}favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{{root}}}favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{{root}}}favicon/favicon-16x16.png">
+<!--    <link rel="manifest" href="{{{root}}}favicon/site.webmanifest">-->
+    <link rel="mask-icon" href="{{{root}}}favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="alternate" href="{{{url}}}/ua/" hreflang="ua">
+    <link rel="alternate" href="{{{url}}}/" hreflang="ru">
+    <link rel="alternate" href="{{{url}}}/en/" hreflang="en">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@400;500&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="{{{root}}}style/iconfont.css">
+    <link rel="stylesheet" href="{{{root}}}style/index.min.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header lock-padding">
+        <div class="header__container">
+            <div class="header__menu menu">
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-1" href="#intro" class="menu__link">{{{menu.home}}}</a>
+                        </li>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-2" href="#about" class="menu__link">{{{menu.about}}}</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".screen-3" href="#service" class="menu__link">{{{menu.service}}}</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".screen-4" href="#cosmetic" class="menu__link">{{{menu.cosmetics}}}</a>
+                        </li>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-5" href="#certificates" class="menu__link">{{{menu.certificates}}}</a>
+                        </li>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-6" href="#consultation" class="menu__link">{{{menu.consultation}}}</a>
+                        </li>
+                        <li class="menu__item_mob">
+                            <a data-goto=".screen-7" href="#review" class="menu__link">{{{menu.review}}}</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".screen-8" href="#salon" class="menu__link">{{{menu.contacts}}}</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+            </div>
+            <a href="index.html" class="header__logo" title="logo">
+                <img src="{{{root}}}img/logo.png" alt="{{{alt.logo}}}">
+            </a>
+            <div data-da=".menu__body,500,1" class="header__service">
+                <div class="header__phone phone">
+                    <a href="tel:{{{phone}}}" class="header__link phone__link">{{{phone}}}</a>
+                </div>
+                <div data-da=".menu__body,1024,2" class="header__lang lang">
+                    <a href="{{{root-url}}}" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</a>
+                    <a href="{{{root-url}}}ua/" class="header__btn lang__btn" id="lang-ua"
+                       onclick="setLang('ua')">UA</a>
+                    <a href="{{{root-url}}}en/" class="header__btn lang__btn" id="lang-en"
+                       onclick="setLang('en')">EN</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page">
+        <section id="intro" class="page__screen screen-1 screen intro">
+            <div class="screen__content intro__content">
+                <div class="container">
+                    <div class="intro__title-block">
+                        <h1 class="intro__title">{{{intro.title}}}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="screen__body">
+                <div class="screen__image">
+                    <img src="{{{root}}}img/intro.jpeg" alt="{{{alt.intro}}}">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page__screen screen-2 screen about">
+            <div class="screen__content">
+                <div class="container about__container">
+                    <div class="about__content">
+                        <h2 class="screen__title about__title">{{{about.title}}}</h2>
+                        <p class="about__description _text-line">{{{about.description}}}</p>
+
+                        <div class="about__buttons">
+                            <a href="#" class="btn btn_primary">{{{about.btn.consultation}}}</a>
+                            <a data-goto=".screen-4" href="#"
+                               class="menu__link btn btn_secondary">{{{about.btn.brand}}}</a>
+                        </div>
+                        <div class="bg" id="parallax-about">
+                            <div class="bg__border" data-depth="0.50"></div>
+                        </div>
+                    </div>
+                    <div data-da=".about__content,768,2" class="about__photo">
+                        <img src="{{{root}}}img/photo.png" alt="{{{alt.about}}}">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="page__screen screen-3 screen service">
+            <div class="screen__content service__content">
+                <div class="fluid-container service__container">
+                    <div class="service__body">
+                        <h2 class="screen__title screen__title_bg service__title">{{{service.title}}}</h2>
+                        <div class="f-block__body">
+                            <div class="service-slider swiper-container">
+                                <div class="service-slider__wrapper swiper-wrapper">
+                                    <div data-hash="service-1" class="service-slider__slide swiper-slide">
+                                        <div class="service-slider__image">
+                                            <img src="{{{root}}}img/service/service-1.png" alt="{{{alt.services.0}}}">
+                                        </div>
+                                        <div class="service-slider__service-info service-info">
+                                            <a href="#service-1" class="popup-link">
+                                                <h2 class="service-info__title">{{{service.items.0.title}}}</h2>
+                                            </a>
+                                            <div class="service-info__details">
+                                                <div class="service-info__price">{{{service.items.0.price}}}</div>
+                                                <div class="service-info__time time">
+                                                    <div class="time__icon">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M30.4541 13.2773H22.2041C22.0623 13.2773 21.9463 13.3934 21.9463 13.5352V15.082C21.9463 15.2238 22.0623 15.3398 22.2041 15.3398H30.4541C30.5959 15.3398 30.712 15.2238 30.712 15.082V13.5352C30.712 13.3934 30.5959 13.2773 30.4541 13.2773ZM26.1358 17.6602H22.2041C22.0623 17.6602 21.9463 17.7762 21.9463 17.918V19.4648C21.9463 19.6066 22.0623 19.7227 22.2041 19.7227H26.1358C26.2776 19.7227 26.3936 19.6066 26.3936 19.4648V17.918C26.3936 17.7762 26.2776 17.6602 26.1358 17.6602ZM15.3818 10.3931H13.9864C13.7866 10.3931 13.6254 10.5542 13.6254 10.754V18.7462C13.6254 18.8622 13.6802 18.9686 13.7737 19.0362L18.5722 22.536C18.7333 22.6521 18.9589 22.6198 19.0749 22.4587L19.9032 21.3275V21.3243C20.0192 21.1632 19.9837 20.9376 19.8226 20.8216L15.7395 17.8696V10.754C15.7427 10.5542 15.5784 10.3931 15.3818 10.3931Z"
+                                                                  fill="black"/>
+                                                            <path d="M25.936 21.7174H24.0733C23.8928 21.7174 23.722 21.8109 23.6253 21.9656C23.216 22.6133 22.7391 23.2128 22.1912 23.7606C21.247 24.7048 20.1481 25.4461 18.9267 25.9617C17.6602 26.4966 16.3163 26.7673 14.9306 26.7673C13.5416 26.7673 12.1978 26.4966 10.9345 25.9617C9.71311 25.4461 8.61418 24.7048 7.66994 23.7606C6.72571 22.8164 5.98449 21.7174 5.46887 20.4961C4.93391 19.2328 4.66321 17.8889 4.66321 16.5C4.66321 15.111 4.93391 13.7704 5.46887 12.5039C5.98449 11.2825 6.72571 10.1836 7.66994 9.23932C8.61418 8.29508 9.71311 7.55386 10.9345 7.03824C12.1978 6.50328 13.5448 6.23258 14.9306 6.23258C16.3196 6.23258 17.6634 6.50328 18.9267 7.03824C20.1481 7.55386 21.247 8.29508 22.1912 9.23932C22.7391 9.78717 23.216 10.3866 23.6253 11.0343C23.722 11.189 23.8928 11.2825 24.0733 11.2825H25.936C26.1583 11.2825 26.3001 11.0504 26.2002 10.8539C24.099 6.67408 19.8387 3.95738 15.0821 3.90259C8.11789 3.81558 2.33323 9.51646 2.32033 16.4742C2.30744 23.4448 7.95676 29.1005 14.9274 29.1005C19.7452 29.1005 24.0765 26.3742 26.2002 22.1461C26.3001 21.9495 26.1551 21.7174 25.936 21.7174Z"
+                                                                  fill="black"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="time__info">{{{service.items.0.time}}}</div>
+                                                </div>
+                                                <div class="service-info__more">
+                                                    <a href="#service-1"
+                                                       class="popup-link service-info__link">{{{service.link-more}}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-hash="service-2" class="service-slider__slide swiper-slide">
+                                        <div class="service-slider__image">
+                                            <img src="{{{root}}}img/service/service-2.png" alt="{{{alt.services.1}}}">
+                                        </div>
+                                        <div class="service-slider__service-info service-info">
+                                            <a href="#service-2" class="popup-link">
+                                                <h2 class="service-info__title">{{{service.items.1.title}}}</h2>
+                                            </a>
+                                            <div class="service-info__details">
+                                                <div class="service-info__price">{{{service.items.1.price}}}</div>
+                                                <div class="service-info__time time">
+                                                    <div class="time__icon">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M30.4541 13.2773H22.2041C22.0623 13.2773 21.9463 13.3934 21.9463 13.5352V15.082C21.9463 15.2238 22.0623 15.3398 22.2041 15.3398H30.4541C30.5959 15.3398 30.712 15.2238 30.712 15.082V13.5352C30.712 13.3934 30.5959 13.2773 30.4541 13.2773ZM26.1358 17.6602H22.2041C22.0623 17.6602 21.9463 17.7762 21.9463 17.918V19.4648C21.9463 19.6066 22.0623 19.7227 22.2041 19.7227H26.1358C26.2776 19.7227 26.3936 19.6066 26.3936 19.4648V17.918C26.3936 17.7762 26.2776 17.6602 26.1358 17.6602ZM15.3818 10.3931H13.9864C13.7866 10.3931 13.6254 10.5542 13.6254 10.754V18.7462C13.6254 18.8622 13.6802 18.9686 13.7737 19.0362L18.5722 22.536C18.7333 22.6521 18.9589 22.6198 19.0749 22.4587L19.9032 21.3275V21.3243C20.0192 21.1632 19.9837 20.9376 19.8226 20.8216L15.7395 17.8696V10.754C15.7427 10.5542 15.5784 10.3931 15.3818 10.3931Z"
+                                                                  fill="black"/>
+                                                            <path d="M25.936 21.7174H24.0733C23.8928 21.7174 23.722 21.8109 23.6253 21.9656C23.216 22.6133 22.7391 23.2128 22.1912 23.7606C21.247 24.7048 20.1481 25.4461 18.9267 25.9617C17.6602 26.4966 16.3163 26.7673 14.9306 26.7673C13.5416 26.7673 12.1978 26.4966 10.9345 25.9617C9.71311 25.4461 8.61418 24.7048 7.66994 23.7606C6.72571 22.8164 5.98449 21.7174 5.46887 20.4961C4.93391 19.2328 4.66321 17.8889 4.66321 16.5C4.66321 15.111 4.93391 13.7704 5.46887 12.5039C5.98449 11.2825 6.72571 10.1836 7.66994 9.23932C8.61418 8.29508 9.71311 7.55386 10.9345 7.03824C12.1978 6.50328 13.5448 6.23258 14.9306 6.23258C16.3196 6.23258 17.6634 6.50328 18.9267 7.03824C20.1481 7.55386 21.247 8.29508 22.1912 9.23932C22.7391 9.78717 23.216 10.3866 23.6253 11.0343C23.722 11.189 23.8928 11.2825 24.0733 11.2825H25.936C26.1583 11.2825 26.3001 11.0504 26.2002 10.8539C24.099 6.67408 19.8387 3.95738 15.0821 3.90259C8.11789 3.81558 2.33323 9.51646 2.32033 16.4742C2.30744 23.4448 7.95676 29.1005 14.9274 29.1005C19.7452 29.1005 24.0765 26.3742 26.2002 22.1461C26.3001 21.9495 26.1551 21.7174 25.936 21.7174Z"
+                                                                  fill="black"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="time__info">{{{service.items.1.time}}}</div>
+                                                </div>
+                                                <div class="service-info__more">
+                                                    <a href="#service-2"
+                                                       class="popup-link service-info__link">{{{service.link-more}}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-hash="service-3" class="service-slider__slide swiper-slide">
+                                        <div class="service-slider__image">
+                                            <img src="{{{root}}}img/service/service-3.png" alt="{{{alt.services.2}}}">
+                                        </div>
+                                        <div class="service-slider__service-info service-info">
+                                            <a href="#service-3" class="popup-link">
+                                                <h2 class="service-info__title">{{{service.items.2.title}}}</h2>
+                                            </a>
+                                            <div class="service-info__details">
+                                                <div class="service-info__price">{{{service.items.2.price}}}</div>
+                                                <div class="service-info__time time">
+                                                    <div class="time__icon">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M30.4541 13.2773H22.2041C22.0623 13.2773 21.9463 13.3934 21.9463 13.5352V15.082C21.9463 15.2238 22.0623 15.3398 22.2041 15.3398H30.4541C30.5959 15.3398 30.712 15.2238 30.712 15.082V13.5352C30.712 13.3934 30.5959 13.2773 30.4541 13.2773ZM26.1358 17.6602H22.2041C22.0623 17.6602 21.9463 17.7762 21.9463 17.918V19.4648C21.9463 19.6066 22.0623 19.7227 22.2041 19.7227H26.1358C26.2776 19.7227 26.3936 19.6066 26.3936 19.4648V17.918C26.3936 17.7762 26.2776 17.6602 26.1358 17.6602ZM15.3818 10.3931H13.9864C13.7866 10.3931 13.6254 10.5542 13.6254 10.754V18.7462C13.6254 18.8622 13.6802 18.9686 13.7737 19.0362L18.5722 22.536C18.7333 22.6521 18.9589 22.6198 19.0749 22.4587L19.9032 21.3275V21.3243C20.0192 21.1632 19.9837 20.9376 19.8226 20.8216L15.7395 17.8696V10.754C15.7427 10.5542 15.5784 10.3931 15.3818 10.3931Z"
+                                                                  fill="black"/>
+                                                            <path d="M25.936 21.7174H24.0733C23.8928 21.7174 23.722 21.8109 23.6253 21.9656C23.216 22.6133 22.7391 23.2128 22.1912 23.7606C21.247 24.7048 20.1481 25.4461 18.9267 25.9617C17.6602 26.4966 16.3163 26.7673 14.9306 26.7673C13.5416 26.7673 12.1978 26.4966 10.9345 25.9617C9.71311 25.4461 8.61418 24.7048 7.66994 23.7606C6.72571 22.8164 5.98449 21.7174 5.46887 20.4961C4.93391 19.2328 4.66321 17.8889 4.66321 16.5C4.66321 15.111 4.93391 13.7704 5.46887 12.5039C5.98449 11.2825 6.72571 10.1836 7.66994 9.23932C8.61418 8.29508 9.71311 7.55386 10.9345 7.03824C12.1978 6.50328 13.5448 6.23258 14.9306 6.23258C16.3196 6.23258 17.6634 6.50328 18.9267 7.03824C20.1481 7.55386 21.247 8.29508 22.1912 9.23932C22.7391 9.78717 23.216 10.3866 23.6253 11.0343C23.722 11.189 23.8928 11.2825 24.0733 11.2825H25.936C26.1583 11.2825 26.3001 11.0504 26.2002 10.8539C24.099 6.67408 19.8387 3.95738 15.0821 3.90259C8.11789 3.81558 2.33323 9.51646 2.32033 16.4742C2.30744 23.4448 7.95676 29.1005 14.9274 29.1005C19.7452 29.1005 24.0765 26.3742 26.2002 22.1461C26.3001 21.9495 26.1551 21.7174 25.936 21.7174Z"
+                                                                  fill="black"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="time__info">{{{service.items.2.time}}}</div>
+                                                </div>
+                                                <div class="service-info__more">
+                                                    <a href="#service-3"
+                                                       class="popup-link service-info__link">{{{service.link-more}}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-hash="service-4" class="service-slider__slide swiper-slide">
+                                        <div class="service-slider__image">
+                                            <img src="{{{root}}}img/service/service-4.png"
+                                                 alt="{{{alt.services.3}}}">
+                                        </div>
+                                        <div class="service-slider__service-info service-info">
+                                            <a href="#service-4" class="popup-link">
+                                                <h2 class="service-info__title">{{{service.items.3.title}}}</h2>
+                                            </a>
+                                            <div class="service-info__details">
+                                                <div class="service-info__price">{{{service.items.3.price}}}</div>
+                                                <div class="service-info__time time">
+                                                    <div class="time__icon">
+                                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M30.4541 13.2773H22.2041C22.0623 13.2773 21.9463 13.3934 21.9463 13.5352V15.082C21.9463 15.2238 22.0623 15.3398 22.2041 15.3398H30.4541C30.5959 15.3398 30.712 15.2238 30.712 15.082V13.5352C30.712 13.3934 30.5959 13.2773 30.4541 13.2773ZM26.1358 17.6602H22.2041C22.0623 17.6602 21.9463 17.7762 21.9463 17.918V19.4648C21.9463 19.6066 22.0623 19.7227 22.2041 19.7227H26.1358C26.2776 19.7227 26.3936 19.6066 26.3936 19.4648V17.918C26.3936 17.7762 26.2776 17.6602 26.1358 17.6602ZM15.3818 10.3931H13.9864C13.7866 10.3931 13.6254 10.5542 13.6254 10.754V18.7462C13.6254 18.8622 13.6802 18.9686 13.7737 19.0362L18.5722 22.536C18.7333 22.6521 18.9589 22.6198 19.0749 22.4587L19.9032 21.3275V21.3243C20.0192 21.1632 19.9837 20.9376 19.8226 20.8216L15.7395 17.8696V10.754C15.7427 10.5542 15.5784 10.3931 15.3818 10.3931Z"
+                                                                  fill="black"/>
+                                                            <path d="M25.936 21.7174H24.0733C23.8928 21.7174 23.722 21.8109 23.6253 21.9656C23.216 22.6133 22.7391 23.2128 22.1912 23.7606C21.247 24.7048 20.1481 25.4461 18.9267 25.9617C17.6602 26.4966 16.3163 26.7673 14.9306 26.7673C13.5416 26.7673 12.1978 26.4966 10.9345 25.9617C9.71311 25.4461 8.61418 24.7048 7.66994 23.7606C6.72571 22.8164 5.98449 21.7174 5.46887 20.4961C4.93391 19.2328 4.66321 17.8889 4.66321 16.5C4.66321 15.111 4.93391 13.7704 5.46887 12.5039C5.98449 11.2825 6.72571 10.1836 7.66994 9.23932C8.61418 8.29508 9.71311 7.55386 10.9345 7.03824C12.1978 6.50328 13.5448 6.23258 14.9306 6.23258C16.3196 6.23258 17.6634 6.50328 18.9267 7.03824C20.1481 7.55386 21.247 8.29508 22.1912 9.23932C22.7391 9.78717 23.216 10.3866 23.6253 11.0343C23.722 11.189 23.8928 11.2825 24.0733 11.2825H25.936C26.1583 11.2825 26.3001 11.0504 26.2002 10.8539C24.099 6.67408 19.8387 3.95738 15.0821 3.90259C8.11789 3.81558 2.33323 9.51646 2.32033 16.4742C2.30744 23.4448 7.95676 29.1005 14.9274 29.1005C19.7452 29.1005 24.0765 26.3742 26.2002 22.1461C26.3001 21.9495 26.1551 21.7174 25.936 21.7174Z"
+                                                                  fill="black"/>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="time__info">{{{service.items.3.time}}}</div>
+                                                </div>
+                                                <div class="service-info__more">
+                                                    <a href="#service-4"
+                                                       class="popup-link service-info__link">{{{service.link-more}}}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-prev service__button-prev"></div>
+                                <div class="swiper-button-next service__button-next"></div>
+                            </div>
+                        </div>
+                        <div class="service-btns">
+                            <a href="#" class="btn btn_primary-w service-btn">{{{service.btn.appointment}}}</a>
+                            <a href="#all_service"
+                               class="popup-link btn btn_secondary-w service-btn">{{{service.btn.procedures}}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cosmetic" class="page__screen screen-4 screen cosmetic">
+            <div class="screen__content cosmetic__content">
+                <div class="container">
+                    <div class="cosmetic__container">
+                        <h2 class="screen__title _text-line cosmetic__title">{{{cosmetic.title}}}</h2>
+                        <a href="products.html" data-da=".cosmetic__content,768,last"
+                           class="btn btn_secondary cosmetic-btn">{{{cosmetic.btn}}}</a>
+                        <p class="cosmetic__description">{{{cosmetic.description}}}</p>
+                    </div>
+                    <div class="cosmetic__cards">
+                        <ul class="cosmetic__list">
+                            <li class="cosmetic__item">
+                                <a href="products.html#cosmetic-cards" class="cosmetic__item-link"
+                                   onclick="setFilterSelection('brand-holyland')">
+                                    <h2 class="cosmetic__item-title">Holyland</h2>
+                                    <div class="cosmetic__img">
+                                        <img src="{{{root}}}img/holyland.png" alt="{{{alt.cosmetics.0}}}">
+                                        <div class="_dark"></div>
+                                    </div>
+                                    <div id="parallax-cosmetic-1" class="bg">
+                                        <div data-depth-y="0.5" data-depth-x="-0.2" class="_border"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cosmetic__item">
+                                <a href="products.html#cosmetic-cards" class="cosmetic__item-link"
+                                   onclick="setFilterSelection('brand-dermaquest')">
+                                    <h2 class="cosmetic__item-title">Dermaquest</h2>
+                                    <div class="cosmetic__img">
+                                        <img src="{{{root}}}img/dermaquest.png" alt="{{{alt.cosmetics.1}}}">
+                                        <div class="_dark"></div>
+                                    </div>
+                                    <div id="parallax-cosmetic-2" class="bg">
+                                        <div data-depth-y="0.5" data-depth-x="-0.2" class="_border"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="cosmetic__item">
+                                <a href="products.html#cosmetic-cards" class="cosmetic__item-link"
+                                   onclick="setFilterSelection('brand-bio_matrix')">
+                                    <h2 class="cosmetic__item-title">Bio-matrix</h2>
+                                    <div class="cosmetic__img">
+                                        <img src="{{{root}}}img/holyland.png" alt="{{{alt.cosmetics.2}}}">
+                                        <div class="_dark"></div>
+                                    </div>
+                                    <div id="parallax-cosmetic-3" class="bg">
+                                        <div data-depth-y="0.5" data-depth-x="-0.2" class="_border"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="page__screen screen-5 screen certificates">
+            <div class="screen__content certificates__content">
+                <div class="certificates__container">
+                    <div class="certificates__body">
+                        <div class="certificates__row">
+                            <div class="certificates-slider swiper-container">
+                                <div class="certificates-slider__wrapper swiper-wrapper">
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma1.08.png"
+                                                 alt="{{{alt.certificates.0}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma1.07.png"
+                                                 alt="{{{alt.certificates.1}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma1.06.png"
+                                                 alt="{{{alt.certificates.2}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma1.05.png"
+                                                 alt="{{{alt.certificates.3}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma1.04.png"
+                                                 alt="{{{alt.certificates.4}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma1.03.png"
+                                                 alt="{{{alt.certificates.5}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma1.02.png"
+                                                 alt="{{{alt.certificates.6}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma1.01.png"
+                                                 alt="{{{alt.certificates.7}}}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certificates__info">
+                            <h2 class="certificates__title">{{{certificates.title}}}</h2>
+                            <p class="certificates__description">{{{certificates.description}}}</p>
+                        </div>
+                        <div class="certificates__row">
+                            <div dir="rtl" class="certificates-slider swiper-container">
+                                <div class="certificates-slider__wrapper swiper-wrapper">
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma2.08.png"
+                                                 alt="{{{alt.certificates.8}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma2.07.png"
+                                                 alt="{{{alt.certificates.9}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma2.06.png"
+                                                 alt="{{{alt.certificates.10}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma2.05.png"
+                                                 alt="{{{alt.certificates.11}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma2.04.png"
+                                                 alt="{{{alt.certificates.12}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma2.03.png"
+                                                 alt="{{{alt.certificates.13}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma2.02.png"
+                                                 alt="{{{alt.certificates.14}}}">
+                                        </div>
+                                    </div>
+                                    <div class="certificates-slider__slide swiper-slide">
+                                        <div class="certificates-slider__image">
+                                            <img src="{{{root}}}img/diplom/Diploma2.01.png"
+                                                 alt="{{{alt.certificates.15}}}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consultation" class="page__screen screen-6 screen consultation">
+            <div class="screen__content consultation__content">
+                <div class="consultation__container">
+                    <div class="consultation__body">
+                        <div class="consultation__header">
+                            <h2 class="screen__title _text-line consultation__title">{{{consultation.title}}}</h2>
+                            <div data-da=".consultation__image-body,1024,last"
+                                 class="consultation__slider-navigation">
+                                <div class="swiper-button-prev consultation__button-prev"></div>
+                                <div class="swiper-button-next consultation__button-next"></div>
+                            </div>
+                        </div>
+
+                        <div class="consultation__body-content">
+                            <div class="consultation__image-body">
+                                <div class="consultation__image">
+                                    <img src="{{{root}}}img/consultation/consultation.png"
+                                         alt="{{{alt.consultation}}}">
+                                </div>
+                            </div>
+                            <div class="f-block__body">
+                                <div class="consultation-slider swiper-container">
+                                    <div class="consultation-slider__wrapper swiper-wrapper">
+                                        <div class="consultation-slider__slide consultation-slide swiper-slide">
+                                            <div class="consultation-slide-body">
+                                                <span class="consultation-slide__span">01.</span>
+                                                <h2 class="consultation-slide__title">{{{consultation.items.0.title}}}</h2>
+                                                <p class="consultation-slide__description">{{{consultation.items.0.description}}}</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="consultation-slider__slide consultation-slide swiper-slide">
+                                            <div class="consultation-slide-body">
+                                                <span class="consultation-slide__span">02.</span>
+                                                <h2 class="consultation-slide__title">{{{consultation.items.1.title}}}</h2>
+                                                <p class="consultation-slide__description">{{{consultation.items.1.description}}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="consultation-slider__slide consultation-slide swiper-slide">
+                                            <div class="consultation-slide-body">
+                                                <span class="consultation-slide__span">03.</span>
+                                                <h2 class="consultation-slide__title">{{{consultation.items.2.title}}}</h2>
+                                                <p class="consultation-slide__description">{{{consultation.items.2.description}}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="consultation-slider__slide consultation-slide swiper-slide">
+                                            <div class="consultation-slide-body">
+                                                <span class="consultation-slide__span">04.</span>
+                                                <h2 class="consultation-slide__title">{{{consultation.items.3.title}}}</h2>
+                                                <p class="consultation-slide__description">{{{consultation.items.3.description}}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="consultation__description">
+                            <span class="consultation__hr-line"></span>
+                            <p class="consultation__detail">
+                                <span class="consultation__detail_strong">{{{consultation.detail-strong}}}</span>
+                                <span id="dotsConsultation" class="consultation__more-dots">...</span><span
+                                    id="moreConsultation"
+                                    class="consultation__more consultation-detail-strong">{{{consultation.detail}}}</span>
+                                <br>
+                                <button id="btnMoreConsultation"
+                                        class="consultation__more-btn">{{{consultation.btn.more}}}
+                                </button>
+                            </p>
+                            <a href="#"
+                               class="btn btn_primary consultation__btn">{{{consultation.btn.consultation}}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="review" class="page__screen screen-7 screen review">
+            <div class="screen__content review__content">
+                <div class="review__bg-container">
+                    <div class="container review__container">
+                        <h2 class="screen__title screen__title_bg review__title">{{{review.title}}}</h2>
+                        <div class="f-block">
+                            <div class="f-block__body review__body">
+                                <!-- Slider main container -->
+                                <div class="review-slider swiper-container">
+                                    <!-- Additional required wrapper -->
+                                    <div class="review-slider__wrapper swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div data-hash="review-slide-1" class="review-slider__slide swiper-slide">
+                                            <div class="review-slider__item">
+                                                <p class="review-slider__text">{{{review.items.0.text}}}</p>
+                                                <p class="review-slider__person">{{{review.items.0.author}}}</p>
+                                            </div>
+                                        </div>
+                                        <div data-hash="review-slide-2" class="review-slider__slide swiper-slide">
+                                            <div class="review-slider__item">
+                                                <p class="review-slider__text">{{{review.items.1.text}}}</p>
+                                                <p>
+                                                </p>
+                                                <p class="review-slider__person">{{{review.items.1.author}}}</p>
+                                            </div>
+                                        </div>
+                                        <div data-hash="review-slide-3" class="review-slider__slide swiper-slide">
+                                            <div class="review-slider__item">
+                                                <p class="review-slider__text">{{{review.items.2.text}}}</p>
+                                                <p class="review-slider__person">{{{review.items.2.author}}}</p>
+                                            </div>
+                                        </div>
+                                        <div data-hash="review-slide-4" class="review-slider__slide swiper-slide">
+                                            <div class="review-slider__item">
+                                                <p class="review-slider__text">{{{review.items.3.text}}}</p>
+                                                <p class="review-slider__person">{{{review.items.3.author}}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination review__pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev review__button-prev"></div>
+                                <div class="swiper-button-next review__button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_bg"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="salon" class="page__screen screen-8 screen salon">
+            <div class="screen__content salon__content">
+                <div class="container salon__container">
+                    <div class="salon__body">
+                        <div class="salon__info">
+                            <div data-da=".salon__container,1024,first" class="salon__details">
+                                <h2 class="screen__title _text-line salon__title">{{{salon.title}}}</h2>
+                                <address class="salon__address">{{{salon.address}}}</address>
+                            </div>
+                            <p class="salon__schedule">
+                                <span>{{{salon.schedule.title}}}</span>
+                                <span>{{{salon.schedule.weekdays}}}</span>
+                                <span>{{{salon.schedule.weekend}}}</span>
+                            </p>
+                            <p class="salon__phone">
+                                <span>{{{salon.schedule.phone-title}}}</span>
+                                <a href="tel:{{{phone}}}">{{{phone}}}</a>
+                            </p>
+                            <div class="salon__social">
+                                <div class="salon__social-item">
+                                    <a href="https://instagram.com/studio.golynska" class="salon__social-link icon-instagram"
+                                       title="instagram"></a>
+                                </div>
+                                <div class="salon__social-item">
+                                    <a href="https://t.me/golynskaTa" class="salon__social-link icon-telegram"
+                                       title="telegram"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="salon__slider">
+                            <div class="f-block">
+                                <div class="f-block__body salon__body">
+                                    <div class="salon-slider swiper-container">
+                                        <div class="salon-slider__wrapper swiper-wrapper">
+                                            <div data-hash="salon-slide-1"
+                                                 class="salon-slider__slide swiper-slide">
+                                                <div class="salon-slider__image">
+                                                    <img data-src="{{{root}}}img/salon/salon-5.jpg"
+                                                         src="{{{root}}}img/1x1.png"
+                                                         width="1" height="1" class="swiper-lazy"
+                                                         alt="{{{alt.salon.0}}}">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </div>
+                                            <div data-hash="salon-slide-2" class="salon-slider__slide swiper-slide">
+                                                <div class="salon-slider__image">
+                                                    <img data-src="{{{root}}}img/salon/salon-2.jpg"
+                                                         src="{{{root}}}img/1x1.png"
+                                                         width="1" height="1" class="swiper-lazy"
+                                                         alt="{{{alt.salon.1}}}">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </div>
+                                            <div data-hash="salon-slide-3" class="salon-slider__slide swiper-slide">
+                                                <div class="salon-slider__image">
+                                                    <img data-src="{{{root}}}img/salon/salon-3.jpg"
+                                                         src="{{{root}}}img/1x1.png"
+                                                         width="1" height="1" class="swiper-lazy"
+                                                         alt="{{{alt.salon.2}}}">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </div>
+                                            <div data-hash="salon-slide-4" class="salon-slider__slide swiper-slide">
+                                                <div class="salon-slider__image">
+                                                    <img data-src="{{{root}}}img/salon/salon-4.jpg"
+                                                         src="{{{root}}}img/1x1.png"
+                                                         width="1" height="1" class="swiper-lazy"
+                                                         alt="{{{alt.salon.3}}}">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </div>
+                                            <div data-hash="salon-slide-5" class="salon-slider__slide swiper-slide">
+                                                <div class="salon-slider__image">
+                                                    <img data-src="{{{root}}}img/salon/salon-1.jpg"
+                                                         src="{{{root}}}img/1x1.png"
+                                                         width="1" height="1" class="swiper-lazy"
+                                                         alt="{{{alt.salon.4}}}">
+                                                    <div class="swiper-lazy-preloader"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- If we need navigation buttons -->
+                                        <div class="swiper-button-prev salon__button-prev"></div>
+                                        <div class="swiper-button-next salon__button-next"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn_primary salon__btn">{{{salon.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer" class="page__screen screen-9 screen footer">
+            <div class="screen__content footer__content">
+                <div class="container footer__container">
+                    <div class="footer__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.364729923862!2d36.249581804218096!3d50.006499783323875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0da5e77ffd7%3A0x74580dc32c4b412c!2z0KHQv9C-0YDRgtC60L7QvNC_0LvQtdC60YEgItCf0L7Qu9GW0YLQtdGF0L3RltC6IiDQuNC8LiDQmC4g0JfQvtGA0LjQvdCw!5e0!3m2!1sru!2sua!4v1624995034025!5m2!1sru!2sua"
+                                width="1" height="1" style="border:0;width: 100%; height: 100%;" allowfullscreen=""
+                                loading="lazy" title="map"></iframe>
+                    </div>
+                    <div class="footer__body">
+                        <nav class="footer__menu menu__body menu">
+                            <ul class="footer__list menu__list">
+                                <li class="footer__item">
+                                    <a data-goto=".screen-1" href="#intro" class="menu__link">{{{menu.home}}}</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-2" href="#about" class="menu__link">{{{menu.about}}}</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-3" href="#service"
+                                       class="menu__link">{{{menu.service}}}</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-4" href="#cosmetic"
+                                       class="menu__link">{{{menu.cosmetics}}}</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-5" href="#certificates"
+                                       class="menu__link">{{{menu.certificates}}}</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-6" href="#consultation"
+                                       class="menu__link">{{{menu.consultation}}}</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-7" href="#review"
+                                       class="menu__link">{{{menu.review}}}</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a data-goto=".screen-8" href="#salon" class="menu__link">{{{menu.contacts}}}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <p class="footer__copyright">{{{footer.copyright}}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bg"></div>
+        </footer>
+    </main>
+</div>
+
+<div id="all_service" class="popup">
+    <a href="#service" class="popup__area"></a>
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__close-box">
+                <a href="#service" class="popup__close close-popup">
+                    <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#232323" stroke-width="6.08333"/>
+                    </svg>
+                </a>
+            </div>
+            <h2 class="popup__title screen__title screen__title_bg">{{{service.modal.title}}}</h2>
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-btn">
+                            <button></button>
+                        </div>
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title">
+                                    <span>{{{service.modal.accordions.0.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.modal.accordions.0.price}}}</div>
+                            </div>
+                            <div class="accordion__description">
+                                {{{service.modal.accordions.0.title-description}}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <div class="panel__table table">
+                                <div class="table__row">
+                                    <div class="table__title">{{{service.modal.accordions.0.table-rows.0.title}}}</div>
+                                    <div class="table__details">
+                                        <div class="table__time">{{{service.modal.accordions.0.table-rows.0.time}}}</div>
+                                        <div class="table__price">{{{service.modal.accordions.0.table-rows.0.price}}}</div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div class="table__title">{{{service.modal.accordions.0.table-rows.1.title}}}</div>
+                                    <div class="table__details">
+                                        <div class="table__time">{{{service.modal.accordions.0.table-rows.1.time}}}</div>
+                                        <div class="table__price">{{{service.modal.accordions.0.table-rows.1.price}}}</div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div class="table__title">{{{service.modal.accordions.0.table-rows.2.title}}}</div>
+                                    <div class="table__details">
+                                        <div class="table__time">{{{service.modal.accordions.0.table-rows.2.time}}}</div>
+                                        <div class="table__price">{{{service.modal.accordions.0.table-rows.2.price}}}</div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div class="table__title">{{{service.modal.accordions.0.table-rows.3.title}}}</div>
+                                    <div class="table__details">
+                                        <div class="table__time">{{{service.modal.accordions.0.table-rows.3.time}}}</div>
+                                        <div class="table__price">{{{service.modal.accordions.0.table-rows.3.price}}}</div>
+                                    </div>
+                                </div>
+                                <div class="table__row">
+                                    <div class="table__title">{{{service.modal.accordions.0.table-rows.4.title}}}</div>
+                                    <div class="table__details">
+                                        <div class="table__time">{{{service.modal.accordions.0.table-rows.4.time}}}</div>
+                                        <div class="table__price">{{{service.modal.accordions.0.table-rows.4.price}}}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="panel__title">{{{service.modal.accordions.0.descriptions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.0.descriptions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.modal.accordions.0.descriptions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.0.descriptions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-btn">
+                            <button></button>
+                        </div>
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title">
+                                    <span>{{{service.modal.accordions.1.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.modal.accordions.1.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.modal.accordions.1.title-description}}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.modal.accordions.1.descriptions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.1.descriptions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.modal.accordions.1.descriptions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.1.descriptions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-btn">
+                            <button></button>
+                        </div>
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title">
+                                    <span>{{{service.modal.accordions.2.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.modal.accordions.2.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.modal.accordions.2.title-description}}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.modal.accordions.2.descriptions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.2.descriptions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.modal.accordions.2.descriptions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.2.descriptions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-btn">
+                            <button></button>
+                        </div>
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title">
+                                    <span>{{{service.modal.accordions.3.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.modal.accordions.3.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.modal.accordions.3.title-description}}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.modal.accordions.3.descriptions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.3.descriptions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.modal.accordions.3.descriptions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.3.descriptions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-btn">
+                            <button></button>
+                        </div>
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title">
+                                    <span>{{{service.modal.accordions.4.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.modal.accordions.4.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.modal.accordions.4.title-description}}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.modal.accordions.4.descriptions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.4.descriptions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.modal.accordions.4.descriptions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.4.descriptions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-btn">
+                            <button></button>
+                        </div>
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title">
+                                    <span>{{{service.modal.accordions.5.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.modal.accordions.5.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.modal.accordions.5.title-description}}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.modal.accordions.5.descriptions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.5.descriptions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.modal.accordions.5.descriptions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.5.descriptions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        <div class="accordion__header-btn">
+                            <button></button>
+                        </div>
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title">
+                                    <span>{{{service.modal.accordions.6.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.modal.accordions.6.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.modal.accordions.6.title-description}}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.modal.accordions.6.descriptions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.6.descriptions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.modal.accordions.6.descriptions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.modal.accordions.6.descriptions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="service-1" class="popup">
+    <a href="#service" class="popup__area"></a>
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__close-box">
+                <a href="#service" class="popup__close close-popup">
+                    <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#232323" stroke-width="6.08333"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="accordion accordion__simple">
+                <div class="accordion__item">
+                    <div class="accordion__header open">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title ">
+                                    <span>{{{service.items.0.modal.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.items.0.modal.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.items.0.modal.description}}}</div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.items.0.modal.accordions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.items.0.modal.accordions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.items.0.modal.accordions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.items.0.modal.accordions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="service-2" class="popup">
+    <a href="#service" class="popup__area"></a>
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__close-box">
+                <a href="#service" class="popup__close close-popup">
+                    <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#232323" stroke-width="6.08333"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="accordion accordion__simple">
+                <div class="accordion__item">
+                    <div class="accordion__header open">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title ">
+                                    <span>{{{service.items.0.modal.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.items.0.modal.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.items.0.modal.description}}}</div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.items.0.modal.accordions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.items.0.modal.accordions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.items.0.modal.accordions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.items.0.modal.accordions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="service-3" class="popup">
+    <a href="#service" class="popup__area"></a>
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__close-box">
+                <a href="#service" class="popup__close close-popup">
+                    <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#232323" stroke-width="6.08333"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="accordion accordion__simple">
+                <div class="accordion__item">
+                    <div class="accordion__header open">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title ">
+                                    <span>{{{service.items.0.modal.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.items.0.modal.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.items.0.modal.description}}}</div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.items.0.modal.accordions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.items.0.modal.accordions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.items.0.modal.accordions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.items.0.modal.accordions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="service-4" class="popup">
+    <a href="#service" class="popup__area"></a>
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__close-box">
+                <a href="#service" class="popup__close close-popup">
+                    <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 33L33 3.00006M3 3.00006L33 33L3 3.00006Z" stroke="#232323" stroke-width="6.08333"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="accordion accordion__simple">
+                <div class="accordion__item">
+                    <div class="accordion__header open">
+                        <div class="accordion__header-info">
+                            <div class="accordion__header-top">
+                                <h2 class="accordion__header-title ">
+                                    <span>{{{service.items.0.modal.title}}}</span>
+                                </h2>
+                                <div class="accordion__header-price">{{{service.items.0.modal.price}}}</div>
+                            </div>
+                            <div class="accordion__description">{{{service.items.0.modal.description}}}</div>
+                        </div>
+                    </div>
+                    <div class="accordion__panel panel">
+                        <div class="accordion__panel-content panel__content">
+                            <h3 class="panel__title">{{{service.items.0.modal.accordions.0.title}}}</h3>
+                            <p class="panel__text">{{{service.items.0.modal.accordions.0.text}}}</p>
+                            <h3 class="panel__title">{{{service.items.0.modal.accordions.1.title}}}</h3>
+                            <p class="panel__text">{{{service.items.0.modal.accordions.1.text}}}</p>
+                            <a href="#"
+                               class="panel__btn btn btn_secondary-w service-btn">{{{service.modal.btn}}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="{{{root}}}js/dynamicAdapt.js"></script>
+<script src="{{{root}}}js/burger.js"></script>
+<script src="{{{root}}}js/popup.js"></script>
+<script src="{{{root}}}js/sliders.js"></script>
+<script src="{{{root}}}js/index.js"></script>
+</body>
+</html>

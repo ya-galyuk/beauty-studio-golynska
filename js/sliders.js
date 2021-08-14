@@ -1,32 +1,9 @@
 // sliders --------------------------------------
 const optionBase = {
-    speed: 1500,
-
-    // parallax
-    parallax: true,
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // vertical slider
-    direction: 'horizontal',
+    speed: 1000,
 
     // desktop drag
-    simulateTouch: true,
-    // touchRation: 1,
-    // touchAngle: 45,
-    // grabCursor: true,
-
-    // slide to click
-    slideToClickedSlide: false,
-
-    // hash navigation
-    hashNavigation: {
-        watchState: true
-    },
+    simulateTouch: false,
 
     // Keyboard Control
     keyboard: {
@@ -34,11 +11,6 @@ const optionBase = {
         onlyInViewport: true,
         pageUpDown: true,
     },
-
-    // Mousewheel Control
-    // mousewheel: {
-    //     sensitivity: 1,
-    // },
 
     // if slider too small
     watchOverflow: true,
@@ -59,23 +31,19 @@ const optionBase = {
     nested: true,
 }
 
-new Swiper('.service-slider', {
+const serviceSwiper = new Swiper('.service-slider', {
 
     ...optionBase,
 
-    // slidesPerView: 'auto',
     spaceBetween: 30,
-
-    // autoHeight: true,
 
     breakpoints: {
         0: {
             slidesPerView: 1,
-            // spaceBetween: 0,
+            autoHeight: true
         },
-        500: {
+        501: {
             slidesPerView: 'auto',
-            // spaceBetween: 30,
         },
     },
 
@@ -88,17 +56,7 @@ new Swiper('.service-slider', {
 new Swiper('.consultation-slider', {
     speed: 1500,
 
-    // vertical slider
-    direction: 'horizontal',
-
     autoHeight: true,
-
-    // desktop drag
-    simulateTouch: true,
-
-    // slide to click
-    slideToClickedSlide: false,
-
 
     // Keyboard Control
     keyboard: {
@@ -140,17 +98,17 @@ new Swiper('.review-slider', {
 
     ...optionBase,
 
-    // Pagination
     pagination: {
         el: '.review__pagination',
         clickable: true,
-        // dynamicBullets: true,
     },
 
     navigation: {
         nextEl: '.review__button-next',
         prevEl: '.review__button-prev'
     },
+
+    spaceBetween: 10,
 
     breakpoints: {
         0: {
@@ -163,17 +121,12 @@ new Swiper('.review-slider', {
             slidesPerView: 3,
         }
     },
-
-    slidesPerView: 3,
-
-    spaceBetween: 10,
 })
 
 new Swiper('.salon-slider', {
 
     ...optionBase,
 
-    // Pagination
     pagination: false,
 
     navigation: {
@@ -188,8 +141,6 @@ new Swiper('.certificates-slider', {
 
     speed: 2000,
     parallax: true,
-
-    direction: 'horizontal',
 
     // if slider too small
     watchOverflow: true,
@@ -210,6 +161,7 @@ new Swiper('.certificates-slider', {
         delay: 0,
         stopOnLastSlide: true,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
 
     // Pagination

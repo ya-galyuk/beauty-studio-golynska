@@ -1,0 +1,1287 @@
+{
+  "lang": {
+    "ua": "ua",
+    "ru": "ru",
+    "en": "en"
+  },
+  "url": "https://www.example.com",
+  "root-url": "/beauty-studio-golynska/",
+  "root": {
+    "ua": "../",
+    "ru": "",
+    "en": "../"
+  },
+  "dir": {
+    "ua": "ua/",
+    "ru": "",
+    "en": "en/"
+  },
+  "title": "Beauty studio Golynska",
+  "phone": "+380 (66) 770 09 48",
+  "meta": {
+    "description": {
+      "ua": "Голинська Тетяна. Косметолог-естетист. Ультразвукова чистка обличчя. Хім. Пілінги. ️Хіромассаж особи. Мезотерапія. Кріотерапії. Запис на консультацію: +380667700948",
+      "ru": "Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948",
+      "en": "Golynskaya Tatiana. Aesthetic beautician. ️Ultrasonic facial cleansing. Chem. Peelings. ️Chiromassage of the face. Mesotherapy. ️Cryotherapy. Record on consultation: +380667700948"
+    },
+    "keywords": ""
+  },
+  "menu": {
+    "home": {
+      "ua": "Головна",
+      "ru": "Главная",
+      "en": "Home"
+    },
+    "about": {
+      "ua": "Про себе",
+      "ru": "О себе",
+      "en": "About"
+    },
+    "service": {
+      "ua": "Послуги",
+      "ru": "Услуги",
+      "en": "Service"
+    },
+    "cosmetics": {
+      "ua": "Косметика",
+      "ru": "Косметика",
+      "en": "Cosmetics"
+    },
+    "certificates": {
+      "ua": "Сертифікати",
+      "ru": "Сертификаты",
+      "en": "Certificates"
+    },
+    "consultation": {
+      "ua": "Консультація",
+      "ru": "Консультации",
+      "en": "Consultation"
+    },
+    "review": {
+      "ua": "Відгуки",
+      "ru": "Отзывы",
+      "en": "Review"
+    },
+    "salon": {
+      "ua": "Салон",
+      "ru": "Салон",
+      "en": "Salon"
+    },
+    "contacts": {
+      "ua": "Контакти",
+      "ru": "Контакты",
+      "en": "Contacts"
+    },
+    "brands": {
+      "ua": "Бренди",
+      "ru": "Бренды",
+      "en": "Brands"
+    }
+  },
+  "intro": {
+    "title": {
+      "ua": "Ваша краса гідна <br/> більшого, ніж ви для неї робите",
+      "ru": "Ваша красота достойна <br/> большего, чем вы для неё делаете",
+      "en": "Your beauty deserves <br/> more than you do for it"
+    }
+  },
+  "about": {
+    "title": {
+      "ua": "Про себе",
+      "ru": "О себе",
+      "en": "About myself"
+    },
+    "description": {
+      "ua": "Тетяна Голинська - універсальний косметолог. За останні 25 років вона накопичила великий практичний досвід. Тетяна знає конкретні вимоги і потреби клієнтів. Поєднуючи свої знання і досвід з провідними косметичними брендами.",
+      "ru": "Татьяна Голынская - универсальный косметолог. За последние 25 лет она накопила обширный практический опыт. Татьяна знает конкретные требования и потребности клиентов. Сочетая свои знания и опыт с ведущими косметическими брендами.",
+      "en": "Tatiana Golynskaya is a universal cosmetologist. Over the past 25 years, she has accumulated extensive practical experience. Tatiana knows the specific requirements and needs of customers. Combining their knowledge and experience with leading cosmetic brands."
+    },
+    "btn": {
+      "consultation": {
+        "ua": "Записатися на консультацію",
+        "ru": "Записаться на консультацию",
+        "en": "Sign up for a consultation"
+      },
+      "brand": {
+        "ua": "Детальніше про бренди",
+        "ru": "Подробнее про бренды",
+        "en": "More about brands"
+      }
+    }
+  },
+  "service": {
+    "title": {
+      "ua": "Послуги та ціни",
+      "ru": "Услуги и цены",
+      "en": "Services and prices"
+    },
+    "link-more": {
+      "ua": "Докладніше",
+      "ru": "Подробнее",
+      "en": "More details"
+    },
+    "btn": {
+      "appointment": {
+        "ua": "Записатися на прийом",
+        "ru": "Записаться на прием",
+        "en": "To make an appointment"
+      },
+      "procedures": {
+        "ua": "Всі процедури",
+        "ru": "Все процедуры",
+        "en": "All procedures"
+      }
+    },
+    "items": [
+      {
+        "title": {
+          "ua": "Кріотерапія",
+          "ru": "Криотерапия",
+          "en": "Cryotherapy"
+        },
+        "price": {
+          "ua": "300 грн",
+          "ru": "300 грн",
+          "en": "300 UAH"
+        },
+        "time": {
+          "ua": "8 хвилин",
+          "ru": "8 минут",
+          "en": "8 minutes"
+        },
+        "modal": {
+          "title": {
+            "ua": "Кріотерапія",
+            "ru": "Криотерапия",
+            "en": "Cryotherapy"
+          },
+          "price": {
+            "ua": "від 300 грн",
+            "ru": "от 300 грн",
+            "en": "from 300 UAH"
+          },
+          "description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "accordions": [
+            {
+              "title": {
+                "ua": "Опис",
+                "ru": "Описание",
+                "en": "Description"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            },
+            {
+              "title": {
+                "ua": "Як проводиться процедура?",
+                "ru": "Как проводится процедура?",
+                "en": "How is the procedure conducted?"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": {
+          "ua": "Мезотерапія. Біоревіталізація.",
+          "ru": "Мезотерапия. Биоревитализация.",
+          "en": "Mesotherapy. Biorevitalization."
+        },
+        "price": {
+          "ua": "300 грн",
+          "ru": "300 грн",
+          "en": "300 UAH"
+        },
+        "time": {
+          "ua": "8 хвилин",
+          "ru": "8 минут",
+          "en": "8 minutes"
+        },
+        "modal": {
+          "title": {
+            "ua": "Мезотерапія. Біоревіталізація.",
+            "ru": "Мезотерапия. Биоревитализация.",
+            "en": "Mesotherapy. Biorevitalization."
+          },
+          "price": {
+            "ua": "від 300 грн",
+            "ru": "от 300 грн",
+            "en": "from 300 UAH"
+          },
+          "description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "accordion": [
+            {
+              "title": {
+                "ua": "Опис",
+                "ru": "Описание",
+                "en": "Description"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            },
+            {
+              "title": {
+                "ua": "Як проводиться процедура?",
+                "ru": "Как проводится процедура?",
+                "en": "How is the procedure conducted?"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": {
+          "ua": "Хімічні пілінги",
+          "ru": "Химические пилинги",
+          "en": "Chemical peelings"
+        },
+        "price": {
+          "ua": "300 грн",
+          "ru": "300 грн",
+          "en": "300 UAH"
+        },
+        "time": {
+          "ua": "8 хвилин",
+          "ru": "8 минут",
+          "en": "8 minutes"
+        },
+        "modal": {
+          "title": {
+            "ua": "Хімічні пілінги",
+            "ru": "Химические пилинги",
+            "en": "Chemical peelings"
+          },
+          "price": {
+            "ua": "від 300 грн",
+            "ru": "от 300 грн",
+            "en": "from 300 UAH"
+          },
+          "description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "accordion": [
+            {
+              "title": {
+                "ua": "Опис",
+                "ru": "Описание",
+                "en": "Description"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            },
+            {
+              "title": {
+                "ua": "Як проводиться процедура?",
+                "ru": "Как проводится процедура?",
+                "en": "How is the procedure conducted?"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": {
+          "ua": "Ультразвукова. Механічна. Комбінована.",
+          "ru": "Ультразвуковая. Механическая. Комбинированная.",
+          "en": "Ultrasonic. Mechanical. Combined."
+        },
+        "price": {
+          "ua": "300 грн",
+          "ru": "300 грн",
+          "en": "300 UAH"
+        },
+        "time": {
+          "ua": "8 хвилин",
+          "ru": "8 минут",
+          "en": "8 minutes"
+        },
+        "modal": {
+          "title": {
+            "ua": "Ультразвукова. Механічна. Комбінована.",
+            "ru": "Ультразвуковая. Механическая. Комбинированная.",
+            "en": "Ultrasonic. Mechanical. Combined."
+          },
+          "price": {
+            "ua": "від 300 грн",
+            "ru": "от 300 грн",
+            "en": "from 300 UAH"
+          },
+          "description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "accordion": [
+            {
+              "title": {
+                "ua": "Опис",
+                "ru": "Описание",
+                "en": "Description"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            },
+            {
+              "title": {
+                "ua": "Як проводиться процедура?",
+                "ru": "Как проводится процедура?",
+                "en": "How is the procedure conducted?"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "modal": {
+      "title": {
+        "ua": "Послуги та ціни",
+        "ru": "Услуги и цены",
+        "en": "Services and prices"
+      },
+      "btn": {
+        "ua": "Записатися на прийом",
+        "ru": "Записаться на прием",
+        "en": "To make an appointment"
+      },
+      "accordions": [
+        {
+          "title": {
+            "ua": "Консультація",
+            "ru": "Консультация",
+            "en": "Consultation"
+          },
+          "price": {
+            "ua": "безкоштовно*",
+            "ru": "бесплатно*",
+            "en": "is free*"
+          },
+          "title-description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "table-rows": [
+            {
+              "title": {
+                "ua": "Атравматична чистка обличчя",
+                "ru": "Атравматическая чистка лица",
+                "en": "Atraumatic facial cleaning"
+              },
+              "time": {
+                "ua": "60 хв",
+                "ru": "60 мин",
+                "en": "60 min"
+              },
+              "price": {
+                "ua": "750 грн",
+                "ru": "750 грн",
+                "en": "750 UAH"
+              }
+            },
+            {
+              "title": {
+                "ua": "Програма Age Control-Super Lift",
+                "ru": "Программа Age Control-Super Lift",
+                "en": "Age Control-Super Lift Program"
+              },
+              "time": {
+                "ua": "120 хв",
+                "ru": "120 мин",
+                "en": "120 min"
+              },
+              "price": {
+                "ua": "750 грн",
+                "ru": "750 грн",
+                "en": "750 UAH"
+              }
+            },
+            {
+              "title": {
+                "ua": "Пептиди в корекції вікових змін шкіри",
+                "ru": "Пептиды в коррекции возрастных изменений кожи",
+                "en": "Peptides in the correction of age-related skin changes"
+              },
+              "time": {
+                "ua": "45 хв",
+                "ru": "45 мин",
+                "en": "45 min"
+              },
+              "price": {
+                "ua": "800 грн",
+                "ru": "800 грн",
+                "en": "800 UAH"
+              }
+            },
+            {
+              "title": {
+                "ua": "Рішення проблем шкіри навколо очей",
+                "ru": "Решение проблем кожи вокруг глаз",
+                "en": "Solving skin problems around the eyes"
+              },
+              "time": {
+                "ua": "30 хв",
+                "ru": "30 мин",
+                "en": "30 min"
+              },
+              "price": {
+                "ua": "650 грн",
+                "ru": "650 грн",
+                "en": "650 UAH"
+              }
+            },
+            {
+              "title": {
+                "ua": "Програма «Vitalize» з гіалуроновою кислотою",
+                "ru": "Программа «Vitalize» с гиалуроновой кислотой",
+                "en": "Program \"Vitalize\" with hyaluronic acid"
+              },
+              "time": {
+                "ua": "15 хв",
+                "ru": "15 мин",
+                "en": "15 min"
+              },
+              "price": {
+                "ua": "700 грн",
+                "ru": "700 грн",
+                "en": "700 UAH"
+              }
+            }
+          ],
+          "descriptions": [
+            {
+              "title": {
+                "ua": "Опис",
+                "ru": "Описание",
+                "en": "Description"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            },
+            {
+              "title": {
+                "ua": "Як проводиться процедура?",
+                "ru": "Как проводится процедура?",
+                "en": "How is the procedure conducted?"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "ua": "Процедури догляду із застосуванням лікувальної косметики «Holy Land» (Ізраїль)",
+            "ru": "Процедуры ухода с применением лечебной косметики «Holyland» (Израиль)",
+            "en": "Care procedures with the use of medical cosmetics \"Holyland\" (Israel)"
+          },
+          "price": {
+            "ua": "від 650 грн",
+            "ru": "от 650 грн",
+            "en": "from 650 UAH"
+          },
+          "title-description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "descriptions": [
+            {
+              "title": {
+                "ua": "Опис",
+                "ru": "Описание",
+                "en": "Description"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            },
+            {
+              "title": {
+                "ua": "Як проводиться процедура?",
+                "ru": "Как проводится процедура?",
+                "en": "How is the procedure conducted?"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "ua": "Процедури догляду із застосуванням лікувальної косметики «Dermaquest» (США)",
+            "ru": "Процедуры ухода с применением лечебной косметики «Dermaquest» (США)",
+            "en": "Care procedures with the use of medical cosmetics \"Dermaquest\" (USA)"
+          },
+          "price": {
+            "ua": "від 800 грн",
+            "ru": "от 800 грн",
+            "en": "from 800 UAH"
+          },
+          "title-description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "descriptions": [
+            {
+              "title": {
+                "ua": "Опис",
+                "ru": "Описание",
+                "en": "Description"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            },
+            {
+              "title": {
+                "ua": "Як проводиться процедура?",
+                "ru": "Как проводится процедура?",
+                "en": "How is the procedure conducted?"
+              },
+              "text": {
+                "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+              }
+            }
+          ]
+        },
+        {
+          "title": {
+            "ua": "Хімічні пілінги",
+            "ru": "Химические пилинги",
+            "en": "Chemical peelings"
+          },
+          "price": {
+            "ua": "від 750 грн",
+            "ru": "от 750 грн",
+            "en": "from 750 UAH"
+          },
+          "title-description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "description-1-title": {
+            "ua": "Опис",
+            "ru": "Описание",
+            "en": "Description"
+          },
+          "description-1-text": {
+            "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+            "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+            "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+          },
+          "description-2-title": {
+            "ua": "Як проводиться процедура?",
+            "ru": "Как проводится процедура?",
+            "en": "How is the procedure conducted?"
+          },
+          "description-2-text": {
+            "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+            "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+            "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+          }
+        },
+        {
+          "title": {
+            "ua": "Іспанська (хиромассаж) масаж обличчя і зони декольте",
+            "ru": "Испанский (хиромассаж) массаж лица и зоны декольте",
+            "en": "Spanish (chromassage) face massage and zone neckline"
+          },
+          "price": {
+            "ua": "від 800 грн",
+            "ru": "от 800 грн",
+            "en": "from 800 UAH"
+          },
+          "title-description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "description-1-title": {
+            "ua": "Опис",
+            "ru": "Описание",
+            "en": "Description"
+          },
+          "description-1-text": {
+            "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+            "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+            "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+          },
+          "description-2-title": {
+            "ua": "Як проводиться процедура?",
+            "ru": "Как проводится процедура?",
+            "en": "How is the procedure conducted?"
+          },
+          "description-2-text": {
+            "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+            "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+            "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+          }
+        },
+        {
+          "title": {
+            "ua": "Внутрішньо контурна пластика",
+            "ru": "Внутрикожная контурная пластика",
+            "en": "Intracutaneous contour plastic"
+          },
+          "price": {
+            "ua": "від 1100 грн",
+            "ru": "от 1100 грн",
+            "en": "from 1100 UAH"
+          },
+          "title-description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "description-1-title": {
+            "ua": "Опис",
+            "ru": "Описание",
+            "en": "Description"
+          },
+          "description-1-text": {
+            "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+            "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+            "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+          },
+          "description-2-title": {
+            "ua": "Як проводиться процедура?",
+            "ru": "Как проводится процедура?",
+            "en": "How is the procedure conducted?"
+          },
+          "description-2-text": {
+            "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+            "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+            "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+          }
+        },
+        {
+          "title": {
+            "ua": "Підліткова косметологія",
+            "ru": "Подростковая косметология",
+            "en": "Teenage cosmetology"
+          },
+          "price": {
+            "ua": "від 600 грн",
+            "ru": "от 600 грн",
+            "en": "from 600 UAH"
+          },
+          "title-description": {
+            "ua": "Косметика Holy Land проводиться в Ізраїлі вже 25 років",
+            "ru": "Косметика Holy Land производится в Израиле уже 25 лет",
+            "en": "Holy Land cosmetics are produced in Israel for 25 years"
+          },
+          "description-1-title": {
+            "ua": "Опис",
+            "ru": "Описание",
+            "en": "Description"
+          },
+          "description-1-text": {
+            "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+            "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+            "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+          },
+          "description-2-title": {
+            "ua": "Як проводиться процедура?",
+            "ru": "Как проводится процедура?",
+            "en": "How is the procedure conducted?"
+          },
+          "description-2-text": {
+            "ua": "Косметика Holy Land виготовляється в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+            "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+            "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+          }
+        }
+      ]
+    }
+  },
+  "cosmetic": {
+    "title": {
+      "ua": "Косметика з якою працюємо",
+      "ru": "Косметика с которой работаем",
+      "en": "Cosmetics with which we work"
+    },
+    "btn": {
+      "ua": "Вся косметика",
+      "ru": "Вся косметика",
+      "en": "All cosmetics"
+    },
+    "description": {
+      "ua": "Унікальні омолоджуючі і відновлювальні процедури для обличчя з використанням косметичних засобів всесвітньо відомих брендів. Ці ексклюзивні лінії створені із застосуванням новітніх технологій, а також природних компонентів. Кожна лінія унікальна і має широкий спектр дії.",
+      "ru": "Уникальные омолаживающие и восстанавливающие процедуры для лица с использованием косметических средств всемирно известных брендов. Эти эксклюзивные линии созданы с применением новейших технологий, а также природных компонентов. Каждая линия уникальна и имеет широкий спектр действия.",
+      "en": "Unique rejuvenating and restoring facial procedures using cosmetics world-famous brands. These exclusive lines are created using the latest technologies, as well as natural components. Each line is unique and has a wide range of action."
+    }
+  },
+  "certificates": {
+    "title": {
+      "ua": "Ви в надійних руках",
+      "ru": "Вы в надёжных руках",
+      "en": "You are in reliable hands"
+    },
+    "description": {
+      "ua": "Ваше обличчя розквітне в доброзичливій атмосфері та турботі. Звернувшись до мене, ви довірите здоров'я і красу професіоналу.",
+      "ru": "Ваше лицо расцветёт в доброжелательной атмосфере и заботе. Обратившись ко мне, вы доверите здоровье и красоту профессионалу.",
+      "en": "Your face will bloom in a friendly atmosphere and care. Turning to me, you beat the health and beauty of a professional."
+    }
+  },
+  "consultation": {
+    "title": {
+      "ua": "Як проходить консультація?&#160;*",
+      "ru": "Как проходит консультация?&#160;*",
+      "en": "How is the consultation?&#160;*"
+    },
+    "items": [
+      {
+        "title": {
+          "ua": "Діагностика стану шкіри",
+          "ru": "Диагностика состояния кожи",
+          "en": "Diagnostics of skin condition"
+        },
+        "description": {
+          "ua": "На консультації фахівець проводить детальний діагностику шкіри.",
+          "ru": "На консультации специалист проводит детальный диагностику кожи.",
+          "en": "At the consultation, a specialist conducts detailed skin diagnostics."
+        }
+      },
+      {
+        "title": {
+          "ua": "Аналіз існуючого домашнього догляду",
+          "ru": "Анализ существующего домашнего ухода",
+          "en": "Analysis of existing home care"
+        },
+        "description": {
+          "ua": "На консультації фахівець проведе ретельний аналіз існуючого догляду, за вашим бажанням оцінить склади препаратів, дасть фідбек щодо помилок і адекватності препаратів стану вашої шкіри.",
+          "ru": "На консультации специалист проведет тщательный анализ существующего ухода, по вашему желанию оценит склады препаратов, даст фидбэк относительно ошибок и адекватности препаратов состояния вашей кожи.",
+          "en": "During the consultation specialist will conduct a thorough analysis of the existing care of your request will evaluate storage products, will give feedback regarding errors and the adequacy of the preparations of your skin condition."
+        }
+      },
+      {
+        "title": {
+          "ua": "Визначення цілей домашнього догляду",
+          "ru": "Определение целей домашнего ухода",
+          "en": "Defining home care objectives"
+        },
+        "description": {
+          "ua": "Спеціаліст разом з вами визначить цілі, які можна досягти домашнім доглядом, а в разі потреби і реалістичності запиту, порадить методики досягнення цілей іншими методами.",
+          "ru": "Специалист вместе с вами определит цели, которые можно достичь домашним уходом, а в случае необходимости и реалистичности запроса, посоветует методики достижения целей другими методами.",
+          "en": "A specialist with you will determine the goals that can be achieved by home care, and if necessary, the realism of the request will advise the methods of achieving goals by other methods."
+        }
+      },
+      {
+        "title": {
+          "ua": "Визначення цілей домашнього догляду",
+          "ru": "Определение целей домашнего ухода",
+          "en": "Defining home care objectives"
+        },
+        "description": {
+          "ua": "Спеціаліст разом з вами визначить цілі, які можна досягти домашнім доглядом, а в разі потреби і реалістичності запиту, порадить методики досягнення цілей іншими методами.",
+          "ru": "Специалист вместе с вами определит цели, которые можно достичь домашним уходом, а в случае необходимости и реалистичности запроса, посоветует методики достижения целей другими методами.",
+          "en": "A specialist with you will determine the goals that can be achieved by home care, and if necessary, the realism of the request will advise the methods of achieving goals by other methods."
+        }
+      }
+    ],
+    "detail-strong": {
+      "ua": "* Замовте 30-хвилинну віртуальну консультацію і перевірку по догляду за шкірою.",
+      "ru": "*Закажите 30-минутную виртуальную консультацию и проверку по уходу за кожей.",
+      "en": "* Book a 30-minute virtual advice and skin care check."
+    },
+    "detail": {
+      "ua": "Консультація проводиться не виходячи з дому, адаптована до ваших унікальних потреб і допоможе вам дати правильні рекомендації по продуктам, допоможе з режимом догляду за шкірою і допоможе з будь-якими рекомендаціями по догляду за шкірою, інструментів і пристроїв для догляду за шкірою обличчя. Я також можу продемонструвати продукти, очистити ваш косметичний кабінет і поділитися порадами і хитрощами, надаючи індивідуальні поради.",
+      "ru": "Консультация проводится не выходя из дома, адаптирована к вашим уникальным потребностям и поможет вам дать правильные рекомендации по продуктам, поможет с режимом ухода за кожей и поможет с любыми рекомендациями по уходу за кожей, инструментам и устройствам для  ухода за кожей лица. Я также могу продемонстрировать продукты, очистить ваш косметический кабинет и поделиться советами и уловками, предоставляя индивидуальные советы.",
+      "en": "Consultation is carried out without leaving the house, adapted to your unique needs and will help you give the right recommendations on products, it will help with the skin care regimen and will help with any skin care guidelines, tools and facial care devices. I can also demonstrate the products, clean your cosmetic office and share tips and tricks by providing individual tips."
+    },
+    "btn": {
+      "consultation": {
+        "ua": "Записатися на консультацію",
+        "ru": "Записаться на консультацию",
+        "en": "Sign up for a consultation"
+      },
+      "more": {
+        "ua": "детальніше",
+        "ru": "больше",
+        "en": "more"
+      }
+    }
+  },
+  "review": {
+    "title": {
+      "ua": "Наші щасливі клієнти",
+      "ru": "Наши счастливые клиенты",
+      "en": "Our happy customers"
+    },
+    "items": [
+      {
+        "text": {
+          "ua": "\"А також базові сценарії поведінки користувачів можуть бути віддані соціально-демократичної анафемі. У своєму прагненні підвищити якість життя, вони забувають, що реалізація намічених планових завдань\"",
+          "ru": "\"А также базовые сценарии поведения пользователей могут быть преданы социально-демократической  анафеме. В своём стремлении повысить качество жизни, они забывают, что реализация намеченных плановых заданий\"",
+          "en": "\"As well as basic scenarios of user behavior can be betrayed by socio-democratic anathema. In its desire to improve the quality of life, they forget that the implementation of planned planned tasks\""
+        },
+        "author": {
+          "ua": "Владислава Жулей",
+          "ru": "Владислава Жулей",
+          "en": "Vladislav Zhuley"
+        }
+      },
+      {
+        "text": {
+          "ua": "\"А також базові сценарії поведінки користувачів можуть бути віддані соціально-демократичної анафемі. У своєму прагненні підвищити якість життя, вони забувають, що реалізація намічених планових завдань\"",
+          "ru": "\"А также базовые сценарии поведения пользователей могут быть преданы социально-демократической  анафеме. В своём стремлении повысить качество жизни, они забывают, что реализация намеченных плановых заданий\"",
+          "en": "\"As well as basic scenarios of user behavior can be betrayed by socio-democratic anathema. In its desire to improve the quality of life, they forget that the implementation of planned planned tasks\""
+        },
+        "author": {
+          "ua": "Владислава Жулей",
+          "ru": "Владислава Жулей",
+          "en": "Vladislav Zhuley"
+        }
+      },
+      {
+        "text": {
+          "ua": "\"А також базові сценарії поведінки користувачів можуть бути віддані соціально-демократичної анафемі. У своєму прагненні підвищити якість життя, вони забувають, що реалізація намічених планових завдань\"",
+          "ru": "\"А также базовые сценарии поведения пользователей могут быть преданы социально-демократической  анафеме. В своём стремлении повысить качество жизни, они забывают, что реализация намеченных плановых заданий\"",
+          "en": "\"As well as basic scenarios of user behavior can be betrayed by socio-democratic anathema. In its desire to improve the quality of life, they forget that the implementation of planned planned tasks\""
+        },
+        "author": {
+          "ua": "Владислава Жулей",
+          "ru": "Владислава Жулей",
+          "en": "Vladislav Zhuley"
+        }
+      },
+      {
+        "text": {
+          "ua": "\"А також базові сценарії поведінки користувачів можуть бути віддані соціально-демократичної анафемі. У своєму прагненні підвищити якість життя, вони забувають, що реалізація намічених планових завдань\"",
+          "ru": "\"А также базовые сценарии поведения пользователей могут быть преданы социально-демократической  анафеме. В своём стремлении повысить качество жизни, они забывают, что реализация намеченных плановых заданий\"",
+          "en": "\"As well as basic scenarios of user behavior can be betrayed by socio-democratic anathema. In its desire to improve the quality of life, they forget that the implementation of planned planned tasks\""
+        },
+        "author": {
+          "ua": "Владислава Жулей",
+          "ru": "Владислава Жулей",
+          "en": "Vladislav Zhuley"
+        }
+      }
+    ]
+  },
+  "salon": {
+    "title": {
+      "ua": "Салон",
+      "ru": "Салон",
+      "en": "Salon"
+    },
+    "address": {
+      "ua": "м. Харків, <span> вул. Алчевськ, 50а</span><br/>(біля станції метро Пушкінська)",
+      "ru": "г. Харьков, <span>ул. Алчевських, 50а</span><br/>(возле станции метро Пушкинская)",
+      "en": "Kharkov, <span> ul. Alchevsky, 50a</span><br/>(near Pushkinskaya metro station)"
+    },
+    "schedule": {
+      "title": {
+        "ua": "Графік роботи:",
+        "ru": "График работы:",
+        "en": "Schedule:"
+      },
+      "weekdays": {
+        "ua": "пн-пт 10:00 – 18:00",
+        "ru": "пн-пт 10:00 – 18:00",
+        "en": "Mon-Fri 10:00 – 18:00"
+      },
+      "weekend": {
+        "ua": "сб-нд вихідний",
+        "ru": "сб-вс выходной",
+        "en": "Sat-Sun day off"
+      },
+      "phone-title": {
+        "ua": "Номер для запису:",
+        "ru": "Номер для записи:",
+        "en": "Record number:"
+      }
+    },
+    "btn": {
+      "ua": "Записатися на консультацію",
+      "ru": "Записаться на консультацию",
+      "en": "Sign up for a consultation"
+    }
+  },
+  "footer": {
+    "copyright": {
+      "ua": "© 2021, косметолог Тетяна Голинська",
+      "ru": "© 2021, косметолог Татьяна Голынская",
+      "en": "© 2021, Cosmetologist Tatyana Golynska"
+    }
+  },
+  "products": {
+    "title": {
+      "ua": "Бренди з якими працюємо",
+      "ru": "Бренды с которыми работаем",
+      "en": "Brands with which we work"
+    },
+    "cards": {
+      "title": {
+        "ua": "Косметика",
+        "ru": "Косметика",
+        "en": "Cosmetics"
+      },
+      "filter": {
+        "ua": "Всі бренди",
+        "ru": "Все бренды",
+        "en": "All brands"
+      },
+      "sort": {
+        "ua": "Сортувати за ціною",
+        "ru": "Сортировать по цене",
+        "en": "Sort by price"
+      },
+      "items": [
+        {
+          "description": {
+            "ua": "holyland Зволожуючий крем для жирної шкіри",
+            "ru": "holyland Увлажняющий крем для жирной кожи",
+            "en": "HOLYLAND Moisturizing Fatty Cream"
+          },
+          "price": {
+            "ua": "1000 грн",
+            "ru": "1000 грн",
+            "en": "1000 UAH"
+          },
+          "modal": {
+            "title": {
+              "ua": "Зволожуючий крем для жирної шкіри",
+              "ru": "Увлажняющий крем для жирной кожи",
+              "en": "Moisturizing Fatty Skin Cream"
+            },
+            "price": {
+              "ua": "1000 грн",
+              "ru": "1000 грн",
+              "en": "1000 UAH"
+            },
+            "feature": [
+              {
+                "ua": "Об'єм (мл): ",
+                "ru": "Объем (мл): ",
+                "en": "Volume (ml): "
+              },
+              {
+                "ua": "<span>Час застосування: </span> універсальний",
+                "ru": "<span>Время применения: </span>универсальный",
+                "en": "<span>Application time: </span> Universal"
+              },
+              {
+                "ua": "<span>Класифікація: </span> дерматокосметіка",
+                "ru": "<span>Классификация: </span>дерматокосметика",
+                "en": "<span>Classification: </span> Dermatokosmetics"
+              },
+              {
+                "ua": "<span>Призначення: </span> зволоження, зміцнення, заспокоєння",
+                "ru": "<span>Назначение: </span>увлажнение, укрепление, успокоение",
+                "en": "<span>Purpose: </span> Moisturizing, strengthening, calm"
+              },
+              {
+                "ua": "<span>Тип шкіри: </span> комбінована, нормальна",
+                "ru": "<span>Тип кожи: </span> комбинированная, нормальная",
+                "en": "<span>Skin Type: </span> Combined, Normal"
+              }
+            ],
+            "accordions": [
+              {
+                "title": {
+                  "ua": "Опис",
+                  "ru": "Описание",
+                  "en": "Description"
+                },
+                "text": [
+                  {
+                    "ua": "Косметика Holy Land проводиться в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                    "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                    "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+                  },
+                  {
+                    "ua": "Косметика Holy Land проводиться в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                    "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                    "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+                  }
+                ]
+              },
+              {
+                "title": {
+                  "ua": "Застосування",
+                  "ru": "Применение",
+                  "en": "Application"
+                },
+                "text": [
+                  {
+                    "ua": "Косметика Holy Land проводиться в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                    "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                    "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+                  },
+                  {
+                    "ua": "Косметика Holy Land проводиться в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                    "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                    "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+                  }
+                ]
+              },
+              {
+                "title": {
+                  "ua": "Склад",
+                  "ru": "Состав",
+                  "en": "Structure"
+                },
+                "text": [
+                  {
+                    "ua": "Косметика Holy Land проводиться в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                    "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                    "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+                  },
+                  {
+                    "ua": "Косметика Holy Land проводиться в Ізраїлі і вже 25 років допомагає піклуватися про здоров'я шкіри за допомогою унікальних формул і складів, заснованих на натуральних інгредієнтах найвищої якості. Продукти спрямовані на відновлення здорового природного функціонування шкіри. Ефективність формул і препаратів доведена дослідженнями і відгуками косметологів, а безпеку підтверджується сертифікатами.",
+                    "ru": "Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.",
+                    "en": "Holy Land cosmetics are produced in Israel and has been helped to take care of the health of the skin with the help of unique formulas and compositions based on natural ingredients of the highest quality. Products are aimed at restoring healthy natural skin functioning. The effectiveness of formulas and drugs is proved by research and reviews of cosmetologists, and security is confirmed by certificates."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "alt": {
+    "logo": {
+      "ua": "Логотип Beauty studio Golynska",
+      "ru": "Логотип Beauty studio Golynska",
+      "en": "Beauty studio Golynska logo"
+    },
+    "intro": {
+      "ua": "Зображення, на якому Тетяна сидить на дивані",
+      "ru": "Изображение, на котором Татьяна сидит на диване",
+      "en": "An image on which Tatiana sits on the sofa"
+    },
+    "about": {
+      "ua": "Фото Тетяна Голинська",
+      "ru": "Фото Татьяна Голынская",
+      "en": "Photo Tatyana Golynska"
+    },
+    "services": [
+      {
+        "ua": "Кріотерапія",
+        "ru": "Криотерапия",
+        "en": "Cryotherapy"
+      },
+      {
+        "ua": "Мезотерапія. Біоревіталізація.",
+        "ru": "Мезотерапия. Биоревитализация.",
+        "en": "Mesotherapy. Biorevitalization."
+      },
+      {
+        "ua": "Хімічні пілінги",
+        "ru": "Химические пилинги",
+        "en": "Chemical peelings"
+      },
+      {
+        "ua": "Ультразвукова. Механічна. Комбінована.",
+        "ru": "Ультразвуковая. Механическая. Комбинированная.",
+        "en": "Ultrasonic. Mechanical. Combined."
+      }
+    ],
+    "cosmetics": [
+      {
+        "ua": "Косметика Holyland",
+        "ru": "Косметика Holyland",
+        "en": "Cosmetics Holyland."
+      },
+      {
+        "ua": "Косметика Dermaquest",
+        "ru": "Косметика Dermaquest",
+        "en": "Cosmetics Dermaquest."
+      },
+      {
+        "ua": "Косметика Bio-matrix",
+        "ru": "Косметика Bio-matrix",
+        "en": "Cosmetics Bio-matrix."
+      }
+    ],
+    "certificates": [
+      {
+        "ua": "Диплом №1",
+        "ru": "Диплом №1",
+        "en": "Diploma1.08"
+      },
+      {
+        "ua": "Диплом №2",
+        "ru": "Диплом №2",
+        "en": "Diploma1.07"
+      },
+      {
+        "ua": "Диплом №3",
+        "ru": "Диплом №3",
+        "en": "Diploma1.06"
+      },
+      {
+        "ua": "Сертифікат №1",
+        "ru": "Сертификат №1",
+        "en": "Diploma1.05"
+      },
+      {
+        "ua": "Сертифікат №2",
+        "ru": "Сертификат №2",
+        "en": "Diploma1.04"
+      },
+      {
+        "ua": "Сертифікат №3",
+        "ru": "Сертификат №3",
+        "en": "Diploma1.03"
+      },
+      {
+        "ua": "Диплом №4",
+        "ru": "Диплом №4",
+        "en": "Diploma1.02"
+      },
+      {
+        "ua": "Сертифікат №4",
+        "ru": "Сертификат №4",
+        "en": "Diploma1.01"
+      },
+      {
+        "ua": "Диплом №5",
+        "ru": "Диплом №5",
+        "en": "Diploma2.08"
+      },
+      {
+        "ua": "Сертифікат №5",
+        "ru": "Сертификат №5",
+        "en": "Diploma2.07"
+      },
+      {
+        "ua": "Сертифікат №6",
+        "ru": "Сертификат №6",
+        "en": "Diploma2.06"
+      },
+      {
+        "ua": "Диплом №6",
+        "ru": "Диплом №6",
+        "en": "Diploma2.05"
+      },
+      {
+        "ua": "Диплом №7",
+        "ru": "Диплом №7",
+        "en": "Diploma2.04"
+      },
+      {
+        "ua": "Сертифікат №7",
+        "ru": "Сертификат №7",
+        "en": "Diploma2.03"
+      },
+      {
+        "ua": "Сертифікат №8",
+        "ru": "Сертификат №8",
+        "en": "Diploma2.02"
+      },
+      {
+        "ua": "Сертифікат №9",
+        "ru": "Сертификат №9",
+        "en": "Diploma2.01"
+      }
+    ],
+    "consultation": {
+      "ua": "Фото як відбувається консультація",
+      "ru": "Фото как проходит консультация",
+      "en": "Photo How to consult"
+    },
+    "salon": [
+      {
+        "ua": "Фото салона №1",
+        "ru": "Фото салона №1",
+        "en": "Photo of the salon #1"
+      },
+      {
+        "ua": "Фото салона №2",
+        "ru": "Фото салона №2",
+        "en": "Photo of the salon #2"
+      },
+      {
+        "ua": "Фото салона №3",
+        "ru": "Фото салона №3",
+        "en": "Photo of the salon #3"
+      },
+      {
+        "ua": "Фото салона №4",
+        "ru": "Фото салона №4",
+        "en": "Photo of the salon #4"
+      },
+      {
+        "ua": "Фото салона №5",
+        "ru": "Фото салона №5",
+        "en": "Photo of the salon #5"
+      }
+    ],
+    "products": {
+      "intro": {
+        "ua": "Зображення, на якому косметика",
+        "ru": "Изображение, на котором косметика",
+        "en": "Image on which cosmetics"
+      },
+      "cards": [
+        {
+          "ua": "",
+          "ru": "",
+          "en": ""
+        }
+      ]
+    }
+  }
+}

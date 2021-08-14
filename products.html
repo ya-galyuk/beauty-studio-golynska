@@ -2,30 +2,38 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8"/>
-    <meta
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-            name="viewport"
-    />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" name="viewport"/>
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
 
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!--  SEO -->
 
     <!--  max 140  -->
-    <meta name="description" content=""/>
+    <meta name="description" content="Голынская Татьяна. Косметолог-эстетист. ️Ультразвуковая чистка лица. Хим. Пилинги. ️Хиромассаж лица. Мезотерапия. ️Криотерапия. Запись на консультацию: +380667700948"/>
     <!--  max 20 words ex: tag-1, tag-2, tab-3  -->
     <meta name="keywords" content=""/>
 
+    <title>Beauty studio Golynska</title>
 
-    <title>Title</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<!--    <link rel="manifest" href="favicon/site.webmanifest">-->
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="alternate" href="https://www.example.com/products.html" hreflang="ru">
+    <link rel="alternate" href="https://www.example.com/ua/products.html" hreflang="ua">
+    <link rel="alternate" href="https://www.example.com/en/products.html" hreflang="en">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@400;500&display=swap"
+          rel="stylesheet">
 
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/index.min.css">
 </head>
-<body onload="setBrand();">
+<body>
 
 <div class="wrapper products-wrapper">
     <header class="header lock-padding">
@@ -33,51 +41,49 @@
             <div class="header__menu menu">
                 <nav class="menu__body">
                     <ul class="menu__list">
-                        <li class="menu__item_mob"><a data-goto=".screen-1" href="#" class="menu__link">Главная</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-2" href="#" class="menu__link">О себе</a></li>
-                        <li class="menu__item"><a data-goto=".screen-3" href="#" class="menu__link">Бренды</a></li>
-                        <li class="menu__item"><a data-goto=".screen-4" href="#" class="menu__link">Косметика</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-5" href="#" class="menu__link">Сертификаты</a>
-                        </li>
-                        <li class="menu__item_mob"><a data-goto=".screen-6" href="#" class="menu__link">Консультации</a>
-                        </li>
-                        <li class="menu__item_mob"><a data-goto=".screen-7" href="#" class="menu__link">Отзывы</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="#" class="menu__link">Салон</a></li>
-                        <li class="menu__item_mob"><a data-goto=".screen-8" href="#" class="menu__link">Контакты</a>
-                        </li>
+                        <li class="menu__item"><a data-goto=".screen-p-1" href="#cosmetic-brand" class="menu__link">Бренды</a></li>
+                        <li class="menu__item"><a data-goto=".screen-p-2" href="#cosmetic-cards" class="menu__link">Косметика</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-1" href="/beauty-studio-golynska/#intro" class="menu__link">Главная</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-2" href="/beauty-studio-golynska/#about" class="menu__link">О себе</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-3" href="/beauty-studio-golynska/#service" class="menu__link">Услуги</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-4" href="/beauty-studio-golynska/#cosmetics" class="menu__link">Косметика</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-5" href="/beauty-studio-golynska/#certificates" class="menu__link">Сертификаты</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-6" href="/beauty-studio-golynska/#consultation" class="menu__link">Консультации</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-7" href="/beauty-studio-golynska/#review" class="menu__link">Отзывы</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="/beauty-studio-golynska/#salon" class="menu__link">Салон</a></li>
+                        <li class="menu__item_mob"><a data-goto=".screen-8" href="/beauty-studio-golynska/#salon" class="menu__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="menu__icon">
                     <span></span>
                 </div>
             </div>
-            <a href="index.html" class="header__logo">
-                <img src="img/logo.png" alt="">
+            <a href="/beauty-studio-golynska/" class="header__logo">
+                <img src="img/logo.png" width="180" height="180" alt="Логотип Beauty studio Golynska">
             </a>
             <div data-da=".menu__body,500,1" class="header__service">
                 <div class="header__phone phone">
-                    <a href="tel:+380667700948" class="header__link phone__link">+380 (66) 770 09 48</a>
+                    <a href="tel:+380 (66) 770 09 48" class="header__link phone__link">+380 (66) 770 09 48</a>
                 </div>
                 <div data-da=".menu__body,1024,2" class="header__lang lang">
-                    <ul class="lang__list">
-                        <li><a href="" class="header__link lang__link">UK</a></li>
-                        <li><a href="" class="header__link lang__link active">RU</a></li>
-                    </ul>
+                    <a href="/beauty-studio-golynska/products.html" class="header__btn lang__btn" id="lang-ru" onclick="setLang('ru')">RU</a>
+                    <a href="/beauty-studio-golynska/ua/products.html" class="header__btn lang__btn" id="lang-ua" onclick="setLang('ua')">UA</a>
+                    <a href="/beauty-studio-golynska/en/products.html" class="header__btn lang__btn" id="lang-en" onclick="setLang('en')">EN</a>
                 </div>
             </div>
         </div>
     </header>
 
     <main class="page">
-        <section id="cosmetic-intro" class="page__screen screen-1 screen intro">
+        <section id="cosmetic-intro" class="page__screen screen intro">
             <div class="screen__body">
-                <div class="screen__image">
-                    <img src="img/intro.png" alt="">
+                <div class="screen__image intro__img">
+<!--                    <img src="img/products-intro.jpg" alt="Изображение, на котором косметика">-->
                 </div>
             </div>
         </section>
 
-        <section id="cosmetic-brand" class="page__screen screen cosmetic">
+        <section id="cosmetic-brand" class="page__screen screen-p-1 screen cosmetic">
             <div class="screen__content cosmetic__content">
                 <div class="container">
                     <div class="cosmetic__container">
@@ -92,10 +98,12 @@
                                    onclick="setBrand('brand-holyland')">
                                     <h2 class="cosmetic__item-title">Holyland</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/holyland.png" alt="">
+                                        <img src="img/holyland.png" alt="Косметика Holyland">
                                         <div class="_dark"></div>
                                     </div>
-                                    <div class="_border"></div>
+                                    <div id="parallax-cosmetic-1" class="bg">
+                                        <div data-depth-y="0.5" data-depth-x="-0.2" class="_border"></div>
+                                    </div>
                                 </a>
                             </li>
                             <li class="cosmetic__item">
@@ -103,10 +111,12 @@
                                    onclick="setBrand('brand-dermaquest')">
                                     <h2 class="cosmetic__item-title">Dermaquest</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/dermaquest.png" alt="">
+                                        <img src="img/dermaquest.png" alt="Косметика Dermaquest">
                                         <div class="_dark"></div>
                                     </div>
-                                    <div class="_border"></div>
+                                    <div id="parallax-cosmetic-2" class="bg">
+                                        <div data-depth-y="0.5" data-depth-x="-0.2" class="_border"></div>
+                                    </div>
                                 </a>
                             </li>
                             <li class="cosmetic__item">
@@ -114,10 +124,12 @@
                                    onclick="setBrand('brand-bio_matrix')">
                                     <h2 class="cosmetic__item-title">Bio-matrix</h2>
                                     <div class="cosmetic__img">
-                                        <img src="img/holyland.png" alt="">
+                                        <img src="img/holyland.png" alt="Косметика Bio-matrix">
                                         <div class="_dark"></div>
                                     </div>
-                                    <div class="_border"></div>
+                                    <div id="parallax-cosmetic-3" class="bg">
+                                        <div data-depth-y="0.5" data-depth-x="-0.2" class="_border"></div>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -126,7 +138,7 @@
             </div>
         </section>
 
-        <section id="cosmetic-cards" class="page__screen screen cosmetic-cards cards">
+        <section id="cosmetic-cards" class="page__screen screen-p-2 screen cosmetic-cards cards">
             <div class="screen__content cards__content">
                 <div class="container">
                     <h2 class="screen__title _text-line cards__title">Косметика</h2>
@@ -134,8 +146,8 @@
                         <div class="cards__brand brand">
                             <ul class="brand__list">
                                 <li class="brand__item">
-                                    <button class="brand__btn brand-all active" onclick="filterSelection('all')">Все
-                                        бренды
+                                    <button class="brand__btn brand-all active"
+                                            onclick="filterSelection('all')">Все бренды
                                     </button>
                                 </li>
                                 <li class="brand__item">
@@ -191,6 +203,7 @@
                                 <div class="card__price">1000 грн</div>
                             </div>
                         </a>
+
                         <a href="#" class="popup-link cards__item card dermaquest">
                             <div class="card__img">
                                 <img src="img/products/card__item-2.png" alt=""/>
@@ -309,9 +322,6 @@
                             </div>
                         </a>
                     </div>
-                    <div class="cards__more">
-                        <a class="cards__more-btn">Загрузить ещё</a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -323,28 +333,36 @@
                         <nav class="footer__menu menu__body menu">
                             <ul class="footer__list menu__list">
                                 <li class="footer__item">
-                                    <a data-goto=".screen-1" href="index.html#intro" class="menu__link">Главная</a>
+                                    <a data-goto=".screen-1" href="/beauty-studio-golynska/#intro"
+                                       class="menu__link">Главная</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-2" href="index.html#about" class="menu__link">О себе</a>
+                                    <a data-goto=".screen-2" href="/beauty-studio-golynska/#about"
+                                       class="menu__link">О себе</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-3" href="index.html#service" class="menu__link">Услуги</a>
+                                    <a data-goto=".screen-3" href="/beauty-studio-golynska/#service"
+                                       class="menu__link">Услуги</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-4" href="index.html#cosmetic" class="menu__link">Косметика</a>
+                                    <a data-goto=".screen-4" href="/beauty-studio-golynska/#cosmetic"
+                                       class="menu__link">Косметика</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-5" href="index.html#certificates" class="menu__link">Сертификаты</a>
+                                    <a data-goto=".screen-5" href="/beauty-studio-golynska/#certificates"
+                                       class="menu__link">Сертификаты</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-6" href="index.html#consultation" class="menu__link">Консультации</a>
+                                    <a data-goto=".screen-6" href="/beauty-studio-golynska/#consultation"
+                                       class="menu__link">Консультации</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-7" href="index.html#review" class="menu__link">Отзывы</a>
+                                    <a data-goto=".screen-7" href="/beauty-studio-golynska/#review"
+                                       class="menu__link">Отзывы</a>
                                 </li>
                                 <li class="footer__item">
-                                    <a data-goto=".screen-8" href="index.html#salon" class="menu__link">Салон</a>
+                                    <a data-goto=".screen-8" href="/beauty-studio-golynska/#salon"
+                                       class="menu__link">Салон</a>
                                 </li>
                             </ul>
                         </nav>
@@ -352,7 +370,6 @@
                     </div>
                 </div>
             </div>
-            <!--            <div class="footer_bg"></div>-->
         </footer>
     </main>
 </div>
@@ -376,7 +393,7 @@
                 <h2 class="popup__title screen__title">Увлажняющий крем для жирной кожи</h2>
                 <div class="popup__feature feature">
                     <ul class="feature__list">
-                        <li class="feature__item"><span>Объем (мл): </span>40ml</li>
+                        <li class="feature__item">Объем (мл): 
                         <li class="feature__item"><span>Время применения: </span>универсальный</li>
                         <li class="feature__item"><span>Классификация: </span>дерматокосметика</li>
                         <li class="feature__item"><span>Назначение: </span>увлажнение, укрепление, успокоение</li>
@@ -392,30 +409,16 @@
                             </div>
                             <div class="accordion__header-info">
                                 <div class="accordion__header-top">
-                                    <h2 class="accordion__header-title"><span>Описание</span></h2>
+                                    <h2 class="accordion__header-title">
+                                        <span>Применение</span>
+                                    </h2>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion__panel panel">
                             <div class="accordion__panel-content panel__content">
-                                <p class="panel__text">
-                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
-                                    здоровье
-                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
-                                    самого высокого качества. Продукты направлены на восстановление здорового
-                                    естественного
-                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
-                                    отзывами косметологов, а безопасность подтверждается сертификатами.
-                                </p>
-                                <p class="panel__text">
-                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
-                                    здоровье
-                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
-                                    самого высокого качества. Продукты направлены на восстановление здорового
-                                    естественного
-                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
-                                    отзывами косметологов, а безопасность подтверждается сертификатами.
-                                </p>
+                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
+                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
                             </div>
                         </div>
                     </div>
@@ -426,31 +429,16 @@
                             </div>
                             <div class="accordion__header-info">
                                 <div class="accordion__header-top">
-                                    <h2 class="accordion__header-title"><span>Применение</span>
+                                    <h2 class="accordion__header-title">
+                                        <span>Применение</span>
                                     </h2>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion__panel panel">
                             <div class="accordion__panel-content panel__content">
-                                <p class="panel__text">
-                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
-                                    здоровье
-                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
-                                    самого высокого качества. Продукты направлены на восстановление здорового
-                                    естественного
-                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
-                                    отзывами косметологов, а безопасность подтверждается сертификатами.
-                                </p>
-                                <p class="panel__text">
-                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
-                                    здоровье
-                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
-                                    самого высокого качества. Продукты направлены на восстановление здорового
-                                    естественного
-                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
-                                    отзывами косметологов, а безопасность подтверждается сертификатами.
-                                </p>
+                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
+                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
                             </div>
                         </div>
                     </div>
@@ -461,60 +449,31 @@
                             </div>
                             <div class="accordion__header-info">
                                 <div class="accordion__header-top">
-                                    <h2 class="accordion__header-title"><span>Состав</span>
+                                    <h2 class="accordion__header-title">
+                                        <span>Состав</span>
                                     </h2>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion__panel panel">
                             <div class="accordion__panel-content panel__content">
-                                <p class="panel__text">
-                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
-                                    здоровье
-                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
-                                    самого высокого качества. Продукты направлены на восстановление здорового
-                                    естественного
-                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
-                                    отзывами косметологов, а безопасность подтверждается сертификатами.
-                                </p>
-                                <p class="panel__text">
-                                    Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о
-                                    здоровье
-                                    кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах
-                                    самого высокого качества. Продукты направлены на восстановление здорового
-                                    естественного
-                                    функционирования кожи. Эффективность формул и препаратов доказана исследованиями и
-                                    отзывами косметологов, а безопасность подтверждается сертификатами.
-                                </p>
+                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
+                                <p class="panel__text">Косметика Holy Land производится в Израиле и уже 25 лет помогает заботиться о здоровье кожи с помощью уникальных формул и составов, основанных на натуральных ингредиентах  самого высокого качества. Продукты направлены на восстановление здорового естественного функционирования кожи. Эффективность формул и препаратов доказана исследованиями и отзывами косметологов, а безопасность подтверждается сертификатами.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 
-<!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="js/dynamicAdapt.js"></script>
 <script src="js/burger.js"></script>
 <script src="js/popup.js"></script>
 <script src="js/filter.js"></script>
 <script src="js/sort.js"></script>
-<script>
-    function setBrand(filterBrand) {
-        let brand = filterBrand;
-        const localBrand = localStorage.getItem('brand');
-        if (!brand) {
-            brand = localBrand;
-        }
-        const el = document.querySelector(`.${brand}`);
-        el?.click();
-        localStorage.removeItem('brand');
-    }
-</script>
-<!--<script src="js/sliders.js"></script>-->
 <script src="js/index.js"></script>
 </body>
 </html>

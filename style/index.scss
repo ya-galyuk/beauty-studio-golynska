@@ -2,7 +2,7 @@
 @import "variable";
 @import "mixin";
 @import "templates";
-@import "font";
+@import "function";
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -24,24 +24,17 @@
 html,
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   font-style: normal;
   line-height: 1;
   font-size: 14px;
   background-color: $bg-light;
   color: $text-color_dark;
   text-rendering: optimizeLegibility;
+  scroll-behavior: auto;
 }
 
-h1 {
-  @extend %tpl-font_regular;
-}
-
-h2 {
-  @extend %tpl-font_regular;
-}
-
-h3 {
+h1, h2, h3 {
   @extend %tpl-font_regular;
 }
 
@@ -51,7 +44,11 @@ button {
 }
 
 a:hover {
-  text-decoration: underline;
+  &.menu__link:not(.btn),
+  &.lang__btn,
+  &:not(.btn) {
+    color: $color-orange;
+  }
 
   &.btn,
   &.card {
@@ -65,6 +62,34 @@ ul {
 
 ._d-none {
   display: none;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+
+  &__border {
+    border: 3px solid #232323;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.about {
+  .bg {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+  }
+}
+
+.cosmetic {
+  .bg {
+    top: -12px;
+    left: -12px;
+    position: absolute !important;
+  }
 }
 
 ._text_strong {
@@ -103,6 +128,7 @@ body.lock {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 11px 27px;
   position: relative;
   font-family: 'Montserrat', sans-serif;
@@ -162,22 +188,20 @@ body.lock {
   flex: 1 0 100%;
   position: relative;
   min-width: 0;
-  margin-bottom: 100px;
+  margin-bottom: get-vh(100px);
 
   &:last-child {
     margin: 0;
   }
 
   &__content {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    @include adaptive-value("padding-left", 50, 18, 0);
-    @include adaptive-value("padding-right", 50, 18, 0);
+    padding: 50px 30px;
     position: relative;
     z-index: 2;
   }
 
   &__title {
+    font-family: "Oswald", sans-serif;
     @extend %tpl-font_medium;
     color: $text-color_dark;
     display: inline-block;
@@ -212,6 +236,12 @@ body.lock {
       height: 100%;
       top: 0;
       left: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__content {
+      padding: 50px 18px;
     }
   }
 }
@@ -332,7 +362,7 @@ body.lock {
     align-items: center;
     justify-content: space-between;
     min-height: 80px;
-    transition: all 1s;
+    transition: min-height 1s;
   }
 
   &__logo {
@@ -344,7 +374,7 @@ body.lock {
     transform: translate(-50%, 0);
     z-index: 5;
     order: 2;
-    transition: all 2s;
+    transition: max-width 2s;
 
     img {
       max-width: 100%;
@@ -372,24 +402,20 @@ body.lock {
     display: flex;
     align-items: center;
 
-    &__list {
-      display: flex;
-      align-items: center;
-
-      li {
-        list-style: none;
-        margin: 0 20px 0 0;
-      }
-    }
-
-    &__link {
+    &__btn {
       @extend %tpl-font_regular;
       font-family: 'Montserrat', sans-serif;
       font-size: 20px;
       color: $text-color_dark;
+      background: transparent;
+      margin: 0 20px 0 0;
+
+      &:last-child {
+        margin: 0;
+      }
     }
 
-    &__link.active {
+    &__btn.active {
       @extend %tpl-font_medium;
     }
   }
@@ -418,7 +444,7 @@ body.lock {
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     .menu {
       &__list {
         display: flex;
@@ -581,6 +607,14 @@ body.lock {
     &__container {
       min-height: 60px;
     }
+    &__service {
+      .phone__link {
+        display: none;
+      }
+    }
+    &__phone {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -593,7 +627,7 @@ body.lock {
   &__content {
     top: 100%;
     transform: translateY(-100%);
-    padding-bottom: 90px;
+    padding: get-vh(100px) 42px get-vh(90px);
   }
 
   &__title-block {
@@ -602,13 +636,13 @@ body.lock {
   }
 
   &__title {
-    @extend %tpl-font_regular;
     font-family: 'Oswald', sans-serif;
     @include adaptive-value("font-size", 52, 36, 1);
     font-weight: 400;
+    font-style: normal;
     display: inline;
     background: #fff;
-    line-height: 2;
+    line-height: 160%;
     text-transform: uppercase;
     position: relative;
     white-space: pre-line;
@@ -624,6 +658,12 @@ body.lock {
       width: auto;
     }
   }
+  @media (max-width: 500px) {
+    &__content {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
 }
 
 /* ----------------------------------------*/
@@ -632,8 +672,8 @@ body.lock {
 .about {
   &__container {
     position: relative;
-    @include adaptive-value("padding-top", 90, 0, 1, 1024);
-    @include adaptive-value("padding-bottom", 90, 0, 1, 1024);
+    padding-top: get-vh(90px);
+    padding-bottom: get-vh(90px);
   }
 
   &__content {
@@ -647,17 +687,6 @@ body.lock {
     min-width: 425px;
     position: relative;
     background: $bg-light;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 12px;
-      left: 0;
-      height: calc(100% + 10px);
-      width: calc(100% + 22px);
-      border: 3px solid #232323;
-      pointer-events: none;
-    }
   }
 
   &__title {
@@ -692,17 +721,19 @@ body.lock {
   &__photo {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate3d(0px, -50%, 0px) rotate(0deg) !important;
     @include adaptive-value("right", 0, -100, 1, 1024);
     @include adaptive-value("max-width", 808, 650, 1, 1024);
     z-index: -1;
 
     img {
+      object-fit: cover;
       width: 100%;
+      height: 100%;
     }
   }
 
-  @media (max-width: 1220px) {
+  @media (max-width: 1230px) {
     &__buttons {
       flex-direction: column;
 
@@ -731,7 +762,11 @@ body.lock {
       position: relative;
       z-index: 1;
       right: 0;
-      transform: none;
+      transform: none !important;
+    }
+
+    & .bg {
+      display: none;
     }
   }
 }
@@ -743,10 +778,7 @@ body.lock {
   background: $bg-dark;
 
   &__content {
-    padding-left: 0;
-    padding-right: 0;
-    @include adaptive-value("padding-top", 80, 50, 1, 375);
-    @include adaptive-value("padding-bottom", 80, 50, 1, 375);
+    padding: get-vh(80px) 0;
   }
 
   &__container {
@@ -757,7 +789,12 @@ body.lock {
   &__body {
     position: relative;
     padding: 55px 0 0 60px;
-    @include adaptive-value("margin-left", 240, 40, 1, 1024, 1920);
+    margin-left: auto;
+    max-width: 1680px;
+  }
+
+  &-slider {
+    padding-right: 24px;
   }
 
   &-slider__slide {
@@ -766,10 +803,6 @@ body.lock {
     height: auto;
     max-width: min-content;
     overflow: hidden;
-
-    &:last-child {
-      width: 0;
-    }
   }
 
   &__title {
@@ -777,8 +810,11 @@ body.lock {
     top: 0;
     left: 0;
     margin: 0;
-    z-index: 2;
+    z-index: 100;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     @include adaptive-value("font-size", 52, 40, 1);
+    font-family: "Oswald", sans-serif;
   }
 
   &-slider__image {
@@ -843,7 +879,7 @@ body.lock {
       @include adaptive-value("font-size", 20, 14, 1, 375);
       flex: 1 1 auto;
       text-align: end;
-      opacity: .5;
+      opacity: .7;
 
       &:hover {
         opacity: 1;
@@ -863,6 +899,17 @@ body.lock {
     }
   }
 
+  @media (max-width: 1920px) {
+    &__body {
+      @include adaptive-value("max-width", 1680, 1440, 1, 1440, 1920);
+    }
+  }
+  @media (max-width: 1500px) {
+    &__body {
+      margin-left: 30px;
+      max-width: initial;
+    }
+  }
   @media (max-width: 768px) {
     &__body {
       @include adaptive-value("padding-left", 60, 20, 1, 375);
@@ -881,8 +928,13 @@ body.lock {
     }
   }
   @media (max-width: 500px) {
+    &-slider {
+      padding-right: 0;
+    }
+
     &-slider__slide {
       width: 100%;
+      height: auto;
       max-width: initial;
     }
 
@@ -911,10 +963,6 @@ body.lock {
     }
   }
   @media (max-width: 425px) {
-    &-slider__slide:last-child {
-      display: none;
-    }
-
     &-slider__image {
       @include adaptive-value("height", 385, 335, 1, 375, 425);
     }
@@ -935,8 +983,10 @@ body.lock {
 /* cosmetic -------------------------------*/
 .cosmetic {
   &__content {
-    @include adaptive-value("padding-top", 180, 50, 1, 375);
-    @include adaptive-value("padding-bottom", 180, 50, 1, 375);
+    //@include adaptive-value("padding-top", 180, 50, 1, 375);
+    //@include adaptive-value("padding-bottom", 180, 50, 1, 375);
+    padding-top: get-vh(180px);
+    padding-bottom: get-vh(180px);
   }
 
   &__container {
@@ -956,7 +1006,8 @@ body.lock {
   &__title {
     display: flex;
     align-items: center;
-    @include adaptive-value("font-size", 52, 40, 1, 375);
+    flex: 1 1 auto;
+    @include adaptive-value("font-size", 52, 36, 1, 375);
     @include adaptive-value("margin-bottom", 34, 24, 1, 375);
   }
 
@@ -990,8 +1041,6 @@ body.lock {
     &:hover {
       ._border {
         position: absolute;
-        top: -12px;
-        left: -12px;
         height: calc(100% + 24px);
         width: calc(100% + 24px);
         border: 3px solid #232323;
@@ -1001,6 +1050,7 @@ body.lock {
     &-title {
       @extend %tpl-font_medium;
       @include adaptive-value("font-size", 42, 34, 1, 375);
+      font-family: 'Oswald', sans-serif;
       color: $text-color_light;
       position: absolute;
       top: 50%;
@@ -1072,7 +1122,7 @@ body.lock {
   background: $bg-dark;
 
   &__content {
-    padding: 50px 0 50px 0;
+    padding: get-vh(50px) 0;
   }
 
   &-slider__slide {
@@ -1123,7 +1173,7 @@ body.lock {
   &__description {
     @extend %tpl-font_regular;
     font-family: 'Montserrat', sans-serif;
-    padding: 0 20px;
+    padding: 0 18px;
     @include adaptive-value("font-size", 20, 15, 1, 375);
   }
 }
@@ -1132,6 +1182,10 @@ body.lock {
 
 /* consultation ---------------------------*/
 .consultation {
+  &-slider {
+    padding-right: 24px;
+  }
+
   &__title {
     font-family: 'Oswald', sans-serif;
     @extend %tpl-font_medium;
@@ -1143,25 +1197,26 @@ body.lock {
   }
 
   &__content {
-    @include adaptive-value("padding-top", 100, 50, 1, 375);
-    @include adaptive-value("padding-bottom", 100, 50, 1, 375);
+    padding: get-vh(80px) 0;
   }
 
   &__container {
     max-width: 1920px;
-    padding: 0 40px;
     margin: 0 auto;
   }
 
   &__body {
-    @include adaptive-value("margin-left", 200, 0, 1, 1440, 1920);
+    position: relative;
+    margin-left: auto;
+    max-width: 1680px;
   }
 
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1440px;
+    max-width: 1470px;
+    padding-right: 30px;
   }
 
   &__slider-navigation {
@@ -1211,7 +1266,8 @@ body.lock {
   }
 
   &__description {
-    max-width: 1440px;
+    max-width: 1470px;
+    padding-right: 30px;
     @include adaptive-value("margin-top", 68, 48, 1, 375);
   }
 
@@ -1283,19 +1339,17 @@ body.lock {
     right: 0;
   }
 
-  @media (min-width: 1920px) {
+  @media (max-width: 1920px) {
     &__body {
-      margin-left: 200px;
+      @include adaptive-value("max-width", 1680, 1440, 1, 1440, 1920);
     }
   }
-  @media (max-width: 1440px) {
-    &__container {
-      padding: 0 40px;
+  @media (max-width: 1500px) {
+    &__body {
+      margin-left: 30px;
+      max-width: initial;
     }
 
-    &__body {
-      margin-left: 0;
-    }
   }
   @media (max-width: 1024px) {
     &-slider__wrapper {
@@ -1311,11 +1365,16 @@ body.lock {
       justify-content: space-between;
       align-items: flex-start;
       width: 100%;
+      //padding-right: 30px;
     }
 
     &__image {
       width: 100%;
       height: 322px;
+    }
+
+    &__slider-navigation {
+      margin-right: 30px;
     }
   }
   @media (max-width: 768px) {
@@ -1341,6 +1400,15 @@ body.lock {
     }
   }
   @media (max-width: 500px) {
+    &__body {
+      margin-left: 0;
+    }
+    &__body {
+      padding: 0 18px;
+    }
+    &__header {
+      padding: 0;
+    }
     &__image-body {
       flex-direction: column;
     }
@@ -1349,6 +1417,8 @@ body.lock {
       min-width: 100%;
       margin-bottom: 24px;
     }
+  }
+  @media (max-width: 375px) {
   }
 }
 
@@ -1369,10 +1439,7 @@ body.lock {
 
   &__content {
     position: relative;
-    padding-left: 0;
-    padding-right: 0;
-    @include adaptive-value("padding-top", 180, 50, 1, 375);
-    @include adaptive-value("padding-bottom", 180, 50, 1, 375);
+    padding: get-vh(180px) 0;
   }
 
   &__bg-container {
@@ -1390,7 +1457,7 @@ body.lock {
   &__title {
     position: absolute;
     @include adaptive-value("font-size", 52, 40, 1, 375);
-    @include adaptive-value("top", -43, -30, 1, 552);
+    top: -43px;
   }
 
   &-slider {
@@ -1427,6 +1494,7 @@ body.lock {
   &__pagination {
     position: initial;
     margin: 0 auto;
+    height: 20px;
 
     .swiper-pagination-bullet {
       width: 20px;
@@ -1472,9 +1540,15 @@ body.lock {
     right: 0;
   }
 
-  @media (max-width: 1460px) {
+  @media (max-width: 1440px) {
     &__container {
-      padding: 0 18px;
+      padding: 0 30px;
+    }
+  }
+  @media (max-width: 645px) {
+    &__title {
+      width: calc(100% - (2 * 18px));
+      top: -73px;
     }
   }
   @media (max-width: 600px) {
@@ -1492,19 +1566,20 @@ body.lock {
       display: none;
     }
   }
-  @media (max-width: 541px) {
+  @media (max-width: 500px) {
+    &__container {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+  @media (max-width: 437px) {
     &__title {
-      top: -65px;
+      top: -103px;
     }
   }
   @media (max-width: 375px) {
     &__title {
       @include adaptive-value("font-size", 52, 34, 1, 280);
-    }
-  }
-  @media (max-width: 335px) {
-    &__title {
-      top: -100px;
     }
   }
 }
@@ -1514,8 +1589,8 @@ body.lock {
 /* salon ----------------------------------*/
 .salon {
   &__content {
-    @include adaptive-value("padding-top", 220, 50, 1, 375);
-    @include adaptive-value("padding-bottom", 150, 50, 1, 375);
+    padding-top: get-vh(220px);
+    padding-bottom: get-vh(150px);
   }
 
   &__body {
@@ -1527,7 +1602,6 @@ body.lock {
   &__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   &__title {
@@ -1545,18 +1619,37 @@ body.lock {
     }
   }
 
+  &__details,
   &__schedule,
   &__phone {
-    @extend %tpl-font_regular;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    // if font-size 22px
-    @include adaptive-value("line-height", 47, 33, 1, 1024);
+    margin-bottom: 30px;
   }
 
-  &__phone a {
-    &:hover {
-      color: $color-orange;
+  &__schedule,
+  &__phone {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 150%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+
+    span {
+      display: block;
+    }
+
+    span:first-child {
+      margin-bottom: 7px;
+      font-weight: 700;
+    }
+  }
+
+  &__phone {
+    a {
+      display: block;
+
+      &:hover {
+        color: $color-orange;
+      }
     }
   }
 
@@ -1583,7 +1676,6 @@ body.lock {
 
   &__social {
     display: flex;
-    margin-top: 34px;
 
     &-item {
       background: #fff;
@@ -1597,24 +1689,7 @@ body.lock {
     &-link {
       display: flex;
       position: relative;
-
-      &:after {
-        opacity: 0;
-        position: absolute;
-        top: 2px;
-        left: 2px;
-        content: '';
-        width: calc(100% + 4px);
-        height: calc(100% + 3px);
-        border: 2px solid $color-orange;
-        transition: all .3s ease 0s;
-      }
-
-      &:hover {
-        &:after {
-          opacity: 1;
-        }
-      }
+      font-size: 36px;
     }
   }
 
@@ -1650,6 +1725,10 @@ body.lock {
     right: 20px;
   }
 
+  &__btn {
+    margin-top: 34px;
+  }
+
   @media (max-width: 1024px) {
     &-slider {
       @include adaptive-value("width", 956, 400, 1, 768);
@@ -1662,8 +1741,7 @@ body.lock {
 
     &__schedule,
     &__phone {
-      @include adaptive-value("font-size", 22, 18, 1, 320);
-      line-height: calc(150% + 14px);
+      line-height: 150%;
     }
 
     &__details {
@@ -1683,22 +1761,21 @@ body.lock {
 
     &__info {
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
       margin-bottom: 32px;
     }
 
-    &__schedule {
-      margin-right: 40px;
-    }
-  }
-  @media (max-width: 425px) {
-    &__info {
-      flex-direction: column;
+    &__details {
+      margin-bottom: 0;
     }
 
     &__schedule,
     &__phone {
-      font-size: 22px;
+      margin-top: 32px;
+    }
+    &__schedule {
+      @include adaptive-value("margin-right", 40, 30, 1, 425);
     }
   }
 }
@@ -1718,7 +1795,7 @@ body.lock {
 
   &__menu {
     font-family: 'Montserrat', sans-serif;
-    @extend %tpl-font_medium;
+    @extend %tpl-font_regular;
     font-size: 20px;
     color: $text-color_light;
   }
@@ -1743,10 +1820,10 @@ body.lock {
   &__copyright {
     font-family: 'Montserrat', sans-serif;
     @extend %tpl-font_regular;
-    @include adaptive-value("font-size", 22, 16, 1);
+    @include adaptive-value("font-size", 20, 16, 1);
     color: $text-color_light;
     text-align: center;
-    opacity: .4;
+    opacity: .5;
   }
 
   &__map {
@@ -1833,6 +1910,7 @@ body.lock {
     align-items: flex-start;
     justify-content: center;
     padding: 0 18px;
+    margin-right: calc(-1 * (100vw - 100%));
   }
 
   &__content {
@@ -2066,6 +2144,18 @@ body.lock {
       line-height: 150%;
       @include adaptive-value("font-size", 18, 16, 1);
       color: #E8D7CD;
+    }
+  }
+
+  &__simple {
+    @include adaptive-value("margin-top", 130, 100, 1);
+
+    .panel {
+      max-height: initial;
+
+      &__content {
+        padding: 16px 0;
+      }
     }
   }
 

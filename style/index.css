@@ -118,7 +118,7 @@ body {
   font-family: sans-serif;
   font-style: normal;
   line-height: 1;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #fff;
   color: #232323;
   text-rendering: optimizeLegibility;
@@ -704,7 +704,7 @@ body.lock {
 }
 @media (max-width: 1440px) {
   .about__description {
-    font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1120));
   }
 }
 .about__buttons {
@@ -905,7 +905,7 @@ body.lock {
 }
 @media (max-width: 1440px) {
   .service-info__more {
-    font-size: calc(14px + 6 * ((100vw - 375px) / 1065));
+    font-size: calc(16px + 4 * ((100vw - 375px) / 1065));
   }
 }
 .service-info__more:hover {
@@ -1066,7 +1066,7 @@ body.lock {
 }
 @media (max-width: 1440px) {
   .cosmetic__description {
-    font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
@@ -1230,7 +1230,7 @@ body.lock {
 }
 @media (max-width: 1440px) {
   .certificates__description {
-    font-size: calc(15px + 5 * ((100vw - 375px) / 1065));
+    font-size: calc(16px + 4 * ((100vw - 375px) / 1065));
   }
 }
 
@@ -1359,7 +1359,7 @@ body.lock {
 }
 @media (max-width: 1440px) {
   .consultation__detail {
-    font-size: calc(15px + 5 * ((100vw - 375px) / 1065));
+    font-size: calc(14px + 6 * ((100vw - 375px) / 1065));
   }
 }
 .consultation__more {
@@ -1379,7 +1379,7 @@ body.lock {
 }
 @media (max-width: 1440px) {
   .consultation__more-btn {
-    font-size: calc(15px + 5 * ((100vw - 375px) / 1065));
+    font-size: calc(14px + 6 * ((100vw - 375px) / 1065));
   }
 }
 .consultation__button-prev, .consultation__button-next {
@@ -1546,7 +1546,7 @@ body.lock {
 }
 @media (max-width: 1440px) {
   .review-slider__item {
-    font-size: calc(14px + 6 * ((100vw - 320px) / 1120));
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1120));
   }
 }
 .review-slider__text {
@@ -1673,6 +1673,11 @@ body.lock {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
 }
+@media (max-width: 1440px) {
+  .salon__address {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 1120));
+  }
+}
 .salon__address span {
   color: #FF4603;
 }
@@ -1685,6 +1690,11 @@ body.lock {
   line-height: 150%;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
+}
+@media (max-width: 1440px) {
+  .salon__schedule, .salon__phone {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 1120));
+  }
 }
 .salon__schedule span, .salon__phone span {
   display: block;
@@ -1831,6 +1841,7 @@ body.lock {
 @media (max-width: 768px) {
   .salon__schedule, .salon__phone {
     margin-top: 32px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 768px) {
@@ -1841,6 +1852,12 @@ body.lock {
 @media (max-width: 768px) and (max-width: 1440px) {
   .salon__schedule {
     margin-right: calc(30px + 10 * ((100vw - 425px) / 1015));
+  }
+}
+@media (max-width: 768px) {
+  .salon__social {
+    margin-top: 30px;
+    flex: 1 1 100%;
   }
 }
 

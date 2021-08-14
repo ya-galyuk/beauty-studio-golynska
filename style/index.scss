@@ -27,7 +27,7 @@ body {
   font-family: sans-serif;
   font-style: normal;
   line-height: 1;
-  font-size: 14px;
+  font-size: 16px;
   background-color: $bg-light;
   color: $text-color_dark;
   text-rendering: optimizeLegibility;
@@ -698,7 +698,7 @@ body.lock {
 
   &__description {
     font-family: 'Montserrat', sans-serif;
-    @include adaptive-value("font-size", 20, 14, 1);
+    @include adaptive-value("font-size", 20, 16, 1);
     @extend %tpl-font_regular;
     margin-bottom: 18px;
     padding-right: 0;
@@ -876,7 +876,7 @@ body.lock {
     &__more {
       @extend %tpl-font_regular;
       font-family: 'Montserrat', sans-serif;
-      @include adaptive-value("font-size", 20, 14, 1, 375);
+      @include adaptive-value("font-size", 20, 16, 1, 375);
       flex: 1 1 auto;
       text-align: end;
       opacity: .7;
@@ -1015,7 +1015,7 @@ body.lock {
     max-width: calc(1160px + 22px);
     @extend %tpl-font_regular;
     font-family: 'Montserrat', sans-serif;
-    @include adaptive-value("font-size", 20, 14, 1);
+    @include adaptive-value("font-size", 20, 16, 1);
     padding: 0 0 0 22px;
     @include adaptive-value("margin-bottom", 34, 24, 1, 375);
   }
@@ -1174,7 +1174,7 @@ body.lock {
     @extend %tpl-font_regular;
     font-family: 'Montserrat', sans-serif;
     padding: 0 18px;
-    @include adaptive-value("font-size", 20, 15, 1, 375);
+    @include adaptive-value("font-size", 20, 16, 1, 375);
   }
 }
 
@@ -1281,7 +1281,7 @@ body.lock {
   &__detail {
     font-family: 'Montserrat', sans-serif;
     @extend %tpl-font_regular;
-    @include adaptive-value("font-size", 20, 15, 1, 375);
+    @include adaptive-value("font-size", 20, 14, 1, 375);
     margin: 26px 0;
 
     &_strong {
@@ -1300,7 +1300,7 @@ body.lock {
       display: none;
       font-family: 'Montserrat', sans-serif;
       @extend %tpl-font_regular;
-      @include adaptive-value("font-size", 20, 15, 1, 375);
+      @include adaptive-value("font-size", 20, 14, 1, 375);
       text-decoration: underline;
       background: transparent;
       opacity: .7;
@@ -1471,7 +1471,7 @@ body.lock {
 
   &-slider__item {
     font-family: 'Montserrat', sans-serif;
-    @include adaptive-value("font-size", 20, 14, 1);
+    @include adaptive-value("font-size", 20, 16, 1);
     @extend %tpl-font_regular;
     font-weight: 400;
     height: 100%;
@@ -1612,7 +1612,8 @@ body.lock {
   &__address {
     @extend %tpl-font_regular;
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    //font-size: 22px;
+    @include adaptive-value("font-size", 22, 16, 1);
 
     span {
       color: $color-orange;
@@ -1631,7 +1632,8 @@ body.lock {
     font-weight: normal;
     line-height: 150%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    //font-size: 22px;
+    @include adaptive-value("font-size", 22, 16, 1);
 
     span {
       display: block;
@@ -1773,9 +1775,15 @@ body.lock {
     &__schedule,
     &__phone {
       margin-top: 32px;
+      margin-bottom: 0;
     }
     &__schedule {
       @include adaptive-value("margin-right", 40, 30, 1, 425);
+    }
+
+    &__social {
+      margin-top: 30px;
+      flex: 1 1 100%;
     }
   }
 }

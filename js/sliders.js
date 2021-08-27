@@ -31,7 +31,7 @@ const optionBase = {
     nested: true,
 }
 
-const serviceSwiper = new Swiper('.service-slider', {
+new Swiper('.service-slider', {
 
     ...optionBase,
 
